@@ -6,15 +6,24 @@ Vault de Obsidian para apuntes universitarios. Todo el contenido está en españ
 
 ```
 Universidad/
+├── plantillas/                        # Templates para nuevas notas
+│   ├── Plantilla - Nota de clase.md
+│   ├── Plantilla - Formulario.md
+│   └── Plantilla - Ejercicio.md
 ├── cursos/
-│   └── [ciclo]/                   # e.g. 2026-1
-│       └── [Curso]/               # e.g. Motores, PLC, Amplificadores, SeriesTransformadas
-│           ├── Formulario.md      # Referencia de fórmulas del curso
+│   └── [ciclo]/                       # e.g. 2026-1
+│       ├── Dashboard [ciclo].md       # Indice del semestre
+│       ├── Evaluaciones.base          # Vista de evaluaciones del ciclo
+│       └── [Curso]/                   # e.g. Motores, PLC, Amplificadores, SeriesTransformadas
+│           ├── [Curso] MOC.md         # Mapa de contenido del curso
+│           ├── Silabo.md              # Silabo del curso
+│           ├── Formulario.md          # Referencia de formulas del curso
+│           ├── *.base                 # Vistas de base de datos
 │           └── clases/
-│               └── sNN/           # Sesión NN
+│               └── sNN/              # Semana NN (e.g. s01 = semana 01)
 │                   ├── SNN-0 Título.md    # Notas de clase (numeradas por tema)
 │                   ├── SNN-1 Tema ...md
-│                   └── attachments/       # Imágenes pegadas desde clase
+│                   └── attachments/       # Imagenes pegadas desde clase
 ```
 
 ## Convenciones para notas
@@ -25,17 +34,129 @@ Universidad/
 - **Imágenes:** se guardan en `attachments/` dentro de cada sesión, se referencian con `![[nombre.png]]`
 - **Fórmulas:** LaTeX con `$$...$$` para bloques y `$...$` inline
 - **Estructura de nota:** Encabezados `##` para secciones principales, `###` para subsecciones
-- **Frontmatter:** YAML con `title`, `tags`, `date` como mínimo en notas nuevas (e.g. `date: 2026-03-29`)
 - **Bibliografía:** Sección `## Bibliografía` al final con formato APA cuando aplique
 - **Listas "Donde:":** Después de una fórmula, listar variables con `- $símbolo$ = descripción`
+
+## Frontmatter
+
+Todas las notas deben tener frontmatter YAML. Los campos dependen del tipo de nota:
+
+### Notas de clase
+
+```yaml
+---
+title: "Titulo descriptivo"
+curso: "[[Curso MOC]]"
+unidad: 1
+semana: 1
+orden: 1
+tipo: clase
+tags:
+  - curso/nombre-curso
+  - tipo/clase
+  - tema/nombre-del-tema
+date: 2026-03-28
+---
+```
+
+### Formularios
+
+```yaml
+---
+title: "Formulario - Nombre del curso"
+curso: "[[Curso MOC]]"
+tipo: formulario
+tags:
+  - curso/nombre-curso
+  - tipo/formulario
+date: 2026-03-28
+---
+```
+
+### Ejercicios
+
+```yaml
+---
+title: "Titulo del ejercicio"
+curso: "[[Curso MOC]]"
+unidad: 1
+semana: 1
+tipo: ejercicio
+tags:
+  - curso/nombre-curso
+  - tipo/ejercicio
+  - tema/nombre-del-tema
+date: 2026-03-28
+---
+```
+
+### MOCs y Dashboards
+
+```yaml
+---
+title: "MOC - Nombre del curso"
+curso: nombre-curso
+ciclo: 2026-1
+tipo: moc
+tags:
+  - curso/nombre-curso
+  - tipo/moc
+date: 2026-03-29
+aliases:
+  - Curso MOC
+---
+```
+
+**Property `curso` como wikilink:** En notas de clase, ejercicio y formulario usar `"[[Curso MOC]]"` para que el MOC aparezca como backlink.
+
+## Tags
+
+Usar 3 jerarquías de tags:
+
+| Jerarquía | Uso | Ejemplos |
+| --------- | --- | -------- |
+| `curso/` | Identificar el curso | `curso/motores`, `curso/plc`, `curso/amplificadores`, `curso/series-transformadas` |
+| `tipo/` | Tipo de nota | `tipo/clase`, `tipo/ejercicio`, `tipo/formulario`, `tipo/referencia`, `tipo/moc`, `tipo/dashboard` |
+| `tema/` | Tema específico | `tema/ley-de-ampere`, `tema/histeresis`, `tema/circuito-magnetico` |
+
+Los tags de `tema/` se agregan orgánicamente conforme aparecen nuevos conceptos. No predefinir una taxonomía completa.
+
+## Wikilinks
+
+- Preferir `[[wikilinks]]` para enlaces internos (Obsidian rastrea renombrados automáticamente)
+- `[texto](url)` solo para enlaces externos
+- **Enlazar solo la primera mención** de un concepto que tenga su propia nota, no cada aparición
+- En Formulario.md, agregar línea `Fuente: [[nota origen]]` debajo de cada sección principal
+
+## MOCs y navegación
+
+- Cada curso tiene un **MOC** como punto de entrada (e.g. `Motores MOC.md`)
+- El semestre tiene un **Dashboard** que enlaza todos los MOCs (e.g. `Dashboard 2026-1.md`)
+- Los MOCs listan todas las notas por semana y contienen el calendario de evaluaciones
+- Crear MOCs y Dashboards por defecto al iniciar un nuevo curso o semestre
+
+## Plantillas
+
+Carpeta de plantillas: `plantillas/`
+
+| Plantilla | Uso |
+| --------- | --- |
+| `Plantilla - Nota de clase.md` | Notas de clase semanales |
+| `Plantilla - Formulario.md` | Formulario de fórmulas por curso |
+| `Plantilla - Ejercicio.md` | Ejercicios resueltos paso a paso |
+
+Usar la plantilla correspondiente al crear notas nuevas (Ctrl+T en Obsidian).
+
+## Bases
+
+Los archivos `.base` proveen vistas de datos dinámicas (plugin core Bases habilitado):
+- `Notas por semana.base` en cada curso: vista tabla agrupada por semana
+- `Evaluaciones.base` a nivel de ciclo: vista de silabos y evaluaciones
 
 ## Reglas generales
 
 ### Sintaxis y formato
 - Usar siempre Obsidian Flavored Markdown (wikilinks, callouts, embeds, properties)
-- Preferir `[[wikilinks]]` para enlaces internos (Obsidian rastrea renombrados automáticamente) y `[texto](url)` solo para enlaces externos
-- Incluir frontmatter YAML en cada nota nueva: `title`, `tags`, `date` como mínimo
-- Usar tags jerárquicos cuando tenga sentido (e.g. `#curso/motores`, `#tema/electromagnetismo`)
 - Usar callouts `> [!tipo]` para resaltar información importante, advertencias o ejemplos clave
 
 ### Contenido y estructura
@@ -46,7 +167,6 @@ Universidad/
 ### Protección
 - No modificar notas existentes a menos que el usuario lo pida explícitamente
 - No borrar archivos sin pedir confirmación
-- No crear archivos README, índices ni MOCs a menos que se soliciten
 
 ## Skills de Obsidian disponibles
 

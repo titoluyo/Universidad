@@ -1,3 +1,15 @@
+---
+title: Introduccion al curso
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 0
+tipo: introduccion
+tags:
+  - curso/motores
+  - tipo/introduccion
+date: 2026-03-28
+---
 ¡Hola! Te doy la bienvenida al curso y a esta semana de aprendizaje donde identificaremos las leyes fundamentales del electromagnetismo para su aplicación en los circuitos magnéticos.
 
 Comencemos respondiendo una pregunta.

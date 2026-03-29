@@ -1,4 +1,20 @@
-Las líneas de campo magnético de una corriente continua rectilínea forman círculos concéntricos alrededor del hilo conductor. La dirección del campo magnético viene dada por la regla de la mano derecha: cuando el pulgar de la mano derecha señala la dirección de la corriente, los otros dedos rodean el hilo conductor en la dirección del campo magnético.
+---
+title: Los circuitos magneticos
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 2
+tipo: clase
+tags:
+  - curso/motores
+  - tipo/clase
+  - tema/circuito-magnetico
+  - tema/reluctancia
+  - tema/ley-de-hopkinson
+date: 2026-03-28
+---
+
+Las líneas de [[S01-1 Tema 01 - Como se produce un campo magnético|campo magnético]] de una corriente continua rectilínea forman círculos concéntricos alrededor del hilo conductor. La dirección del campo magnético viene dada por la regla de la mano derecha: cuando el pulgar de la mano derecha señala la dirección de la corriente, los otros dedos rodean el hilo conductor en la dirección del campo magnético.
 ![[Pasted image 20260328222422.png]]
 ## Circuitos magnéticos a partir de los eléctricos
 

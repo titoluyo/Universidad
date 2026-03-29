@@ -1,6 +1,22 @@
+---
+title: Obtencion de la curva de magnetizacion
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 7
+tipo: clase
+tags:
+  - curso/motores
+  - tipo/clase
+  - tema/magnetizacion
+  - tema/histeresis
+  - tema/materiales-ferromagneticos
+date: 2026-03-28
+---
+
 ## 1. Propiedades magnéticas macroscópicas
 
-Las propiedades magnéticas macroscópicas de un material lineal, homogéneo e isótropo se definen en función de la susceptibilidad magnética $\chi_m$, coeficiente adimensional que representa la proporcionalidad entre la magnetización o imanación $M$ y la intensidad de campo magnético $H$, según la ecuación:
+Las propiedades magnéticas macroscópicas de un material lineal, homogéneo e isótropo se definen en función de la susceptibilidad magnética $\chi_m$, coeficiente adimensional que representa la proporcionalidad entre la magnetización o imanación $M$ y la intensidad de [[S01-1 Tema 01 - Como se produce un campo magnético|campo magnético]] $H$, según la ecuación:
 
 $$
 M = \chi_m H

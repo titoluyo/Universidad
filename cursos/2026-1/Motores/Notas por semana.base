@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("cursos/2026-1/Motores/clases")
+    - file.ext == "md"
+formulas:
+  titulo: if(title, title, file.basename)
+properties:
+  formula.titulo:
+    displayName: Titulo
+  semana:
+    displayName: Semana
+  orden:
+    displayName: Orden
+  tipo:
+    displayName: Tipo
+views:
+  - type: table
+    name: Notas por semana
+    groupBy:
+      property: semana
+      direction: ASC
+    order:
+      - file.name
+      - formula.titulo
+      - semana
+      - orden
+      - tipo

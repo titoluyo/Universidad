@@ -1,0 +1,15 @@
+filters:
+  and:
+    - file.hasTag("silabo")
+properties:
+  title:
+    displayName: Curso
+  file.name:
+    displayName: Archivo
+views:
+  - type: table
+    name: Silabos del ciclo
+    order:
+      - file.name
+      - title
+      - file.mtime

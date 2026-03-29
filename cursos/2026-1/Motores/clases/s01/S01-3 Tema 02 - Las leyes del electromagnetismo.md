@@ -1,4 +1,21 @@
-Ahora que conocemos más sobre los campos y circuitos magnéticos, es momento de profundizar en las leyes del electromagnetismo. Específicamente, hablaremos de la **ley de Faraday**, la **ley de Lenz**, las **corrientes de Foucault**, la **ley de Coulomb**, la **fuerza de Lorentz**, la **regla de la mano derecha** y la **ley de Biot Savart**.
+---
+title: Las leyes del electromagnetismo
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 3
+tipo: clase
+tags:
+  - curso/motores
+  - tipo/clase
+  - tema/ley-de-faraday
+  - tema/ley-de-lenz
+  - tema/fuerza-de-lorentz
+  - tema/ley-de-biot-savart
+date: 2026-03-28
+---
+
+Ahora que conocemos más sobre los campos y [[S01-2 Tema 01 - Los circuitos magnéticos|circuitos magnéticos]], es momento de profundizar en las leyes del electromagnetismo. Específicamente, hablaremos de la **ley de Faraday**, la **ley de Lenz**, las **corrientes de Foucault**, la **ley de Coulomb**, la **fuerza de Lorentz**, la **regla de la mano derecha** y la **ley de Biot Savart**.
 
 ## Revisa cada una de las leyes:
 

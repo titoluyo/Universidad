@@ -1,3 +1,17 @@
+---
+title: Sistema de unidades
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 4
+tipo: referencia
+tags:
+  - curso/motores
+  - tipo/referencia
+  - tema/unidades-si
+date: 2026-03-28
+---
+
 ## Sistema de unidades
 
 A lo largo del curso, hablaremos sobre distintas unidades del sistema de unidades. A continuación, encontrarás las más importantes junto con sus símbolos.

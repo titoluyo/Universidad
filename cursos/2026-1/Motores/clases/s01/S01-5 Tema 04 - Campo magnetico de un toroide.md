@@ -1,3 +1,18 @@
+---
+title: Campo magnetico de un toroide
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 5
+tipo: clase
+tags:
+  - curso/motores
+  - tipo/clase
+  - tema/toroide
+  - tema/ley-de-ampere
+date: 2026-03-28
+---
+
 ## 1. ¿Qué es un toroide?
 
 Cuando hablamos de un toroide nos referimos a una figura geométrica tridimensional que se asemeja a una donut. Se genera al girar un círculo en el espacio alrededor de un eje que no pasa por su centro, creando así una figura anular con una cavidad en el medio.
@@ -10,7 +25,7 @@ En un toroide, la corriente eléctrica circula por los alambres enrollados alred
 
 ![[Pasted image 20260328231533.png]]
 
-## 3. La ley de Ampère
+## 3. La [[S01-1 Tema 01 - Como se produce un campo magnético|ley de Ampère]]
 
 Para calcular el valor del campo magnético dentro de un toroide, consideremos un toroide con $N$ vueltas de alambre y una corriente $I$ fluyendo a través de cada vuelta. La corriente total enlazada por una trayectoria amperiana es $NI$. Usando la ley de Ampère, podemos expresar el campo magnético en función de la corriente y el número de vueltas:
 

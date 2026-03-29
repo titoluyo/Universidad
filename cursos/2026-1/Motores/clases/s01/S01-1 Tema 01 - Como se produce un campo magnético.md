@@ -1,3 +1,18 @@
+---
+title: Como se produce un campo magnetico
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 1
+tipo: clase
+tags:
+  - curso/motores
+  - tipo/clase
+  - tema/campo-magnetico
+  - tema/ley-de-ampere
+date: 2026-03-28
+---
+
 ## 1. ¿Qué es un campo magnético?
 
 Un campo magnético es una descripción matemática de la influencia magnética de las corrientes eléctricas y de los materiales magnéticos. Existen cuatro principios básicos que describen cómo se utilizan los campos magnéticos:
@@ -27,7 +42,7 @@ En unidades del SI, $I$ se mide en amperes y $H$ en amperes-vuelta por metro.
 
 ### Explicación de la Figura 1
 
-Si el núcleo es de hierro o de ciertos metales similares, llamados materiales ferromagnéticos, casi todo el campo magnético producido por la corriente permanecerá dentro del núcleo, de modo que el camino de integración especificado en la ley de Ampère es la longitud media del núcleo $l_n$. La corriente que pasa por el camino de integración $I_{\text{neta}}$ es entonces $Ni$, puesto que la bobina de alambre corta dicho camino $N$ veces mientras pasa la corriente $i$. La ley de Ampère se expresa entonces como:
+Si el núcleo es de hierro o de ciertos metales similares, llamados [[S01-7 Tema 05 - Obtencion de la curva de magnetizacion|materiales ferromagnéticos]], casi todo el campo magnético producido por la corriente permanecerá dentro del núcleo, de modo que el camino de integración especificado en la ley de Ampère es la longitud media del núcleo $l_n$. La corriente que pasa por el camino de integración $I_{\text{neta}}$ es entonces $Ni$, puesto que la bobina de alambre corta dicho camino $N$ veces mientras pasa la corriente $i$. La ley de Ampère se expresa entonces como:
 
 $$H \cdot l_n = N \cdot i$$
 

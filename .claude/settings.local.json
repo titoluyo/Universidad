@@ -4,7 +4,15 @@
       "Bash(C:/work/droid/.venv/Scripts/python.exe \"C:/work/claude-pulse/claude_status.py\" --themes-demo 2>&1)",
       "Bash(C:/work/droid/.venv/Scripts/python.exe \"C:/work/claude-pulse/claude_status.py\" --theme default 2>&1)",
       "Bash(C:/work/droid/.venv/Scripts/python.exe \"C:/work/claude-pulse/claude_status.py\" --animate on 2>&1)",
-      "Bash(C:/work/droid/.venv/Scripts/python.exe \"C:/work/claude-pulse/claude_status.py\" --bar-size medium 2>&1)"
+      "Bash(C:/work/droid/.venv/Scripts/python.exe \"C:/work/claude-pulse/claude_status.py\" --bar-size medium 2>&1)",
+      "Bash(find /c/work/universidad_vault/Universidad -not -path */.git/* -not -path */.obsidian/* -type d)",
+      "Bash(ls:*)",
+      "WebSearch",
+      "Bash(mkdir -p \"C:/work/universidad_vault/Universidad/cursos/2026-1/Amplificadores\" \"C:/work/universidad_vault/Universidad/cursos/2026-1/PLC\" \"C:/work/universidad_vault/Universidad/cursos/2026-1/Series y Transformadas\")",
+      "Bash(mv \"C:/work/universidad_vault/Universidad/Motores Electricos Estaticos y Rotativos\" \"C:/work/universidad_vault/Universidad/cursos/2026-1/\")"
     ]
+  },
+  "enabledPlugins": {
+    "obsidian@obsidian-skills": true
   }
 }

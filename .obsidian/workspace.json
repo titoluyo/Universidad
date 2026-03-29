@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "121a8b2acc0b5168",
+    "type": "split",
+    "children": [
+      {
+        "id": "dec479d6f90a2f79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d948490260d26f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-1 Tema 01 - Cómo se produce un campo magnético.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S01-1 Tema 01 - Cómo se produce un campo magnético"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e376561faa8f1542",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad079f982a426acf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cab922b4f85b7a9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e21c7f0cf6d3f2ba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b515019fddcfcb99",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 306.5
+  },
+  "right": {
+    "id": "ca23c823690c8229",
+    "type": "split",
+    "children": [
+      {
+        "id": "01bafb2e6531f419",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7afd2a51e381ba5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-1 Tema 01 - Cómo se produce un campo magnético.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for S01-1 Tema 01 - Cómo se produce un campo magnético"
+            }
+          },
+          {
+            "id": "392dfbe3ab33bebc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-1 Tema 01 - Cómo se produce un campo magnético.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from S01-1 Tema 01 - Cómo se produce un campo magnético"
+            }
+          },
+          {
+            "id": "4c36b2223bd53e8e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e246a95a2cc63d3e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "12249a973e94b5b5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-1 Tema 01 - Cómo se produce un campo magnético.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of S01-1 Tema 01 - Cómo se produce un campo magnético"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "1d948490260d26f4",
+  "lastOpenFiles": [
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-2 Tema 01 - Los circuitos magnéticos.md",
+    "Untitled.canvas",
+    "Motores Eléctricos Estáticos y Rotativos/Formulario.md",
+    "Welcome.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-1 Tema 01 - Cómo se produce un campo magnético.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-4 Tema 03 - Sistema de unidades.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-0 Introducción.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-7 Tema 05 - Obtención de la curva de magnetización.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-5 Tema 04 - Campo magnético de un toroide.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-6 Tema 04 - Ejercicio de la ley de Ampere.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328235855.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328235831.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328235810.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-3 Tema 02 - Las leyes del electromagnetismo.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/S01-5 Tema 04 - Campo magnético de un toroide 1.md",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328231533.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Semana+1+-+Info_JJMRGN.pdf",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328225601.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328224215.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328223056.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328223040.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328222422.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s04",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments/Pasted image 20260328220654.png",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01/attachments",
+    "Untitled 2/desktop.ini",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s03",
+    "Motores Eléctricos Estáticos y Rotativos/clases/Untitled/desktop.ini",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s01",
+    "Untitled 1/desktop.ini",
+    "Motores Eléctricos Estáticos y Rotativos/clases/s02",
+    "Motores Eléctricos Estáticos y Rotativos/clases"
+  ]
+}

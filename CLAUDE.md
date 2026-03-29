@@ -6,20 +6,22 @@ Vault de Obsidian para apuntes universitarios. Todo el contenido está en españ
 
 ```
 Universidad/
-├── [Curso]/
-│   ├── Formulario.md              # Referencia de fórmulas del curso
-│   └── clases/
-│       └── sNN/                   # Sesión NN
-│           ├── SNN-0 Título.md    # Notas de clase (numeradas por tema)
-│           ├── SNN-1 Tema ...md
-│           └── attachments/       # Imágenes pegadas desde clase
+├── cursos/
+│   └── [ciclo]/                   # e.g. 2026-1
+│       └── [Curso]/               # e.g. Motores, PLC, Amplificadores, SeriesTransformadas
+│           ├── Formulario.md      # Referencia de fórmulas del curso
+│           └── clases/
+│               └── sNN/           # Sesión NN
+│                   ├── SNN-0 Título.md    # Notas de clase (numeradas por tema)
+│                   ├── SNN-1 Tema ...md
+│                   └── attachments/       # Imágenes pegadas desde clase
 ```
 
 ## Convenciones para notas
 
 - **Idioma:** Español siempre (incluidos títulos, properties, tags)
 - **Nombres de archivo:** `SNN-X Tema NN - Título descriptivo.md` (sin tildes en nombres de archivo)
-- **Carpetas de sesión:** `sNN/` en minúsculas
+- **Carpetas de sesión:** `sNN/` en minúsculas (sNN = semana NN, e.g. `s01` = semana 01)
 - **Imágenes:** se guardan en `attachments/` dentro de cada sesión, se referencian con `![[nombre.png]]`
 - **Fórmulas:** LaTeX con `$$...$$` para bloques y `$...$` inline
 - **Estructura de nota:** Encabezados `##` para secciones principales, `###` para subsecciones

@@ -90,6 +90,36 @@ date: 2026-03-28
 ---
 ```
 
+### Silabos
+
+```yaml
+---
+title: Silabo - Nombre del curso
+curso: "[[Curso MOC]]"
+tags:
+  - curso/nombre-curso
+  - silabo
+date: 2026-03-29
+aliases:
+  - Silabo Nombre Curso
+---
+```
+
+**Nombre de archivo:** `Silabo - Nombre descriptivo del curso.md`
+
+**Estructura de secciones** (en este orden, sin numerar):
+
+1. `## Datos generales` — tabla con Codigo, Ciclo, Carreras, Creditos, Ensenanza, Horas semanales
+2. `## Fundamentacion`
+3. `## Sumilla`
+4. `## Logro general de aprendizaje`
+5. `## Unidades y logros especificos de aprendizaje` — cada unidad como `### Unidad N: Nombre (semanas X-Y)` con callout `> [!abstract] Logro especifico` y lista de **Temario**. Separar unidades con `---`
+6. `## Metodologia` — párrafo compacto
+7. `## Sistema de evaluacion` — fórmula en LaTeX `$$...$$`, tabla con columnas Tipo/Descripcion/Semana/Peso/Observacion, callout `> [!warning] Indicaciones importantes`
+8. `## Competencias por carrera` — tabla Carrera/Competencias especificas
+9. `## Cronograma de actividades` — una tabla por unidad (`### Unidad N: Nombre`) con columnas Semana/Temas/Evaluaciones. Evaluaciones en **negrita**
+10. `## Bibliografia` — subsecciones `### Base` y `### Complementaria`
+
 ### MOCs y Dashboards
 
 ```yaml
@@ -107,7 +137,7 @@ aliases:
 ---
 ```
 
-**Property `curso` como wikilink:** En notas de clase, ejercicio y formulario usar `"[[Curso MOC]]"` para que el MOC aparezca como backlink.
+**Property `curso` como wikilink:** En notas de clase, ejercicio, formulario y silabo usar `"[[Curso MOC]]"` para que el MOC aparezca como backlink.
 
 ## Tags
 
@@ -163,6 +193,15 @@ Los archivos `.base` proveen vistas de datos dinámicas (plugin core Bases habil
 - Mantener el mismo estilo expositivo de las notas actuales: explicativo, didáctico, con desarrollo paso a paso
 - Al crear nuevas notas, seguir la numeración correlativa de la sesión (SNN-X)
 - Las carpetas de attachments son por sesión, no globales
+
+### Evaluaciones
+Al resolver evaluaciones, seguir estas reglas:
+
+1. **Analizar detenidamente las imágenes** siempre que estén presentes o se incluyan en la pregunta
+2. **Escribir las respuestas en el archivo** de evaluación
+3. **Calcular para todas las opciones** — no solo la correcta, sino verificar qué implica cada alternativa
+4. **Siempre incluir cálculos, proceso y razonamiento** en el documento para sustentar la respuesta y validar posibles errores
+5. **Crear wikilinks hacia los documentos de teoría** que sustentan cada respuesta
 
 ### Protección
 - No modificar notas existentes a menos que el usuario lo pida explícitamente

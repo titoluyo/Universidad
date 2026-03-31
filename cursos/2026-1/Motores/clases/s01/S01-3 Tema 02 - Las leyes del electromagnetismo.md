@@ -96,7 +96,7 @@ Donde:
 
 La regla de la mano derecha es básica para estudiar el comportamiento de los campos magnéticos. Veamos el siguiente video para descubrir de qué trata.
 
-[Video: regla de la mano derecha](https://www.youtube.com/watch?v=PyTS_IDGOE0)
+![Video: regla de la mano derecha](https://www.youtube.com/watch?v=PyTS_IDGOE0)
 
 ### Ley de Biot-Savart
 

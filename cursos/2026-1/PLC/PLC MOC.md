@@ -14,5 +14,5 @@ aliases:
 
 ## Recursos del curso
 
-- [[Silabo|Silabo del curso]]
-- [[Formulario|Formulario de formulas]]
+- [[Silabo - Maquinas Electricas Estaticas y Rotativas|Silabo del curso]]
+- [[Formulario - PLC|Formulario de formulas]]

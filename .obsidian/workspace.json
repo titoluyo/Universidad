@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dec479d6f90a2f79",
+        "id": "a4de68a18135e7e1",
         "type": "tabs",
         "children": [
           {
-            "id": "1d948490260d26f4",
+            "id": "814660c5654c9086",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
+                "file": "cursos/2026-1/Amplificadores/Silabo - Circuitos Electronicos Amplificadores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Amplificadores MOC"
+              "title": "Silabo - Circuitos Electronicos Amplificadores"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 457.5
+    "width": 340.5
   },
   "right": {
     "id": "ca23c823690c8229",
@@ -183,53 +183,54 @@
       "bases:Create new base": false
     }
   },
-  "active": "1d948490260d26f4",
+  "active": "814660c5654c9086",
   "lastOpenFiles": [
-    "cursos/2026-1/Amplificadores/Formulario.md",
+    "cursos/2026-1/Amplificadores/Silabo - Amplificadores PDF.md",
+    "cursos/2026-1/Amplificadores/Silabo - Circuitos Electronicos Amplificadores.md",
+    "cursos/2026-1/Amplificadores/Silabo - Circuitos Electronicos Amplificadores.md.tmp.4952.1774916014520",
+    "cursos/2026-1/Amplificadores/attachments/CIRCUITOSELECTRÓNICOSAMPLIFICADORES_undefined.pdf",
+    "cursos/2026-1/Amplificadores/attachments",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/S01-99 Evaluación Semana 01 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/S01-5 Tema 01 - Ejercicio 4 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/S01-1 Tema 01 - Funciones en el plano complejo.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/S01-0 Introduccion Series y Transformadas.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01",
+    "cursos/2026-1/Motores/clases/s01/S01-99 Evaluación Semana 01 (Motores).md",
     "cursos/2026-1/Evaluaciones.base",
-    "cursos/2026-1/Dashboard 2026-1.md",
-    "cursos/2026-1/Motores/Notas por semana.base",
-    "cursos/2026-1/Motores/Formulario.md",
-    "cursos/2026-1/Motores/Motores MOC.md",
-    "cursos/2026-1/Motores/Silabo.md",
-    "CLAUDE.md.tmp.3236.1774825095610",
-    "cursos/2026-1/Motores/clases/s01/S01-0 Introducción.md",
-    "cursos/2026-1/Motores/clases/s01/S01-7 Tema 05 - Obtencion de la curva de magnetizacion.md",
-    "cursos/2026-1/Motores/clases/s01/S01-6 Tema 04 - Ejercicio de la ley de Ampere.md",
-    "cursos/2026-1/Motores/clases/s01/S01-5 Tema 04 - Campo magnetico de un toroide.md",
-    "cursos/2026-1/Motores/clases/s01/S01-4 Tema 03 - Sistema de unidades.md",
-    "cursos/2026-1/Motores/clases/s01/S01-3 Tema 02 - Las leyes del electromagnetismo.md",
-    "cursos/2026-1/Motores/clases/s01/S01-2 Tema 01 - Los circuitos magnéticos.md",
-    "cursos/2026-1/Motores/clases/s01/S01-1 Tema 01 - Como se produce un campo magnético.md",
-    "cursos/2026-1/Motores/Formulario.md.tmp.3236.1774825015939",
-    "cursos/2026-1/Motores/Formulario.md.tmp.3236.1774825014604",
-    "cursos/2026-1/Motores/Formulario.md.tmp.3236.1774825012826",
-    "cursos/2026-1/Motores/Formulario.md.tmp.3236.1774825011492",
-    "cursos/2026-1/SeriesTransformadas/Formulario.md",
-    "cursos/2026-1/SeriesTransformadas/SeriesTransformadas MOC.md",
-    "cursos/2026-1/PLC/Formulario.md",
-    "cursos/2026-1/PLC/Formulario.md.tmp.3236.1774824999337",
     "cursos/2026-1/PLC/PLC MOC.md",
+    "cursos/2026-1/Amplificadores/Formulario - Amplificadores.md",
     "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
-    "cursos/2026-1/SeriesTransformadas/clases",
-    "cursos/2026-1/PLC/clases",
-    "plantillas/Plantilla - Ejercicio.md",
-    "plantillas/Plantilla - Formulario.md",
-    "plantillas/Plantilla - Nota de clase.md",
-    "cursos/2026-1/Motores/Sílabo.md",
-    "CLAUDE.md",
+    "cursos/2026-1/Amplificadores/Formulario.md",
+    "cursos/2026-1/PLC/Formulario - PLC.md",
+    "cursos/2026-1/SeriesTransformadas/Formulario - Series y Transformadas.md",
+    "cursos/2026-1/SeriesTransformadas/SeriesTransformadas MOC.md",
+    "cursos/2026-1/SeriesTransformadas/Silabo - Series y Transformadas.md",
+    "cursos/2026-1/Dashboard 2026-1.md",
+    "cursos/2026-1/Motores/Motores MOC.md",
+    "cursos/2026-1/Motores/Formulario - Motores Eléctricos Estáticos y Rotativos.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/attachments/Pasted image 20260329223826.png",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/S01-4 Tema 01 - Ejercicio 3 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/attachments/Pasted image 20260329222757.png",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/S01-3 Tema 01 - Ejercicio 2 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/S01-2 Tema 01 - Ejercicio 1 (SyT).md",
+    "cursos/2026-1/Motores/Silabo - Maquinas Electricas Estaticas y Rotativas.md",
+    "cursos/2026-1/SeriesTransformadas/clases/S01-1 Tema 01 - Funciones en el plano complejo PDF.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/attachments/Semana+1+-+Func_INWCUD.pdf",
+    "cursos/2026-1/SeriesTransformadas/clases/s01/attachments",
+    "cursos/2026-1/Motores/clases/s01/S01-0 Introducción - Motores.md",
+    "cursos/2026-1/SeriesTransformadas/clases/S01-0 Introducción Series y Transformadas.md",
+    "cursos/2026-1/SeriesTransformadas/Untitled",
+    "cursos/2026-1/SeriesTransformadas/Silabo - Series y Transformadas PDF.md",
+    "cursos/2026-1/SeriesTransformadas/attachments/SERIESYTRANSFORMADAS_undefined.pdf",
+    "cursos/2026-1/SeriesTransformadas/attachments",
+    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260329190408.png",
+    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260329190041.png",
+    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260329185300.png",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328235855.png",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328235831.png",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328235810.png",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328231533.png",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328225601.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328223040.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328224215.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328223056.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328220654.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328222422.png",
-    "cursos/2026-1/Motores Electricos Estaticos y Rotativos/clases/s01/S01-7 Tema 05 - Obtencion de la curva de magnetizacion.md",
-    "cursos/2026-1/Motores Electricos Estaticos y Rotativos/clases/s01/S01-5 Tema 04 - Campo magnetico de un toroide.md",
     "Untitled.canvas"
   ]
 }

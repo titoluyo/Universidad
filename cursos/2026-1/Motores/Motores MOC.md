@@ -14,8 +14,8 @@ aliases:
 
 ## Recursos del curso
 
-- [[Silabo|Silabo del curso]]
-- [[Formulario|Formulario de formulas]]
+- [[Silabo - Maquinas Electricas Estaticas y Rotativas|Silabo del curso]]
+- [[Formulario - Motores Eléctricos Estáticos y Rotativos|Formulario de formulas]]
 
 ---
 
@@ -25,7 +25,7 @@ aliases:
 
 | Orden | Nota | Tipo |
 | ----- | ---- | ---- |
-| 0 | [[S01-0 Introducción\|Introduccion al curso]] | introduccion |
+| 0 | [[S01-0 Introducción - Motores\|Introduccion al curso]] | introduccion |
 | 1 | [[S01-1 Tema 01 - Como se produce un campo magnético\|Como se produce un campo magnetico]] | clase |
 | 2 | [[S01-2 Tema 01 - Los circuitos magnéticos\|Los circuitos magneticos]] | clase |
 | 3 | [[S01-3 Tema 02 - Las leyes del electromagnetismo\|Las leyes del electromagnetismo]] | clase |

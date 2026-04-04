@@ -1,0 +1,21 @@
+# Obsidian workspace state files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/sync-version.json
+.obsidian/graph.json
+.obsidian/cache/
+.obsidian/logs/
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Custom Exclusions
+.materiales/

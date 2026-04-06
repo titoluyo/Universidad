@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/SeriesTransformadas/Silabo - Series y Transformadas.md",
+                "file": "cursos/2026-1/SeriesTransformadas/clases/s02/S02-99 Evaluación PA01 (SyT).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Silabo - Series y Transformadas"
+              "title": "S02-99 Evaluación PA01 (SyT)"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cursos/2026-1/SeriesTransformadas/Silabo - Series y Transformadas.md",
+                "file": "cursos/2026-1/SeriesTransformadas/clases/s02/S02-99 Evaluación PA01 (SyT).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Silabo - Series y Transformadas"
+              "title": "Backlinks for S02-99 Evaluación PA01 (SyT)"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cursos/2026-1/SeriesTransformadas/Silabo - Series y Transformadas.md",
+                "file": "cursos/2026-1/SeriesTransformadas/clases/s02/S02-99 Evaluación PA01 (SyT).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Silabo - Series y Transformadas"
+              "title": "Outline of S02-99 Evaluación PA01 (SyT)"
             }
           }
         ],
@@ -186,6 +186,25 @@
   },
   "active": "6e78c0ddddb3f00f",
   "lastOpenFiles": [
+    "cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion/TitoLuyoMurata_PA01.pdf",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion/TitoLuyoMurata_PA01_preg02.jpg",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion/TitoLuyoMurata_PA01_preg03.jpg",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion/TitoLuyoMurata_PA01_preg04.jpg",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion/TitoLuyoMurata_PA01_preg05.jpg",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion/TitoLuyoMurata_PA01_preg01.jpg",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/New folder",
+    "cursos/2026-1/SeriesTransformadas/Silabo - Series y Transformadas.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/S02-99 Evaluación PA01 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/S02-5 Tema 02 - Ejercicio 4 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/S02-4 Tema 02 - Ejercicio 3 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/S02-3 Tema 02 - Ejercicio 2 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/S02-2 Tema 02 - Ejercicio 1 (SyT).md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/S02-1 Tema 02 - Limites y continuidad de funciones complejas.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/semana02.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s02/semana02",
+    "cursos/2026-1/SeriesTransformadas/clases/s02",
+    "extract_pdf.py",
     "Untitled 1.base",
     "Untitled.base",
     "cursos/2026-1/Amplificadores/clases/s01/S01-7 Analisis amplificador clase A en DC y AC.md",
@@ -202,36 +221,17 @@
     "cursos/2026-1/Amplificadores/clases/s01/S01-3 Transistor Bipolar - Construccion y criterio de funcionamiento.md.tmp.43176.1774997892711",
     "cursos/2026-1/Amplificadores/clases/s01",
     "cursos/2026-1/Amplificadores/Silabo - Amplificadores PDF.md",
-    "cursos/2026-1/Amplificadores/Silabo - Circuitos Electronicos Amplificadores.md.tmp.4952.1774916014520",
-    "cursos/2026-1/Amplificadores/attachments/CIRCUITOSELECTRÓNICOSAMPLIFICADORES_undefined.pdf",
-    "cursos/2026-1/Amplificadores/attachments",
     "cursos/2026-1/SeriesTransformadas/clases/s01/S01-99 Evaluación Semana 01 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s01/S01-5 Tema 01 - Ejercicio 4 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s01/S01-1 Tema 01 - Funciones en el plano complejo.md",
     "cursos/2026-1/SeriesTransformadas/clases/s01/S01-0 Introduccion Series y Transformadas.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s01",
     "cursos/2026-1/Motores/clases/s01/S01-99 Evaluación Semana 01 (Motores).md",
-    "cursos/2026-1/Evaluaciones.base",
     "cursos/2026-1/PLC/PLC MOC.md",
-    "cursos/2026-1/Amplificadores/Formulario - Amplificadores.md",
-    "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
-    "cursos/2026-1/Amplificadores/Formulario.md",
-    "cursos/2026-1/PLC/Formulario - PLC.md",
-    "cursos/2026-1/SeriesTransformadas/Formulario - Series y Transformadas.md",
-    "cursos/2026-1/SeriesTransformadas/SeriesTransformadas MOC.md",
-    "cursos/2026-1/SeriesTransformadas/Silabo - Series y Transformadas.md",
-    "cursos/2026-1/Dashboard 2026-1.md",
     "cursos/2026-1/SeriesTransformadas/clases/s01/attachments/Pasted image 20260329223826.png",
     "cursos/2026-1/SeriesTransformadas/clases/s01/attachments/Pasted image 20260329222757.png",
-    "cursos/2026-1/SeriesTransformadas/clases/s01/attachments/Semana+1+-+Func_INWCUD.pdf",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260329190408.png",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260329190041.png",
     "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260329185300.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328235855.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328235831.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328235810.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328231533.png",
-    "cursos/2026-1/Motores/clases/s01/attachments/Pasted image 20260328225601.png",
     "Untitled.canvas"
   ]
 }

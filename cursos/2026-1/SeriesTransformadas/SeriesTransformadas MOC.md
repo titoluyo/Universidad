@@ -25,3 +25,10 @@ aliases:
 - [[S01-3 Tema 01 - Ejercicio 2 (SyT)|Ejercicio 2]]
 - [[S01-4 Tema 01 - Ejercicio 3 (SyT)|Ejercicio 3 - Raices cubicas de (-1+i)]]
 - [[S01-5 Tema 01 - Ejercicio 4 (SyT)|Ejercicio 4 - Raices cubicas de (-8i)]]
+
+## Semana 2 — Limites, continuidad y propiedades de funciones complejas
+
+- [[S02-1 Tema 02 - Limites y continuidad de funciones complejas|Limites y continuidad de funciones complejas]]
+- [[S02-2 Tema 02 - Ejercicio 1 (SyT)|Ejercicio 1 - Limite por racionalizacion]]
+- [[S02-3 Tema 02 - Ejercicio 2 (SyT)|Ejercicio 2 - Limite por regla de L'Hospital]]
+- [[S02-4 Tema 02 - Ejercicio 3 (SyT)|Ejercicio 3 - Continuidad por factorizacion]]

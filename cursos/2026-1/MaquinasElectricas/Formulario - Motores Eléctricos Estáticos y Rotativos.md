@@ -90,10 +90,17 @@ En el interior de un toroide de radio medio $r$:
 $$B = \frac{\mu_0 NI}{2\pi r}$$
 
 ### Magnetización en Materiales
+Fuente: [[S01-7 Tema 05 - Obtencion de la curva de magnetizacion|S01-7 Obtencion de la curva de magnetizacion]]
+
 - **Magnetización ($M$):** $M = \chi_m H$
-- **Relación de Inducción:** $B = \mu_0(H + M) = \mu H$
+- **Relación de Inducción:** $B = \mu_0(H + M) = \mu_0 H (1 + \chi_m) = \mu_0 \mu_r H = \mu H$
 - **Permeabilidad Relativa:** $\mu_r = 1 + \chi_m$
   *Donde $\chi_m$ es la susceptibilidad magnética.*
+
+### Clasificación de Materiales por $\chi_m$
+- Diamagnéticos: $\mu_r \leq 1$, $\chi_m \sim -10^{-5}$
+- Paramagnéticos: $\mu_r \geq 1$, $\chi_m \sim 10^{-3}$
+- Ferromagnéticos: $\mu_r \gg 1$, $\chi_m$ elevado
 
 ---
 
@@ -165,7 +172,7 @@ $$i = I = \frac{N \cdot i}{N}$$
 ---
 
 ## 7. Permeabilidad Magnética y Entrehierro
-Fuente: [[S02-3 Tema 02 - Caracteristicas para crear un campo magnetico|S02-2 Caracteristicas para crear un campo magnetico]]
+Fuente: [[S02-3 Tema 02 - Caracteristicas para crear un campo magnetico|S02-3 Caracteristicas para crear un campo magnetico]]
 
 ### Permeabilidad Relativa
 $$\mu_r = \frac{\mu}{\mu_0}$$
@@ -194,7 +201,7 @@ Donde:
 ---
 
 ## 8. Lazo de Histéresis y Pérdidas Magnéticas
-Fuente: [[S02-4 Tema 03 - Lazo de histeresis|S02-3 Lazo de histeresis]]
+Fuente: [[S02-4 Tema 03 - Lazo de histeresis|S02-4 Lazo de histeresis]]
 
 ### Energía del Ciclo de Histéresis
 $$dE = S \cdot L_m \cdot H \cdot dB$$
@@ -214,7 +221,7 @@ Donde:
 ---
 
 ## 9. Métodos de Análisis de Circuitos Magnéticos
-Fuente: [[S02-5 Tema 04 - Metodos de analisis|S02-4 Metodos de analisis]]
+Fuente: [[S02-5 Tema 04 - Metodos de analisis|S02-5 Metodos de analisis]]
 
 ### Ley de Circuitación (circuito serie hierro + entrehierro)
 $$F = Ni = H_{Fe} \cdot l_{Fe} + H_e \cdot l_e$$
@@ -275,7 +282,13 @@ $$P_{Fe} = V \cdot I_{exc} \cdot \cos \phi_v$$
 ### Componentes de la Corriente de Excitación
 $$I_{Fe} = I_{exc} \cdot \cos \phi_v \qquad I_\mu = I_{exc} \cdot \text{sen} \, \phi_v$$
 
-$$I_{exc} = \sqrt{I_{Fe}^2 + I_\mu^2}$$
+$$\vec{I_{exc}} = \vec{I_{Fe}} + \vec{I_\mu} \qquad I_{exc} = \sqrt{I_{Fe}^2 + I_\mu^2}$$
+
+### Factor de Potencia de Excitación
+$$\cos \phi_v = \frac{I_{Fe}}{I_{exc}}$$
+
+### Tensión en Inductancia
+$$v = L \frac{di}{dt}$$
 
 ### Circuito Equivalente (con pérdidas)
 $$R_{Fe} = \frac{V}{I_{Fe}} \qquad X_\mu = \frac{V}{I_\mu}$$
@@ -297,6 +310,9 @@ $$\phi_1 = \phi_m \cos \omega t \cos p\alpha$$
 ### F.E.M. Inducida (caso general)
 $$e_2 = -N_2 \frac{d\phi}{dt}$$
 
+### Pulsación de la F.E.M. Inducida
+$$\omega_2 = \omega_1 \pm p\Omega$$
+
 ### Relación de Frecuencias (ecuación fundamental)
 $$f_2 = f_1 \pm \frac{n \cdot p}{60}$$
 
@@ -305,11 +321,22 @@ Donde:
 - $f_2$ = frecuencia del inducido
 - $n$ = velocidad del rotor [rpm]
 - $p$ = número de pares de polos
+- $\omega_1 = 2\pi f_1$, $\omega_2 = 2\pi f_2$, $\Omega = \frac{2\pi n}{60}$
 
 ### Caso 1: Inducido Fijo — Transformador ($\Omega = 0$)
-$$E_2 = 4{,}44 \cdot N_2 \cdot f_1 \cdot \phi_m$$
+
+F.E.M. instantánea:
+$$e_2 = N_2 \omega_1 \phi_m \, \text{sen} \, \omega_1 t \cos p\alpha$$
+
+Valor eficaz:
+$$E_2 = \frac{N_2 \omega_1 \phi_m}{\sqrt{2}} = 4{,}44 \cdot N_2 \cdot f_1 \cdot \phi_m$$
 
 ### Caso 2: Inducido Móvil — Máquina Síncrona ($\omega_1 = 0$)
-$$E_2 = 4{,}44 \cdot N_2 \cdot f_2 \cdot \phi_m$$
+
+F.E.M. instantánea:
+$$e_2 = N_2 p\Omega \phi_m \, \text{sen} \, p\Omega t$$
+
+Valor eficaz:
+$$E_2 = \frac{N_2 p\Omega \phi_m}{\sqrt{2}} = 4{,}44 \cdot N_2 \cdot f_2 \cdot \phi_m$$
 
 $$f_2 = \frac{n \cdot p}{60}$$

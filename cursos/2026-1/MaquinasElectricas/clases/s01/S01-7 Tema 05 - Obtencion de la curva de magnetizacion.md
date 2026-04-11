@@ -54,13 +54,13 @@ Los materiales ferromagnéticos exhiben magnetizaciones significativas incluso c
 
 Si aplicamos una intensidad de campo magnético o excitación magnética H creciente a una muestra de material ferromagnético, y representamos la inducción B en función de H, obtenemos la llamada curva de imanación o magnetización del material (Figura 1).
 
-![[Pasted image 20260328235810.png]]
-Figura 1. Curva de Imanación o magnetización
+![[Figura 1. Curva de Imanación o magnetización.png]]
+**Figura 1.** Curva de Imanación o magnetización
 
 En la Figura 1 vemos que se pueden distinguir tres partes claramente diferenciadas en la curva de imanación. Se observan: una primera zona reversible, en la cual, si eliminamos el campo H exterior, la densidad de flujo también desaparece; una segunda zona irreversible; y una última parte, que representa la zona de saturación, en la cual la permeabilidad relativa es unitaria. El valor de B que se produce en un material ferromagnético debido a una determinada excitación magnética H no es una función uniforme, sino que depende del material. Si introducimos una muestra de material ferromagnético en el interior de una bobina y hacemos variar H modificando la corriente que circula por la bobina, obtenemos la siguiente curva:
 
-![[Pasted image 20260328235831.png]]
-Figura 2. Curva de histéresis 
+![[Figura 2. Curva de histéresis.png]]
+**Figura 2.** Curva de histéresis 
 
 Con respecto a la Figura 2, cuando $H = 0$ en el punto 3, aún existe una cierta magnetización $B = B_r$ que recibe el nombre de inducción remanente y constituye el estado de magnetización permanente de la muestra. Cuando $B = 0$, en el punto 4, $H$ presenta un valor de $H_c$ que se denomina campo coercitivo, que es el campo opuesto que es necesario aplicar para desmagnetizar la muestra. Si se continúa disminuyendo $H$ hasta alcanzar $H = -H_{\max}$, punto 5, y después invertimos el sentido de cambio de $H$, se llega a formar una curva cerrada, que recibe el nombre de ciclo de histéresis.
 
@@ -70,8 +70,8 @@ El ciclo de histéresis es una representación gráfica de los diferentes estado
 
 Los materiales ferromagnéticos se usan en electroimanes, núcleos de transformadores, motores y generadores, en los que se desea tener un campo magnético tan grande como sea posible con una corriente determinada. Ya que la histéresis disipa energía, los materiales que se utilizan en estas aplicaciones deben tener un ciclo de histéresis tan estrecho como sea posible. En los imanes permanentes por lo regular es deseable un ciclo de histéresis amplio, con una magnetización de campo cero intensa, y la necesidad de un campo inverso también intenso para desmagnetizar (figura 3).
 
-![[Pasted image 20260328235855.png]]
-Figura 3. Ciclos de histéresis y su posible uso en distintas aplicaciones.
+![[Figura 3. Ciclos de histéresis y su posible uso en distintas aplicaciones.png]]
+**Figura 3.** Ciclos de histéresis y su posible uso en distintas aplicaciones.
 
 ---
 

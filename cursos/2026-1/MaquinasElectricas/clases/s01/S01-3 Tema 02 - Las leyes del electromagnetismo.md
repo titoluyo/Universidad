@@ -23,7 +23,8 @@ Ahora que conocemos más sobre los campos y [[S01-2 Tema 01 - Los circuitos magn
 
 Hacia 1830, Michael Faraday, británico, y Joseph Henry, norteamericano, descubrieron la inducción electromagnética.
 
-![[Pasted image 20260328224215.png]]
+![[Figura 1. Imán, lamparita y bobina.png]]
+**Figura 1.** Imán, lamparita y bobina
 
 Supongamos tener como en la figura una bobina con una lamparita en serie. Si la bobina y el imán están en reposo relativo y el conjunto está libre de otras interacciones, la lamparita permanecerá apagada; si, en cambio, el imán se acerca bruscamente a la bobina, la lamparita destellará indicando que sobre ella apareció una fuerza electromotriz inducida por el movimiento del imán. La lamparita permanecerá encendida en tanto se mantenga el movimiento del imán; si este se detiene, no importa cuán cerca de la bobina, la lamparita se apagará. Si el imán se aleja de la bobina, la lamparita encenderá nuevamente hasta que este vuelva a detenerse. La lamparita será más brillante cuanto más rápido sea el movimiento del imán. El imán puede ser reemplazado por un electroimán, es decir, una bobina circulada por corriente que, como sabemos, producirá un campo magnético. En un circuito cerrado se produce una fuerza electromotriz proporcional a la variación temporal del flujo que enlaza.
 
@@ -102,7 +103,8 @@ La regla de la mano derecha es básica para estudiar el comportamiento de los ca
 
 Al igual que una carga origina un campo eléctrico o una masa un campo gravitatorio, un elemento de corriente genera un campo magnético. Biot y Savart llegaron a la conclusión de que, al circular una corriente por un conductor, esta genera un campo magnético.
 
-![[Pasted image 20260328225601.png]]
+![[Figura 2. Ley de Biot Savart.png]]
+**Figura 2.** Ley de Biot-Savart
 
 La expresión matemática que define esta ley es:
 

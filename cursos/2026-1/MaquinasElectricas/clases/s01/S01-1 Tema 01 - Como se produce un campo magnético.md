@@ -38,7 +38,8 @@ Donde:
 
 En unidades del SI, $I$ se mide en amperes y $H$ en amperes-vuelta por metro.
 
-![[Pasted image 20260328220654.png]]
+![[Figura 1. Un núcleo magnético sencillo.png]]
+**Figura 1.** Un núcleo magnético sencillo
 
 ### Explicación de la Figura 1
 
@@ -81,6 +82,12 @@ De esta forma, el flujo total en el núcleo de la figura 1, producido por la cor
 $$\phi = BA = \frac{\mu N i A}{l_n}$$
 
 Donde $A$ es el área de la sección transversal del núcleo.
+
+---
+
+> [!tip] Simulador
+> Puedes continuar explorando el funcionamiento de un campo magnético en el siguiente simulador:
+> [Abrir simulador PhET - Faraday](https://phet.colorado.edu/sims/cheerpj/faraday/latest/faraday.html?simulation=faraday&locale=es_PE)
 
 ## Bibliografía
 

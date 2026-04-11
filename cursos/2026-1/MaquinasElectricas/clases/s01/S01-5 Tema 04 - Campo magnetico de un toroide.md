@@ -23,7 +23,8 @@ Para nuestra materia, un toroide alude a configuración de un conductor eléctri
 
 En un toroide, la corriente eléctrica circula por los alambres enrollados alrededor del toroide, generando un campo magnético que circula por el interior del toroide. Dado que el toroide es una estructura cerrada, el campo magnético fuera de esta forma es casi nulo.
 
-![[Pasted image 20260328231533.png]]
+![[Figura 1. Circuito magnético en forma de toroide.png]]
+**Figura 1.** Circuito magnético en forma de toroide
 
 ## 3. La [[S01-1 Tema 01 - Como se produce un campo magnético|ley de Ampère]]
 

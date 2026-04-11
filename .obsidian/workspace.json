@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "cursos/2026-1/MaquinasElectricas/Formulario - Motores Eléctricos Estáticos y Rotativos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "Formulario - Motores Eléctricos Estáticos y Rotativos"
             }
           }
         ]
@@ -186,26 +186,35 @@
   },
   "active": "5aeb4bec51c42aa4",
   "lastOpenFiles": [
+    "cursos/2026-1/MaquinasElectricas/Formulario - Motores Eléctricos Estáticos y Rotativos.md.tmp.73176.1775945158065",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-7 Tema 05 - Obtencion de la curva de magnetizacion.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 3. Ciclos de histéresis y su posible uso en distintas aplicaciones.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 2. Curva de histéresis.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 1. Curva de Imanación o magnetización.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-5 Tema 04 - Campo magnetico de un toroide.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-5 Tema 04 - Campo magnetico de un toroide.md.tmp.73176.1775944841335",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 1. Circuito magnético en forma de toroide.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-4 Tema 03 - Sistema de unidades.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-3 Tema 02 - Las leyes del electromagnetismo.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 2. Ley de Biot Savart.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 1. Imán, lamparita y bobina.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-2 Tema 01 - Los circuitos magnéticos.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 2. Circuito magnético equivalente.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 1. Núcleo ferromagnético del núcleo.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-1 Tema 01 - Como se produce un campo magnético.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/Figura 1. Un núcleo magnético sencillo.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-0 Introducción - Motores.md",
+    "CLAUDE.md",
     "utils/parse_vtt.py",
     "utils",
     "cursos/2026-1/MaquinasElectricas/clases/s01/S01-6 Tema 04 - Ejercicio de la ley de Ampere.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-7 Tema 05 - Obtencion de la curva de magnetizacion.md",
     "cursos/2026-1/MaquinasElectricas/clases/s01/S01-99 Evaluación Semana 01 (Motores).md",
     "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/video-ampere-resultado.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/video-ampere-reemplazo.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/video-ampere-despeje-I.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/video-ampere-formula.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/video-ampere-enunciado.png",
     "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/video-s01-ampere.es.vtt",
     "cursos/2026-1/MaquinasElectricas/clases/s01/attachments/video-s01-ampere.es.vtt.part",
     "cursos/2026-1/MaquinasElectricas/clases/s03/S03-4 Ejercicio resuelto - Ecuacion de tension inducida (Video).md",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-7 Ejercicio resuelto - Metodos de analisis Ej2 (Video).md",
     "cursos/2026-1/MaquinasElectricas/clases/s03/S03-4 Ejercicio resuelto - Ecuacion de tension inducida (Video).md.tmp.73176.1775942966419",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/attachments/video4-resultado-e2.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/attachments/video4-formula-e2.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/attachments/video4-calculo-B.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/attachments/video4-calculo-flujo.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/attachments/video4-formula-e1.png",
     "cursos/2026-1/MaquinasElectricas/clases/s03/attachments/video-s03-tension.es.vtt",
     "cursos/2026-1/MaquinasElectricas/clases/s03/attachments/video-s03-tension.es.vtt.part",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-6 Ejercicio resuelto - Metodos de analisis Ej1 (Video).md",
@@ -216,8 +225,6 @@
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-2 Ejercicio resuelto - Circuito ferromagnetico (Video).md",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-6 Ejercicios a resolver - Semana 02.md",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-7 Ejercicios a resolver - Semana 02.md",
-    "parse_vtt.py",
-    "cursos/2026-1/MaquinasElectricas/clases/s02/attachments/video-s02-metodos.es.vtt",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-1 Tema 01 - Circuito magnetico excitado con corriente continua.md",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-2 Tema 02 - Caracteristicas para crear un campo magnetico.md",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-3 Tema 02 - Caracteristicas para crear un campo magnetico.md",
@@ -225,13 +232,6 @@
     "cursos/2026-1/MaquinasElectricas/clases/s03/S03-0 Ideas clave - Semana 03.md",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-6 Ejercicio resuelto - Circuito ferromagnetico (Video).md",
     "cursos/2026-1/MaquinasElectricas/clases/s02/S02-tmp Ejercicio resuelto - Circuito ferromagnetico (Video).md",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/S03-3 Tema 03 - Ecuacion de tension inducida.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/S03-2 Tema 02 - Nucleo ferromagnetico excitado con CA sinusoidal.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/S03-1 Tema 01 - Circuitos magneticos excitados con corriente alterna.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s02/S02-5 Ejercicios a resolver - Semana 02.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s02/S02-4 Tema 04 - Metodos de analisis.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s02/S02-3 Tema 03 - Lazo de histeresis.md",
-    "cursos/2026-1/MaquinasElectricas/Silabo - Maquinas Electricas Estaticas y Rotativas.md",
     "Untitled.canvas"
   ]
 }

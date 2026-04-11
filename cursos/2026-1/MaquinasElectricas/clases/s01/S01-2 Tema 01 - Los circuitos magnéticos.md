@@ -15,7 +15,6 @@ date: 2026-03-28
 ---
 
 Las líneas de [[S01-1 Tema 01 - Como se produce un campo magnético|campo magnético]] de una corriente continua rectilínea forman círculos concéntricos alrededor del hilo conductor. La dirección del campo magnético viene dada por la regla de la mano derecha: cuando el pulgar de la mano derecha señala la dirección de la corriente, los otros dedos rodean el hilo conductor en la dirección del campo magnético.
-![[Pasted image 20260328222422.png]]
 ## Circuitos magnéticos a partir de los eléctricos
 
 Mira el siguiente video para conocer más sobre los circuitos magnéticos:
@@ -69,16 +68,16 @@ Las permeancias en serie y en paralelo obedecen las mismas reglas que las conduc
 
 En la siguiente figura 1 se observa un núcleo ferromagnético. Tres lados de este núcleo tienen una anchura uniforme, mientras que el cuarto es un poco más delgado. La profundidad del núcleo visto es de 10 cm, mientras que las demás dimensiones se muestran en la figura 1. Hay una bobina de 200 vueltas enrollada sobre el lado izquierdo del núcleo. Si la permeabilidad relativa $\mu_r$ es de 2 500, ¿qué cantidad de flujo producirá una corriente de 1 A en la bobina?
 
-![[Pasted image 20260328223040.png]]
-**Figura 1** - Núcleo ferromagnético del núcleo
+![[Figura 1. Núcleo ferromagnético del núcleo.png]]
+**Figura 1.** Núcleo ferromagnético del núcleo
 
 Solución:
 
 Tres lados del núcleo tienen la misma área en la sección transversal, mientras que el cuarto lado tiene un área diferente. Entonces, se puede dividir el núcleo en dos regiones: 1) la correspondiente al lado más delgado y 2) la que forman los otros tres lados en conjunto.
 
 El circuito magnético correspondiente a este núcleo se muestra en la figura 2.
-![[Pasted image 20260328223056.png]]
-**Figura 2** - Circuito magnético equivalente
+![[Figura 2. Circuito magnético equivalente.png]]
+**Figura 2.** Circuito magnético equivalente
 
 La longitud media de la región 1 es de 45 cm y el área transversal de 10 x 10 cm = 100 $cm^2$. De esta forma, la reluctancia de la región es:
 

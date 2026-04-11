@@ -20,3 +20,15 @@ $RECYCLE.BIN/
 # Custom Exclusions
 .materiales/
 cursos/2026-1/SeriesTransformadas/clases/s02/evaluacion/
+.env
+# Obsidian ignores utils/ folder (not notes)
+utils/.obsidian-ignore
+
+# Playwright MCP
+.playwright-mcp/
+
+# yt-dlp subtitles (raw VTT files, content already in notes)
+**/*.vtt
+
+# Video screenshots (raw captures, curated ones kept in attachments)
+**/video-s02-ejercicio-*.png

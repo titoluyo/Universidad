@@ -1,0 +1,60 @@
+% Amplificador Diferencial con BJT PNP
+% Basado en: S03-1 Amplificador diferencial con BJT PNP
+% Compilar en Overleaf o con pdflatex
+% Requiere: circuitikz
+
+\documentclass[border=10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}[
+    american,
+    scale=1.2,
+    transform shape,
+    every node/.style={font=\small}
+]
+
+    % === Fuente de alimentación +Vcc (arriba) ===
+    \draw (0, 7) node[above]{$+V_{CC}$} to[short, *-] (0, 6.5);
+
+    % === Resistencia de cola REE ===
+    \draw (0, 6.5) to[R, l=$R_{EE}$, i<=$I_{EE}$] (0, 5);
+
+    % === Nodo de emisores comunes ===
+    \draw (0, 5) -- (-2.5, 5) -- (-2.5, 4.5);  % rama a Q1
+    \draw (0, 5) -- ( 2.5, 5) -- ( 2.5, 4.5);  % rama a Q2
+
+    % === Transistor Q1 (PNP, izquierda) ===
+    % PNP: emisor arriba, colector abajo (corriente baja)
+    \draw (-2.5, 4.5) node[pnp, anchor=E, xscale=-1](Q1){};
+    \node[left] at (Q1.text) {$Q_1$};
+
+    % === Transistor Q2 (PNP, derecha) ===
+    \draw (2.5, 4.5) node[pnp, anchor=E](Q2){};
+    \node[right] at (Q2.text) {$Q_2$};
+
+    % === Entradas V1 y V2 (bases) ===
+    \draw (Q1.B) -- ++(-1, 0) node[left]{$V_1$};
+    \draw (Q2.B) -- ++( 1, 0) node[right]{$V_2$};
+
+    % === Resistencias de colector RC1 y RC2 ===
+    \draw (Q1.C) to[R, l_=$R_{C1}$] ++(0, -2.5) node[ground](gnd1){};
+    \draw (Q2.C) to[R, l=$R_{C2}$]  ++(0, -2.5) node[ground](gnd2){};
+
+    % === Salidas Vo1 y Vo2 ===
+    \draw (Q1.C) to[short, *-] ++(-1.2, 0) node[left]{$V_{o1}$};
+    \draw (Q2.C) to[short, *-] ++( 1.2, 0) node[right]{$V_{o2}$};
+
+    % === Etiquetas de corriente ===
+    \draw[->, >=stealth] (-2.5, 5) -- (-2.5, 4.7) node[midway, left]{$I_{E1}$};
+    \draw[->, >=stealth] ( 2.5, 5) -- ( 2.5, 4.7) node[midway, right]{$I_{E2}$};
+
+    % === Anotaciones ===
+    \node[align=center, font=\footnotesize, text=gray] at (0, 3)
+        {$I_{EE} = I_{E1} + I_{E2}$};
+
+\end{circuitikz}
+
+\end{document}

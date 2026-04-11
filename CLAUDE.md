@@ -6,6 +6,8 @@ Vault de Obsidian para apuntes universitarios. Todo el contenido está en españ
 
 ```
 Universidad/
+├── utils/                             # Scripts utilitarios para recolección de contenido
+│   └── parse_vtt.py                   # Parsea subtítulos VTT de YouTube a texto limpio
 ├── plantillas/                        # Templates para nuevas notas
 │   ├── Plantilla - Nota de clase.md
 │   ├── Plantilla - Formulario.md
@@ -206,6 +208,57 @@ Al resolver evaluaciones, seguir estas reglas:
 ### Protección
 - No modificar notas existentes a menos que el usuario lo pida explícitamente
 - No borrar archivos sin pedir confirmación
+
+## Procedimiento: Extraer contenido del portal UTP (web autenticada)
+
+MCP Server `@playwright/mcp` configurado (scope: proyecto). Permite controlar un browser headless.
+
+### Flujo
+
+1. **Navegar** a la URL del portal UTP (`class.utp.edu.pe`)
+2. **Autenticarse** si redirige al SSO (`sso.utp.edu.pe`): llenar usuario/contraseña del `.env` (keys: `UTP_WEB_USER`, `UTP_WEB_PASS`) y click en "Iniciar sesión"
+3. **Expandir secciones colapsadas** (accordions `<details>`): hacer click en cada `<summary>` antes de tomar el snapshot
+4. **Tomar snapshot** (accessibility tree) para extraer todo el texto y fórmulas LaTeX
+5. **Extraer URLs de imágenes** con `browser_evaluate`: filtrar `<img>` por alt text que contenga "Figura" o el prefijo de la semana
+6. **Descargar imágenes** con PowerShell `Invoke-WebRequest` (curl falla por SSL en Windows): guardar en `attachments/` de la sesión correspondiente
+7. **Crear la nota** con todo el contenido (sin resumir), fórmulas en LaTeX, imágenes embebidas con `![[nombre.png]]`
+8. **Actualizar el Formulario** del curso con las fórmulas nuevas, incluyendo `Fuente: [[nota]]`
+
+### Notas importantes
+
+- Las imágenes del portal están en S3 (`utp-prd-upload-file-storage.s3.amazonaws.com`), son públicas y se descargan sin auth
+- curl falla en Windows (exit code 35, SSL error) — usar siempre PowerShell `Invoke-WebRequest`
+- Los warnings de PowerShell `UnauthorizedAccess` son del profile, no del comando — ignorar si el output termina en "OK"
+- Las fórmulas en el portal aparecen como `img "LaTeX: ..."` en el snapshot — convertir a `$$...$$` o `$...$`
+- Descargar en lotes paralelos (3-4 imágenes por comando PowerShell) para eficiencia
+
+## Procedimiento: Extraer ejercicios de videos de YouTube
+
+### Flujo
+
+1. **Extraer transcripción** con `yt-dlp` (instalado): `yt-dlp --write-auto-sub --sub-lang es --skip-download --sub-format vtt -o "ruta/output" "URL"`
+2. **Parsear la transcripción** VTT a texto limpio con timestamps usando el script `utils/parse_vtt.py`
+3. **Analizar la transcripción** para identificar momentos clave: enunciado, datos, fórmulas, cálculos, resultado
+4. **Navegar al video** con Playwright (`browser_navigate`)
+5. **Cerrar diálogos** si aparecen (YouTube Premium "No thanks", cookies consent)
+6. **Pausar el video** y verificar duración real (si la propaganda desplazó los tiempos, el video puede mostrar duración incorrecta hasta que se recargue)
+7. **Tomar screenshots** en timestamps clave usando `browser_run_code`:
+   - Pausar: `document.querySelector('video').pause()`
+   - Seek: `document.querySelector('video').currentTime = seconds`
+   - Esperar: `page.waitForTimeout(2000)` (dar tiempo al frame de renderizar)
+   - Capturar área del video: `page.screenshot({ clip: { x: 0, y: 60, width: 914, height: 514 } })`
+   - **Importante**: las coordenadas del video son fijas (`y: 60` por la barra de YouTube); verificar con `boundingBox()` si hay problemas
+8. **Verificar capturas** leyéndolas — si solo muestran la barra de YouTube, el video no estaba visible (pudo haber terminado y colapsado); re-seek a `currentTime = 0` y reintentar
+9. **Crear la nota** combinando transcripción + capturas, con resolución paso a paso en LaTeX
+
+### Notas importantes
+
+- `yt-dlp` está instalado globalmente via pip
+- El script `utils/parse_vtt.py` limpia el formato VTT (elimina tags `<c>`, deduplica líneas repetidas, extrae timestamps `m:ss`)
+- Los subtítulos auto-generados tienen errores de transcripción en términos técnicos (e.g. "weever" = Weber, "ampi" = Ampere) — interpretar con contexto
+- Si el video tiene propaganda al inicio, la duración reportada por `document.querySelector('video').duration` puede ser solo la del ad; esperar a que termine o saltar
+- Guardar las capturas del video en `attachments/` con prefijo descriptivo (e.g. `video-ej-enunciado.png`, `video2-tabla.png`)
+- Al insertar un ejercicio de video entre notas existentes: renumerar las notas posteriores (archivos + frontmatter `orden` + wikilinks en Formulario y otras notas)
 
 ## Skills de Obsidian disponibles
 

@@ -67,3 +67,36 @@ $$w = f(z) = u(x, y) + iv(x, y)$$
 Donde:
 - $u(x, y)$ = parte real de $f(z)$
 - $v(x, y)$ = parte imaginaria de $f(z)$
+
+## Derivada de una funcion compleja
+
+Fuente: [[S03-1 Tema 03 - Derivada de una funcion compleja]]
+
+### Definicion
+
+$$f'(z) = \lim_{\Delta z \to 0} \frac{f(z + \Delta z) - f(z)}{\Delta z}$$
+
+### Diferencial
+
+$$dw = f'(z)\,dz$$
+
+### Propiedades
+
+| Propiedad | Formula |
+| --- | --- |
+| Suma | $\frac{d}{dz}\{f(z) + g(z)\} = f'(z) + g'(z)$ |
+| Resta | $\frac{d}{dz}\{f(z) - g(z)\} = f'(z) - g'(z)$ |
+| Producto | $\frac{d}{dz}\{f(z) \cdot g(z)\} = f(z)\,g'(z) + g(z)\,f'(z)$ |
+| Cociente | $\frac{d}{dz}\left\{\frac{f(z)}{g(z)}\right\} = \frac{g(z)\,f'(z) - f(z)\,g'(z)}{g(z)^2}$ |
+
+## Ecuaciones de Cauchy-Riemann
+
+Fuente: [[S03-1 Tema 03 - Derivada de una funcion compleja]]
+
+### Forma cartesiana
+
+$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \qquad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
+
+### Forma polar
+
+$$\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta} \qquad \frac{1}{r}\frac{\partial u}{\partial \theta} = -\frac{\partial v}{\partial r}$$

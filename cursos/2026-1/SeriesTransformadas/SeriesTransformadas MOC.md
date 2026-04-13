@@ -32,3 +32,10 @@ aliases:
 - [[S02-2 Tema 02 - Ejercicio 1 (SyT)|Ejercicio 1 - Limite por racionalizacion]]
 - [[S02-3 Tema 02 - Ejercicio 2 (SyT)|Ejercicio 2 - Limite por regla de L'Hospital]]
 - [[S02-4 Tema 02 - Ejercicio 3 (SyT)|Ejercicio 3 - Continuidad por factorizacion]]
+
+## Semana 3 — Derivada de una funcion compleja y ecuaciones de Cauchy-Riemann
+
+- [[S03-1 Tema 03 - Derivada de una funcion compleja|Derivada de una funcion compleja]]
+- [[S03-2 Tema 03 - Ejercicio 1 (SyT)|Ejercicio 1 - Derivada de cociente]]
+- [[S03-3 Tema 03 - Ejercicio 2 (SyT)|Ejercicio 2 - Derivada por regla de la cadena]]
+- [[S03-4 Tema 03 - Ejercicio 3 (SyT)|Ejercicio 3 - Verificar existencia con Cauchy-Riemann]]

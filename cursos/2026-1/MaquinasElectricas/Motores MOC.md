@@ -46,8 +46,11 @@ aliases:
 
 ### Semana 4
 
-> [!info] Pendiente
-> Corriente de excitacion para flujo sinusoidal. Almacenamiento de energia. Obtencion del lazo de histeresis.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 1 | [[S04-1 Tema 01 - Creacion de corriente de excitacion para flujo sinusoidal y almacenamiento de energia\|Creacion de corriente de excitacion para flujo sinusoidal y almacenamiento de energia]] | clase |
+| 2 | [[S04-2 Ejercicio resuelto - Circuito equivalente de excitacion (Video)\|Ejercicio resuelto - Circuito equivalente de excitacion]] | ejercicio |
+| 3 | [[S04-3 Tema 02 - Obtencion del lazo de histeresis\|Obtencion del lazo de histeresis]] | clase |
 
 ### Semana 5
 

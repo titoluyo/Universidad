@@ -202,6 +202,7 @@ Donde:
 
 ## 8. Lazo de Histéresis y Pérdidas Magnéticas
 Fuente: [[S02-4 Tema 03 - Lazo de histeresis|S02-4 Lazo de histeresis]]
+Fuente: [[S04-3 Tema 02 - Obtencion del lazo de histeresis|S04-3 Obtencion del lazo de histeresis]]
 
 ### Energía del Ciclo de Histéresis
 $$dE = S \cdot L_m \cdot H \cdot dB$$
@@ -217,6 +218,24 @@ Donde:
 - $K_H$ = constante del tipo de chapa magnética
 - $f$ = frecuencia $[\text{Hz}]$
 - $B_{\max}$ = inducción máxima $[\text{T}]$
+
+### Ecuación de Fröelich (curva de magnetización analítica)
+$$B = \frac{a \cdot H}{1 + b \cdot H}$$
+
+Donde:
+- $a$, $b$ = constantes propias del material, elegidas para aproximar la curva real $B = f(H)$
+- $B$ = inducción magnética $[\text{T}]$
+- $H$ = intensidad de campo magnético $[A \cdot v/m]$
+
+### Permeabilidad Variable (curva no lineal)
+$$\mu = \frac{B}{H}$$
+
+*La permeabilidad del material ferromagnético no es constante — depende del valor de $H$ en la curva de magnetización.*
+
+### Parámetros característicos del ciclo de histéresis
+- **Inducción remanente $B_r$:** valor de $B$ cuando $H = 0$ (magnetización permanente).
+- **Campo coercitivo $H_c$:** valor de $H$ opuesto necesario para anular la magnetización remanente ($B = 0$).
+- **Área del ciclo $\propto$ energía disipada por unidad de volumen por ciclo** (pérdidas por histéresis).
 
 ---
 

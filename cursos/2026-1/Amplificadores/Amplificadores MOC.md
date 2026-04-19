@@ -14,5 +14,11 @@ aliases:
 
 ## Recursos del curso
 
-- [[Silabo - Maquinas Electricas Estaticas y Rotativas|Silabo del curso]]
+- [[Silabo - Circuitos Electronicos Amplificadores|Silabo del curso]]
 - [[Formulario - Amplificadores|Formulario de formulas]]
+
+## Bibliografia
+
+- Boylestad, R. & Nashelsky, L. *Electronica: Teoria de Circuitos y Dispositivos Electronicos*. Pearson.
+- Jaeger, R. & Blalock, T. *Microelectronic Circuit Design*. McGraw-Hill.
+- Sedra, A. & Smith, K. *Microelectronic Circuits*. Oxford University Press.

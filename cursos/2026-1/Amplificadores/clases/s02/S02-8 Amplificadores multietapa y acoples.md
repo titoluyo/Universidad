@@ -3,7 +3,7 @@ title: "Amplificadores multietapa y acoples entre etapas"
 curso: "[[Amplificadores MOC]]"
 unidad: 1
 semana: 2
-orden: 7
+orden: 8
 tipo: clase
 tags:
   - curso/amplificadores

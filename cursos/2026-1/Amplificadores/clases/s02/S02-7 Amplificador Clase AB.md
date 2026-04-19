@@ -2,8 +2,8 @@
 title: "Amplificador Clase AB"
 curso: "[[Amplificadores MOC]]"
 unidad: 1
-semana: 3
-orden: 4
+semana: 2
+orden: 7
 tipo: clase
 tags:
   - curso/amplificadores

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/SeriesTransformadas/clases/s03/S03-99 Evaluacion sem 03.md",
+                "file": "cursos/2026-1/Amplificadores/clases/s03/S03-2 Amplificador Operacional - Fundamentos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S03-99 Evaluacion sem 03"
+              "title": "S03-2 Amplificador Operacional - Fundamentos"
             }
           }
         ]
@@ -186,12 +186,21 @@
   },
   "active": "5aeb4bec51c42aa4",
   "lastOpenFiles": [
+    "cursos/2026-1/Amplificadores/clases/s03/S03-1 Amplificador diferencial con BJT PNP.md",
+    "cursos/2026-1/Amplificadores/clases/s03/S03-2 Amplificador Operacional - Fundamentos.md",
+    "cursos/2026-1/Amplificadores/clases/s03/S03-3 Configuraciones del Amplificador Operacional.md",
+    "cursos/2026-1/Amplificadores/clases/s02/S02-7 Amplificador Clase AB.md",
+    "cursos/2026-1/Amplificadores/clases/s02/S02-8 Amplificadores multietapa y acoples.md",
+    "cursos/2026-1/Amplificadores/clases/s04/S04-1 Aplicaciones lineales del amplificador operacional.md",
+    "cursos/2026-1/Amplificadores/clases/s04/S04-2 Eficiencia de los amplificadores y circuitos resonantes.md",
+    "cursos/2026-1/Amplificadores/clases/s04/S04-2 Eficiencia de los amplificadores y circuitos resonantes.md.tmp.21712.1776123950378",
+    "cursos/2026-1/Amplificadores/clases/s03/S03-4 Amplificador Clase AB.md",
+    "cursos/2026-1/SeriesTransformadas/clases/s03/S03-99 Evaluacion sem 03.md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/evaluacion sem03/LuyoMurataTito_s03.pdf",
     "cursos/2026-1/SeriesTransformadas/clases/s03/evaluacion sem03/LuyoMurataTito_s03_p3.jpg",
     "cursos/2026-1/SeriesTransformadas/clases/s03/evaluacion sem03/LuyoMurataTito_s03_p2.jpg",
     "cursos/2026-1/SeriesTransformadas/clases/s03/evaluacion sem03/LuyoMurataTito_s03_p1.jpg",
     "cursos/2026-1/SeriesTransformadas/clases/s03/evaluacion sem03/Pasted image 20260412234838.jpg",
-    "cursos/2026-1/SeriesTransformadas/clases/s03/S03-99 Evaluacion sem 03.md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/evaluacion sem03",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-4 Tema 03 - Ejercicio 3 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-99 Evaluacion sem 03",
@@ -223,15 +232,6 @@
     "cursos/2026-1/MaquinasElectricas/clases/s01/S01-5 Tema 04 - Campo magnetico de un toroide.md.tmp.73176.1775944841335",
     "cursos/2026-1/MaquinasElectricas/clases/s01/S01-4 Tema 03 - Sistema de unidades.md",
     "cursos/2026-1/MaquinasElectricas/clases/s01/S01-3 Tema 02 - Las leyes del electromagnetismo.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-2 Tema 01 - Los circuitos magnéticos.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-1 Tema 01 - Como se produce un campo magnético.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-0 Introducción - Motores.md",
-    "CLAUDE.md",
-    "utils/parse_vtt.py",
-    "utils",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-6 Tema 04 - Ejercicio de la ley de Ampere.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s01/S01-99 Evaluación Semana 01 (Motores).md",
-    "cursos/2026-1/MaquinasElectricas/clases/s03/S03-4 Ejercicio resuelto - Ecuacion de tension inducida (Video).md",
     "Untitled.canvas"
   ]
 }

@@ -39,6 +39,7 @@ aliases:
 - [[S03-2 Tema 03 - Ejercicio 1 (SyT)|Ejercicio 1 - Derivada de cociente]]
 - [[S03-3 Tema 03 - Ejercicio 2 (SyT)|Ejercicio 2 - Derivada por regla de la cadena]]
 - [[S03-4 Tema 03 - Ejercicio 3 (SyT)|Ejercicio 3 - Verificar existencia con Cauchy-Riemann]]
+- [[S03-99 Evaluacion sem 03|Evaluacion semana 03]]
 
 ## Semana 4 — Funciones analiticas, holomorfas, armonicas y armonicas conjugadas
 
@@ -47,3 +48,4 @@ aliases:
 - [[S04-3 Tema 04 - Ejercicio 2 (SyT)|Ejercicio 2 - Probar que u = e^(-x)(x sen y - y cos y) es armonica]]
 - [[S04-4 Tema 04 - Ejercicio 3 (SyT)|Ejercicio 3 - Encontrar la conjugada armonica de u = x^2 - y^2 - y]]
 - [[S04-5 Tema 04 - Ejercicio 4 (SyT)|Ejercicio 4 - Demostrar que f(z) = xy + iy no es analitica en ningun punto]]
+- [[S04-98 PA-2 sem 04|Participacion Academica 02]]

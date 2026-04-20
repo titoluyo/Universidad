@@ -39,3 +39,11 @@ aliases:
 - [[S03-2 Tema 03 - Ejercicio 1 (SyT)|Ejercicio 1 - Derivada de cociente]]
 - [[S03-3 Tema 03 - Ejercicio 2 (SyT)|Ejercicio 2 - Derivada por regla de la cadena]]
 - [[S03-4 Tema 03 - Ejercicio 3 (SyT)|Ejercicio 3 - Verificar existencia con Cauchy-Riemann]]
+
+## Semana 4 — Funciones analiticas, holomorfas, armonicas y armonicas conjugadas
+
+- [[S04-1 Tema 04 - Funciones analiticas, holomorfas y armonicas|Funciones analiticas, holomorfas, armonicas y armonicas conjugadas]]
+- [[S04-2 Tema 04 - Ejercicio 1 (SyT)|Ejercicio 1 - Probar que f(z) = (y^3 - 3x^2 y) + i(x^3 - 3xy^2 + 3) es armonica]]
+- [[S04-3 Tema 04 - Ejercicio 2 (SyT)|Ejercicio 2 - Probar que u = e^(-x)(x sen y - y cos y) es armonica]]
+- [[S04-4 Tema 04 - Ejercicio 3 (SyT)|Ejercicio 3 - Encontrar la conjugada armonica de u = x^2 - y^2 - y]]
+- [[S04-5 Tema 04 - Ejercicio 4 (SyT)|Ejercicio 4 - Demostrar que f(z) = xy + iy no es analitica en ningun punto]]

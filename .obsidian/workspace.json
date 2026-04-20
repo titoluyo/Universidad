@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/SeriesTransformadas/clases/s04/S04-98 PA-2 sem 04.md",
+                "file": "cursos/2026-1/MaquinasElectricas/clases/s04/S04-99 Evaluacion - PC1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S04-98 PA-2 sem 04"
+              "title": "S04-99 Evaluacion - PC1"
             }
           }
         ]
@@ -186,26 +186,30 @@
   },
   "active": "5aeb4bec51c42aa4",
   "lastOpenFiles": [
+    "cursos/2026-1/MaquinasElectricas/clases/s04/pc1/TitoLuyoMurata_PC1.pdf",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/pc1/_convert_pdf.py",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/pc1/TitoLuyoMurata_PC1.jpg",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/pc1/examen-pc1.docx",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/pc1",
+    "cursos/2026-1/SeriesTransformadas/clases/s04/S04-98 PA-2 sem 04.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/examen-pc1-image2.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/examen-pc1-image1.png",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/_extract_imgs.py",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/_extract_imgs.py.tmp.60704.1776654854260",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/examen-pc1-raw.txt",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/_extract_docx.py",
+    "cursos/2026-1/MaquinasElectricas/clases/s04/examen-pc1.docx",
     "cursos/2026-1/MaquinasElectricas/clases/s04/S04-99 Evaluacion - PC1.md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-99 Evaluacion sem 03.md",
     "cursos/2026-1/SeriesTransformadas/SeriesTransformadas MOC.md.tmp.66624.1776652376375",
-    "cursos/2026-1/SeriesTransformadas/clases/s04/S04-98 PA-2 sem 04.md",
     "cursos/2026-1/SeriesTransformadas/clases/s04/pa2/PA-2_Alumnos.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s04/pa2",
     "cursos/2026-1/MaquinasElectricas/clases/s04/S04-3 Tema 02 - Obtencion del lazo de histeresis.md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-98 PA-2 sem 03.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s03/S03-98 PA-2 sem 03.md.tmp.66624.1776652228253",
-    "cursos/2026-1/SeriesTransformadas/clases/s03/pa2/PA-2_Alumnos.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s03/pa2",
     "cursos/2026-1/SeriesTransformadas/clases/s04/S04-5 Tema 04 - Ejercicio 4 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s04/S04-4 Tema 04 - Ejercicio 3 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s04/S04-3 Tema 04 - Ejercicio 2 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s04/S04-2 Tema 04 - Ejercicio 1 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s04/S04-1 Tema 04 - Funciones analiticas, holomorfas y armonicas.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s04/Semana04_Man.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s04/attachments",
-    "cursos/2026-1/SeriesTransformadas/clases/s04",
-    "cursos/2026-1/MaquinasElectricas/Formulario - Motores Eléctricos Estáticos y Rotativos.md.tmp.60704.1776589659392",
     "cursos/2026-1/MaquinasElectricas/clases/s04/S04-2 Ejercicio resuelto - Circuito equivalente de excitacion (Video).md",
     "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/s04-t02-fig7-seccion-circuito-equivalente.png",
     "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/s04-t02-fig6-circuito-equivalente.png",
@@ -214,10 +218,7 @@
     "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/s04-t02-fig4-obtencion-histeresis.png",
     "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/s04-t02-fig3-bobina-nucleo.png",
     "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/s04-t02-fig2-curva-diversos-materiales.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/s04-t02-fig1-curva-imanacion-hierro.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/s04-t02-banner.jpg",
     "cursos/2026-1/MaquinasElectricas/clases/s04/S04-1 Tema 01 - Creacion de corriente de excitacion para flujo sinusoidal y almacenamiento de energia.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s04/attachments/video-s04-ej-angulo-final.png",
     "cursos/2026-1/Amplificadores/playground/Playground MOC.md",
     "cursos/2026-1/Amplificadores/clases/s03/S03-2 Amplificador Operacional - Fundamentos.md",
     "cursos/2026-1/Amplificadores/clases/s03/S03-1 Amplificador diferencial con BJT PNP.md",
@@ -231,7 +232,6 @@
     "cursos/2026-1/SeriesTransformadas/clases/s03/Untitled.md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-3 Tema 03 - Ejercicio 2 (SyT).md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-1 Tema 03 - Derivada de una funcion compleja.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s03/S03-2 Tema 03 - Ejercicio 1 (SyT).md",
     "Untitled.canvas"
   ]
 }

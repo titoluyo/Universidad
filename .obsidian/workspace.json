@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 274.5
   },
   "right": {
     "id": "ca23c823690c8229",
@@ -184,8 +184,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "5aeb4bec51c42aa4",
+  "active": "0cab922b4f85b7a9",
   "lastOpenFiles": [
+    "cursos/2026-1/Amplificadores/ejercicios/Equivalente Thevenin en divisor de tension para BJT.md",
+    "cursos/2026-1/Amplificadores/ejercicios/Equivalente Thevenin en divisor de tension para BJT.md.tmp.65528.1776725961056",
+    "cursos/2026-1/Amplificadores/ejercicios",
     "cursos/2026-1/MaquinasElectricas/clases/s04/pc1/TitoLuyoMurata_PC1.pdf",
     "cursos/2026-1/MaquinasElectricas/clases/s04/pc1/_convert_pdf.py",
     "cursos/2026-1/MaquinasElectricas/clases/s04/pc1/TitoLuyoMurata_PC1.jpg",
@@ -198,11 +201,8 @@
     "cursos/2026-1/MaquinasElectricas/clases/s04/_extract_imgs.py.tmp.60704.1776654854260",
     "cursos/2026-1/MaquinasElectricas/clases/s04/examen-pc1-raw.txt",
     "cursos/2026-1/MaquinasElectricas/clases/s04/_extract_docx.py",
-    "cursos/2026-1/MaquinasElectricas/clases/s04/examen-pc1.docx",
     "cursos/2026-1/MaquinasElectricas/clases/s04/S04-99 Evaluacion - PC1.md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-99 Evaluacion sem 03.md",
-    "cursos/2026-1/SeriesTransformadas/SeriesTransformadas MOC.md.tmp.66624.1776652376375",
-    "cursos/2026-1/SeriesTransformadas/clases/s04/pa2/PA-2_Alumnos.pdf",
     "cursos/2026-1/MaquinasElectricas/clases/s04/S04-3 Tema 02 - Obtencion del lazo de histeresis.md",
     "cursos/2026-1/SeriesTransformadas/clases/s03/S03-98 PA-2 sem 03.md",
     "cursos/2026-1/SeriesTransformadas/clases/s04/S04-5 Tema 04 - Ejercicio 4 (SyT).md",

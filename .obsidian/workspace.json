@@ -11,14 +11,13 @@
             "id": "5aeb4bec51c42aa4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "cursos/2026-1/Amplificadores/clases/s06/S06-1 Amplificadores lineales y no lineales.md",
-                "mode": "source",
-                "source": false
+                "file": "cursos/2026-1/Evaluaciones.base",
+                "viewName": "Silabos del ciclo"
               },
-              "icon": "lucide-file",
-              "title": "S06-1 Amplificadores lineales y no lineales"
+              "icon": "lucide-table",
+              "title": "Evaluaciones"
             }
           }
         ]
@@ -186,9 +185,9 @@
   },
   "active": "5aeb4bec51c42aa4",
   "lastOpenFiles": [
+    "cursos/2026-1/Amplificadores/clases/s06/S06-1 Amplificadores lineales y no lineales.md",
     "cursos/2026-1/Amplificadores/teoria/Ecuacion del diodo - derivacion desde Boltzmann.md",
     "cursos/2026-1/Amplificadores/clases/s04/S04-2 Eficiencia de los amplificadores y circuitos resonantes.md",
-    "cursos/2026-1/Amplificadores/clases/s06/S06-1 Amplificadores lineales y no lineales.md",
     "cursos/2026-1/Amplificadores/clases/s06/attachments",
     "cursos/2026-1/Amplificadores/clases/s06",
     "cursos/2026-1/MaquinasElectricas/clases/s05/informe-word-source.md",

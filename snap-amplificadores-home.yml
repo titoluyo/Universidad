@@ -1,0 +1,312 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - link "Cursos" [ref=e13] [cursor=pointer]:
+          - /url: /student/courses
+          - generic [ref=e14]:
+            - img [ref=e16]
+            - generic [ref=e18]: Cursos
+        - link "Chat" [ref=e20] [cursor=pointer]:
+          - /url: /student/messages
+          - generic [ref=e21]:
+            - img [ref=e23]
+            - generic [ref=e25]: Chat
+        - link "Calendario" [ref=e27] [cursor=pointer]:
+          - /url: /student/calendar
+          - generic [ref=e28]:
+            - img [ref=e30]
+            - generic [ref=e32]: Calendario
+        - link "Ayuda" [ref=e34] [cursor=pointer]:
+          - /url: /student/help
+          - generic [ref=e35]:
+            - img [ref=e37]
+            - generic [ref=e39]: Ayuda
+        - link "Configuración" [ref=e41] [cursor=pointer]:
+          - /url: /student/configuration
+          - generic [ref=e42]:
+            - img [ref=e44]
+            - generic [ref=e46]: Configuración
+      - generic [ref=e48]:
+        - button "Correo UTP" [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+          - generic [ref=e53]:
+            - text: Correo
+            - text: UTP
+        - button "UTP+biblio" [ref=e54] [cursor=pointer]:
+          - img [ref=e56]
+          - generic [ref=e58]: UTP+biblio
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - link "UTP" [ref=e61] [cursor=pointer]:
+          - /url: /student/courses
+          - img "UTP" [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e65] [cursor=pointer]:
+            - generic [ref=e145]: 9+
+            - img [ref=e67]
+          - link "Hola, Tito Takeo Estudiante Tito Takeo" [ref=e69] [cursor=pointer]:
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - generic [ref=e74]: Hola,
+                - generic [ref=e75]: Tito Takeo
+              - generic [ref=e77]: Estudiante
+            - img "Tito Takeo" [ref=e79]
+            - img [ref=e81]
+      - generic [ref=e413]:
+        - generic [ref=e414]:
+          - button "Volver a cursos" [ref=e416] [cursor=pointer]:
+            - img [ref=e418]
+            - generic [ref=e421]: Volver a cursos
+          - generic [ref=e422]:
+            - generic [ref=e423]:
+              - text: Circuitos Electrónicos Amplificadores
+              - generic [ref=e424]: "- Sección 29579"
+            - generic [ref=e425]: Presencial
+        - generic [ref=e429]:
+          - link "Sílabo" [ref=e431] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/syllabus
+            - generic [ref=e432]: Sílabo
+          - link "Contenido" [ref=e434] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/learnv2
+            - generic [ref=e435]: Contenido
+          - link "Evaluaciones" [ref=e437] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/listEvaluation
+            - generic [ref=e438]: Evaluaciones
+          - link "Tareas" [ref=e440] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/listHomework
+            - generic [ref=e441]: Tareas
+          - link "Foros" [ref=e443] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/listForum
+            - generic [ref=e444]: Foros
+          - link "Notas" [ref=e446] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/calification
+            - generic [ref=e447]: Notas
+          - link "Anuncios" [ref=e449] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/announcements
+            - generic [ref=e450]: Anuncios
+          - link "Zoom" [ref=e452] [cursor=pointer]:
+            - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/zoom
+            - generic [ref=e453]: Zoom
+        - generic [ref=e456]:
+          - generic [ref=e457]:
+            - img [ref=e459]
+            - paragraph [ref=e461]: Las clases presenciales serán transmitidas en vivo vía Zoom y quedarán grabadas en la plataforma. No obstante, recuerda esta clase ha sido diseñada para desarrollarse de manera presencial, incluyendo actividades, evaluaciones, tareas, trabajos, así como las consultas e interacciones con tu docente.
+            - link [ref=e462]:
+              - button [ref=e464] [cursor=pointer]:
+                - img [ref=e466]
+          - generic [ref=e470]:
+            - generic [ref=e472] [cursor=pointer]:
+              - paragraph [ref=e473]:
+                - img [ref=e475]
+                - text: Información del curso
+              - button [ref=e478]:
+                - img [ref=e480]
+            - generic [ref=e483]:
+              - generic [ref=e485] [cursor=pointer]:
+                - paragraph [ref=e486]: Bibliografía
+                - button [ref=e488]:
+                  - img [ref=e490]
+              - generic [ref=e493] [cursor=pointer]:
+                - paragraph [ref=e494]: Foro de Consultas
+                - button [ref=e496]:
+                  - img [ref=e498]
+          - paragraph [ref=e501]:
+            - text: Total de semanas
+            - generic [ref=e503]: (18)
+          - generic [ref=e506]:
+            - generic [ref=e508]:
+              - generic [ref=e510] [cursor=pointer]:
+                - paragraph [ref=e511]: Semana 01
+                - button [ref=e513]:
+                  - img [ref=e515]
+              - generic [ref=e520] [cursor=pointer]:
+                - paragraph [ref=e521]: S01
+                - button [ref=e523]:
+                  - img [ref=e525]
+            - generic [ref=e528]:
+              - generic [ref=e530] [cursor=pointer]:
+                - paragraph [ref=e531]: Semana 02
+                - button [ref=e533]:
+                  - img [ref=e535]
+              - generic [ref=e540] [cursor=pointer]:
+                - paragraph [ref=e541]: S02
+                - button [ref=e543]:
+                  - img [ref=e545]
+            - generic [ref=e548]:
+              - generic [ref=e550] [cursor=pointer]:
+                - paragraph [ref=e551]: Semana 03
+                - button [ref=e553]:
+                  - img [ref=e555]
+              - generic [ref=e560] [cursor=pointer]:
+                - paragraph [ref=e561]: S03
+                - button [ref=e563]:
+                  - img [ref=e565]
+            - generic [ref=e568]:
+              - generic [ref=e570] [cursor=pointer]:
+                - paragraph [ref=e571]: Semana 04
+                - button [ref=e573]:
+                  - img [ref=e575]
+              - generic [ref=e580] [cursor=pointer]:
+                - paragraph [ref=e581]: S04
+                - button [ref=e583]:
+                  - img [ref=e585]
+            - generic [ref=e588]:
+              - generic [ref=e590] [cursor=pointer]:
+                - paragraph [ref=e591]: Semana 05
+                - button [ref=e593]:
+                  - img [ref=e595]
+              - generic [ref=e600] [cursor=pointer]:
+                - paragraph [ref=e601]: S05
+                - button [ref=e603]:
+                  - img [ref=e605]
+            - generic [ref=e608]:
+              - generic [ref=e610] [cursor=pointer]:
+                - paragraph [ref=e611]: Semana 06
+                - button [ref=e613]:
+                  - img [ref=e615]
+              - generic [ref=e618]:
+                - generic [ref=e620] [cursor=pointer]:
+                  - paragraph [ref=e621]: S06
+                  - button [ref=e623]:
+                    - img [ref=e625]
+                - generic [ref=e627]:
+                  - link "Material ∙ PDF S06-Material Revisado Sin fecha límite" [ref=e628] [cursor=pointer]:
+                    - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/learnv2/week/6/unit/55733e4b-ebe4-5b86-8284-d0afbacba5cd/theme/5227b698-d5b9-4c25-84db-60d10efdaaa4/content/5f14111c-c672-4d9c-83ee-b8eae3b1e38b/pdf
+                    - generic [ref=e630]:
+                      - img [ref=e633]
+                      - generic [ref=e636]:
+                        - paragraph [ref=e637]: Material ∙ PDF
+                        - paragraph [ref=e638]: S06-Material
+                      - generic [ref=e640]:
+                        - img [ref=e642]
+                        - generic [ref=e644]: Revisado
+                      - paragraph [ref=e647]: Sin fecha límite
+                  - link "Material ∙ PDF S06-Material2 Revisado Sin fecha límite" [ref=e648] [cursor=pointer]:
+                    - /url: /student/courses/08eb7f8d-ab62-53df-9b46-c0ca85f1f263/section/55733e4b-ebe4-5b86-8284-d0afbacba5cd/learnv2/week/6/unit/55733e4b-ebe4-5b86-8284-d0afbacba5cd/theme/5227b698-d5b9-4c25-84db-60d10efdaaa4/content/42f51ff5-9b0c-402b-9f6a-721cb7de352a/pdf
+                    - generic [ref=e650]:
+                      - img [ref=e653]
+                      - generic [ref=e656]:
+                        - paragraph [ref=e657]: Material ∙ PDF
+                        - paragraph [ref=e658]: S06-Material2
+                      - generic [ref=e660]:
+                        - img [ref=e662]
+                        - generic [ref=e664]: Revisado
+                      - paragraph [ref=e667]: Sin fecha límite
+            - generic [ref=e669]:
+              - generic [ref=e671] [cursor=pointer]:
+                - paragraph [ref=e672]: Semana 07
+                - button [ref=e674]:
+                  - img [ref=e676]
+              - generic [ref=e681] [cursor=pointer]:
+                - paragraph [ref=e682]: S07
+                - button [ref=e684]:
+                  - img [ref=e686]
+            - generic [ref=e689]:
+              - generic [ref=e691] [cursor=pointer]:
+                - paragraph [ref=e692]: Semana 08
+                - button [ref=e694]:
+                  - img [ref=e696]
+              - generic [ref=e701] [cursor=pointer]:
+                - paragraph [ref=e702]: S08
+                - button [ref=e704]:
+                  - img [ref=e706]
+            - generic [ref=e709]:
+              - generic [ref=e711] [cursor=pointer]:
+                - paragraph [ref=e712]: Semana 09
+                - button [ref=e714]:
+                  - img [ref=e716]
+              - generic [ref=e721] [cursor=pointer]:
+                - paragraph [ref=e722]: S09
+                - button [ref=e724]:
+                  - img [ref=e726]
+            - generic [ref=e729]:
+              - generic [ref=e731] [cursor=pointer]:
+                - paragraph [ref=e732]: Semana 10
+                - button [ref=e734]:
+                  - img [ref=e736]
+              - generic [ref=e741] [cursor=pointer]:
+                - paragraph [ref=e742]: S10
+                - button [ref=e744]:
+                  - img [ref=e746]
+            - generic [ref=e749]:
+              - generic [ref=e751] [cursor=pointer]:
+                - paragraph [ref=e752]: Semana 11
+                - button [ref=e754]:
+                  - img [ref=e756]
+              - generic [ref=e761] [cursor=pointer]:
+                - paragraph [ref=e762]: S11
+                - button [ref=e764]:
+                  - img [ref=e766]
+            - generic [ref=e769]:
+              - generic [ref=e771] [cursor=pointer]:
+                - paragraph [ref=e772]: Semana 12
+                - button [ref=e774]:
+                  - img [ref=e776]
+              - generic [ref=e781] [cursor=pointer]:
+                - paragraph [ref=e782]: S12
+                - button [ref=e784]:
+                  - img [ref=e786]
+            - generic [ref=e789]:
+              - generic [ref=e791] [cursor=pointer]:
+                - paragraph [ref=e792]: Semana 13
+                - button [ref=e794]:
+                  - img [ref=e796]
+              - generic [ref=e801] [cursor=pointer]:
+                - paragraph [ref=e802]: S13
+                - button [ref=e804]:
+                  - img [ref=e806]
+            - generic [ref=e809]:
+              - generic [ref=e811] [cursor=pointer]:
+                - paragraph [ref=e812]: Semana 14
+                - button [ref=e814]:
+                  - img [ref=e816]
+              - generic [ref=e821] [cursor=pointer]:
+                - paragraph [ref=e822]: S14
+                - button [ref=e824]:
+                  - img [ref=e826]
+            - generic [ref=e829]:
+              - generic [ref=e831] [cursor=pointer]:
+                - paragraph [ref=e832]: Semana 15
+                - button [ref=e834]:
+                  - img [ref=e836]
+              - generic [ref=e841] [cursor=pointer]:
+                - paragraph [ref=e842]: S15
+                - button [ref=e844]:
+                  - img [ref=e846]
+            - generic [ref=e849]:
+              - generic [ref=e851] [cursor=pointer]:
+                - paragraph [ref=e852]: Semana 16
+                - button [ref=e854]:
+                  - img [ref=e856]
+              - generic [ref=e861] [cursor=pointer]:
+                - paragraph [ref=e862]: S16
+                - button [ref=e864]:
+                  - img [ref=e866]
+            - generic [ref=e869]:
+              - generic [ref=e871] [cursor=pointer]:
+                - paragraph [ref=e872]: Semana 17
+                - button [ref=e874]:
+                  - img [ref=e876]
+              - generic [ref=e881] [cursor=pointer]:
+                - paragraph [ref=e882]: S17
+                - button [ref=e884]:
+                  - img [ref=e886]
+            - paragraph [ref=e892]: Semana 18 (No tienes contenido en esta semana)
+    - generic [ref=e893]:
+      - generic [ref=e894] [cursor=pointer]:
+        - generic: Videotutoriales de contenido
+        - button [ref=e895]:
+          - img [ref=e896]
+      - generic [ref=e899]:
+        - generic [ref=e900]:
+          - button [ref=e901] [cursor=pointer]:
+            - img [ref=e902]
+          - generic [ref=e904]:
+            - img [ref=e905]
+            - text: Mira y aprende
+          - generic [ref=e907]:
+            - generic [ref=e908]: Mira videos tutoriales correspondientes a la sección “Contenido ”
+            - text: y conoce más de las funcionalidades que te ofrece UTP+Class.
+        - generic [ref=e910]: Sección “Contenido”
+  - generic [ref=e142]: Has cambiado a Estudiante de prueba

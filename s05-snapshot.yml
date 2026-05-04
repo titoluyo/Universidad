@@ -1,0 +1,226 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "UTP" [ref=e10] [cursor=pointer]:
+        - /url: /student/courses
+        - img "UTP" [ref=e11]
+      - generic [ref=e14] [cursor=pointer]:
+        - generic [ref=e37]: 9+
+        - img [ref=e16]
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - 'heading "📚 Semana 05 - Tema 01: Pérdidas magnéticas en el núcleo" [level=2] [ref=e40]'
+        - generic [ref=e41]:
+          - text: Material
+          - generic [ref=e42]: •
+          - generic [ref=e43]: HTML
+          - generic [ref=e44]: •
+          - generic [ref=e45]:
+            - img [ref=e47]
+            - generic [ref=e49]: Revisado
+      - generic [ref=e52]:
+        - paragraph [ref=e53]:
+          - img "S5 - B1.jpg" [ref=e54]
+        - generic [ref=e56]:
+          - paragraph [ref=e58]: "Cuando los campos magnéticos asociados con núcleos ferromagnéticos se reducen, parte de la energía almacenada se devuelve a la fuente. Sin embargo, una porción de esa energía almacenada se disipa irreversiblemente en forma de calor en el núcleo. Esta pérdida de energía se atribuye a dos causas principales: las pérdidas por histéresis, que son características del material y están relacionadas con los ciclos de magnetización y desmagnetización; y las pérdidas por corrientes parásitas o corrientes de Foucault, que se originan por corrientes inducidas en el núcleo. Además, existen pérdidas de energía en núcleos sometidos a ciclos de magnetización y desmagnetización periódicos mediante excitaciones repetitivas."
+          - generic [ref=e59]:
+            - paragraph [ref=e60]:
+              - img "Figura 1. Disposición en láminas del núcleo ayuda a reducir las corrientes de Foucault..png" [ref=e61]
+            - paragraph [ref=e62]: Figura 1. Disposición en láminas del núcleo ayuda a reducir las corrientes de Foucault.
+        - group [ref=e63]:
+          - generic "Pérdidas por histéresis" [ref=e64]:
+            - strong [ref=e65]: Pérdidas por histéresis
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - paragraph [ref=e105]:
+                - text: La variación en la amplitud del campo magnético oscila entre
+                - 'img "LaTeX: +H_m" [ref=e106]'
+                - text: "y"
+                - 'img "LaTeX: -H_m" [ref=e107]'
+                - text: ", lo que equivale a cambios en la inducción entre"
+                - 'img "LaTeX: +B_m" [ref=e108]'
+                - text: "y"
+                - 'img "LaTeX: -B_m" [ref=e109]'
+                - text: . Si consideramos en un principio que la inducción en el núcleo se mueve desde
+                - 'img "LaTeX: -B_R" [ref=e110]'
+                - text: (punto
+                - strong [ref=e111]: a
+                - text: ) hasta
+                - 'img "LaTeX: B_m" [ref=e112]'
+                - text: (punto
+                - strong [ref=e113]: c
+                - text: ) siguiendo el tramo de la curva
+                - strong [ref=e114]: abc
+                - text: ", experimentaremos un aumento en la inducción en el núcleo. Esto se traduce en la absorción de energía por parte del campo magnético, la cual es almacenada durante esta fase del ciclo."
+              - paragraph [ref=e115]:
+                - 'img "LaTeX: 𝑾_𝒂𝒄=𝒗𝒐𝒍∫^{B_m}_{-B_r}H.𝒅𝑩=𝒗𝒐𝒍∗𝒘_𝟏" [ref=e116]'
+              - paragraph [ref=e117]:
+                - text: La integral
+                - 'img "LaTeX: w_1" [ref=e118]'
+                - text: de la expresión anterior representará, el área de la superficie
+                - strong [ref=e119]: abcdea
+                - text: de la figura 2. Si se considera ahora que la inducción se reduce desde
+                - 'img "LaTeX: B_m" [ref=e120]'
+                - text: (punto
+                - strong [ref=e121]: c
+                - text: ) hasta
+                - 'img "LaTeX: B_r" [ref=e122]'
+                - text: (punto
+                - strong [ref=e123]: e
+                - text: ), siguiendo el tramo
+                - strong [ref=e124]: ce
+                - text: "de la curva de histéresis, entonces resultará una energía devuelta a la fuente (red) durante esta parte del ciclo porque es negativa, y cuyo valor es:"
+            - generic [ref=e125]:
+              - paragraph [ref=e126]:
+                - img "Figura 2. Energía disipada en el camino abce del ciclo de histéresis.png" [ref=e127]
+              - paragraph [ref=e128]: Figura 2. Energía disipada en el camino abce del ciclo de histéresis.
+          - paragraph [ref=e129]:
+            - 'img "LaTeX: 𝑾_{𝒄𝒆}=𝒗𝒐𝒍∫_{𝑩_𝒎}^{𝑩_𝒓}𝑯.𝒅𝑩=𝒗𝒐𝒍∗𝒘_𝟐" [ref=e130]'
+          - paragraph [ref=e131]:
+            - text: Si se expone al núcleo a un aumento de la inducción desde
+            - 'img "LaTeX: -B_r" [ref=e132]'
+            - text: hasta
+            - 'img "LaTeX: B_m" [ref=e133]'
+            - text: ", siguiendo la trayectoria"
+            - strong [ref=e134]: abc
+            - text: ", seguido por una disminución de la inducción entre"
+            - 'img "LaTeX: B_m" [ref=e135]'
+            - text: "y"
+            - 'img "LaTeX: B_r" [ref=e136]'
+            - text: ", a lo largo de la ruta"
+            - strong [ref=e137]: ce
+            - text: ", la superficie resultante"
+            - strong [ref=e138]: abcea
+            - text: en la figura 2 reflejará la cantidad de energía absorbida por el núcleo ferromagnético durante este ciclo de excitación cíclica. Esta energía no se devuelve a la red, sino que se disipa en el núcleo en forma de calor.
+          - paragraph [ref=e139]:
+            - text: De acuerdo con lo anterior, se puede afirmar que si las fluctuaciones en el campo magnético ocurren en el rango de
+            - 'img "LaTeX: ±𝐻_𝑚" [ref=e140]'
+            - text: ", lo que corresponde a variaciones en la inducción de"
+            - 'img "LaTeX: ±𝐵_𝑚" [ref=e141]'
+            - text: ", la cantidad total de energía disipada en forma de calor en el núcleo durante este ciclo completo, denotada como"
+            - 'img "LaTeX: W_H" [ref=e142]'
+            - text: ", se calculará de la siguiente manera:"
+          - paragraph [ref=e143]:
+            - 'img "LaTeX: 𝑾_𝑯=(𝒗𝒐𝒍)∮𝑯.𝒅𝑩" [ref=e144]'
+          - paragraph [ref=e145]:
+            - text: En la aplicación práctica, resulta más útil referirse a la pérdida de energía por unidad de tiempo en el núcleo (la potencia disipada por histéresis). Si el número de ciclos completos de magnetización es
+            - strong [ref=e146]: f
+            - text: (donde
+            - strong [ref=e147]: f
+            - text: "representa la frecuencia de la corriente suministrada a la bobina), entonces la potencia perdida se calculará de la siguiente manera:"
+          - paragraph [ref=e148]:
+            - 'img "LaTeX: 𝑷_𝑯=𝒇.𝑾_𝑯=𝒇(𝒗𝒐𝒍)∮𝑯.𝒅𝑩=𝒇(𝒗𝒐𝒍)\\hspace{0.2cm}(á𝒓𝒆𝒂 𝒅𝒆𝒍 𝒄𝒊𝒄𝒍𝒐)" [ref=e149]'
+          - paragraph [ref=e150]: La única dependencia radica en la amplitud de la inducción, la frecuencia de la fuente de energía (red) y las propiedades intrínsecas del material magnético (representadas por el área del ciclo).
+          - paragraph [ref=e151]:
+            - text: Experimentalmente, C. P. Steinmetz
+            - strong [ref=e152]
+            - text: "propuso en 1892 una fórmula empírica para definir el cálculo de la pérdida por histéresis, la cual indica:"
+          - paragraph [ref=e153]:
+            - 'img "LaTeX: 𝑷_𝑯=𝒌_𝑯 𝒇(𝒗𝒐𝒍)𝑩_𝒎^𝜶" [ref=e154]'
+          - paragraph [ref=e155]: "Donde:"
+          - list [ref=e156]:
+            - listitem [ref=e157]:
+              - 'img "LaTeX: k_H" [ref=e158]'
+              - text: ": coeficiente de Steinmetz"
+            - listitem [ref=e159]:
+              - 'img "LaTeX: 𝛂" [ref=e160]'
+              - text: ": exponente de Steinmetz"
+            - listitem [ref=e161]: Dependen de la naturaleza del núcleo ferromagnético.
+            - listitem [ref=e162]:
+              - text: El exponente 𝛂 varía entre 1,5 y 2,5, siendo un valor frecuente 𝛂 = 1,6, mientras que
+              - 'img "LaTeX: 𝒌_𝑯" [ref=e163]'
+              - text: varía, en el caso de acero al silicio, entre 100 y 200.
+        - paragraph [ref=e66]
+        - group [ref=e67]:
+          - generic "Pérdidas por corrientes de Foucault" [active] [ref=e68]:
+            - strong [ref=e69]: Pérdidas por corrientes de Foucault
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - paragraph [ref=e167]:
+                - text: En el gráfico se muestra una bobina arrollada sobre un núcleo de hierro macizo, el cual, al ser alimentado con corriente alterna, se producirá un campo magnético alterno de inducción
+                - 'img "LaTeX: B_Z = B_Z.cos\\hspace{0.1cm}⁡wt" [ref=e168]'
+                - text: que atravesará toda la masa de hierro en el sentido del eje Z.
+              - paragraph [ref=e169]: Aparecerán en el material unas f.e.m.s. inducidas que darán lugar a unas corrientes parásitas que circularán por el material si este es conductor, llamadas corrientes de Foucault.
+              - paragraph [ref=e170]: Estas corrientes pueden generar pérdidas y calentamiento de los núcleos.
+              - paragraph [ref=e171]: Para prevenir estas pérdidas, el hierro empleado en los circuitos magnéticos suele estar laminado, en forma de chapas magnéticas de pequeño espesor, con capas externas aislantes para evitar la circulación de corriente de una chapa a otra.
+            - generic [ref=e172]:
+              - paragraph [ref=e173]:
+                - img "Figura 3. Áreas del ciclo de histéresis.png" [ref=e175]
+              - paragraph [ref=e176]: Figura 3. Áreas del ciclo de histéresis
+          - paragraph [ref=e177]:
+            - img "Figura 4. Sección de área del ciclo de histéresis.png" [ref=e178]
+          - paragraph [ref=e179]: Figura 4. Núcleo de hierro laminado.
+          - paragraph [ref=e180]: "Si el campo es uniforme en la sección transversal de la chapa, el flujo que atraviesa la espira sombreada es:"
+          - paragraph [ref=e181]:
+            - 'img "LaTeX: 𝝓=𝟐𝒃𝒚𝑩_𝒎 𝒄𝒐𝒔\\hspace{0.1cm} 𝒘𝒕" [ref=e182]'
+          - paragraph [ref=e183]:
+            - text: "Por la ley de Faraday:"
+            - 'img "LaTeX: 𝒆=𝟐𝒘𝒃𝒚𝑩_𝒎 𝒔𝒆𝒏\\hspace{0.1cm} 𝒘𝒕" [ref=e184]'
+          - paragraph [ref=e185]:
+            - text: "El cual produce una corriente en la espira y se obtiene una resistencia de:"
+            - 'img "LaTeX: 𝑹=\\frac{𝟐𝒃}{𝝈 𝒅𝒚}" [ref=e186]'
+            - text: ; donde la conductividad del material es
+            - strong [ref=e187]: σ
+            - text: y “y” es el espesor de la chapa magnética, y varía entre 0 y
+            - 'img "LaTeX: \\frac{a}{2}" [ref=e188]'
+            - text: .
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - paragraph [ref=e191]: "La potencia instantánea en la espira será:"
+          - paragraph [ref=e192]:
+            - 'img "LaTeX: 𝒅𝑷_𝑭=𝑹.𝒊^𝟐=\\frac{𝒆^𝟐}{R}=\\frac{𝟒𝒘^𝟐.𝒃^𝟐.𝒚^𝟐 .𝑩_𝒎^𝟐.𝝈.𝒔𝒆𝒏^𝟐 𝒘𝒕\\hspace{0.1cm} 𝒅𝒚}{𝟐𝒃}" [ref=e193]'
+          - list [ref=e194]:
+            - listitem [ref=e195]:
+              - paragraph [ref=e196]: "Y su valor medio:"
+          - paragraph [ref=e197]:
+            - 'img "LaTeX: 𝒅𝑷_𝑭=𝒘^𝟐 𝒃𝒚^𝟐 𝑩_𝒎^𝟐 𝝈𝒅𝒚" [ref=e198]'
+          - list [ref=e199]:
+            - listitem [ref=e200]:
+              - paragraph [ref=e201]: "Con una potencia disipada total:"
+          - paragraph [ref=e202]:
+            - 'img "LaTeX: 𝑷_𝑭=∫_𝟎^{𝒂/𝟐}𝒘^𝟐 𝑩_𝒎^𝟐 𝒃𝝈𝒚^𝟐 𝒅𝒚=\\frac{𝒘^𝟐}{24} 𝑩_𝒎^𝟐 𝒂^𝟑 𝒃𝝈" [ref=e203]'
+          - list [ref=e204]:
+            - listitem [ref=e205]:
+              - paragraph [ref=e206]: "Y por unidad de volumen:"
+          - paragraph [ref=e207]:
+            - 'img "LaTeX: \\frac{𝑷_𝑭}{vol}=𝝅^𝟐 𝒇^𝟐 𝑩_𝒎^𝟐 𝒂^𝟐 \\frac{𝝈}{6}=𝒌_𝑭 𝒇^𝟐 𝑩_𝒎^𝟐 𝒂^𝟐 𝝈" [ref=e208]'
+          - list [ref=e209]:
+            - listitem [ref=e210]:
+              - paragraph [ref=e211]: "Si hay frecuencia elevada, se deben utilizar chapas más delgadas. Por lo tanto, las pérdidas totales en el hierro son:"
+          - paragraph [ref=e212]:
+            - 'img "LaTeX: 𝑷_{𝑭𝒆}=𝑷_𝑯+𝑷_𝑭=𝒌_𝑯 𝒇𝑩_𝒎^𝜶+𝒌_𝑭 𝒇^𝟐 𝑩_𝒎^𝟐 𝒂^𝟐 𝝈" [ref=e213]'
+          - paragraph [ref=e214]:
+            - text: El fabricante del material magnético suministra las curvas donde se muestran las pérdidas totales en función de
+            - strong [ref=e215]: B
+            - text: ", a frecuencia constante."
+          - paragraph [ref=e216]:
+            - img "Figura 5. Curvas de pérdidas en el hierro.png" [ref=e217]
+          - paragraph [ref=e218]: Figura 5. Curvas de pérdidas en el hierro
+        - separator [ref=e70]
+        - figure [ref=e71]:
+          - generic [ref=e72]:
+            - paragraph [ref=e73]:
+              - strong [ref=e74]: "Bibliografía:"
+            - list [ref=e75]:
+              - listitem [ref=e76]:
+                - generic [ref=e77]:
+                  - text: Fraile Mora, J. (2008).
+                  - emphasis [ref=e78]: Maquinas Eléctricas
+                  - text: (6ta. ed.). McGraw-Hill Interamericana.
+        - figure [ref=e79]:
+          - paragraph [ref=e80]:
+            - text: ❓ Si tienes alguna
+            - strong [ref=e81]: duda o consulta sobre el material
+            - text: ", puedes dirigirte al"
+            - strong [ref=e82]: Foro de
+            - text: consultas y preguntarle a tu docente, compañeros y compañeras.
+      - generic [ref=e85]:
+        - button "Anterior" [ref=e88] [cursor=pointer]:
+          - generic [ref=e89]:
+            - img [ref=e91]
+            - generic [ref=e93]: Anterior
+        - button "Siguiente" [ref=e96] [cursor=pointer]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: Siguiente
+            - img [ref=e100]
+  - generic [ref=e34]: Has cambiado a Estudiante de prueba

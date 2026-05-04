@@ -203,6 +203,7 @@ Donde:
 ## 8. Lazo de Histéresis y Pérdidas Magnéticas
 Fuente: [[S02-4 Tema 03 - Lazo de histeresis|S02-4 Lazo de histeresis]]
 Fuente: [[S04-3 Tema 02 - Obtencion del lazo de histeresis|S04-3 Obtencion del lazo de histeresis]]
+Fuente: [[S05-1 Tema 01 - Perdidas magneticas en el nucleo|S05-1 Perdidas magneticas en el nucleo]]
 
 ### Energía del Ciclo de Histéresis
 $$dE = S \cdot L_m \cdot H \cdot dB$$
@@ -211,13 +212,32 @@ Donde:
 - $S$ = sección transversal del núcleo
 - $L_m$ = longitud magnética
 
+### Energía absorbida y devuelta en una rama del ciclo
+
+Energía absorbida (tramo $-B_r \rightarrow B_m$, abc):
+$$W_{ac} = vol \int_{-B_r}^{B_m} H \cdot dB = vol \cdot w_1$$
+
+Energía devuelta a la red (tramo $B_m \rightarrow B_r$, ce):
+$$W_{ce} = vol \int_{B_m}^{B_r} H \cdot dB = vol \cdot w_2$$
+
+Energía total disipada por ciclo (área del lazo):
+$$W_H = (vol) \oint H \cdot dB$$
+
+Potencia disipada por histéresis (con frecuencia $f$):
+$$P_H = f \cdot W_H = f \cdot (vol) \oint H \cdot dB = f \cdot (vol) \cdot (\text{área del ciclo})$$
+
 ### Fórmula de Steinmetz (Pérdidas por Histéresis)
+$$P_H = k_H \cdot f \cdot (vol) \cdot B_m^{\alpha}$$
+
+Forma alternativa por unidad de masa:
 $$P_H = K_H \cdot f \cdot B^{2}_{\max} \quad \left[\frac{\text{W}}{\text{kg}}\right]$$
 
 Donde:
-- $K_H$ = constante del tipo de chapa magnética
+- $k_H$ = coeficiente de Steinmetz (depende del material)
+- $\alpha$ = exponente de Steinmetz, entre 1,5 y 2,5 (valor frecuente $\alpha = 1{,}6$)
+- Para acero al silicio: $k_H$ entre 100 y 200
 - $f$ = frecuencia $[\text{Hz}]$
-- $B_{\max}$ = inducción máxima $[\text{T}]$
+- $B_m = B_{\max}$ = inducción máxima $[\text{T}]$
 
 ### Ecuación de Fröelich (curva de magnetización analítica)
 $$B = \frac{a \cdot H}{1 + b \cdot H}$$
@@ -359,3 +379,46 @@ Valor eficaz:
 $$E_2 = \frac{N_2 p\Omega \phi_m}{\sqrt{2}} = 4{,}44 \cdot N_2 \cdot f_2 \cdot \phi_m$$
 
 $$f_2 = \frac{n \cdot p}{60}$$
+
+---
+
+## 13. Pérdidas por Corrientes de Foucault y Pérdidas Totales en el Hierro
+Fuente: [[S05-1 Tema 01 - Perdidas magneticas en el nucleo|S05-1 Perdidas magneticas en el nucleo]]
+
+### Inducción alterna en el núcleo
+$$B_z = B_z \cos \omega t$$
+
+### Flujo en la espira sombreada (chapa)
+$$\phi = 2 b y B_m \cos \omega t$$
+
+### F.E.M. inducida (Ley de Faraday)
+$$e = 2 \omega b y B_m \, \text{sen} \, \omega t$$
+
+### Resistencia de la espira
+$$R = \frac{2b}{\sigma \cdot dy}$$
+
+Donde:
+- $\sigma$ = conductividad del material
+- $y$ = espesor de la chapa magnética, varía entre $0$ y $\frac{a}{2}$
+- $a$ = espesor total de la chapa
+- $b$ = ancho de la chapa
+
+### Potencia instantánea en la espira
+$$dP_F = R \cdot i^2 = \frac{e^2}{R} = \frac{4 \omega^2 \cdot b^2 \cdot y^2 \cdot B_m^2 \cdot \sigma \cdot \text{sen}^2 \omega t \cdot dy}{2b}$$
+
+### Potencia media diferencial
+$$dP_F = \omega^2 \cdot b \cdot y^2 \cdot B_m^2 \cdot \sigma \cdot dy$$
+
+### Potencia disipada total (integrando)
+$$P_F = \int_0^{a/2} \omega^2 B_m^2 b \sigma y^2 \, dy = \frac{\omega^2}{24} B_m^2 \cdot a^3 \cdot b \cdot \sigma$$
+
+### Pérdidas por corrientes de Foucault por unidad de volumen
+$$\frac{P_F}{vol} = \pi^2 f^2 B_m^2 a^2 \frac{\sigma}{6} = k_F \cdot f^2 \cdot B_m^2 \cdot a^2 \cdot \sigma$$
+
+> [!info] A mayor frecuencia, chapas más delgadas
+> Las pérdidas por Foucault crecen con $f^2$ y con $a^2$. Para frecuencias elevadas se requieren chapas magnéticas de menor espesor.
+
+### Pérdidas totales en el hierro (histéresis + Foucault)
+$$P_{Fe} = P_H + P_F = k_H \cdot f \cdot B_m^{\alpha} + k_F \cdot f^2 \cdot B_m^2 \cdot a^2 \cdot \sigma$$
+
+El fabricante del material magnético suministra las curvas de pérdidas totales en función de $B$ a frecuencia constante.

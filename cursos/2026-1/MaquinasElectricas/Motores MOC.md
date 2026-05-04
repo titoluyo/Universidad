@@ -54,8 +54,13 @@ aliases:
 
 ### Semana 5
 
-> [!info] Pendiente
-> Perdidas en el nucleo. Perdidas por histeresis y por corrientes parasitas.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 1 | [[S05-1 Tema 01 - Perdidas magneticas en el nucleo\|Perdidas magneticas en el nucleo]] | clase |
+| 2 | [[S05-2 Ejercicio resuelto - Perdidas en el hierro y exponente de Steinmetz (Video)\|Ejercicio resuelto - Perdidas en el hierro y exponente de Steinmetz]] | ejercicio |
+| 98 | [[S05-98 Indicaciones y Rubrica - LC1 Laboratorio\|Indicaciones y Rubrica LC1]] | rubrica |
+| 99 | [[S05-99 Laboratorio - LC1 Circuito magnetico con nucleo ferromagnetico\|Laboratorio LC1 - Circuito magnetico con nucleo ferromagnetico]] | laboratorio |
+| 100 | [[S05-100 Informe LC1 - Circuito magnetico con nucleo ferromagnetico\|Informe LC1 - Circuito magnetico]] | informe |
 
 ---
 

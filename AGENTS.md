@@ -285,11 +285,13 @@ URL del PDF del Sílabo: `https://ms-utp-prd-silbiaback-cd.s3.amazonaws.com/pdfs
 
 URL de cada item: `/learnv2/week/<N>/unit/<section_uuid>/theme/<theme_uuid>/content/<content_uuid>/<tipo>` donde `<tipo>` es:
 
-- `html` → "Contenido personalizado" — rich text con LaTeX (fórmulas como `<img alt="LaTeX: ...">`) y figuras. **Tipo principal en Virtual 24/7.**
-- `pdf` → "Material ∙ PDF" — slide/lectura descargable.
+- `html` → "Contenido personalizado" — rich text con LaTeX (fórmulas como `<img alt="LaTeX: ...">`) y figuras. **Tipo principal en Virtual 24/7.** Dos sub-formatos comunes:
+  - **HTML inline:** texto + fórmulas LaTeX (imágenes desde el servicio AWS `5a6yscpebg.execute-api.us-east-1.amazonaws.com/latex-to-svg/<urlencoded>?scale=1` — el `alt` arranca con `LaTeX: ...`, decodear URL y normalizar caracteres unicode mathematical italic `𝑧→z, 𝑥→x, 𝑦→y, 𝜃→\theta, 𝜋→\pi, ∮→\oint`) + figuras JPEG/PNG en S3.
+  - **HTML video:** `<video><source src="...mp4">` + 3 links "Descargar .MP4 / .MP3 / .PDF". El **PDF "Guion"** es la transcripción del video con el desarrollo escrito — preferir leer el Guion antes que ver el video.
+- `pdf` → "Material ∙ PDF" — la página tiene un visor PDF embebido en `<iframe>`; el URL real de S3 está en el query param `d=` del iframe src (extraer con `decodeURIComponent`).
 - `url` → "Material ∙ URL" — link externo.
-- `evaluation/<id>` → "Evaluación calificada" / "Evaluación no calificada".
-- `video` → posiblemente video (no observado aún).
+- `evaluation/<id>` → "Evaluación calificada" / "Evaluación no calificada". **Visitar la URL solo muestra metadatos** (intentos, fechas, tipo) — el cronómetro y el intento se inician solo al hacer click en "Realizar evaluación". Útil para capturar metadatos sin consumir el intento.
+- `video` → posiblemente video standalone (no observado aún; los videos suelen venir como sub-formato del `/html`).
 
 Iconos en títulos: 📚 = lección, 📝 = cuestionario / examen no calificado, 🔴 = evaluación calificada principal (PA, PC, EXFN). Prefijo `(AC-SNN)` = código de actividad calificada.
 
@@ -331,6 +333,8 @@ Array.from(document.querySelectorAll('a[href*="/learnv2/week/N/"]'))
                text: a.innerText.trim().replace(/\s+/g, ' ') }));
 
 // Expandir un acordeón por título exacto (idempotente — chequea si ya hay links dentro)
+// Útil porque el toggle es stateful entre re-navegaciones; al re-cargar la pagina, las
+// semanas pueden estar ya expandidas y un click "ingenuo" las cerraria.
 const expandIf = (label) => {
   const p = Array.from(document.querySelectorAll('p'))
     .find(p => p.textContent.trim() === label);
@@ -341,6 +345,24 @@ const expandIf = (label) => {
   if (el) { el.click(); return true; }
   return false;
 };
+
+// Regex para sub-temas Virtual 24/7 de la semana N (Introducción / Tema XX / Cierre)
+// Importante: usar \s+N$ (uno o MÁS espacios) — algunos títulos tienen doble espacio
+// antes del número, e.g. "Tema 02: Teorema de Cauchy  6"
+const subRegex = /^(Introducción a la semana N|Tema \d+:.*\s+N|Cierre de la semana N)$/;
+
+// Extraer body de anuncio (descartando iconos UI estaticos)
+const cks = Array.from(document.querySelectorAll('.ck-content'));
+const main = cks.sort((a,b)=>b.innerText.length - a.innerText.length)[0];
+const imgs = Array.from(main.querySelectorAll('img'))
+  .filter(i => !i.src.includes('/static/media/'))
+  .map(i => ({ src: i.src, alt: i.alt }));
+return { text: main.innerText, imgs };
+
+// Extraer URL real del PDF embebido en /pdf (esta dentro del iframe src query d=)
+const ifr = document.querySelector('iframe[src*="/lib/ui/index.html"]');
+const url = new URL(ifr.src);
+const pdfUrl = decodeURIComponent(url.hash.split('d=')[1].split('&')[0]);
 ```
 
 ### Notas técnicas
@@ -354,17 +376,18 @@ const expandIf = (label) => {
 
 ## Procedimiento: Extraer contenido HTML de un item del portal (Virtual 24/7)
 
-Cubre la extracción de UN item `/html` (típicamente "Contenido personalizado" con texto y fórmulas LaTeX).
+Cubre la extracción de UN item `/html` (típicamente "Contenido personalizado" con texto, fórmulas LaTeX y figuras).
 
 ### Flujo
 
-1. **Navegar** al link `/learnv2/week/N/.../content/<id>/html`.
-2. **Expandir secciones colapsadas** (`<details>`): hacer click en cada `<summary>` antes del snapshot.
-3. **Tomar snapshot** (accessibility tree) para extraer todo el texto y fórmulas LaTeX.
-4. **Extraer URLs de imágenes** con `browser_evaluate`: filtrar `<img>` por alt text que contenga "Figura" o el prefijo de la semana.
-5. **Descargar imágenes** con PowerShell `Invoke-WebRequest` a `attachments/` de la sesión correspondiente.
-6. **Crear la nota** con todo el contenido (sin resumir), fórmulas en LaTeX, imágenes embebidas con `![[nombre.png]]`.
-7. **Actualizar el Formulario** del curso con las fórmulas nuevas, incluyendo `Fuente: [[nota]]`.
+1. **Navegar** al link `/learnv2/week/N/.../content/<id>/html`. Esperar ~2s.
+2. **Detectar formato** (browser_evaluate):
+   - Si tiene `<video>` o link "Descargar .PDF" → es **video con Guion** (saltar al paso 3b).
+   - Si solo tiene texto + LaTeX images + figuras → es **HTML inline** (paso 3a).
+3a. **HTML inline:** serializar el `.ck-content` preservando orden de `<img>` con sus `alt`. Convertir `<img alt="LaTeX: <expr>">` a `$<expr>$` (inline) o `$$<expr>$$` (bloque, si la expresion contiene `\frac`, `\sum`, `\int`). Normalizar caracteres unicode mathematical italic (`𝑧→z`, etc.). Descargar figuras (img sin prefijo "LaTeX:") a `attachments/`.
+3b. **Video con Guion:** descargar el PDF "Guion" (link "Descargar .PDF") a `attachments/<TXX-EjY-Guion-descripcion>.pdf` con PowerShell. Leer el PDF con `Read` para extraer enunciado, datos y desarrollo paso a paso.
+4. **Crear la nota** con todo el contenido (sin resumir), fórmulas en LaTeX, imágenes embebidas con `![[nombre.png]]`, callouts `> [!summary]` / `> [!success]` / `> [!warning]` para estructurar.
+5. **Actualizar el Formulario** del curso con las fórmulas nuevas, incluyendo `Fuente: [[nota]]`.
 
 ## Procedimiento: Extraer una semana completa de un curso
 
@@ -397,10 +420,11 @@ Cuando el usuario diga "extrae el Curso X, semana Y" (o "la semana actual"):
    - Carpeta: `cursos/<ciclo>/<carpeta_vault>/clases/sNN/attachments/` para imágenes/PDFs.
 
 7. **Procesar cada item según tipo**
-   - **`/html`** (Virtual 24/7) → seguir el "Procedimiento: Extraer contenido HTML" para crear `SNN-X Tema NN - Título.md`.
-   - **`/pdf`** → descargar a `attachments/SNN-material.pdf` (o nombre descriptivo). Si es indicaciones de evaluación, alimenta la nota `SNN-99 Evaluación …md`. Si es soporte de clase Presencial, puede ser fuente principal para crear notas SNN-X temáticas.
+   - **`/html` inline (texto + LaTeX + figuras)** → extraer body con la función JS de "Helpers", convertir cada `<img alt="LaTeX: ...">` a `$...$` o `$$...$$` (decodear URL del src y normalizar caracteres unicode mathematical italic), descargar las figuras (alt sin "LaTeX: ") con PowerShell a `attachments/`. Crear `SNN-X Tema NN - Título.md`.
+   - **`/html` video (con `<video>` + Descargar PDF/MP4/MP3)** → preferir descargar el **Guion PDF** (es la transcripción del video con todo el desarrollo escrito) en vez de procesar el video. El PDF se lee directo con `Read`. Crear nota basada en el Guion.
+   - **`/pdf`** → extraer URL real del iframe (ver helpers JS), descargar a `attachments/<descripción>.pdf` con PowerShell. Si es manual de la semana → guardar en raíz de `sNN/` como `SemanaNN_Tema.pdf`. Si es indicaciones de evaluación → usar como fuente para la nota SNN-99 (o SNN-98).
    - **`/url`** → registrar como external link en la nota correspondiente; no descargar el destino.
-   - **`/evaluation/<id>`** → navegar, capturar enunciado y preguntas, crear `SNN-99 Evaluación …md` o `SNN-98 Indicaciones …md` según convención. Aplicar reglas de "Evaluaciones".
+   - **`/evaluation/<id>`** → navegar (solo lee metadatos, no consume intento), capturar fechas/tipo. Si los enunciados de las preguntas vienen en un PDF "Indicaciones" aparte, transcribir esos enunciados; si vienen solo al hacer click en "Realizar evaluación" (caso PA/PC), pedir al usuario que abra el examen y pegue los enunciados o suba un PDF. Crear `SNN-99 Evaluación …md` (metadatos + indicaciones) y `SNN-98 ... Enunciados.md` (enunciados + desarrollo si aplica). Aplicar reglas de "Evaluaciones".
 
 8. **Actualizar referencias**
    - Renumerar notas existentes si se inserta algo entre medio (frontmatter `orden`, archivo, wikilinks).

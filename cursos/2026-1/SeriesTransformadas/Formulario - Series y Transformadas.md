@@ -161,3 +161,131 @@ $$v(x,y) = \int_{(x_0, y_0)}^{(x, y)}\left(-u_y\, dx + u_x\, dy\right) + C$$
 | Unicidad | $u$ armonica en $D$ queda determinada por sus valores en $\partial D$ |
 | Valor medio | $u(\text{centro del disco}) = $ promedio de $u$ sobre la circunferencia |
 | Ortogonalidad | Si $f = u+iv$ analitica, las curvas $u = c_1$ y $v = c_2$ son ortogonales: $\nabla u \cdot \nabla v = 0$ |
+
+## Funciones complejas elementales
+
+Fuente: [[S05-1 Tema 05 - Funciones complejas elementales]]
+
+### Funcion exponencial
+
+Para $z = x + iy$:
+
+$$e^z = e^x(\cos y + i\,\text{sen}\,y)$$
+
+- $|e^z| = e^x$
+- $\arg(e^z) = y + 2k\pi$, $k \in \mathbb{Z}$
+- Holomorfa en todo $\mathbb{C}$
+- Periodica de periodo $2\pi i$: $e^z = e^{z + 2\pi i}$
+
+### Funcion logaritmica (multivaluada)
+
+$$\ln z = \ln|z| + i(\arg(z) + 2k\pi), \quad k = 0, \pm 1, \pm 2, \ldots$$
+
+- Rama principal: $k = 0$
+- Cada vuelta ($k$) da un valor distinto
+
+### Exponente y potencia complejos
+
+| Tipo                                                   | Definicion                              |
+| ------------------------------------------------------ | --------------------------------------- |
+| **Exponente** (base $\beta$ fija, $z$ variable)        | $\beta^z = e^{z\,\ln \beta},\ \beta \neq 0$ |
+| **Potencia** (base $z$ variable, $\lambda$ constante)  | $z^\lambda = e^{\lambda\,\ln z},\ z \neq 0$ |
+
+Ambas heredan la multivaluacion de $\ln$.
+
+### Funciones trigonometricas complejas
+
+$$\text{sen}\,z = \frac{e^{iz} - e^{-iz}}{2i}, \qquad \cos z = \frac{e^{iz} + e^{-iz}}{2}$$
+
+Identidad pitagorica (ver [[S05-5 Tema 05 - Ejercicio 4 (SyT)|demostracion]]):
+
+$$\text{sen}^2 z + \cos^2 z = 1$$
+
+### Funciones hiperbolicas complejas
+
+$$\text{senh}\,z = \frac{e^z - e^{-z}}{2}, \qquad \cosh z = \frac{e^z + e^{-z}}{2}$$
+
+## Integrales de contorno
+
+Fuente: [[S06-1 Tema 06 - Integral de contorno en funciones complejas]]
+
+### Definicion
+
+Si $f(z)$ es continua sobre la curva $C$ desde $A$ hasta $B$:
+
+$$\int_{A}^{B} f(z)\,dz = \lim_{n \to \infty} \sum_{k=1}^{n} f(z_k)\,\Delta z_k$$
+
+### Descomposicion en partes real e imaginaria
+
+Si $f(z) = u(x,y) + i\,v(x,y)$ y $dz = dx + i\,dy$:
+
+$$\int_{C} f(z)\,dz = \int_{C}(u\,dx - v\,dy) + i\int_{C}(v\,dx + u\,dy)$$
+
+### Cambio de variable a parametro $\theta$
+
+Para curvas parametrizadas $z = z(\theta)$:
+
+$$\int_{A}^{B} f(z)\,dz = \int_{\theta_A}^{\theta_B} f(z(\theta))\,\frac{dz}{d\theta}\,d\theta$$
+
+### Casos canonicos
+
+| Curva $C$         | $z(\theta)$              | $dz/d\theta$         |
+| ----------------- | ------------------------ | -------------------- |
+| $\|z\| = 1$       | $\cos\theta + i\,\text{sen}\,\theta$ | $-\text{sen}\,\theta + i\,\cos\theta$ |
+| $\|z\| = r$       | $r\,e^{i\theta}$         | $i\,r\,e^{i\theta}$  |
+| Camino horizontal $y = y_0$ | $x + iy_0$, $x: a \to b$ | $dx$ (con $dy = 0$) |
+| Camino vertical $x = x_0$   | $x_0 + iy$, $y: a \to b$ | $i\,dy$ (con $dx = 0$) |
+
+### Resultado fundamental
+
+$$\boxed{\oint_{|z|=r} \frac{dz}{z} = 2\pi i}$$
+
+(independiente de $r > 0$, demostrado en [[S06-1 Tema 06 - Integral de contorno en funciones complejas|sesión]] por dos métodos).
+
+## Teorema de Cauchy
+
+Fuente: [[S06-3 Tema 06 - Teorema de Cauchy]]
+
+### Teorema de Green (cálculo vectorial)
+
+$$\oint_{C}\bigl(P\,dx + Q\,dy\bigr) = \iint_{\mathcal{R}}\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)dx\,dy$$
+
+### Teorema de Cauchy
+
+> Si $f$ es **analítica** en un dominio $\mathcal{R}$ simplemente conexo y $f'$ es continua, entonces para toda trayectoria simple cerrada $C \subset \mathcal{R}$:
+>
+> $$\oint_{C} f(z)\,dz = 0$$
+
+### Forma integral via Green (derivacion)
+
+$$\int f(z)\,dz = \iint\left(-\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}\right)dx\,dy + i\iint\left(\frac{\partial u}{\partial x} - \frac{\partial v}{\partial y}\right)dx\,dy$$
+
+Ambos integrandos se anulan por las ecuaciones de Cauchy-Riemann ($u_x = v_y$, $u_y = -v_x$) → $\oint f(z)\,dz = 0$.
+
+### Consecuencias
+
+| Propiedad | Enunciado |
+| --- | --- |
+| Independencia del camino | $\int_A^B f\,dz$ depende solo de $A, B$ si $f$ analítica |
+| Existencia de antiderivada | $\int_A^B f\,dz = F(B) - F(A)$ con $F' = f$ |
+| Singularidades | Si $C$ encierra un punto donde $f$ no es analítica, el teorema **no aplica** |
+
+## Teorema de extension de Cauchy
+
+Fuente: [[S06-6 Tema 06 - Teorema de extension de Cauchy]]
+
+### Singularidad
+
+$z_0$ es singularidad de $f$ si $f$ no es analítica en $z_0$ pero sí en al menos un punto de todo entorno de $z_0$.
+
+### Deformacion de contornos
+
+> Si $f$ es analítica en una región y $C_1, C_2$ son dos contornos cerrados simples tales que **$C_1$ se puede deformar continuamente en $C_2$ sin cruzar singularidades**, entonces:
+>
+> $$\oint_{C_1} f(z)\,dz = \oint_{C_2} f(z)\,dz$$
+
+### Aplicacion: integral de $1/z$ alrededor del origen
+
+Para **cualquier** contorno $C$ que rodee $z = 0$ una vez en sentido antihorario:
+
+$$\oint_{C} \frac{dz}{z} = 2\pi i$$

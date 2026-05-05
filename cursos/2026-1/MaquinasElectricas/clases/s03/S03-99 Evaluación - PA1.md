@@ -4,11 +4,12 @@ curso: "[[Motores MOC]]"
 unidad: 1
 semana: 3
 orden: 99
-tipo: clase
+tipo: evaluacion
+subtipo: pa
 tags:
   - curso/motores
-  - tipo/clase
-  - tema/evaluacion
+  - tipo/evaluacion
+  - subtipo/pa
 date: 2026-04-12
 ---
 

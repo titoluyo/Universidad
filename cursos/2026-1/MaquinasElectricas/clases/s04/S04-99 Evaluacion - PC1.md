@@ -4,11 +4,12 @@ curso: "[[Motores MOC]]"
 unidad: 1
 semana: 4
 orden: 99
-tipo: clase
+tipo: evaluacion
+subtipo: pc
 tags:
   - curso/motores
-  - tipo/clase
-  - tema/evaluacion
+  - tipo/evaluacion
+  - subtipo/pc
   - tema/practica-calificada
 date: 2026-04-19
 ---

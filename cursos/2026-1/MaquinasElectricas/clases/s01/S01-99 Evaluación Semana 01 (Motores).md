@@ -1,3 +1,21 @@
+---
+title: "Evaluación Semana 01 (Motores)"
+curso: "[[Motores MOC]]"
+unidad: 1
+semana: 1
+orden: 99
+tipo: evaluacion
+subtipo: cuestionario
+tags:
+  - curso/motores
+  - tipo/evaluacion
+  - subtipo/cuestionario
+  - tema/permeabilidad-magnetica
+  - tema/curva-de-magnetizacion
+  - tema/histeresis
+date: 2026-03-29
+---
+
 ## 1. ¿Cuál será la permeabilidad relativa del material ferromagnético típico, cuya curva de magnetización se muestra en la siguiente figura cuando H = 50 A • espiras/m?
 
 ![[Pasted image 20260329185300.png]]

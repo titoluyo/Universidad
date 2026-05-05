@@ -16,6 +16,17 @@ aliases:
 
 - [[Silabo - Circuitos Electronicos Amplificadores|Silabo del curso]]
 - [[Formulario - Amplificadores|Formulario de formulas]]
+- [[Anuncios|Anuncios del docente]]
+
+## Notas por semana
+
+### Semana 7 — Aplicaciones no lineales (ejercicios)
+
+- [[S07-1 Comparadores y Schmitt trigger - ejercicios resueltos]]
+- [[S07-2 Multivibrador astable y generador de onda triangular - ejercicios]]
+- [[S07-3 Amplificadores logaritmico y antilogaritmico - ejercicios]]
+- [[S07-4 Amplificador operacional de transconductancia (OTA)]]
+- [[S07-5 Integrador y derivador como filtros activos]]
 
 ## Bibliografia
 

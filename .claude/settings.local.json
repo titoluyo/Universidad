@@ -9,7 +9,12 @@
       "Bash(ls:*)",
       "WebSearch",
       "Bash(mkdir -p \"C:/work/universidad_vault/Universidad/cursos/2026-1/Amplificadores\" \"C:/work/universidad_vault/Universidad/cursos/2026-1/PLC\" \"C:/work/universidad_vault/Universidad/cursos/2026-1/Series y Transformadas\")",
-      "Bash(mv \"C:/work/universidad_vault/Universidad/Motores Electricos Estaticos y Rotativos\" \"C:/work/universidad_vault/Universidad/cursos/2026-1/\")"
+      "Bash(mv \"C:/work/universidad_vault/Universidad/Motores Electricos Estaticos y Rotativos\" \"C:/work/universidad_vault/Universidad/cursos/2026-1/\")",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_navigate",
+      "PowerShell($dir = \"cursos\\\\2026-1\\\\Amplificadores\\\\clases\\\\s07\\\\attachments\"; New-Item -ItemType Directory -Force -Path $dir | Out-Null; Invoke-WebRequest -Uri \"https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a49dd184-de19-4630-90a3-110bd81ea65f/S07-Material%201_FACWDP.pdf\" -OutFile \"$dir\\\\S07-Material.pdf\"; Get-Item \"$dir\\\\S07-Material.pdf\" | Select-Object Name,Length)",
+      "WebFetch(domain:controlbyte.tech)"
     ]
   },
   "enabledPlugins": {

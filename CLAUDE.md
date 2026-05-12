@@ -8,17 +8,21 @@ Vault de Obsidian para apuntes universitarios. Todo el contenido está en españ
 Universidad/
 ├── utils/                             # Scripts utilitarios
 │   ├── parse_vtt.py                   # Parsea subtítulos VTT de YouTube a texto limpio
-│   └── semana_actual.py               # Calcula la semana del ciclo
+│   ├── semana_actual.py               # Calcula la semana del ciclo
+│   └── md_to_docx.py                  # Exporta nota Markdown a Word (APA v7 + LaTeX)
 ├── plantillas/                        # Templates para nuevas notas
 │   ├── Plantilla - Nota de clase.md
 │   ├── Plantilla - Formulario.md
 │   ├── Plantilla - Ejercicio.md
 │   ├── Plantilla - Evaluacion.md
 │   ├── Plantilla - Anuncios.md
-│   └── Plantilla - Silabo.md
+│   ├── Plantilla - Silabo.md
+│   ├── reference-apa7.docx            # Estilos para export a Word (editable en Word)
+│   └── apa-7th.csl                    # Estilo de citas APA 7ma edición
 ├── docs/                              # Documentación operativa cargable on-demand
 │   ├── portal-utp.md                  # Estructura del portal + procedimientos de extracción
-│   └── extraccion-youtube.md          # Procedimiento para transcribir videos
+│   ├── extraccion-youtube.md          # Procedimiento para transcribir videos
+│   └── exportar-docx.md               # Procedimiento para convertir notas a Word
 ├── cursos/
 │   └── [ciclo]/                       # e.g. 2026-1
 │       ├── Cursos.md                  # Hub del ciclo: UUIDs, docentes, calendario, patrones
@@ -192,6 +196,13 @@ MCP Server `@playwright/mcp` configurado (scope: proyecto) — controla un brows
 ## Extracción de YouTube
 
 **Trigger:** cuando el usuario pida transcribir un video de YouTube o agregar un ejercicio a partir de un link de YouTube → seguir el procedimiento en [`docs/extraccion-youtube.md`](docs/extraccion-youtube.md). Usa `yt-dlp`, [`utils/parse_vtt.py`](utils/parse_vtt.py) y screenshots vía Playwright.
+
+## Exportación a Word (.docx)
+
+**Triggers:** cuando el usuario diga…
+
+- **"exporta a docx"**, **"convierte a Word"**, **"genera el Word"** → usar [`utils/md_to_docx.py`](utils/md_to_docx.py) (Pandoc + APA v7 + LaTeX nativo). Detalles en [`docs/exportar-docx.md`](docs/exportar-docx.md).
+- **"edita el docx"**, **"agrega track changes/comentarios"** o tareas que requieran manipulación XML interna del `.docx` → usar el skill `docx` de Anthropic (instalación documentada en `docs/exportar-docx.md`).
 
 ## Skills de Obsidian disponibles
 

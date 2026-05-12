@@ -36,7 +36,100 @@ $$\int dt \longleftrightarrow \frac{1}{j\omega} \quad \text{(amplifica bajas)}$$
 
 ---
 
+## Derivacion de las funciones de transferencia
+
+### Receta: amplificador inversor en el dominio de Laplace
+
+Para cualquier amplificador inversor con impedancias $Z_1$ a la entrada y $Z_2$ en realimentacion:
+
+```
+        Z1            Z2
+  Vin --[==]---+---[==]---+
+               |          |
+          (-) \|          |
+               +----------+ Vo
+          (+) /
+               |
+              GND
+```
+
+Por tierra virtual ($V_- = V_+ = 0$) y corriente de entrada del op-amp despreciable:
+
+$$\frac{V_{in} - 0}{Z_1} = \frac{0 - V_o}{Z_2} \;\Rightarrow\; \boxed{H(s) = \frac{V_o(s)}{V_{in}(s)} = -\frac{Z_2(s)}{Z_1(s)}}$$
+
+### Impedancias basicas en el dominio de $s$
+
+| Componente | $Z(s)$ | $Z(j\omega)$ |
+| ---------- | ------ | ------------ |
+| Resistor $R$ | $R$ | $R$ |
+| Capacitor $C$ | $\dfrac{1}{sC}$ | $\dfrac{1}{j\omega C}$ |
+| Inductor $L$ | $sL$ | $j\omega L$ |
+| $R \parallel C$ | $\dfrac{R}{1 + sRC}$ | $\dfrac{R}{1 + j\omega RC}$ |
+| $R$ en serie con $C$ | $R + \dfrac{1}{sC} = \dfrac{1 + sRC}{sC}$ | --- |
+
+### Resumen de las cuatro funciones de transferencia
+
+| Configuracion | $Z_1$ | $Z_2$ | $H(s) = -Z_2/Z_1$ |
+| ------------- | ----- | ----- | ----------------- |
+| **Integrador ideal** | $R$ | $\dfrac{1}{sC}$ | $-\dfrac{1}{sRC}$ |
+| **Integrador real** (LPF) | $R$ | $R_f \parallel C = \dfrac{R_f}{1 + sR_fC}$ | $-\dfrac{R_f/R}{1 + sR_fC}$ |
+| **Derivador ideal** | $\dfrac{1}{sC}$ | $R$ | $-sRC$ |
+| **Derivador real** (HPF) | $R_1 + \dfrac{1}{sC} = \dfrac{1 + sR_1C}{sC}$ | $R$ | $-\dfrac{sRC}{1 + sR_1C}$ |
+
+### Forma normalizada (constante de tiempo $\tau$)
+
+Definiendo $\tau = RC$ (ideal) o $\tau = R_f C, R_1 C$ (practico):
+
+| Caso | Forma estandar |
+| ---- | -------------- |
+| Integrador ideal | $H(s) = -\dfrac{1}{s\tau}$ |
+| LPF (integrador real) | $H(s) = -\dfrac{A_0}{1 + s\tau}$ con $A_0 = R_f/R$, $\tau = R_f C$ |
+| Derivador ideal | $H(s) = -s\tau$ |
+| HPF (derivador real) | $H(s) = -\dfrac{A_\infty\,s\tau}{1 + s\tau}$ con $A_\infty = R/R_1$, $\tau = R_1 C$ |
+
+Frecuencia de corte: $\omega_c = 1/\tau$, $f_c = 1/(2\pi\tau)$.
+
+### Modulo y fase para entrada senoidal ($s = j\omega$)
+
+| Configuracion | $\|H(j\omega)\|$ | $\angle H(j\omega)$ |
+| ------------- | ---------------- | ------------------- |
+| Integrador ideal | $\dfrac{1}{\omega RC}$ | $+90°$ (sin contar el $-180°$ del inversor) |
+| LPF | $\dfrac{A_0}{\sqrt{1 + (\omega/\omega_c)^2}}$ | $0°$ a baja $\omega$, $-90°$ a alta $\omega$ |
+| Derivador ideal | $\omega RC$ | $-90°$ |
+| HPF | $\dfrac{A_\infty\,(\omega/\omega_c)}{\sqrt{1 + (\omega/\omega_c)^2}}$ | $+90°$ a baja $\omega$, $0°$ a alta $\omega$ |
+
+> [!note] Convenio de signo
+> Todos los $H(s)$ aparecen con signo negativo porque la topologia es **inversora**. Si se necesita la forma no inversora (sin signo $-$), agregar un segundo op-amp en seguidor inversor o usar una topologia diferente (no inversora directa).
+
+> [!example] Como aplicar la receta a otra topologia
+> Para un **filtro pasa-banda** de 1er orden con un solo op-amp:
+> - $Z_1 = R_1 + 1/(sC_1)$ → bloquea DC (cero en origen)
+> - $Z_2 = R_2 \parallel C_2$ → corta altas frecuencias (polo)
+>
+> $$H(s) = -\dfrac{Z_2}{Z_1} = -\dfrac{R_2 / (1+sR_2C_2)}{(1+sR_1C_1)/(sC_1)} = -\dfrac{sR_2C_1}{(1+sR_1C_1)(1+sR_2C_2)}$$
+>
+> Cero en $s=0$ (HPF) + dos polos (LPF de 2do orden) = **pasa-banda de 1er orden alrededor de la banda donde solo el cero actua**.
+
+---
+
 ## 1. Integrador = filtro pasa-bajos
+
+### Expresion en el dominio temporal
+
+$$\boxed{v_{out}(t) = -\frac{1}{RC}\int v_{in}(t)\,dt}$$
+
+(Con condicion inicial: $v_{out}(t) = -\frac{1}{RC}\int_0^t v_{in}(\tau)\,d\tau + v_{out}(0)$, donde $v_{out}(0)$ es el voltaje inicial sobre el capacitor.)
+
+> [!info] Derivacion completa
+> Por tierra virtual ($V_- = 0$): la corriente que entra por $R$ vale $i_R = v_{in}/R$. Esta misma corriente carga el capacitor (la corriente de entrada del op-amp es despreciable):
+>
+> $$i_C = C\frac{d(v_{C})}{dt} = C\frac{d(0 - v_{out})}{dt} = -C\frac{dv_{out}}{dt}$$
+>
+> Igualando $i_R = i_C$:
+>
+> $$\frac{v_{in}}{R} = -C\frac{dv_{out}}{dt} \;\Rightarrow\; \frac{dv_{out}}{dt} = -\frac{v_{in}}{RC}$$
+>
+> Integrando ambos lados respecto a $t$ → la formula en caja.
 
 ### Topologia ideal
 
@@ -144,6 +237,110 @@ $$f_c = \frac{1}{2\pi R_f C} = \frac{1}{2\pi \times 3.3\text{k} \times 10\text{n
 ---
 
 ## 2. Derivador = filtro pasa-altos
+
+### Expresion en el dominio temporal
+
+$$\boxed{v_{out}(t) = -RC\,\frac{dv_{in}(t)}{dt}}$$
+
+### Razonamiento paso a paso
+
+Esta es la deduccion completa de como se obtiene la expresion del diferenciador. El circuito es:
+
+- $v_{in}$ entra a traves de un **capacitor $C$** a la entrada **inversora** ($V_-$) del op-amp.
+- Una **resistencia $R$** se conecta entre la salida $v_{out}$ y la misma entrada inversora (realimentacion).
+- La entrada **no inversora** ($V_+$) va directamente a tierra.
+
+```
+                         iR ──────►
+                       +---[ R ]----+
+                       │            │
+       iC ──►          │            │
+   ●───||──●───────────●            │
+   │   C   │       (-) \            │
+   │       │            \           │
+  v_in     │             >─────────●─── v_out
+           │            /
+           │       (+) /
+           │           │
+           │          GND
+           │
+          (nodo inversor; V_-)
+```
+
+**Hipotesis del op-amp ideal**
+
+1. La diferencia de voltaje entre las entradas es nula: $V_+ = V_-$.
+2. Las corrientes que entran por las terminales (+) y (-) son nulas: $i_+ = i_- = 0$.
+
+**Paso 1 — Tierra virtual**
+
+Como $V_+ = 0$ (conectada a tierra), por la hipotesis 1:
+
+$$V_- = V_+ = 0 \;\Rightarrow\; \text{el nodo inversor esta a 0 V (tierra virtual).}$$
+
+> Es "virtual" porque esta a 0 V pero no es realmente tierra fisica — la corriente no fluye hacia ella sino hacia la realimentacion.
+
+**Paso 2 — Voltaje a traves del capacitor**
+
+El capacitor $C$ tiene en un extremo $v_{in}$ y en el otro extremo el nodo $V_- = 0$. Por tanto:
+
+$$v_C = v_{in} - V_- = v_{in} - 0 = v_{in}$$
+
+**Paso 3 — Corriente por el capacitor (relacion V-I del capacitor)**
+
+La relacion fundamental de un capacitor es:
+
+$$i_C = C\,\frac{dv_C}{dt}$$
+
+Sustituyendo $v_C = v_{in}$:
+
+$$\boxed{i_C = C\,\frac{dv_{in}}{dt}}$$
+
+> [!note] Sentido de $i_C$
+> Definimos $i_C$ entrando al nodo inversor (de izquierda a derecha en el diagrama). Si $v_{in}$ aumenta, $dv_{in}/dt > 0 \Rightarrow i_C > 0$ (corriente entrando al nodo).
+
+**Paso 4 — Ley de Kirchhoff de Corrientes (LCK) en el nodo inversor**
+
+En el nodo $V_-$ confluyen tres corrientes: $i_C$ (entrando por $C$), $i_R$ (saliendo por $R$ hacia la salida), e $i_-$ (entrando al op-amp).
+
+Por la hipotesis 2, $i_- = 0$. Entonces:
+
+$$i_C = i_R$$
+
+→ **Toda la corriente del capacitor se desvia por la resistencia de realimentacion.**
+
+**Paso 5 — Voltaje a traves de la resistencia de realimentacion**
+
+La resistencia $R$ esta entre el nodo inversor ($V_- = 0$) y la salida ($v_{out}$). Aplicando la ley de Ohm con la convencion de $i_R$ saliendo del nodo (de izquierda a derecha):
+
+$$i_R = \frac{V_- - v_{out}}{R} = \frac{0 - v_{out}}{R} = -\frac{v_{out}}{R}$$
+
+**Paso 6 — Igualar y despejar $v_{out}$**
+
+De los pasos 3, 4 y 5:
+
+$$\underbrace{C\,\frac{dv_{in}}{dt}}_{i_C} = \underbrace{-\frac{v_{out}}{R}}_{i_R}$$
+
+Despejando $v_{out}$:
+
+$$v_{out} = -RC\,\frac{dv_{in}}{dt}$$
+
+> [!success] Resultado
+> $$\boxed{v_{out} = -RC\,\frac{dv_{in}(t)}{dt}}$$
+>
+> La salida es la **derivada** de la entrada multiplicada por $-RC$. El signo $-$ proviene de que la senal entra por la terminal **inversora**.
+
+### Interpretacion fisica
+
+- **Si $v_{in}$ es constante**: $dv_{in}/dt = 0 \Rightarrow v_{out} = 0$ (en DC el capacitor es un circuito abierto, no entra corriente, no hay caida en $R$).
+- **Si $v_{in}$ cambia rapido**: $dv_{in}/dt$ es grande $\Rightarrow v_{out}$ es grande (de signo opuesto). Esto explica por que el diferenciador es **filtro pasa-altos**: amplifica los cambios rapidos.
+- **Si $v_{in}$ es senoidal $A\sin(\omega t)$**: $dv_{in}/dt = A\omega\cos(\omega t) \Rightarrow v_{out} = -RC \cdot A\omega\cos(\omega t)$. La amplitud de salida es $RC \cdot A\omega$ → **crece linealmente con $\omega$**, confirmando la pendiente de $+20$ dB/dec del Bode.
+
+### Verificacion dimensional
+
+$$[RC] = \Omega \cdot \text{F} = \Omega \cdot \frac{\text{C}}{\text{V}} = \Omega \cdot \frac{\text{A}\cdot\text{s}}{\text{V}} = \frac{\text{V}}{\text{A}}\cdot\frac{\text{A}\cdot\text{s}}{\text{V}} = \text{s}$$
+
+→ $RC$ tiene unidades de tiempo. Por lo tanto $RC \cdot dv/dt$ tiene unidades de voltaje. ✓
 
 ### Topologia ideal
 

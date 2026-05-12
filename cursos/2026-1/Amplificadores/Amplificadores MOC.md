@@ -20,6 +20,13 @@ aliases:
 
 ## Notas por semana
 
+### Semana 6 — Amplificadores lineales y no lineales
+
+- [[S06-1 Amplificadores lineales y no lineales]]
+- [[S06-99 Laboratorio - LE1 Amplificador operacional|S06-99 Guía LE1 — Amplificador operacional]]
+- [[S06-100 Informe LE1 - Amplificador operacional|S06-100 Informe LE1 — Amplificador operacional]]
+- [[S06-101 Espejo - Mejoras propuestas al informe LE1|S06-101 Espejo de mejoras — LE1]]
+
 ### Semana 7 — Aplicaciones no lineales (ejercicios)
 
 - [[S07-1 Comparadores y Schmitt trigger - ejercicios resueltos]]

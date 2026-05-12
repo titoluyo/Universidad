@@ -8,17 +8,59 @@
         "type": "tabs",
         "children": [
           {
+            "id": "5dd537a525e3286c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cursos/2026-1/Amplificadores/clases/s06/S06-101 Espejo - Mejoras propuestas al informe LE1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S06-101 Espejo - Mejoras propuestas al informe LE1"
+            }
+          },
+          {
             "id": "5aeb4bec51c42aa4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/PLC/clases/s07/S07-1 Introduccion a Temporizadores - TON, TOF, TP.md",
+                "file": "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S07-1 Introduccion a Temporizadores - TON, TOF, TP"
+              "title": "Amplificadores MOC"
+            }
+          },
+          {
+            "id": "97af62cd27e1af8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cursos/2026-1/Amplificadores/clases/s07/S07-4 Amplificador operacional de transconductancia (OTA).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S07-4 Amplificador operacional de transconductancia (OTA)"
+            }
+          },
+          {
+            "id": "ebfdabac59013dac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cursos/2026-1/Amplificadores/clases/s07/S07-5 Integrador y derivador como filtros activos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S07-5 Integrador y derivador como filtros activos"
             }
           }
         ]
@@ -53,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "transconductancia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -184,25 +226,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "5aeb4bec51c42aa4",
+  "active": "0cab922b4f85b7a9",
   "lastOpenFiles": [
+    "cursos/2026-1/Amplificadores/clases/s08",
+    "cursos/2026-1/Amplificadores/clases/s06/S06-99 Laboratorio - LE1 Amplificador operacional.md",
+    "cursos/2026-1/Amplificadores/clases/s06/S06-101 Espejo - Mejoras propuestas al informe LE1.md",
+    "cursos/2026-1/Amplificadores/clases/s06/~WRL1251.tmp",
+    "cursos/2026-1/Amplificadores/clases/s06/~WRD0966.tmp",
+    "cursos/2026-1/Amplificadores/clases/s06/~WRD0950.tmp",
     "cursos/2026-1/Amplificadores/clases/s07/S07-4 Amplificador operacional de transconductancia (OTA).md",
+    "cursos/2026-1/Amplificadores/clases/s07/S07-5 Integrador y derivador como filtros activos.md",
+    "cursos/2026-1/Amplificadores/clases/s04/S04-1 Aplicaciones lineales del amplificador operacional.md.tmp.38032.1778025682773",
+    "Untitled.base",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
+    "cursos/2026-1/Amplificadores/clases/s06/~$forme LE1 - Amplificador operacional - v02.docx",
+    "cursos/2026-1/Amplificadores/clases/s06/Informe LE1 - Amplificador operacional - v02.docx",
+    "cursos/2026-1/Amplificadores/clases/s06/Informe LE1 - Amplificador operacional - Copy.docx",
     "cursos/2026-1/PLC/clases/s07/S07-1 Introduccion a Temporizadores - TON, TOF, TP.md",
     "cursos/2026-1/PLC/clases/s07/attachments",
     "cursos/2026-1/PLC/clases/s07",
-    "cursos/2026-1/Amplificadores/clases/s07/S07-4 Amplificador operacional de transconductancia (OTA).md.tmp.91284.1777942294401",
-    "cursos/2026-1/Amplificadores/clases/s07/S07-5 Integrador y derivador como filtros activos.md",
     "cursos/2026-1/Amplificadores/clases/s07/S07-3 Amplificadores logaritmico y antilogaritmico - ejercicios.md",
     "cursos/2026-1/Amplificadores/clases/s07/S07-2 Multivibrador astable y generador de onda triangular - ejercicios.md",
     "cursos/2026-1/Amplificadores/clases/s07/S07-1 Comparadores y Schmitt trigger - ejercicios resueltos.md",
     "cursos/2026-1/Amplificadores/clases/s06/S06-1 Amplificadores lineales y no lineales.md",
-    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.91284.1777941145021",
-    "cursos/2026-1/Amplificadores/clases/s07/S07-3 Amplificadores logaritmico y antilogaritmico - ejercicios.md.tmp.91284.1777941132774",
-    "cursos/2026-1/Amplificadores/clases/s07/attachments/S07-Material.pdf",
-    "cursos/2026-1/Amplificadores/clases/s07/attachments",
-    "cursos/2026-1/Amplificadores/clases/s07",
-    "CLAUDE.md.tmp.86364.1777940155996",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-99 Evaluacion sem 05.md.tmp.86364.1777939937959",
     "docs/extraccion-youtube.md",
     "docs/portal-utp.md",
     "plantillas/Plantilla - Silabo.md",
@@ -228,10 +274,6 @@
     "cursos/2026-1/SeriesTransformadas/clases/s06/S06-4 Tema 06 - Cauchy Ejercicio 1 - contorno triangular.md",
     "cursos/2026-1/SeriesTransformadas/clases/s06/S06-3 Tema 06 - Teorema de Cauchy.md",
     "cursos/2026-1/SeriesTransformadas/clases/s06/S06-2 Tema 06 - Ejercicio 2 - Integral por dos caminos.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-1 Tema 06 - Integral de contorno en funciones complejas.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-99 Evaluacion sem 05.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-5 Tema 05 - Ejercicio 4 (SyT).md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-4 Tema 05 - Ejercicio 3 (SyT).md",
     "Untitled.canvas"
   ]
 }

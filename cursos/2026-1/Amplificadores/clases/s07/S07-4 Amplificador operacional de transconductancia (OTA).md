@@ -19,7 +19,55 @@ date: 2026-05-04
 > [!info] Op-amps especiales
 > Despues de revisar las aplicaciones lineales y no lineales del op-amp **convencional**, el profesor introduce los **op-amps especiales**: el primero es el **OTA** (Operational Transconductance Amplifier).
 
-## Definicion
+## Que es la transconductancia
+
+La **transconductancia** ($g_m$) es el parametro que relaciona la **corriente de salida** de un dispositivo activo con el **voltaje de entrada** que la controla. Su nombre se descompone en:
+
+- *trans-* → entre dos puertos distintos (entrada y salida)
+- *conductancia* → tiene unidades de conductancia ($1/\Omega$ = Siemens)
+
+$$\boxed{g_m \;\equiv\; \left.\frac{\partial I_{salida}}{\partial V_{entrada}}\right|_{V_{salida} = \text{cte}}}$$
+
+| Concepto | Variables | Unidad |
+| -------- | --------- | ------ |
+| **Conductancia** $G$ | $I$ y $V$ del **mismo** par de terminales | S = $1/\Omega$ |
+| **Transconductancia** $g_m$ | $I_{salida}$ vs $V_{entrada}$ (terminales **distintos**) | S = $1/\Omega$ |
+| **Resistencia** $R$ | $V$ y $I$ del mismo par | $\Omega$ |
+| **Transresistencia** $r_m$ | $V_{salida}$ vs $I_{entrada}$ (terminales distintos) | $\Omega$ |
+
+> [!important] Por que importa $g_m$
+> En un amplificador a transistores (BJT, FET o el propio OTA), $g_m$ **mide la capacidad del dispositivo de convertir un voltaje de entrada en una corriente de salida**. Es la magnitud que aparece directamente en la ganancia: $A_v = g_m \cdot R_L$ (ganancia de voltaje cuando la salida se carga con $R_L$) o $A_i = g_m \cdot r_o$ (ganancia de corriente para impedancia $r_o$).
+
+### Transconductancia en distintos dispositivos
+
+| Dispositivo | Formula de $g_m$ | Comentario |
+| ----------- | ---------------- | ---------- |
+| Diodo | $g_m = I_D / V_T$ | $V_T \approx 26$ mV |
+| BJT (region activa) | $g_m = I_C / V_T$ | proporcional a la corriente de colector |
+| MOSFET (saturacion) | $g_m = \sqrt{2\mu_n C_{ox}(W/L) I_D} = 2 I_D / V_{OV}$ | $V_{OV} = V_{GS} - V_{th}$ (overdrive) |
+| Par diferencial bipolar | $g_m = I_{cola} / (2V_T)$ | base del OTA |
+| OTA (LM13700) | $g_m = K \cdot I_{ABC}$ | $K$ ajustado por linealizacion interna |
+
+> [!info] Unidades equivalentes
+> $$1\,\text{S} = 1\,\frac{\text{A}}{\text{V}} = 1\,\Omega^{-1} = 1\,\text{mho} \,(\text{℧, obsoleto})$$
+> Tipicamente se trabaja en mS (milisiemens) o $\mu$S (microsiemens). Por ejemplo: $g_m = 10$ mS significa que **1 mV de entrada produce 10 $\mu$A de salida**.
+
+### Significado fisico
+
+Si $g_m$ es grande:
+- Pequenos cambios en $V_{ent}$ producen grandes cambios en $I_{sal}$ → **dispositivo "sensible"** o de alta ganancia.
+- La impedancia de entrada es **baja vista desde el lado de la corriente** ($1/g_m$ es la resistencia equivalente de pequena senal).
+
+Si $g_m$ es pequena:
+- El dispositivo amplifica poco; util para senales grandes sin distorsion.
+- Mayor linealidad pero menor ganancia.
+
+> [!example] Ejemplo intuitivo
+> Un BJT con $I_C = 1$ mA tiene $g_m = 1\text{mA}/26\text{mV} = 38.5$ mS. Si se carga con $R_C = 5$ k$\Omega$, la ganancia de voltaje es $A_v = g_m R_C = 38.5 \times 5 = 192$. **Toda la ganancia del transistor proviene de su transconductancia.**
+
+---
+
+## Definicion del OTA
 
 El **OTA** (Operational Transconductance Amplifier) es un amplificador diferencial cuya salida es una **corriente** proporcional al voltaje diferencial de entrada, en contraste con el op-amp convencional que entrega un **voltaje** a la salida.
 

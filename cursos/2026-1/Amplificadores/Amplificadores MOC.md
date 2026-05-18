@@ -35,6 +35,11 @@ aliases:
 - [[S07-4 Amplificador operacional de transconductancia (OTA)]]
 - [[S07-5 Integrador y derivador como filtros activos]]
 
+### Semana 8 — Amplificadores realimentados
+
+- [[S08-1 Amplificadores realimentados]]
+- [[S08-2 Realimentacion negativa y realimentacion positiva]]
+
 ## Bibliografia
 
 - Boylestad, R. & Nashelsky, L. *Electronica: Teoria de Circuitos y Dispositivos Electronicos*. Pearson.

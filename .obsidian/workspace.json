@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md",
+                "file": "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S08-1 Amplificadores realimentados"
+              "title": "S09-1 Amplificadores con realimentacion positiva y osciladores"
             }
           },
           {
@@ -120,7 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5
+    "width": 237.5
   },
   "right": {
     "id": "ca23c823690c8229",
@@ -228,24 +228,25 @@
   },
   "active": "5dd537a525e3286c",
   "lastOpenFiles": [
+    "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md.tmp.28812.403993066016",
+    "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md.tmp.28812.c6efa7ae9d3e",
+    "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md.tmp.28812.e9f063612624",
+    "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md.tmp.28812.94ac681d837d",
+    "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md.tmp.28812.d054743525d4",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
+    "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md",
+    "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md",
+    "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md.tmp.28812.e0430fd84464",
+    "cursos/2026-1/Amplificadores/clases/s09",
     "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md.tmp.30788.97d001db75c8",
     "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md.tmp.30788.5d5fff4e1840",
     "cursos/2026-1/Amplificadores/clases/s08/S08-2 Realimentacion negativa y realimentacion positiva.md",
-    "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md",
     "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md.tmp.13264.12595def278e",
     "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md.tmp.13264.6cec2cc49ad6",
-    "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md.tmp.13264.6c8b2bcff5e6",
-    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.13264.0dc22a9aa128",
-    "cursos/2026-1/Amplificadores/clases/s08/S08-2 Realimentacion negativa y realimentacion positiva.md.tmp.13264.d5b8dfe17715",
     "cursos/2026-1/Amplificadores/clases/s06/S06-101 Espejo - Mejoras propuestas al informe LE1.md",
-    "cursos/2026-1/Amplificadores/clases/s08",
     "cursos/2026-1/Amplificadores/clases/s06/S06-99 Laboratorio - LE1 Amplificador operacional.md",
-    "cursos/2026-1/Amplificadores/clases/s06/~WRL1251.tmp",
-    "cursos/2026-1/Amplificadores/clases/s06/~WRD0966.tmp",
-    "cursos/2026-1/Amplificadores/clases/s06/~WRD0950.tmp",
     "cursos/2026-1/Amplificadores/clases/s07/S07-4 Amplificador operacional de transconductancia (OTA).md",
     "cursos/2026-1/Amplificadores/clases/s07/S07-5 Integrador y derivador como filtros activos.md",
-    "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
     "cursos/2026-1/PLC/clases/s07/S07-1 Introduccion a Temporizadores - TON, TOF, TP.md",
     "cursos/2026-1/Amplificadores/clases/s07/S07-3 Amplificadores logaritmico y antilogaritmico - ejercicios.md",
     "cursos/2026-1/Amplificadores/clases/s07/S07-2 Multivibrador astable y generador de onda triangular - ejercicios.md",
@@ -273,7 +274,6 @@
     "cursos/2026-1/SeriesTransformadas/clases/s06/S06-99 PA03 sem 06.md",
     "cursos/2026-1/SeriesTransformadas/clases/s06/S06-6 Tema 06 - Teorema de extension de Cauchy.md",
     "cursos/2026-1/SeriesTransformadas/clases/s06/S06-5 Tema 06 - Cauchy Ejercicio 2 - circle via Green.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-4 Tema 06 - Cauchy Ejercicio 1 - contorno triangular.md",
     "Untitled.canvas"
   ]
 }

@@ -375,13 +375,13 @@ Y la condición de fase exige que **$Z_1$ y $Z_2$ tengan el mismo tipo de reacta
 
 ###### Tabla de configuraciones clásicas
 
-| Configuración           | $Z_1$ (BE)              | $Z_2$ (CE)              | $Z_3$ (BC)                    | $f_0$                                                  |
-| ----------------------- | ----------------------- | ----------------------- | ----------------------------- | ------------------------------------------------------ |
-| **Hartley**             | $L_1$                   | $L_2$                   | $C$                           | $\dfrac{1}{2\pi\sqrt{(L_1+L_2+2M)\,C}}$                |
-| **Colpitts**            | $C_1$                   | $C_2$                   | $L$                           | $\dfrac{1}{2\pi\sqrt{L\,\frac{C_1 C_2}{C_1+C_2}}}$     |
-| **Clapp**               | $C_1$                   | $C_2$                   | $L$ **en serie con** $C_3$    | $\dfrac{1}{2\pi\sqrt{L\,\left(\frac{1}{C_1}+\frac{1}{C_2}+\frac{1}{C_3}\right)^{-1}}}$ |
-| **Sintonizado-sintonizado** | $L_1 \parallel C_1$ (tanque) | $L_2 \parallel C_2$ (tanque) | $C_M$ (Miller del transistor) o nada | dos tanques en resonancia, acoplados por $C_M$         |
-| **Armstrong**           | $L_1$                   | $L_2 \parallel C$ (tanque) | acoplamiento mutuo $M$ (no es $Z$ pura) | $\dfrac{1}{2\pi\sqrt{L_2 C}}$                          |
+| Configuración               | $Z_1$ (BE)                   | $Z_2$ (CE)                   | $Z_3$ (BC)                              | $f_0$                                                                                  |
+| --------------------------- | ---------------------------- | ---------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------- |
+| **Hartley**                 | $L_1$                        | $L_2$                        | $C$                                     | $\dfrac{1}{2\pi\sqrt{(L_1+L_2+2M)\,C}}$                                                |
+| **Colpitts**                | $C_1$                        | $C_2$                        | $L$                                     | $\dfrac{1}{2\pi\sqrt{L\,\frac{C_1 C_2}{C_1+C_2}}}$                                     |
+| **Clapp**                   | $C_1$                        | $C_2$                        | $L$ **en serie con** $C_3$              | $\dfrac{1}{2\pi\sqrt{L\,\left(\frac{1}{C_1}+\frac{1}{C_2}+\frac{1}{C_3}\right)^{-1}}}$ |
+| **Sintonizado-sintonizado** | $L_1 \parallel C_1$ (tanque) | $L_2 \parallel C_2$ (tanque) | $C_M$ (Miller del transistor) o nada    | dos tanques en resonancia, acoplados por $C_M$                                         |
+| **Armstrong**               | $L_1$                        | $L_2 \parallel C$ (tanque)   | acoplamiento mutuo $M$ (no es $Z$ pura) | $\dfrac{1}{2\pi\sqrt{L_2 C}}$                                                          |
 
 > [!tip] Cómo leer la tabla
 > - **Hartley** = L, L, C → divisor inductivo, realimentación capacitiva.

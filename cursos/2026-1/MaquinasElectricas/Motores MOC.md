@@ -83,18 +83,41 @@ aliases:
 
 ### Semana 7
 
-> [!info] Pendiente
-> Circuito equivalente exacto y aproximado del transformador real. Ensayo de vacio y cortocircuito.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S07-0 Introducción - Transformador real\|Introduccion - Transformador real]] | introduccion |
+| 1 | [[S07-1 Tema 01 - Circuito equivalente exacto y aproximado del transformador real\|Circuito equivalente exacto y aproximado del trafo real]] | clase |
+| 2 | [[S07-2 Ejercicio resuelto - Circuito equivalente del transformador real (Video)\|Ejercicio resuelto - Circuito equivalente del trafo real]] | ejercicio |
+| 3 | [[S07-3 Tema 02 - Ensayo de vacío y de cortocircuito de un transformador real\|Ensayo de vacio y cortocircuito]] | clase |
+| 4 | [[S07-4 Ejercicio resuelto - Ensayos del transformador (Video)\|Ejercicio resuelto - Ensayos del trafo]] | ejercicio |
+| 8 | [[S07-8 Conclusiones semana 07\|Conclusiones semana 07]] | clase |
+| 99 | [[S07-99 Evaluación Semana 07 - Cuestionario de autoevaluación\|Cuestionario de autoevaluacion]] | cuestionario |
 
 ### Semana 8
 
-> [!info] Pendiente
-> Determinacion de parametros del transformador real. Eficiencia y regulacion. Diagrama fasorial.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S08-0 Introducción - Pérdidas, eficiencia y regulación\|Introduccion - Perdidas, eficiencia y regulacion]] | introduccion |
+| 1 | [[S08-1 Tema 01 - Determinación de los parámetros del transformador\|Determinacion de los parametros del transformador]] | clase |
+| 2 | [[S08-2 Tema 02 - Eficiencia y regulación del transformador real\|Eficiencia y regulacion del transformador real]] | clase |
+| 3 | [[S08-3 Ejercicio resuelto - Eficiencia y regulación (Video)\|Ejercicio resuelto - Eficiencia y regulacion]] | ejercicio |
+| 4 | [[S08-4 Tema 03 - Diagrama fasorial\|Diagrama fasorial]] | clase |
+| 5 | [[S08-5 Tema 04 - El autotransformador\|El autotransformador]] | clase |
+| 8 | [[S08-8 Conclusiones semana 08\|Conclusiones semana 08]] | clase |
+| 99 | [[S08-99 Evaluación Semana 08 - PA Práctica Aplicada\|🔴 PA - Practica Aplicada (AC-S08)]] | pa |
 
 ### Semana 9
 
-> [!info] Pendiente
-> Transformador trifasico. Circuito equivalente aproximado.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S09-0 Introducción - Transformador trifásico\|Introduccion - Transformador trifasico]] | introduccion |
+| 1 | [[S09-1 Tema 01 - El transformador trifásico\|El transformador trifasico (conexiones)]] | clase |
+| 2 | [[S09-2 Ejercicio resuelto - Transformador trifásico (Video)\|Ejercicio resuelto - Trafo trifasico 4 conexiones]] | ejercicio |
+| 3 | [[S09-3 Tema 02 - Circuito equivalente aproximado del transformador trifásico\|Circuito equivalente aproximado e indice horario]] | clase |
+| 4 | [[S09-4 Ejercicio resuelto - Circuito equivalente trifásico (Video)\|Ejercicio resuelto - Circuito equivalente trifasico]] | ejercicio |
+| 8 | [[S09-8 Conclusiones semana 09\|Conclusiones semana 09]] | clase |
+| 98 | [[S09-98 Indicaciones - Práctica Calificada 2\|Indicaciones y Rubrica PC2]] | rubrica |
+| 99 | [[S09-99 Evaluación Semana 09 - PC2 Práctica Calificada 2\|🔴 PC2 - Practica Calificada 2 (AC-S09)]] | pc |
 
 ---
 

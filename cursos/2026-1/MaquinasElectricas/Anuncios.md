@@ -262,3 +262,118 @@ Imágenes en [anuncios-attachments/](anuncios-attachments/).
 > **Dominaron el reactor con núcleo de hierro y el transformador ideal:** aprendieron a interpretar las curvas experimentales de magnetización y pérdidas, y a construir el circuito equivalente del reactor con sus parámetros: resistencia del devanado, reactancia de dispersión y rama de magnetización. Conocen los materiales magnéticos utilizados en núcleos (acero al silicio, ferritas, nanocristal). Pero lo más valioso es que ya manejan el modelo del transformador monofásico ideal, aplicando la relación de transformación para calcular tensiones, corrientes e impedancias reflejadas.
 >
 > Este conocimiento es la base para analizar cualquier transformador real y para comprender el acoplamiento magnético en motores y generadores.
+
+## 2026-05-04 12:00 AM — Bienvenido a la Semana 7 (parte 1)
+
+![[2026-05-04_Diapositiva13.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 7 – Marzo 26**
+>
+> Estimado(a) estudiante:
+>
+> Recibe la más cordial bienvenida al curso de Máquinas Eléctricas Estáticas y Rotativas. El estudiante analizará las características eléctricas y el comportamiento de las máquinas eléctricas estáticas y rotativas, mediante el análisis teórico y uso de software especializado.
+>
+> Esta semana desarrollaremos los temas:
+> - Circuito equivalente exacto y aproximado del transformador real y aproximado del transformador real.
+> - Ensayo de vacío y de cortocircuito de un transformador real.
+>
+> Actividades y evaluaciones:
+> - Revisión de los materiales explicativos de la semana.
+>
+> **Logro de aprendizaje:** El estudiante será capaz de representar el transformador real mediante sus circuitos equivalentes exacto y aproximado, y determinar sus parámetros característicos a partir de los ensayos de vacío y cortocircuito.
+>
+> **Utilidad e importancia:** Los ensayos de vacío y cortocircuito son las pruebas estándar para caracterizar cualquier transformador. El ingeniero debe interpretar correctamente sus resultados para mejorar la eficiencia y regulación de tensión.
+
+## 2026-05-08 12:00 AM — Bienvenido a la Semana 7 (parte 2)
+
+![[2026-05-08_Diapositiva14.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 7 – Marzo 26** (continuación)
+>
+> Estimado(a) estudiante:
+>
+> Excelente trabajo esta semana, estudiantes. Han dado el paso del transformador ideal al real, aprendiendo a representar sus imperfecciones mediante circuitos equivalentes y a determinar sus parámetros mediante ensayos estandarizados.
+>
+> **Dominaron el circuito equivalente y los ensayos del transformador:** aprendieron a construir el circuito equivalente exacto del transformador real, con todos sus parámetros referidos al primario o secundario, y a utilizar el circuito aproximado para simplificar análisis sin perder precisión significativa. Pero lo más valioso es que ya realizan mentalmente los ensayos de vacío (para determinar pérdidas en el núcleo y rama de magnetización) y de cortocircuito (para determinar pérdidas en el cobre e impedancia serie), calculando los parámetros a partir de las mediciones.
+>
+> Este conocimiento es fundamental para la selección, operación y mantenimiento de transformadores en aplicaciones industriales. Han aprendido a obtener de la práctica los datos que necesita la teoría.
+
+## 2026-05-11 12:00 AM — Bienvenido a la Semana 8 (parte 1)
+
+![[2026-05-11_Diapositiva15.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 8 – Marzo 26**
+>
+> Estimado(a) estudiante:
+>
+> Recibe la más cordial bienvenida al curso de Máquinas Eléctricas Estáticas y Rotativas. El estudiante analizará las características eléctricas y el comportamiento de las máquinas eléctricas estáticas y rotativas, mediante el análisis teórico y uso de software especializado.
+>
+> Esta semana desarrollaremos los temas:
+> - Determinación de los parámetros de un transformador real.
+> - Determinación de la eficiencia y regulación de un transformador.
+> - Diagrama fasorial.
+>
+> Actividades y evaluaciones:
+> - Revisión de los materiales explicativos de la semana.
+>
+> **Logro de aprendizaje:** El estudiante será capaz de calcular los parámetros del transformador a partir de ensayos, determinar su eficiencia y regulación para diferentes condiciones de carga, y construir e interpretar el diagrama fasorial correspondiente.
+>
+> **Utilidad e importancia:** La eficiencia y regulación son los indicadores de desempeño más importantes de un transformador. El ingeniero debe calcularlos correctamente para evaluar su comportamiento bajo distintas cargas y garantizar la calidad de suministro a sus equipos.
+
+## 2026-05-15 12:00 AM — Bienvenido a la Semana 8 (parte 2)
+
+![[2026-05-15_Diapositiva16.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 8 – Marzo 26** (continuación)
+>
+> Estimado(a) estudiante:
+>
+> Excelente trabajo esta semana, estudiantes. Han alcanzado el punto culminante del análisis del transformador: determinar sus parámetros a partir de ensayos, calcular su eficiencia y regulación, y visualizar su comportamiento mediante diagramas fasoriales.
+>
+> **Dominaron el cálculo de parámetros, eficiencia y regulación:** aprendieron a calcular los parámetros del transformador (resistencia equivalente, reactancia de dispersión, conductancia y susceptancia de magnetización) a partir de los ensayos de vacío y cortocircuito. Determinaron la eficiencia para diferentes condiciones de carga y la regulación de tensión para factores de potencia inductivos, capacitivos y resistivos. Pero lo más valioso es que ya construyen e interpretan el diagrama fasorial del transformador con carga, visualizando la caída de tensión y el desfase entre tensiones y corrientes.
+>
+> Este conocimiento es esencial para seleccionar transformadores y garantizar un suministro de calidad en cualquier aplicación.
+
+## 2026-05-20 8:55 PM — Sobre examen (PA) de la Semana 8
+
+> Estimados estudiantes, reciban un cordial saludo.
+>
+> Espero estén teniendo un excelente día. Para aclarar sobre la práctica de la semana 8 y dejar un precedente. Después de revisar exhaustivamente y verificar las fuentes respectivas (capítulos sobre transformadores en el libro de máquinas eléctricas del autor Stephen J. Chapman 3rd y también el libro de A. E. Fitzgerald 6th para mayores referencias), además de un pequeño inconveniente en la plataforma. Se llega a la conclusión de que la **respuesta correcta en la pregunta 4 era: Corriente magnética y corriente de pérdida**. Ya que no se pueden modificar prácticas que ya se han evaluado en la plataforma, lo que se hará es manejarlo internamente en el registro ya que esta nota se usará para un promedio al final del ciclo. Así que se verificará a los que han acertado la pregunta y se les subirá sus 4 puntos respectivos.
+>
+> Eso sería todo lo que se tiene que informar les deseo un feliz fin de semana y suerte en sus exámenes.
+
+## 2026-05-18 12:00 AM — Bienvenido a la Semana 9 (parte 1)
+
+![[2026-05-18_Diapositiva17.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 9 – Marzo 26**
+>
+> Estimado(a) estudiante:
+>
+> Recibe la más cordial bienvenida al curso de Máquinas Eléctricas Estáticas y Rotativas. El estudiante analizará las características eléctricas y el comportamiento de las máquinas eléctricas estáticas y rotativas, mediante el análisis teórico y uso de software especializado.
+>
+> Esta semana desarrollaremos los temas:
+> - Transformador trifásico. Circuito equivalente aproximado.
+> - Evaluación.
+>
+> Actividades y evaluaciones:
+> - Revisión de los materiales explicativos de la semana.
+> - **PRÁCTICA CALIFICADA 2.**
+>
+> **Logro de aprendizaje:** El estudiante será capaz de identificar las configuraciones de conexión de transformadores trifásicos, analizar su circuito equivalente aproximado por fase, y determinar sus parámetros característicos a partir de ensayos en condiciones trifásicas.
+>
+> **Utilidad e importancia:** El ingeniero debe comprender las implicancias de cada tipo de conexión, el desplazamiento angular y el comportamiento por fase para seleccionar, operar y mantener adecuadamente los transformadores que alimentan plantas concentradoras.
+
+## 2026-05-22 12:00 AM — Bienvenido a la Semana 9 (parte 2)
+
+![[2026-05-22_Diapositiva18.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 9 – Marzo 26** (continuación)
+>
+> Estimado(a) estudiante:
+>
+> Excelente trabajo esta semana, estudiantes. Han dado el salto al mundo real de la distribución eléctrica industrial, donde los transformadores trifásicos son los protagonistas.
+>
+> **Dominaron el transformador trifásico y su análisis por fase:** aprendieron a diferenciar las configuraciones de conexión (estrella-estrella, estrella-delta, delta-estrella, delta-delta), identificando ventajas, desventajas y aplicaciones de cada una. Comprendieron el concepto de desplazamiento angular y los índices horarios. Pero lo más valioso es que ya aplican el circuito equivalente aproximado por fase, adaptando el modelo monofásico al análisis trifásico y determinando parámetros a partir de ensayos trifásicos.
+>
+> Este conocimiento es fundamental para trabajar con sistemas de potencia reales. Han aprendido a analizar el transformador trifásico, el corazón de toda subestación eléctrica industrial.

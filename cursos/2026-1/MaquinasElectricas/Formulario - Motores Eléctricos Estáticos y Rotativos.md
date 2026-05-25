@@ -485,3 +485,277 @@ $$\mathbf{Z}_L^{\prime} = \frac{\mathbf{V}_P}{\mathbf{I}_P} = \frac{a\,\mathbf{V
 > [!info] Regla de los puntos (dot convention)
 > - Polaridad de voltaje: el extremo marcado del primario y el extremo marcado del secundario son positivos en simultáneo.
 > - Corriente: si entra al punto del primario, **sale** por el punto del secundario.
+
+---
+
+## 17. Transformador Real — Circuito Equivalente
+Fuente: [[S07-1 Tema 01 - Circuito equivalente exacto y aproximado del transformador real|S07-1 Circuito equivalente exacto y aproximado del trafo real]]
+
+### Flujos totales y flujos de dispersión
+$$\Phi_1 = \Phi + \Phi_{d1} \hspace{0.5cm};\hspace{0.5cm} \Phi_2 = \Phi + \Phi_{d2}$$
+
+### Coeficientes de autoinducción de dispersión
+$$L_{d1} = N_1 \, \frac{d\Phi_{d1}}{di_1} \hspace{0.5cm};\hspace{0.5cm} L_{d2} = N_2 \, \frac{d\Phi_{d2}}{di_2}$$
+
+### Reactancias de dispersión
+$$X_1 = L_{d1} \, \omega \hspace{0.5cm};\hspace{0.5cm} X_2 = L_{d2} \, \omega$$
+
+### Ecuaciones de Kirchhoff (fasoriales)
+$$\mathbf{V}_1 = \mathbf{E}_1 + R_1 \, \mathbf{I}_1 + jX_1 \, \mathbf{I}_1$$
+$$\mathbf{V}_2 = \mathbf{E}_2 - R_2 \, \mathbf{I}_2 - jX_2 \, \mathbf{I}_2$$
+
+### F.e.m. inducidas (valores eficaces)
+$$E_1 = 4{,}44 \cdot f \cdot N_1 \cdot \Phi_m \hspace{0.5cm};\hspace{0.5cm} E_2 = 4{,}44 \cdot f \cdot N_2 \cdot \Phi_m$$
+
+### Reducción al primario (transformador equivalente con $N'_2 = N_1$)
+| Magnitud | Real | Equivalente |
+| -------- | ---- | ----------- |
+| Voltaje  | $E_2$, $V_2$ | $E'_2 = a \cdot E_2$, $V'_2 = a \cdot V_2$ |
+| Corriente | $I_2$ | $I'_2 = I_2 / a$ |
+| Resistencia | $R_2$ | $R'_2 = a^2 \cdot R_2$ |
+| Reactancia | $X_2$ | $X'_2 = a^2 \cdot X_2$ |
+| Impedancia | $Z_L$ | $\mathbf{Z}'_L = a^2 \cdot \mathbf{Z}_L$ |
+
+### Impedancia de cortocircuito (circuito equivalente aproximado)
+$$\boxed{R_{cc} = R_1 + R'_2 \hspace{0.4cm};\hspace{0.4cm} X_{cc} = X_1 + X'_2}$$
+
+Para transformadores grandes ($X_{cc} \gg R_{cc}$) suele usarse solo $X_{cc}$.
+
+---
+
+## 18. Ensayo de Vacío
+Fuente: [[S07-3 Tema 02 - Ensayo de vacío y de cortocircuito de un transformador real|S07-3 Ensayo de vacío y cortocircuito]]
+
+### Condición de medida
+Primario alimentado a $V_{1n}$, secundario en circuito abierto. Se miden $P_0$, $I_0$, $V_{20}$.
+
+### Pérdidas en el hierro
+$$P_0 \approx P_{Fe}$$
+
+### Factor de potencia en vacío
+$$P_0 = V_{1n} \cdot I_0 \cdot \cos\varphi_0$$
+
+### Componentes de la corriente de vacío
+$$I_{Fe} = I_0 \cos\varphi_0 \hspace{0.5cm};\hspace{0.5cm} I_\mu = I_0 \sin\varphi_0$$
+
+### Parámetros de la rama paralela
+$$R_{Fe} = \frac{V_1}{I_{Fe}} \hspace{0.5cm};\hspace{0.5cm} X_\mu = \frac{V_1}{I_\mu}$$
+
+Forma alterna directa con $P_0$:
+$$R_{Fe} = \frac{V_{1n}^2}{P_0}$$
+
+### Relación de transformación
+$$a = \frac{N_1}{N_2} = \frac{E_1}{E_2} = \frac{V_{1n}}{V_{20}}$$
+
+---
+
+## 19. Ensayo de Cortocircuito
+Fuente: [[S07-3 Tema 02 - Ensayo de vacío y de cortocircuito de un transformador real|S07-3 Ensayo de vacío y cortocircuito]]
+
+### Condición de medida
+Secundario cortocircuitado, $V_1$ se eleva desde 0 hasta que $I_1 = I_{1n}$. Se miden $V_{1cc}$, $I_{1cc}=I_{1n}$, $P_{cc}$.
+
+### Pérdidas en el cobre
+$$P_{cc} \approx P_{Cu}$$
+
+### Impedancia de cortocircuito
+$$Z_{cc} = \frac{V_{1cc}}{I_{1n}}$$
+
+### Resistencia de cortocircuito
+$$R_{cc} = \frac{P_{cc}}{I_{1n}^{\,2}}$$
+
+### Reactancia de cortocircuito
+$$X_{cc} = \sqrt{Z_{cc}^{\,2} - R_{cc}^{\,2}}$$
+
+### Factor de potencia en cortocircuito
+$$\cos\varphi_{cc} = \frac{P_{cc}}{V_{1cc} \cdot I_{1n}}$$
+
+### Caídas de tensión (diagrama vectorial)
+$$V_{R_{cc}} = R_{cc} \, I_{1n} = V_{1cc} \cos\varphi_{cc}$$
+$$V_{X_{cc}} = X_{cc} \, I_{1n} = V_{1cc} \sin\varphi_{cc}$$
+
+### Reparto entre primario y secundario (referidos al primario)
+$$R_1 = R'_2 = \frac{R_{cc}}{2} \hspace{0.5cm};\hspace{0.5cm} X_1 = X'_2 = \frac{X_{cc}}{2}$$
+
+### Conversión a magnitudes nominales (si el ensayo no se hizo con $I_{1n}$)
+$$V_{1cc} = V_{1corto} \cdot \frac{I_{1n}}{I_{1corto}} \hspace{0.4cm};\hspace{0.4cm} P_{cc} = P_{corto} \cdot \frac{I_{1n}^{\,2}}{I_{1corto}^{\,2}}$$
+
+---
+
+## 20. Tensión de Cortocircuito Porcentual y Corriente de Falta
+Fuente: [[S07-3 Tema 02 - Ensayo de vacío y de cortocircuito de un transformador real|S07-3 Ensayo de vacío y cortocircuito]]
+
+### Tensión relativa de cortocircuito
+$$\boxed{\varepsilon_{cc} = \frac{V_{1cc}}{V_{1n}} \cdot 100}$$
+
+### Componentes resistiva y reactiva
+$$\varepsilon_{R_{cc}} = \frac{V_{R_{cc}}}{V_{1n}} \cdot 100 \hspace{0.5cm};\hspace{0.5cm} \varepsilon_{X_{cc}} = \frac{V_{X_{cc}}}{V_{1n}} \cdot 100$$
+
+### Corriente de cortocircuito de falta (cortocircuito accidental con $V_{1n}$ aplicada)
+$$I_{1falta} = \frac{V_{1n}}{Z_{cc}}$$
+
+Expresión equivalente:
+$$\boxed{I_{1falta} = \frac{100}{\varepsilon_{cc}} \cdot I_{1n}}$$
+
+### Valores típicos de $\varepsilon_{cc}$
+| Capacidad | $\varepsilon_{cc}$ |
+| --------- | ------------------ |
+| $< 1000\,\text{kVA}$ (distribución) | 1 % – 6 % |
+| $> 1000\,\text{kVA}$ | 6 % – 13 % |
+
+Por lo general $\varepsilon_{X_{cc}} > \varepsilon_{R_{cc}}$ porque $X_{cc} \gg R_{cc}$.
+
+---
+
+## 21. Admitancia de Excitación (Forma Chapman)
+Fuente: [[S08-1 Tema 01 - Determinación de los parámetros del transformador|S08-1 Determinacion de los parametros del transformador]]
+
+### Conductancia y susceptancia
+$$G_{Fe} = \frac{1}{R_{Fe}} \hspace{0.5cm};\hspace{0.5cm} B_\mu = \frac{1}{X_\mu}$$
+
+### Admitancia de excitación
+$$\mathbf{Y}_E = G_{Fe} - jB_\mu = \frac{1}{R_{Fe}} - j\,\frac{1}{X_\mu}$$
+
+### Cálculo desde el ensayo de vacío
+$$|\mathbf{Y}_E| = \frac{I_0}{V_0} \hspace{0.5cm};\hspace{0.5cm} \angle\mathbf{Y}_E = -\cos^{-1}\!\left(\frac{P_0}{V_0 \cdot I_0}\right)$$
+
+### Impedancia serie desde el ensayo de cortocircuito
+$$|\mathbf{Z}_{serie}| = \frac{V_{cc}}{I_{cc}} \hspace{0.5cm};\hspace{0.5cm} \angle\mathbf{Z}_{serie} = +\cos^{-1}\!\left(\frac{P_{cc}}{V_{cc} \cdot I_{cc}}\right)$$
+
+$$\mathbf{Z}_{serie} = R_{eq} + jX_{eq}$$
+
+### Descomposición aproximada (criterio de Chapman)
+$$\mathbf{Z}_{serie} = (R_1 + a^2 R_2) + j(X_1 + a^2 X_2)$$
+
+Con reparto igualitario: $R_1 = a^2 R_2 = R_{eq}/2$, $X_1 = a^2 X_2 = X_{eq}/2$.
+
+---
+
+## 22. Regulación de Voltaje y Eficiencia
+Fuente: [[S08-2 Tema 02 - Eficiencia y regulación del transformador real|S08-2 Eficiencia y regulacion del transformador real]]
+
+### Regulación de voltaje (RV)
+$$\boxed{RV = \frac{V_P/a - V_S}{V_S} \cdot 100\,\%}$$
+
+Donde:
+- $V_P/a$ = tensión que entregaría el secundario si el transformador fuera ideal.
+- $V_S$ = tensión real en el secundario a plena carga.
+
+### Ecuación exacta (todo referido al secundario)
+$$\frac{\mathbf{V}_P}{a} = \mathbf{V}_S + R_{eq}\,\mathbf{I}_S + jX_{eq}\,\mathbf{I}_S$$
+
+### Eficiencia del transformador
+$$\eta = \frac{P_{sal}}{P_{ent}} \cdot 100\,\% = \frac{P_{sal}}{P_{sal} + P_{perdida}} \cdot 100\,\%$$
+
+$$\boxed{\eta = \frac{V_S \, I_S \, \cos\theta}{V_S \, I_S \, \cos\theta + P_{Cu} + P_{nucleo}} \cdot 100\,\%}$$
+
+### Pérdidas
+| Tipo | Origen | Se obtiene de |
+| ---- | ------ | ------------- |
+| $P_{Cu} = I^2 R$ | Resistencias del devanado | Ensayo cortocircuito ($P_{cc}$) |
+| $P_{histeresis}$ | Ciclo $B$–$H$ del núcleo | Ensayo vacío ($P_0$) |
+| $P_{Foucault}$ | Corrientes parásitas en chapas | Ensayo vacío ($P_0$) |
+
+### Comportamiento de la RV según FP de la carga
+| FP | $V_P/a$ vs $V_S$ | Signo de RV |
+| -- | ---------------- | ----------- |
+| Inductivo (retraso) | $V_P/a \gg V_S$ | Positiva grande |
+| Resistivo (FP = 1) | $V_P/a > V_S$ | Positiva moderada |
+| Capacitivo (adelanto) | $V_P/a \lessgtr V_S$ | Pequeña o **negativa** |
+
+---
+
+## 23. El Autotransformador
+Fuente: [[S08-5 Tema 04 - El autotransformador|S08-5 El autotransformador]]
+
+### Relación de espiras (devanado común y devanado serie)
+$$\frac{V_C}{V_{SE}} = \frac{N_C}{N_{SE}} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} N_C \cdot I_C = N_{SE} \cdot I_{SE}$$
+
+### Voltajes y corrientes terminales
+| Lado | Voltaje | Corriente |
+| ---- | ------- | --------- |
+| Baja (L) | $V_L = V_C$ | $I_L = I_C + I_{SE}$ |
+| Alta (H) | $V_H = V_C + V_{SE}$ | $I_H = I_{SE}$ |
+
+Donde:
+- $V_C$ = voltaje en el devanado común (aparece en ambos lados)
+- $V_{SE}$ = voltaje en el devanado en serie
+- $I_C$, $I_{SE}$ = corrientes en los devanados común y en serie
+
+> [!info] Sin aislamiento galvánico
+> A diferencia del transformador convencional, el autotransformador tiene **conexión eléctrica directa** entre primario y secundario. Es más compacto y económico, pero **no aísla** los dos lados.
+
+---
+
+## 24. Transformador Trifásico — Conexiones
+Fuente: [[S09-1 Tema 01 - El transformador trifásico|S09-1 El transformador trifasico]]
+
+### Potencia aparente trifásica
+$$S = \sqrt{3} \cdot V_L \cdot I_L = 3 \cdot V_\phi \cdot I_\phi$$
+
+### Relaciones entre fase y línea
+| Conexión | $V_L$ vs $V_\phi$ | $I_L$ vs $I_\phi$ |
+| -------- | ----------------- | ----------------- |
+| **Y** (estrella) | $V_L = \sqrt{3}\,V_\phi$ | $I_L = I_\phi$ |
+| **Δ** (triángulo) | $V_L = V_\phi$ | $I_L = \sqrt{3}\,I_\phi$ |
+
+### Relación de transformación de línea según conexión
+| Conexión | $V_{LP}/V_{LS}$ | Desfase |
+| -------- | ---------------- | ------- |
+| **Y–Y** | $a$ | 0° |
+| **Y–Δ** | $\sqrt{3} \cdot a$ | 30° |
+| **Δ–Y** | $a/\sqrt{3}$ | 30° |
+| **Δ–Δ** | $a$ | 0° |
+
+Donde $a = N_{\phi P}/N_{\phi S}$ es la **relación por fase**.
+
+### Ventajas y desventajas
+| Conexión | Ventajas | Desventajas |
+| -------- | -------- | ----------- |
+| Y–Y | Sencilla, ambos lados con neutro | Problemas con 3.er armónico y cargas desbalanceadas |
+| Y–Δ | Robusta frente a armónicos y desbalances | Desfase 30°, sin neutro secundario |
+| Δ–Y | Robusta + permite neutro secundario | Desfase 30° |
+| Δ–Δ | Sin desfase, robusta | Sin neutro accesible |
+
+---
+
+## 25. Circuito Equivalente Trifásico — Índice Horario
+Fuente: [[S09-3 Tema 02 - Circuito equivalente aproximado del transformador trifásico|S09-3 Circuito equivalente aproximado e indice horario]]
+
+### Análisis por fase (mismas fórmulas que el monofásico)
+$$a = \frac{N_{\phi P}}{N_{\phi S}} = \frac{E_{\phi P}}{E_{\phi S}}$$
+
+Cada fase es un transformador monofásico equivalente con los parámetros $R_{cc}$, $X_{cc}$, $R_{Fe}$, $X_\mu$ aplicables por fase.
+
+### Reflexión de impedancia externa al primario (por fase)
+$$\mathbf{Z}' = m^2 \cdot \mathbf{Z}$$
+
+Con $m = V_{\phi P}/V_{\phi S}$.
+
+### Caída relativa de tensión de cortocircuito (por fase)
+$$\varepsilon_{cc} = \frac{Z_{cc} \cdot I_{\phi}}{V_{\phi}} \cdot 100\,\% \hspace{0.5cm};\hspace{0.5cm} \varepsilon_{X_{cc}} = \frac{X_{cc} \cdot I_{\phi}}{V_{\phi}} \cdot 100\,\%$$
+
+Despejando los parámetros:
+$$Z_{cc} = \frac{\varepsilon_{cc} \cdot V_{\phi}}{I_{\phi}} \hspace{0.5cm};\hspace{0.5cm} X_{cc} = \frac{\varepsilon_{X_{cc}} \cdot V_{\phi}}{I_{\phi}} \hspace{0.5cm};\hspace{0.5cm} R_{cc} = \sqrt{Z_{cc}^{\,2} - X_{cc}^{\,2}}$$
+
+### Índice horario (grupo de conexión)
+**Notación:** `Xy<n>` — primera letra = primario (mayúscula), segunda = secundario (minúscula), $n$ = desfase / 30°.
+
+| Grupo | Símbolo | Desfase |
+| ----- | ------- | ------- |
+| 0 | Dd0, Yy0 | 0° |
+| 5 | Dy5, Yd5 | 150° |
+| 6 | Dd6, Yy6 | 180° |
+| 11 | Dy11, Yd11 | 330° (= −30°) |
+
+> [!info] Compatibilidad para puesta en paralelo
+> Dos transformadores trifásicos en paralelo deben tener **el mismo índice horario** para no producir corrientes circulantes destructivas.
+
+### Procedimiento general para problemas trifásicos
+1. Calcular $m$ con voltajes **de fase** y corrientes **de fase**.
+2. Pasar $\varepsilon_{cc}$, $\varepsilon_{X_{cc}}$ a Ω.
+3. Reflejar impedancias externas (línea, carga) al primario con $m^2$.
+4. Resolver el circuito **por una fase** como si fuera monofásico.
+5. Convertir las tensiones de fase del primario al lado real del secundario:
+   - **Secundario en Y:** $V_L = (V'_\phi / m) \cdot \sqrt{3}$
+   - **Secundario en Δ:** $V_L = V'_\phi / m$

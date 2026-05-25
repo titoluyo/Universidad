@@ -69,3 +69,33 @@ aliases:
 - [[S06-6 Tema 06 - Teorema de extension de Cauchy|Teorema de extensión de Cauchy (deformación de contornos, singularidades)]]
 - [[S06-98 PA03 Enunciados|PA03 — Enunciados de los 5 ejercicios]]
 - [[S06-99 PA03 sem 06|Participación Académica 3 (PA03) — metadatos y consigna]]
+
+## Semana 7 — Aplicación del teorema de Cauchy (fórmula integral) y PC1
+
+- [[S07-0 Tema 01 - Relacion del teorema de Cauchy y una integral|Lectura — Fórmula integral de Cauchy y su generalización]]
+- [[S07-1 Tema 01 - Aplicacion Caso 1 - integral con factor lineal|Caso 1 — dos singularidades simples ($\oint (z^2+1)/(z(2z+1)) dz$)]]
+- [[S07-2 Tema 01 - Aplicacion Caso 2 - formula generalizada (derivadas)|Caso 2 — derivación de la fórmula generalizada (polo orden 2)]]
+- [[S07-3 Tema 01 - Aplicacion Caso 3 - fracciones parciales|Caso 3 — fracciones parciales ($\oint (\sin\pi z^2 + \cos\pi z^2)/((z-1)(z-2)) dz$)]]
+- [[S07-4 Tema 01 - Aplicacion Caso 4 - formula generalizada e2z|Caso 4 — fórmula generalizada con $e^{2z}$ (polo orden 4)]]
+- [[S07-5 Conclusiones semana 07|Cierre semana 07]]
+- [[S07-98 PC1 Enunciados|PC1 — Enunciados (no rendido)]]
+- [[S07-99 PC1 sem 07|Práctica Calificada 1 (PC01) — metadatos y consigna]]
+
+## Semana 8 — Series de potencias en complejos y criterio del cociente
+
+- [[S08-0 Tema 01 - Series de potencias en complejos|Teoría — Series de potencias y criterio del cociente]]
+- [[S08-1 Tema 01 - Convergencia Ej1 - serie geometrica con (z+2)|Ej 1 — $R = 4$, centro $z_0 = -2$]]
+- [[S08-2 Tema 01 - Convergencia Ej2 - serie del seno|Ej 2 — $R = \infty$, serie del $\sin z$]]
+- [[S08-3 Tema 01 - Convergencia Ej3 - exponencial alternante|Ej 3 — $R = \infty$, tipo exponencial]]
+- [[S08-4 Tema 01 - Convergencia Ej4 - polinomial n(n+1)|Ej 4 — $R = 1$, polinomial $n(n+1)$]]
+- [[S08-5 Conclusiones semana 08|Cierre semana 08]]
+- [[S08-99 Evaluacion sem 08|Evaluación no calificada — Cuestionario]]
+
+## Semana 9 — Series de Taylor en números complejos
+
+- [[S09-0 Tema 01 - Series de Taylor en numeros complejos|Teoría — Series de Taylor y procedimiento]]
+- [[S09-1 Tema 01 - Taylor Ej1 - logaritmo neperiano de (1+z)|Ej 1 — $\ln(1+z)$ en $z_0 = 0$]]
+- [[S09-2 Tema 01 - Taylor Ej2 - logaritmo de (1+z) sobre (1-z)|Ej 2 — $\ln\!\left(\dfrac{1+z}{1-z}\right)$ vía propiedad de logaritmos]]
+- [[S09-3 Tema 01 - Taylor Ej3 - sen(z) alrededor de pi cuartos|Ej 3 — $\sin z$ alrededor de $z_0 = \pi/4$]]
+- [[S09-4 Conclusiones semana 09|Cierre semana 09]]
+- [[S09-99 Evaluacion sem 09|Evaluación no calificada — Cuestionario]]

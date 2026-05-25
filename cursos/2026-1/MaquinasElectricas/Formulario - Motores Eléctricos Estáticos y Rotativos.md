@@ -422,3 +422,66 @@ $$\frac{P_F}{vol} = \pi^2 f^2 B_m^2 a^2 \frac{\sigma}{6} = k_F \cdot f^2 \cdot B
 $$P_{Fe} = P_H + P_F = k_H \cdot f \cdot B_m^{\alpha} + k_F \cdot f^2 \cdot B_m^2 \cdot a^2 \cdot \sigma$$
 
 El fabricante del material magnético suministra las curvas de pérdidas totales en función de $B$ a frecuencia constante.
+
+---
+
+## 14. Reactor con Núcleo de Hierro (Sección Cruciforme)
+Fuente: [[S06-1 Tema 01 - El reactor con núcleo de hierro|S06-1 El reactor con núcleo de hierro]]
+
+### Sección cruciforme de tres escalones
+Área real de hierro:
+$$S = b^2 + 2ac - 2bc$$
+
+Relación geométrica de la sección inscrita en el círculo de diámetro $d$:
+$$d^2 = a^2 + c^2 \hspace{0.5cm};\hspace{0.5cm} d^2 = 2b^2$$
+
+Expresión despejando $c$:
+$$S = \frac{d^2}{2} + 2a\sqrt{d^2 - a^2} - d\sqrt{2(d^2 - a^2)}$$
+
+### Dimensiones óptimas (3 escalones)
+Para máximo aprovechamiento del espacio interno del devanado:
+$$a = 0{,}906 \cdot d \hspace{0.5cm};\hspace{0.5cm} b = 0{,}707 \cdot d \hspace{0.5cm};\hspace{0.5cm} c = 0{,}423 \cdot d$$
+
+Donde:
+- $d$ = diámetro de la circunferencia que circunscribe al núcleo
+- $a$, $b$, $c$ = anchos de las láminas (escalón externo, intermedio e interno)
+- $S$ = área real de hierro del núcleo cruciforme
+
+---
+
+## 15. Transformador Monofásico Ideal
+Fuente: [[S06-4 Tema 02 - El transformador monofásico ideal|S06-4 El transformador monofásico ideal]]
+
+### Relación de transformación
+$$\frac{V_P(t)}{V_S(t)} = \frac{N_P}{N_S} = a$$
+
+### Relación de corrientes (Ley de Ampere aplicada al núcleo)
+$$N_P \cdot i_P(t) = N_S \cdot i_S(t) \hspace{0.5cm} \Longrightarrow \hspace{0.5cm} \frac{i_P(t)}{i_S(t)} = \frac{1}{a}$$
+
+### Forma fasorial
+$$\frac{V_P}{V_S} = a \hspace{0.5cm};\hspace{0.5cm} \frac{I_P}{I_S} = \frac{1}{a}$$
+
+### Potencia activa
+$$P_{in} = V_P \cdot I_P \cdot \cos \theta_P \hspace{0.5cm};\hspace{0.5cm} P_{out} = V_S \cdot I_S \cdot \cos \theta_S$$
+
+En el transformador ideal $\theta_S = \theta_P = \theta$, y por tanto:
+$$P_{in} = P_{out}$$
+
+### Conservación de potencias reactiva y aparente
+$$Q_{in} = V_P \cdot I_P \cdot \sin\theta = V_S \cdot I_S \cdot \sin\theta = Q_{out}$$
+$$S_{in} = V_P \cdot I_P = V_S \cdot I_S = S_{out}$$
+
+---
+
+## 16. Polaridad e Impedancia Reflejada
+Fuente: [[S06-6 Tema 02 - Polaridad y conversión de impedancias|S06-6 Polaridad y conversión de impedancias]]
+
+### Impedancia de la carga
+$$\mathbf{Z}_L = \frac{\mathbf{V}_S}{\mathbf{I}_S}$$
+
+### Impedancia aparente vista desde el primario
+$$\mathbf{Z}_L^{\prime} = \frac{\mathbf{V}_P}{\mathbf{I}_P} = \frac{a\,\mathbf{V}_S}{\dfrac{\mathbf{I}_S}{a}} = a^2 \cdot \mathbf{Z}_L$$
+
+> [!info] Regla de los puntos (dot convention)
+> - Polaridad de voltaje: el extremo marcado del primario y el extremo marcado del secundario son positivos en simultáneo.
+> - Corriente: si entra al punto del primario, **sale** por el punto del secundario.

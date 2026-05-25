@@ -14,7 +14,9 @@
       "mcp__playwright__browser_wait_for",
       "mcp__playwright__browser_navigate",
       "PowerShell($dir = \"cursos\\\\2026-1\\\\Amplificadores\\\\clases\\\\s07\\\\attachments\"; New-Item -ItemType Directory -Force -Path $dir | Out-Null; Invoke-WebRequest -Uri \"https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a49dd184-de19-4630-90a3-110bd81ea65f/S07-Material%201_FACWDP.pdf\" -OutFile \"$dir\\\\S07-Material.pdf\"; Get-Item \"$dir\\\\S07-Material.pdf\" | Select-Object Name,Length)",
-      "WebFetch(domain:controlbyte.tech)"
+      "WebFetch(domain:controlbyte.tech)",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click"
     ]
   },
   "enabledPlugins": {

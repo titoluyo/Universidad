@@ -68,8 +68,18 @@ aliases:
 
 ### Semana 6
 
-> [!info] Pendiente
-> Reactor con nucleo de hierro. Circuito equivalente. Materiales magneticos. Transformador monofasico ideal.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S06-0 Introducción - Transformadores monofásicos\|Introduccion a la semana]] | introduccion |
+| 1 | [[S06-1 Tema 01 - El reactor con núcleo de hierro\|El reactor con nucleo de hierro]] | clase |
+| 2 | [[S06-2 Tema 01 - Materiales magnéticos\|Materiales magneticos]] | clase |
+| 3 | [[S06-3 Tema 01 - Curvas experimentales de los materiales magnéticos\|Curvas experimentales de los materiales magneticos]] | clase |
+| 4 | [[S06-4 Tema 02 - El transformador monofásico ideal\|El transformador monofasico ideal]] | clase |
+| 5 | [[S06-5 Ejercicio resuelto - Parametros del transformador ideal (Video)\|Ejercicio resuelto - Parametros del trafo ideal]] | ejercicio |
+| 6 | [[S06-6 Tema 02 - Polaridad y conversión de impedancias\|Polaridad y conversion de impedancias]] | clase |
+| 7 | [[S06-7 Ejercicio resuelto - Circuito equivalente con impedancia reflejada (Video)\|Ejercicio resuelto - Circuito equivalente]] | ejercicio |
+| 8 | [[S06-8 Conclusiones semana 06\|Conclusiones semana 06]] | clase |
+| 99 | [[S06-99 Evaluación Semana 06 - Cuestionario de autoevaluación\|Cuestionario de autoevaluacion]] | cuestionario |
 
 ### Semana 7
 

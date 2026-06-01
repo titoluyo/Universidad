@@ -125,8 +125,15 @@ aliases:
 
 ### Semana 10
 
-> [!info] Pendiente
-> Conversion de energia electromecanica. Funcion energia y coenergia.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S10-0 Introducción - Conversión de energía electromecánica\|Introduccion - Conversion de energia electromecanica]] | introduccion |
+| 1 | [[S10-1 Tema 01 - Conversión de energía electromecánica\|Conversion de energia electromecanica (motor electrico)]] | clase |
+| 2 | [[S10-2 Tema 02 - Función de energía y coenergía\|Funcion de energia y coenergia]] | clase |
+| 3 | [[S10-3 Ejercicio resuelto - Función de energía y coenergía (Video)\|Ejercicio resuelto - Funcion de energia y coenergia]] | ejercicio |
+| 8 | [[S10-8 Conclusiones semana 10\|Conclusiones semana 10]] | clase |
+| 98 | [[S10-98 Indicaciones y Rubrica - LC2 Laboratorio\|Indicaciones y Rubrica LC2]] | rubrica |
+| 99 | [[S10-99 Laboratorio Calificado 2 - LC2\|Laboratorio LC2 - Regulacion y eficiencia del transformador]] | laboratorio |
 
 ### Semana 11
 

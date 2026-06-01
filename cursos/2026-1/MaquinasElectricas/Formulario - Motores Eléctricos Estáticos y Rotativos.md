@@ -759,3 +759,55 @@ $$Z_{cc} = \frac{\varepsilon_{cc} \cdot V_{\phi}}{I_{\phi}} \hspace{0.5cm};\hspa
 5. Convertir las tensiones de fase del primario al lado real del secundario:
    - **Secundario en Y:** $V_L = (V'_\phi / m) \cdot \sqrt{3}$
    - **Secundario en Δ:** $V_L = V'_\phi / m$
+
+---
+
+## 26. Conversión Electromecánica — Fuerza de Lorentz
+Fuente: [[S10-1 Tema 01 - Conversión de energía electromecánica|S10-1 Conversion de energia electromecanica]]
+
+Fuerza sobre una carga puntual $q$ en presencia de campos $\mathbf{E}$ y $\mathbf{B}$:
+
+$$\mathbf{F} \;=\; q\,(\mathbf{E} + \mathbf{v} \times \mathbf{B})$$
+
+- $q$ = carga puntual
+- $\mathbf{E}$ = campo eléctrico
+- $\mathbf{v}$ = velocidad de la partícula
+- $\mathbf{B}$ = densidad de campo magnético
+
+El término $q\,(\mathbf{v} \times \mathbf{B})$ es el responsable del **par electromagnético** en motores: integrado sobre los portadores de carga de un conductor con corriente en un campo magnético, da la fuerza neta sobre el conductor.
+
+---
+
+## 27. Energía y Coenergía Magnética
+Fuente: [[S10-2 Tema 02 - Función de energía y coenergía|S10-2 Funcion de energia y coenergia]]
+
+### Definiciones (sobre la curva $\lambda$–$i$ a posición $x$ fija)
+
+**Energía magnética almacenada** (área entre la curva y el eje $\lambda$):
+
+$$W_c(\lambda, x) \;=\; \int_{\lambda(0)}^{\lambda(t)} i(\lambda, x)\,d\lambda$$
+
+**Coenergía magnética** — función auxiliar sin sentido físico (área bajo la curva, entre la curva y el eje $i$):
+
+$$W'_c(i, x) \;=\; \int_{i(0)}^{i(t)} \lambda(i, x)\,di$$
+
+### Relación complementaria
+
+$$W_c + W'_c \;=\; \lambda \cdot i$$
+
+### Balance de energía (dispositivo con bobina alimentada por $V, i$)
+
+$$i\,d\lambda \;=\; dW_c \;+\; F_e\,dx$$
+
+Si la pieza móvil se mantiene fija ($dx = 0$): $\;dW_c = i\,d\lambda$.
+
+### Caso lineal (sin saturación) — $\lambda = L(x)\,i$
+
+$$W_c \;=\; W'_c \;=\; \tfrac{1}{2}\,L(x)\,i^{2} \;=\; \tfrac{1}{2}\,\frac{\lambda^{2}}{L(x)}$$
+
+### Fuerza electromagnética (caso general — útil con saturación)
+
+$$F_e \;=\; \left.\frac{\partial W'_c(i, x)}{\partial x}\right|_{i\,\text{cte}} \;=\; -\left.\frac{\partial W_c(\lambda, x)}{\partial x}\right|_{\lambda\,\text{cte}}$$
+
+> [!info] Aplicación
+> Estas fórmulas son la base para calcular la **fuerza** en electroimanes/actuadores y el **par** en máquinas rotativas (Unidad 3, semanas 11–14).

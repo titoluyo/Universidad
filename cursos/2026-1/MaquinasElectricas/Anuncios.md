@@ -5,7 +5,7 @@ tipo: anuncios
 tags:
   - curso/motores
   - tipo/anuncios
-date: 2026-05-03
+date: 2026-05-29
 ---
 
 # Anuncios — Máquinas Eléctricas Estáticas y Rotativas (14199, Virtual 24/7)
@@ -377,3 +377,44 @@ Imágenes en [anuncios-attachments/](anuncios-attachments/).
 > **Dominaron el transformador trifásico y su análisis por fase:** aprendieron a diferenciar las configuraciones de conexión (estrella-estrella, estrella-delta, delta-estrella, delta-delta), identificando ventajas, desventajas y aplicaciones de cada una. Comprendieron el concepto de desplazamiento angular y los índices horarios. Pero lo más valioso es que ya aplican el circuito equivalente aproximado por fase, adaptando el modelo monofásico al análisis trifásico y determinando parámetros a partir de ensayos trifásicos.
 >
 > Este conocimiento es fundamental para trabajar con sistemas de potencia reales. Han aprendido a analizar el transformador trifásico, el corazón de toda subestación eléctrica industrial.
+
+## 2026-05-25 12:00 AM — Bienvenido a la Semana 10 (parte 1)
+
+![[2026-05-25_Diapositiva19.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 10 – Marzo 26**
+>
+> Estimado(a) estudiante:
+>
+> Recibe la más cordial bienvenida al curso de Máquinas Eléctricas Estáticas y Rotativas. El estudiante analizará las características eléctricas y el comportamiento de las máquinas eléctricas estáticas y rotativas, mediante el análisis teórico y uso de software especializado.
+>
+> Esta semana desarrollaremos los temas:
+> - Conversión de energía electromecánica. Función energía y coenergía.
+> - Evaluación.
+>
+> Actividades y evaluaciones:
+> - Revisión de los materiales explicativos de la semana.
+> - **LABORATORIO CALIFICADO 2.**
+>
+> **Logro de aprendizaje:** El estudiante será capaz de aplicar los conceptos de energía y coenergía magnética para calcular fuerzas y pares en sistemas electromecánicos, diferenciando el comportamiento lineal y no lineal de los materiales ferromagnéticos.
+>
+> **Utilidad e importancia:** La conversión electromecánica es el principio de funcionamiento de motores y generadores. El ingeniero debe dominar estas herramientas energéticas para analizar el par desarrollado por las máquinas rotativas y optimizar su diseño.
+>
+> Cualquier duda, por favor escribirme mediante el foro.
+
+## 2026-05-29 12:00 AM — Bienvenido a la Semana 10 (parte 2)
+
+![[2026-05-29_Diapositiva20.png]]
+
+> **BIENVENIDO(A) A LA SEMANA 10 – Marzo 26** (continuación)
+>
+> Estimado(a) estudiante:
+>
+> Extraordinario trabajo esta semana, estudiantes. Han abordado el principio fundamental que permite que las máquinas eléctricas conviertan energía eléctrica en mecánica y viceversa, sentando las bases conceptuales para entender motores y generadores.
+>
+> **Dominaron los conceptos de energía y coenergía en sistemas electromagnéticos:** aprendieron a analizar los sistemas de almacenamiento de campo magnético y a utilizar las funciones de energía y coenergía para calcular fuerzas y pares electromagnéticos. Diferenciaron el comportamiento en sistemas lineales y no lineales, comprendiendo cómo la saturación afecta la conversión de energía.
+>
+> Este conocimiento es la base teórica para analizar el par en motores, la fuerza en actuadores y el comportamiento dinámico de todas las máquinas electromecánicas.
+>
+> Docente del curso  
+> Saludos

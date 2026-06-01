@@ -9,7 +9,8 @@ Universidad/
 ├── utils/                             # Scripts utilitarios
 │   ├── parse_vtt.py                   # Parsea subtítulos VTT de YouTube a texto limpio
 │   ├── semana_actual.py               # Calcula la semana del ciclo
-│   └── md_to_docx.py                  # Exporta nota Markdown a Word (APA v7 + LaTeX)
+│   ├── md_to_docx.py                  # Exporta nota Markdown a Word (APA v7 + LaTeX)
+│   └── pngs_a_pdf.py                  # Junta imágenes (PNG/JPG) en un solo PDF, una por página
 ├── plantillas/                        # Templates para nuevas notas
 │   ├── Plantilla - Nota de clase.md
 │   ├── Plantilla - Formulario.md
@@ -171,6 +172,10 @@ Los archivos `.base` proveen vistas de datos dinámicas (plugin core Bases habil
 
 ## Reglas para evaluaciones
 
+> [!danger] NUNCA iniciar una evaluación online sin pedido explícito
+> **NUNCA pulsar el botón "Realizar evaluación" / "Iniciar evaluación"** en el portal (consume el intento y arranca el cronómetro) a menos que el usuario lo pida **explícitamente**.
+> Cuando el usuario dice "comienza", "empieza" o "resuelve la prueba", se refiere a **resolverla OFFLINE** (capturar enunciados sin gastar intento y desarrollarla en el vault), **NO** a iniciarla online. Ante la duda, preguntar antes de hacer clic.
+
 Al resolver evaluaciones, seguir estas reglas:
 
 1. **Analizar detenidamente las imágenes** siempre que estén presentes o se incluyan en la pregunta.
@@ -203,6 +208,32 @@ MCP Server `@playwright/mcp` configurado (scope: proyecto) — controla un brows
 
 - **"exporta a docx"**, **"convierte a Word"**, **"genera el Word"** → usar [`utils/md_to_docx.py`](utils/md_to_docx.py) (Pandoc + APA v7 + LaTeX nativo). Detalles en [`docs/exportar-docx.md`](docs/exportar-docx.md).
 - **"edita el docx"**, **"agrega track changes/comentarios"** o tareas que requieran manipulación XML interna del `.docx` → usar el skill `docx` de Anthropic (instalación documentada en `docs/exportar-docx.md`).
+
+## Juntar imágenes en un PDF (.png/.jpg → .pdf)
+
+**Trigger:** cuando el usuario diga **"junta/convierte/compila estas imágenes en un PDF"** (típico: fotos/escaneos de una resolución manuscrita de PA/PC para subir al portal) → usar [`utils/pngs_a_pdf.py`](utils/pngs_a_pdf.py).
+
+```powershell
+# Carpeta completa (orden alfabético — nombrar las imágenes ...-P01, ...-P02, ...)
+uv run --with img2pdf python utils/pngs_a_pdf.py "<carpeta>"
+# Lista explícita + nombre de salida
+uv run --with img2pdf python utils/pngs_a_pdf.py p1.png p2.png -o entrega.pdf
+```
+
+`img2pdf` es **sin pérdida** (incrusta el PNG/JPG tal cual). Por defecto ajusta cada imagen a una página A4 vertical (`--nativo` para tamaño nativo, `--tamano CARTA` para oficio carta).
+
+## Entorno Python — qué hacer si falta algo
+
+El intérprete `python` del PATH suele ser el **stub de Microsoft Store** (no sirve). El entorno Python se gestiona con **`uv`** (Astral); está instalado en `~/.local/bin/uv.exe`. Ejecutar scripts con dependencias efímeras vía `uv run --with <paquete> python <script>` (no requiere instalar nada global ni activar venvs).
+
+**Si falta algo, instalar bajo demanda (preferir `uv`):**
+
+- **Falta `uv`:** `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`. Tras instalar, usar `~/.local/bin/uv.exe` (puede no estar aún en el PATH de la sesión).
+- **Falta una versión de Python:** `uv python install 3.12` (luego `uv run --python 3.12 ...`).
+- **Falta un paquete (img2pdf, pillow, pikepdf, etc.):** no hace falta `pip install` global — pasarlo con `uv run --with <paquete> ...` y uv lo resuelve en un entorno temporal.
+- **Otras herramientas del sistema (pandoc, etc.):** verificar con `Get-Command <cmd>`; instalar con `winget install <id>` si el usuario lo autoriza.
+
+Confirmado disponible en esta máquina: `pandoc`, Microsoft **Edge** (útil como `msedge --headless --print-to-pdf` si se necesita render HTML→PDF). **No** hay (al 2026-05): Python real en PATH, ImageMagick, motor LaTeX, wkhtmltopdf — instalar vía `uv`/`winget` cuando se requieran.
 
 ## Skills de Obsidian disponibles
 

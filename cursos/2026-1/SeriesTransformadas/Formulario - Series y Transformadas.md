@@ -465,3 +465,58 @@ Ejemplos:
 - $\ln(1+z)$ centrada en $0$ → singular en $z = -1$ → $R = 1$.
 - $\dfrac{1}{1-z}$ centrada en $0$ → singular en $z = 1$ → $R = 1$.
 - $\sin z$, $\cos z$, $e^z$ → enteras → $R = \infty$ para cualquier $z_0$.
+
+## Series de Laurent
+
+Fuente: [[S10-0 Tema 01 - Series de Maclaurin y Laurent]]
+
+### Teorema de Laurent
+
+Si $f$ es analítica en el anillo $R_1 < |z - z_0| < R_2$ (pero no necesariamente en $z_0$) y $C$ es un contorno cerrado simple orientado positivamente en torno de $z_0$ dentro del anillo:
+
+$$f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z - z_0)^n} \qquad (R_1 < |z - z_0| < R_2)$$
+
+$$a_n = \frac{1}{2\pi i}\oint_C \frac{f(z)\,dz}{(z - z_0)^{n+1}}, \qquad b_n = \frac{1}{2\pi i}\oint_C \frac{f(z)\,dz}{(z - z_0)^{-n+1}}$$
+
+- Parte analítica: $\sum a_n (z-z_0)^n$ (potencias $\geq 0$).
+- Parte principal: $\sum b_n (z-z_0)^{-n}$ (potencias negativas; delata la singularidad).
+
+### Forma compacta
+
+$$f(z) = \sum_{n=-\infty}^{\infty} c_n (z - z_0)^n, \qquad c_n = \frac{1}{2\pi i}\oint_C \frac{f(z)\,dz}{(z - z_0)^{n+1}}, \quad n = 0, \pm 1, \pm 2, \ldots$$
+
+### Serie geométrica como herramienta de expansión
+
+$$\frac{1}{1 - w} = \sum_{n=0}^{\infty} w^n, \quad |w| < 1$$
+
+Según el anillo, se elige qué factorizar:
+
+| Condición del anillo | Reescritura | Tipo de potencias |
+| -------------------- | ----------- | ----------------- |
+| $\|z\| > r$ (exterior de $\|z\|=r$) | $\dfrac{1}{z-r}=\dfrac1z\cdot\dfrac{1}{1-r/z}$ (factorizar $z$) | negativas (parte principal) |
+| $\|z\| < r$ (interior de $\|z\|=r$) | $\dfrac{1}{z-r}=-\dfrac1r\cdot\dfrac{1}{1-z/r}$ (factorizar $r$) | positivas (parte analítica) |
+
+Fuente: [[S10-2 Tema 01 - Laurent Ej2 - region anular -1 sobre (z-1)(z-2)]]
+
+### Integrales de contorno vía Laurent (residuo)
+
+El coeficiente $c_{-1}$ (término en $(z-z_0)^{-1}$) es el **residuo** de $f$ en $z_0$. Como $\oint_C (z-z_0)^k\,dz = 0$ para $k \neq -1$ y $\oint_C \dfrac{dz}{z-z_0} = 2\pi i$:
+
+$$\boxed{\oint_C f(z)\,dz = 2\pi i\,c_{-1} = 2\pi i\sum_{\text{polos interiores}}\operatorname{Res}_{z_k} f}$$
+
+Residuo en un polo simple:
+
+$$\operatorname{Res}_{z_0} f = \lim_{z \to z_0}(z - z_0)\,f(z)$$
+
+Solo contribuyen las singularidades **dentro** del contorno (las de fuera dan integral nula).
+
+Fuentes: [[S10-3 Tema 01 - Integral Ej3 - 5z-2 sobre z(z-1)]], [[S10-4 Tema 01 - Integral Ej4 - (z+1) sobre (z2-2z)]]
+
+### Procedimiento Laurent
+
+1. Identificar singularidades ($h(z)=0$) y graficar los círculos.
+2. Elegir el **anillo** de trabajo (región pedida).
+3. Descomponer en fracciones parciales si hay varios factores.
+4. Forzar la forma $\dfrac{1}{1-w}$ en cada término según la condición del anillo.
+5. Expandir y reunir potencias positivas y negativas.
+6. Para integrales: quedarse con el coeficiente de $(z-z_0)^{-1}$ y multiplicar por $2\pi i$ (sumando singularidades interiores).

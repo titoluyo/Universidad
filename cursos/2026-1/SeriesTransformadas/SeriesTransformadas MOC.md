@@ -99,3 +99,14 @@ aliases:
 - [[S09-3 Tema 01 - Taylor Ej3 - sen(z) alrededor de pi cuartos|Ej 3 — $\sin z$ alrededor de $z_0 = \pi/4$]]
 - [[S09-4 Conclusiones semana 09|Cierre semana 09]]
 - [[S09-99 Evaluacion sem 09|Evaluación no calificada — Cuestionario]]
+
+## Semana 10 — Series de Maclaurin y Laurent
+
+- [[S10-0 Tema 01 - Series de Maclaurin y Laurent|Teoría — Maclaurin, Laurent y conexión con integrales]]
+- [[S10-1 Tema 01 - Maclaurin Ej1 - z sobre (z+9)|Ej 1 — Maclaurin de $\frac{z}{z+9}$ → $\sum (-1)^{n-1}z^n/9^n$]]
+- [[S10-2 Tema 01 - Laurent Ej2 - region anular -1 sobre (z-1)(z-2)|Ej 2 — Laurent de $\frac{-1}{(z-1)(z-2)}$ en $1<|z|<2$]]
+- [[S10-3 Tema 01 - Integral Ej3 - 5z-2 sobre z(z-1)|Ej 3 — $\oint\frac{5z-2}{z(z-1)}dz = 10\pi i$ por Laurent]]
+- [[S10-4 Tema 01 - Integral Ej4 - (z+1) sobre (z2-2z)|Ej 4 — $\oint_{|z|=3}\frac{z+1}{z^2-2z}dz = 2\pi i$]]
+- [[S10-5 Conclusiones semana 10|Cierre semana 10]]
+- [[S10-98 PA04 Enunciados y desarrollo|PA04 — Enunciados y desarrollo de los 5 ejercicios]]
+- [[S10-99 PA04 sem 10|Participación Académica 4 (PA04) — calificada]]

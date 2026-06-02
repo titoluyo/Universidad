@@ -134,6 +134,7 @@ aliases:
 | 8 | [[S10-8 Conclusiones semana 10\|Conclusiones semana 10]] | clase |
 | 98 | [[S10-98 Indicaciones y Rubrica - LC2 Laboratorio\|Indicaciones y Rubrica LC2]] | rubrica |
 | 99 | [[S10-99 Laboratorio Calificado 2 - LC2\|Laboratorio LC2 - Regulacion y eficiencia del transformador]] | laboratorio |
+| 100 | [[S10-100 Informe LC2 - Regulacion y eficiencia del transformador\|Informe LC2 - Regulacion y eficiencia]] | informe |
 
 ### Semana 11
 

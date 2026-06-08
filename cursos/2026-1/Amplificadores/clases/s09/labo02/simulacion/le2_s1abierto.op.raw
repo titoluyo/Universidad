@@ -1,0 +1,52 @@
+Title: t:\work\universidad_vault\Universidad\cursos\2026-1\Amplificadores\clases\s09\labo02\simulacion\le2_s1abierto.cir
+Date: Tue Jun  2 19:31:06 2026
+Plotname: Operating Point
+Flags: real
+No. Variables: 21
+No. Points:            1
+Offset:    0.0000000000000000e+00
+Command: Linear Technology Corporation LTspice
+Variables:
+	0	V(b)	voltage
+	1	V(c)	voltage
+	2	V(e)	voltage
+	3	V(m)	voltage
+	4	V(n1)	voltage
+	5	V(vcc)	voltage
+	6	V(vg)	voltage
+	7	I(C1)	device_current
+	8	I(C3)	device_current
+	9	I(R1)	device_current
+	10	I(R2)	device_current
+	11	I(R3)	device_current
+	12	I(R4)	device_current
+	13	I(RC)	device_current
+	14	I(RE)	device_current
+	15	I(Vcc)	device_current
+	16	I(Vg)	device_current
+	17	Ib(Q1)	device_current
+	18	Ic(Q1)	device_current
+	19	Ie(Q1)	device_current
+	20	Is(Q1)	device_current
+Values:
+0		1.513289078410497e+00
+	3.718332996444885e+00
+	8.130338095714019e-01
+	2.615811037427691e+00
+	1.513289078410346e+00
+	1.200000000000000e+01
+	0.000000000000000e+00
+	-1.513289078410346e-17
+	8.130338095714018e-18
+	-1.514344205588713e-17
+	1.513289078410497e-04
+	-1.968789212530704e-04
+	-1.968789212530704e-04
+	8.281667003555114e-03
+	8.130338095714019e-03
+	-8.281667003555114e-03
+	1.513289078410346e-17
+	4.555001341199905e-05
+	8.084788082301841e-03
+	-8.130338095714064e-03
+	0.000000000000000e+00

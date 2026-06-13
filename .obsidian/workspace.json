@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/Amplificadores/clases/s11/S11-2 Osciladores de cristal de cuarzo.md",
+                "file": "cursos/2026-1/Amplificadores/clases/s12/S12-3 Tema 12 - Valor eficaz (RMS) de la corriente.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S11-2 Osciladores de cristal de cuarzo"
+              "title": "S12-3 Tema 12 - Valor eficaz (RMS) de la corriente"
             }
           },
           {
@@ -230,31 +230,34 @@
   },
   "active": "5dd537a525e3286c",
   "lastOpenFiles": [
+    "cursos/2026-1/Amplificadores/clases/s12/S12-1 Tema 12 - Rectificador de pico y rizado.md",
+    "cursos/2026-1/Amplificadores/clases/s12/S12-3 Tema 12 - Valor eficaz (RMS) de la corriente.md",
+    "cursos/2026-1/Amplificadores/clases/s12/S12-3 Tema 12 - Valor eficaz (RMS) de la corriente.md.tmp.11660.3b75af34b360",
+    "cursos/2026-1/Amplificadores/clases/s12/plot_corriente_eficaz.py.tmp.11660.e46aef3d2095",
+    "cursos/2026-1/Amplificadores/clases/s12/attachments/corriente_eficaz.png",
+    "cursos/2026-1/Amplificadores/clases/s12/plot_corriente_eficaz.py",
+    "cursos/2026-1/Amplificadores/clases/s12/plot_corriente_eficaz.py.tmp.11660.8e7d829c00bb",
+    "cursos/2026-1/Amplificadores/clases/s12/S12-2 Tema 12 - Circuitos rectificadores.md",
+    "cursos/2026-1/Amplificadores/clases/s12/S12-2 Tema 12 - Circuitos rectificadores.md.tmp.11660.ca3223c8d26a",
+    "cursos/2026-1/Amplificadores/clases/s12/attachments/rectificadores_comparacion.png",
+    "cursos/2026-1/Amplificadores/clases/s12/plot_rectificadores.py",
+    "cursos/2026-1/Amplificadores/clases/s12/plot_rectificadores.py.tmp.11660.b6730a704793",
+    "cursos/2026-1/Amplificadores/clases/s12/S12-1 Tema 12 - Rectificador de pico y rizado.md.tmp.23436.fc798bfd772b",
+    "cursos/2026-1/Amplificadores/clases/s11/S11-2 Osciladores de cristal de cuarzo.md",
     "cursos/2026-1/Amplificadores/clases/s11/S11-2 Analisis del oscilador puente de Wien.md",
     "cursos/2026-1/Amplificadores/clases/s11/S11-2 Analisis del oscilador puente de Wien.md.tmp.25936.8c147f07e6fe",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/S09-97 Simulacion LTspice - LE2 Realimentacion negativa.md",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/S09-97 Simulacion LTspice - LE2 Realimentacion negativa.md.tmp.14176.6e4d3835d8e8",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/le2_respuesta_frecuencia.png",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/__pycache__/parse_raw.cpython-312.pyc",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/__pycache__",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/plot_rm.py",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/plot_rm.py.tmp.14176.9e58d649a858",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/parse_raw.py.tmp.14176.0b3eee3dd3c6",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/parse_raw.py",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/parse_raw.py.tmp.14176.66a1551a0583",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/simulacion/le2_s1cerrado.op.raw",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/S09-98 Resolucion teorica - Realimentacion negativa (problema serie-serie).md",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/WhatsApp Image 2026-05-19 at 11.05.30 PM.jpeg",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/S09-99 Laboratorio - LE2 Realimentacion negativa.md",
-    "cursos/2026-1/Amplificadores/clases/s11/S11-2 Osciladores de cristal de cuarzo.md",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/_c_otros.png",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/_c_opamp.png",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/_c_z11.png",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/_c_calc.png",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/_c_ss.png",
     "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/_c_stmt.png",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/_c_sch.png",
-    "cursos/2026-1/Amplificadores/clases/s09/labo02/resolucion/WhatsApp Image 2026-05-19 at 11.05.44 PM.jpeg",
     "cursos/2026-1/MaquinasElectricas/clases/s10/S10-98 Indicaciones y Rubrica - LC2 Laboratorio.md",
     "cursos/2026-1/MaquinasElectricas/clases/s10/entregable-word-source.md",
     "cursos/2026-1/MaquinasElectricas/clases/s10/S10-100 Informe LC2 - Regulacion y eficiencia del transformador.md",
@@ -273,9 +276,6 @@
     "cursos/2026-1/Amplificadores/clases/s08/S08-1 Amplificadores realimentados.md",
     "cursos/2026-1/Amplificadores/clases/s08/S08-2 Realimentacion negativa y realimentacion positiva.md",
     "cursos/2026-1/Amplificadores/clases/s06/S06-101 Espejo - Mejoras propuestas al informe LE1.md",
-    "cursos/2026-1/Amplificadores/clases/s06/S06-99 Laboratorio - LE1 Amplificador operacional.md",
-    "cursos/2026-1/Amplificadores/clases/s07/S07-4 Amplificador operacional de transconductancia (OTA).md",
-    "cursos/2026-1/Amplificadores/clases/s07/S07-5 Integrador y derivador como filtros activos.md",
     "Untitled.canvas"
   ]
 }

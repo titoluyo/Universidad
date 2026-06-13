@@ -811,3 +811,48 @@ $$F_e \;=\; \left.\frac{\partial W'_c(i, x)}{\partial x}\right|_{i\,\text{cte}} 
 
 > [!info] Aplicación
 > Estas fórmulas son la base para calcular la **fuerza** en electroimanes/actuadores y el **par** en máquinas rotativas (Unidad 3, semanas 11–14).
+
+---
+
+## 28. Fuerza y Torque de Origen Electromagnético
+Fuente: [[S11-1 Tema 01 - Fuerza electromagnética|S11-1 Fuerza electromagnetica]]
+Fuente: [[S11-2 Tema 01 - Torques de origen electromagnético|S11-2 Torques de origen electromagnetico]]
+
+### Fuerza electromagnética (componente magnética de Lorentz)
+$$\vec{F} = q\,\vec{v} \times \vec{B}$$
+
+### Torque neto sobre una espira rectangular
+$$\vec{\tau} = -I\,A\,B\sin\theta\;\hat{i} \hspace{0.5cm}\text{con}\hspace{0.3cm} A = a\,b$$
+
+### Momento dipolar magnético
+$$\vec{\mu} = I\,A\,\hat{n} \hspace{0.5cm};\hspace{0.5cm} \vec{\mu} = N\,I\,A\,\hat{n} \quad [\text{A}\cdot\text{m}^2]$$
+
+### Torque en función del momento dipolar
+$$\boxed{\vec{\tau} = \vec{\mu} \times \vec{B}} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} \tau = \mu\,B\sin\theta$$
+
+### Energía potencial del dipolo magnético
+$$U = -\vec{\mu}\cdot\vec{B} = -\mu\,B\cos\theta$$
+
+Donde:
+- $\mu = I\cdot A$ = momento dipolar magnético (con $A = \pi r^2$ para un bucle circular)
+- $\theta$ = ángulo entre $\vec{\mu}$ y $\vec{B}$
+- $\tau$ máximo en $\theta = 90°$ (plano de la espira paralelo al campo); $U$ mínima en $\theta = 0°$ (alineación estable)
+
+> [!example] Aplicación numérica
+> Bucle circular $r = 2\,\text{cm}$, $I = 2\,\text{mA}$, $B = 0{,}5\,\text{T}$, $\theta = 30°$ → $\mu \approx 2{,}5\times10^{-6}\,\text{A}\cdot\text{m}^2$, $\tau \approx 6{,}3\times10^{-7}\,\text{N}\cdot\text{m}$, $U \approx -1{,}1\times10^{-6}\,\text{J}$. Desarrollo en [[S11-3 Ejercicio resuelto - Torque en un bucle de corriente (Video)|S11-3]].
+
+---
+
+## 29. Velocidad de Sincronismo (Motores AC)
+Fuente: [[S11-4 Tema 01 - Aplicaciones del motor eléctrico|S11-4 Aplicaciones del motor electrico]]
+
+### Velocidad de sincronismo
+$$n = \frac{60 \cdot f}{P}$$
+
+Donde:
+- $n$ = velocidad de sincronismo [rpm]
+- $f$ = frecuencia de la red [Hz]
+- $P$ = número de **pares de polos** de la máquina
+
+> [!info] Motor asíncrono
+> El **motor asíncrono** gira a una velocidad **distinta** a la de sincronismo (existe deslizamiento). Se regula con **variadores de frecuencia**.

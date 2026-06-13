@@ -110,3 +110,13 @@ aliases:
 - [[S10-5 Conclusiones semana 10|Cierre semana 10]]
 - [[S10-98 PA04 Enunciados y desarrollo|PA04 — Enunciados y desarrollo de los 5 ejercicios]]
 - [[S10-99 PA04 sem 10|Participación Académica 4 (PA04) — calificada]]
+
+## Semana 11 — Series de Fourier: señales periódicas, pares e impares y coeficientes
+
+- [[S11-0 Tema 01 - Senales periodicas, pares e impares|Teoría — Señales periódicas, pares e impares]]
+- [[S11-1 Tema 01 - Ejercicio 1 - periodo de cos(t3) + cos(t4)|Ej 1 — Periodo de $\cos\tfrac{t}{3}+\cos\tfrac{t}{4} = 24\pi$]]
+- [[S11-2 Tema 02 - Series de Fourier|Teoría — Series de Fourier, ortogonalidad y coeficientes]]
+- [[S11-3 Tema 02 - Series de Fourier Ejercicio 1 - onda cuadrada|Ej 1 — Onda cuadrada $\to \tfrac{4}{n\pi}\sin n\omega t$ (impares)]]
+- [[S11-4 Tema 02 - Series de Fourier Ejercicio 2 - onda triangular|Ej 2 — Onda triangular $\to \tfrac{8k}{(n\pi)^2}\sin\tfrac{n\pi}{2}$]]
+- [[S11-5 Conclusiones semana 11|Cierre semana 11]]
+- [[S11-99 Evaluacion sem 11|Evaluación no calificada — Cuestionario]]

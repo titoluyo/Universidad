@@ -520,3 +520,69 @@ Fuentes: [[S10-3 Tema 01 - Integral Ej3 - 5z-2 sobre z(z-1)]], [[S10-4 Tema 01 -
 4. Forzar la forma $\dfrac{1}{1-w}$ en cada término según la condición del anillo.
 5. Expandir y reunir potencias positivas y negativas.
 6. Para integrales: quedarse con el coeficiente de $(z-z_0)^{-1}$ y multiplicar por $2\pi i$ (sumando singularidades interiores).
+
+## Señales periódicas, pares e impares
+
+Fuente: [[S11-0 Tema 01 - Senales periodicas, pares e impares]]
+
+### Periodicidad
+
+$$f(t) = f(t + T) \qquad (T = \text{periodo mínimo})$$
+
+Para una **suma de armónicos**, el periodo total es el menor $T$ múltiplo entero simultáneo de cada periodo individual.
+
+### Paridad
+
+| Tipo | Condición | Simetría | Ejemplo |
+| ---- | --------- | -------- | ------- |
+| Par | $f(-t) = f(t)$ | eje vertical | $\cos$ |
+| Impar | $f(-t) = -f(t)$ | origen | $\sin$ |
+
+### Propiedades
+
+- par × par = par; impar × impar = par; **par × impar = impar**.
+- Toda $f(t)$ se descompone en una parte par y una impar.
+- Integral en intervalo simétrico:
+
+$$\int_{-a}^{a} f(t)\,dt = 2\int_0^a f(t)\,dt \;\;(f\text{ par}); \qquad \int_{-a}^{a} f(t)\,dt = 0 \;\;(f\text{ impar})$$
+
+## Series de Fourier
+
+Fuente: [[S11-2 Tema 02 - Series de Fourier]]
+
+### Serie trigonométrica
+
+$$f(t) = \frac{1}{2}a_0 + \sum_{n=1}^{\infty}\bigl(a_n\cos n\omega t + b_n\sin n\omega t\bigr), \qquad \omega = \frac{2\pi}{T}$$
+
+### Coeficientes (vía ortogonalidad)
+
+$$a_0 = \frac{2}{T}\int_{-T/2}^{T/2} f(t)\,dt$$
+
+$$a_n = \frac{2}{T}\int_{-T/2}^{T/2} f(t)\cos(n\omega t)\,dt, \qquad n = 0, 1, 2, \ldots$$
+
+$$b_n = \frac{2}{T}\int_{-T/2}^{T/2} f(t)\sin(n\omega t)\,dt, \qquad n = 1, 2, 3, \ldots$$
+
+- $\tfrac{1}{2}a_0$ = valor promedio (componente DC) de la señal.
+- $\omega = 2\pi/T$ = frecuencia angular fundamental.
+
+### Atajo por paridad
+
+| Si $f$ es… | Se anula | Serie resultante |
+| ---------- | -------- | ---------------- |
+| **par** | $b_n = 0$ | solo cosenos |
+| **impar** | $a_0 = a_n = 0$ | solo senos |
+
+### Relaciones de ortogonalidad ($\omega = 2\pi/T$)
+
+$$\int_{-T/2}^{T/2}\cos(m\omega t)\cos(n\omega t)\,dt = \int_{-T/2}^{T/2}\sin(m\omega t)\sin(n\omega t)\,dt = \begin{cases}0, & m\neq n\\ T/2, & m=n\end{cases}$$
+
+$$\int_{-T/2}^{T/2}\sin(m\omega t)\cos(n\omega t)\,dt = 0 \quad \forall\, m,n$$
+
+### Resultados notables
+
+| Señal (impar, periodo $T$) | Coeficiente | Serie | Fuente |
+| -------------------------- | ----------- | ----- | ------ |
+| Onda cuadrada ($\pm1$) | $b_n = \dfrac{2}{n\pi}(1-(-1)^n) = \dfrac{4}{n\pi}$ (impares) | $\dfrac{4}{\pi}\sum_{n\,\text{impar}}\dfrac{1}{n}\sin n\omega t$ | [[S11-3 Tema 02 - Series de Fourier Ejercicio 1 - onda cuadrada]] |
+| Onda triangular (altura $k$) | $b_n = \dfrac{8k}{(n\pi)^2}\sin\dfrac{n\pi}{2}$ | $\dfrac{8k}{\pi^2}\left(\sin\tfrac{\pi}{L}t - \tfrac{1}{9}\sin\tfrac{3\pi}{L}t + \cdots\right)$ | [[S11-4 Tema 02 - Series de Fourier Ejercicio 2 - onda triangular]] |
+
+> Las amplitudes decaen como $1/n$ (señal discontinua: cuadrada) o $1/n^2$ (señal continua: triangular): a mayor suavidad, decaimiento más rápido.

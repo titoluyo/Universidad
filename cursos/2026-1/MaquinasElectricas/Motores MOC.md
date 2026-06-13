@@ -138,8 +138,15 @@ aliases:
 
 ### Semana 11
 
-> [!info] Pendiente
-> Fuerzas y torques de origen electromagnetico (partes 1 y 2).
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S11-0 Introducción - Fuerzas y torques de origen electromagnético\|Introduccion - Fuerzas y torques de origen electromagnetico]] | introduccion |
+| 1 | [[S11-1 Tema 01 - Fuerza electromagnética\|Fuerza electromagnetica]] | clase |
+| 2 | [[S11-2 Tema 01 - Torques de origen electromagnético\|Torques de origen electromagnetico]] | clase |
+| 3 | [[S11-3 Ejercicio resuelto - Torque en un bucle de corriente (Video)\|Ejercicio resuelto - Torque en un bucle de corriente]] | ejercicio |
+| 4 | [[S11-4 Tema 01 - Aplicaciones del motor eléctrico\|Aplicaciones del motor electrico]] | clase |
+| 8 | [[S11-8 Conclusiones semana 11\|Conclusiones semana 11]] | clase |
+| 99 | [[S11-99 Evaluación Semana 11 - Cuestionario de autoevaluación\|Cuestionario de autoevaluacion]] | cuestionario |
 
 ### Semana 12
 

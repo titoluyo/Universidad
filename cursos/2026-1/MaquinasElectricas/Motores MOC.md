@@ -150,13 +150,28 @@ aliases:
 
 ### Semana 12
 
-> [!info] Pendiente
-> Maquinas DC. Caracteristicas constructivas. Arrollamiento. FMM. Reaccion de armadura.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S12-0 Introducción - Máquinas de corriente continua\|Introduccion - Maquinas de corriente continua]] | introduccion |
+| 1 | [[S12-1 Tema 01 - Máquinas de corriente continua\|Maquinas de corriente continua (construccion, f.e.m., par)]] | clase |
+| 2 | [[S12-2 Tema 02 - Fuerza magnetomotriz y tensión inducida\|Fuerza magnetomotriz y tension inducida]] | clase |
+| 3 | [[S12-3 Ejercicio resuelto - Máquina elemental DC (Video)\|Ejercicio resuelto - Maquina elemental DC]] | ejercicio |
+| 4 | [[S12-4 Tema 03 - Reacción de armadura y conmutación\|Reaccion de armadura y conmutacion]] | clase |
+| 8 | [[S12-8 Conclusiones semana 12\|Conclusiones semana 12 (foro)]] | clase |
+| 99 | [[S12-99 Evaluación Semana 12 - Cuestionario de autoevaluación\|Cuestionario de autoevaluacion]] | cuestionario |
 
 ### Semana 13
 
-> [!info] Pendiente
-> Generador DC. Motor DC: serie, shunt, compuesto. Curvas caracteristicas.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S13-0 Introducción - Generador y motor de corriente continua\|Introduccion - Generador y motor DC]] | introduccion |
+| 1 | [[S13-1 Tema 01 - Generador de corriente continua\|Generador de corriente continua]] | clase |
+| 2 | [[S13-2 Tema 02 - El motor de corriente continua\|El motor de corriente continua (curvas caracteristicas)]] | clase |
+| 3 | [[S13-3 Ejercicio resuelto - Motor con excitación serie (Video)\|Ejercicio resuelto - Motor serie]] | ejercicio |
+| 4 | [[S13-4 Ejercicio resuelto - Motor con excitación shunt (Video)\|Ejercicio resuelto - Motor shunt]] | ejercicio |
+| 5 | [[S13-5 Ejercicio resuelto - Motor con excitación compuesta (Video)\|Ejercicio resuelto - Motor compuesto]] | ejercicio |
+| 8 | [[S13-8 Conclusiones semana 13\|Conclusiones semana 13]] | clase |
+| 99 | [[S13-99 Evaluación Semana 13 - AC Actividad de Participación (PA)\|🔴 AC-S13 - Actividad de Participacion (PA)]] | pa |
 
 ### Semana 14
 

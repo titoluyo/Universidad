@@ -856,3 +856,114 @@ Donde:
 
 > [!info] Motor asíncrono
 > El **motor asíncrono** gira a una velocidad **distinta** a la de sincronismo (existe deslizamiento). Se regula con **variadores de frecuencia**.
+
+---
+
+## 30. Máquina de Corriente Continua — Tensión Inducida y Par
+Fuente: [[S12-1 Tema 01 - Máquinas de corriente continua|S12-1 Maquinas de corriente continua]]
+Fuente: [[S12-2 Tema 02 - Fuerza magnetomotriz y tensión inducida|S12-2 Fuerza magnetomotriz y tension inducida]]
+
+### Voltaje inducido en la espira giratoria
+$$e_{ind} = (\vec{v}\times\vec{B})\cdot\vec{l} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} e_{ind} = 2\,(\vec{v}\times\vec{B})\cdot\vec{l}$$
+
+Solo contribuyen los lados perpendiculares al campo ($e_{ba}=e_{cd}=(\vec{v}\times\vec{B})\cdot\vec{l}$; $e_{cb}=e_{da}=0$).
+
+### Par inducido en la espira giratoria
+$$\vec{F} = i\,(\vec{l}\times\vec{B}) \hspace{0.4cm};\hspace{0.4cm} \tau = r\,F\,\sin\theta \hspace{0.4cm};\hspace{0.4cm} \tau_{ind} = 2\,r\,(i\,l\,B)$$
+
+Con $A_P \approx \pi r l$ y $\phi = A_P B$:
+
+$$\boxed{\tau_{ind} = \frac{2}{\pi}\,\phi\,i}$$
+
+### Relaciones para el problema de la máquina elemental
+$$e_{ind} = 2rlB\,\omega \hspace{0.5cm};\hspace{0.5cm} \tau_{ind} = 2rlB\,i$$
+
+| Operación | Ley de tensiones | Comportamiento |
+| --------- | ---------------- | -------------- |
+| **Motor** | $e_{ind} = V_B - iR$ | convierte potencia eléctrica → mecánica ($e_{ind} < V_B$) |
+| **Generador** | $e_{ind} = V_B + iR$ | par externo impulsa el eje ($e_{ind} > V_B$) |
+
+Velocidad en vacío: $\omega = \dfrac{V_B}{2rlB}$ (al disminuir $B$, aumenta $\omega$). Desarrollo en [[S12-3 Ejercicio resuelto - Máquina elemental DC (Video)|S12-3]].
+
+### F.e.m. media y par en la máquina DC real
+$$f = \frac{n\cdot p}{60} \hspace{0.5cm};\hspace{0.5cm} E_{med} = 4\,\phi\,\frac{n\cdot p}{60}$$
+
+$$\phi = B_{med}\cdot\frac{2\pi R L}{2p} \hspace{0.5cm};\hspace{0.5cm} F_{med} = B_{med}\,L\,\frac{I_i}{2c}$$
+
+$$\boxed{T = \frac{1}{2\pi}\cdot\frac{p}{c}\cdot Z\cdot\phi\cdot I_i = K_T\,I_i\,\phi} \hspace{0.5cm};\hspace{0.5cm} K_T = \frac{Z}{2\pi}\cdot\frac{p}{c}$$
+
+### Potencia electromagnética
+$$T = \frac{E\cdot I_i}{2\pi\cdot\frac{n}{60}} \hspace{0.5cm};\hspace{0.5cm} P_a = E\cdot I_i = T\cdot\Omega = T\cdot 2\pi\cdot\frac{n}{60} \quad [\text{W}]$$
+
+Donde:
+- $n$ = velocidad [rpm], $p$ = pares de polos, $2c$ = ramas en paralelo, $Z$ = conductores del inducido
+- $\phi$ = flujo por polo, $I_i$ = corriente del inducido, $K_T$ = constante constructiva
+
+---
+
+## 31. Conmutación en la Máquina DC
+Fuente: [[S12-4 Tema 03 - Reacción de armadura y conmutación|S12-4 Reaccion de armadura y conmutacion]]
+
+### Resistencias de transición escobilla–delga
+$$R_1 = R_e\,\frac{T}{T-t} \hspace{0.5cm};\hspace{0.5cm} R_2 = R_e\,\frac{T}{t}$$
+
+### Reparto de corriente (Kirchhoff)
+$$i_1 + i_2 = I_i \hspace{0.4cm};\hspace{0.4cm} R_1 i_1 = R_2 i_2 \hspace{0.4cm}\Longrightarrow\hspace{0.4cm} i_1 = I_i\,\frac{T-t}{T} \hspace{0.4cm};\hspace{0.4cm} i_2 = I_i\,\frac{t}{T}$$
+
+### Corriente en la sección conmutada (conmutación lineal)
+$$i = \frac{I_i}{2}\left(1 - 2\,\frac{t}{T}\right)$$
+
+> [!info] Reacción de armadura
+> Bajo carga, la corriente del inducido distorsiona el campo de los polos → **desplaza el plano neutro** y **debilita el campo**, causando chispas. Se corrige con **interpolos de conmutación** y **devanados de compensación**.
+
+---
+
+## 32. Generador de Corriente Continua — Balance de Potencias
+Fuente: [[S13-1 Tema 01 - Generador de corriente continua|S13-1 Generador de corriente continua]]
+
+### Ecuación del inducido (generador)
+$$E = V + R_i\,I_i + V_{esc} \hspace{0.5cm};\hspace{0.5cm} V_e = R_e\,I_e \;(\text{inductor})$$
+
+### Balance de potencias en el inducido
+$$E\,I_i = V\,I_i + R_i\,I_i^2 + V_{esc}\,I_i \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} P_a = P_2 + P_{cui} + P_{esc}$$
+
+| Término | Significado |
+| ------- | ----------- |
+| $P_2 = V I_i$ | Potencia eléctrica de salida |
+| $P_{cui} = R_i I_i^2$ | Pérdidas en el cobre del inducido |
+| $P_{esc} = V_{esc} I_i$ | Pérdidas en escobillas |
+| $P_a = E I_i$ | Potencia electromagnética |
+
+### Potencia mecánica de entrada
+$$P_1 = P_{exc} + P_m + P_{Fe} + P_a \hspace{0.5cm};\hspace{0.5cm} P_{exc} = V_e I_e = R_e I_e^2$$
+
+> [!info] Tipos de excitación
+> Independiente · Serie · Derivación (shunt) · Compuesta (compound, corta/larga derivación).
+
+---
+
+## 33. Motor de Corriente Continua — Ecuaciones y Curvas Características
+Fuente: [[S13-2 Tema 02 - El motor de corriente continua|S13-2 El motor de corriente continua]]
+
+### Ecuación del inducido (motor) y par
+$$V = E + R_i\,I_i + V_{esc} \hspace{0.5cm};\hspace{0.5cm} P_i = P_a + P_{cui} + P_{esc}$$
+
+$$T = \frac{E\,I_i}{2\pi\frac{n}{60}} = K_T\,\phi\,I_i \hspace{0.5cm};\hspace{0.5cm} E = \frac{n}{60}\,Z\,\phi\,\frac{p}{c} = K_E\,n\,\phi$$
+
+### Velocidad y rendimiento
+$$\boxed{n = \frac{V - R_i\,I_i}{K_E\,\phi}} \hspace{0.5cm};\hspace{0.5cm} \eta = \frac{P_2}{P_1}$$
+
+Regulación de velocidad: (a) flujo/excitación, (b) tensión $V$, (c) resistencia del inducido.
+
+### Característica del motor derivación (shunt) e independiente
+$$n = \frac{1}{K_E\,\phi}\,V - \frac{R_i}{K_E\,K_T\,\phi^2}\,T \hspace{0.5cm}\rightarrow\hspace{0.5cm}\text{recta (velocidad casi constante)}$$
+
+### Característica del motor serie ($\phi = K_I\,I_i$)
+$$T = K_T\,K_I\,I_i^2 \hspace{0.4cm};\hspace{0.4cm} n = a\,\frac{V}{\sqrt{T}} - b \approx a\,\frac{V}{\sqrt{T}} \hspace{0.4cm}\Longrightarrow\hspace{0.4cm} \boxed{n^2\,T = a\,V = \text{cte}}$$
+
+$$a = \frac{1}{K_E}\sqrt{\frac{K_T}{K_I}} \hspace{0.5cm};\hspace{0.5cm} b = \frac{R_i}{K_E\,K_I}$$
+
+Curva hiperbólica: **par de arranque muy alto**, **embalamiento en vacío**. El **motor compuesto** tiene característica **intermedia** entre shunt y serie.
+
+> [!example] Relaciones de proporcionalidad (ejercicios)
+> Con magnetización lineal: $\dfrac{E}{E'} = \dfrac{n\,\phi}{n'\,\phi'}$. Motor → $E = V - R_i I_i$; generador → $E = V + R_i I_i$. Potencia y par: $P_{mec} = T\cdot 2\pi\frac{n}{60}$. Ver [[S13-3 Ejercicio resuelto - Motor con excitación serie (Video)|S13-3]], [[S13-4 Ejercicio resuelto - Motor con excitación shunt (Video)|S13-4]], [[S13-5 Ejercicio resuelto - Motor con excitación compuesta (Video)|S13-5]].

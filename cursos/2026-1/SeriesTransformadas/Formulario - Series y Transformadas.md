@@ -586,3 +586,67 @@ $$\int_{-T/2}^{T/2}\sin(m\omega t)\cos(n\omega t)\,dt = 0 \quad \forall\, m,n$$
 | Onda triangular (altura $k$) | $b_n = \dfrac{8k}{(n\pi)^2}\sin\dfrac{n\pi}{2}$ | $\dfrac{8k}{\pi^2}\left(\sin\tfrac{\pi}{L}t - \tfrac{1}{9}\sin\tfrac{3\pi}{L}t + \cdots\right)$ | [[S11-4 Tema 02 - Series de Fourier Ejercicio 2 - onda triangular]] |
 
 > Las amplitudes decaen como $1/n$ (señal discontinua: cuadrada) o $1/n^2$ (señal continua: triangular): a mayor suavidad, decaimiento más rápido.
+
+## Series de Fourier de medio rango
+
+Fuente: [[S12-0 Tema 01 - Analisis de las series de Fourier]]
+
+Para una función definida solo en $(0, \tau)$, se extiende a periodo $T = 2\tau$ y se desarrolla con **solo senos** o **solo cosenos**:
+
+| Extensión | Serie | Coeficiente |
+| --------- | ----- | ----------- |
+| **Par** (cosenos) | $f(t) = \dfrac{1}{2}a_0 + \sum_{n=1}^{\infty} a_n\cos\dfrac{n\pi t}{\tau}$ | $a_n = \dfrac{2}{\tau}\displaystyle\int_0^{\tau} f(t)\cos\dfrac{n\pi t}{\tau}\,dt$ |
+| **Impar** (senos) | $f(t) = \sum_{n=1}^{\infty} b_n\sin\dfrac{n\pi t}{\tau}$ | $b_n = \dfrac{2}{\tau}\displaystyle\int_0^{\tau} f(t)\sin\dfrac{n\pi t}{\tau}\,dt$ |
+
+Fuente del ejercicio en cosenos: [[S12-1 Tema 01 - Ejercicio 1 - serie por expansion del coseno]]
+
+## Error cuadrático medio (aproximaciones finitas)
+
+Fuente: [[S12-0 Tema 01 - Analisis de las series de Fourier]]
+
+**Suma parcial** ($2k+1$ términos):
+
+$$S_k = \frac{1}{2}a_0 + \sum_{n=1}^{k}\bigl(a_n\cos n\omega t + b_n\sin n\omega t\bigr)$$
+
+**Error** $\varepsilon_k(t) = f(t) - S_k(t)$, y el **error cuadrático medio**:
+
+$$E_k = \frac{1}{T}\int_{-T/2}^{T/2}\bigl[f(t) - S_k(t)\bigr]^2 dt$$
+
+> [!success] Forma reducida (Parseval truncada)
+> $$E_k = \frac{1}{T}\int_{-T/2}^{T/2}\bigl[f(t)\bigr]^2 dt - \frac{a_0^2}{4} - \frac{1}{2}\sum_{n=1}^{k}\bigl(a_n^2 + b_n^2\bigr)$$
+
+- $\frac{1}{T}\int[f(t)]^2 dt$ = potencia media (valor cuadrático medio) de la señal.
+- El término sustraído = potencia capturada por los $k$ armónicos. $E_k$ = potencia residual.
+
+| Señal | $E_5$ | Comentario |
+| ----- | ----- | ---------- |
+| $f(t)=t$ en $(-\pi,\pi)$ (discontinua) | $\approx 0.363$ | converge lento (Gibbs) |
+| $A\lvert\sin\omega_0 t\rvert$ (continua) | $\approx 1.22\times10^{-4}A^2$ | converge muy rápido |
+
+Fuentes: [[S12-2 Tema 01 - Ejercicio 2 - error cuadratico de f(t) = t]], [[S12-3 Tema 01 - Ejercicio 3 - error cuadratico seno rectificado]]
+
+### Fenómeno de Gibbs
+
+Sobreoscilación (≈ 9 % del salto) cerca de una **discontinuidad** al usar sumas parciales; persiste sin importar el número de términos (se comprime hacia la discontinuidad), pero su energía (error cuadrático) tiende a cero. Solo aparece en señales **discontinuas**.
+
+## Teorema de Parseval
+
+Fuente: [[S13-0 Tema 01 - Teorema de Parseval]]
+
+> [!summary] Identidad de Parseval (señales periódicas)
+> $$\frac{1}{T}\int_{-T/2}^{T/2}\bigl[f(t)\bigr]^2 dt = \frac{a_0^2}{4} + \frac{1}{2}\sum_{n=1}^{\infty}\bigl(a_n^2 + b_n^2\bigr)$$
+
+- Lado izquierdo = **potencia promedio** (valor cuadrático medio) de la señal.
+- $\dfrac{a_0^2}{4}$ = potencia DC; $\dfrac{1}{2}(a_n^2+b_n^2)$ = potencia del $n$-ésimo armónico.
+- Se deduce del error cuadrático medio: como $E_k \geq 0$ es no creciente y $\lim E_k = 0$, queda la igualdad.
+
+### Aplicación: sumar series numéricas
+
+Expandir $f$ en Fourier (usar paridad) → aplicar Parseval → calcular $\frac{1}{T}\int[f]^2 dt$ y despejar.
+
+| Función (periodo) | Serie probada | Valor |
+| ----------------- | ------------- | ----- |
+| $f(x)=x$, $(-\pi,\pi)$ (impar) | $\displaystyle\sum_{n=1}^\infty \dfrac{1}{n^2}$ | $\dfrac{\pi^2}{6}$ |
+| $f(x)=1+\lvert x\rvert$, $(-1,1)$ (par) | $\displaystyle\sum_{n=1}^\infty \dfrac{1}{(2n-1)^4}$ | $\dfrac{\pi^4}{96}$ |
+
+Fuentes: [[S13-1 Tema 01 - Ejercicio 1 - Parseval prueba suma 1 sobre n cuadrado]], [[S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta]]

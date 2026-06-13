@@ -120,3 +120,19 @@ aliases:
 - [[S11-4 Tema 02 - Series de Fourier Ejercicio 2 - onda triangular|Ej 2 — Onda triangular $\to \tfrac{8k}{(n\pi)^2}\sin\tfrac{n\pi}{2}$]]
 - [[S11-5 Conclusiones semana 11|Cierre semana 11]]
 - [[S11-99 Evaluacion sem 11|Evaluación no calificada — Cuestionario]]
+
+## Semana 12 — Análisis de las series de Fourier: medio rango, error cuadrático y Gibbs
+
+- [[S12-0 Tema 01 - Analisis de las series de Fourier|Teoría — Medio rango, error cuadrático y fenómeno de Gibbs]]
+- [[S12-1 Tema 01 - Ejercicio 1 - serie por expansion del coseno|Ej 1 — Serie en cosenos (medio rango) del escalón $0/1$]]
+- [[S12-2 Tema 01 - Ejercicio 2 - error cuadratico de f(t) = t|Ej 2 — Error cuadrático de $f(t)=t$ a 5 términos ($E_5\approx0.363$)]]
+- [[S12-3 Tema 01 - Ejercicio 3 - error cuadratico seno rectificado|Ej 3 — Error cuadrático del seno rectificado ($E_5\approx1.22\times10^{-4}A^2$)]]
+- [[S12-4 Conclusiones semana 12|Cierre semana 12]]
+
+## Semana 13 — Teorema de Parseval (cierre Unidad 2 + PC02)
+
+- [[S13-0 Tema 01 - Teorema de Parseval|Teoría — Identidad de Parseval y demostración]]
+- [[S13-1 Tema 01 - Ejercicio 1 - Parseval prueba suma 1 sobre n cuadrado|Ej 1 — $\sum 1/n^2 = \pi^2/6$ (problema de Basilea)]]
+- [[S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta|Ej 2 — $\sum 1/(2n-1)^4 = \pi^4/96$]]
+- [[S13-3 Conclusiones semana 13|Cierre semana 13]]
+- [[S13-99 PC02 sem 13|Práctica Calificada 2 (PC02) — calificada, 19–21 jun]]

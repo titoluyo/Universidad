@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/Amplificadores/clases/s12/S12-3 Tema 12 - Valor eficaz (RMS) de la corriente.md",
+                "file": "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S12-3 Tema 12 - Valor eficaz (RMS) de la corriente"
+              "title": "S13-1 Tema 13 - Que son los espejos de corriente"
             }
           },
           {
@@ -230,22 +230,27 @@
   },
   "active": "5dd537a525e3286c",
   "lastOpenFiles": [
-    "cursos/2026-1/SeriesTransformadas/SeriesTransformadas MOC.md.tmp.36616.472457f18ee8",
-    "cursos/2026-1/SeriesTransformadas/Formulario - Series y Transformadas.md.tmp.36616.1f251c91f0b0",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md.tmp.37556.2ac4da2d93af",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md.tmp.37556.26dd0d0e51c6",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.37556.f47bb28b8a81",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-2 Tema 13 - Polarizar con espejos de corriente.md",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-2 Tema 13 - Polarizar con espejos de corriente.md.tmp.37556.bcbf45985862",
+    "cursos/2026-1/Amplificadores/clases/s13/attachments/polarizacion_espejos.png",
+    "cursos/2026-1/Amplificadores/clases/s13/plot_polarizacion_espejos.py",
+    "cursos/2026-1/Amplificadores/clases/s12/S12-3 Tema 12 - Valor eficaz (RMS) de la corriente.md",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.37556.3d65d6946ced",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md.tmp.37556.3ad3a646debc",
+    "cursos/2026-1/Amplificadores/clases/s13/attachments/espejo_corriente.png",
+    "cursos/2026-1/Amplificadores/clases/s13/plot_espejo_corriente.py",
+    "cursos/2026-1/Amplificadores/clases/s13/plot_espejo_corriente.py.tmp.37556.801c41c096e0",
+    "cursos/2026-1/Amplificadores/clases/s13/attachments",
+    "cursos/2026-1/Amplificadores/clases/s13",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-99 PC02 sem 13.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/S13-99 PC02 sem 13.md.tmp.36616.f583dda1f9d8",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-3 Conclusiones semana 13.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/S13-3 Conclusiones semana 13.md.tmp.36616.180db2d975c1",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta.md.tmp.36616.89904df2a802",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-1 Tema 01 - Ejercicio 1 - Parseval prueba suma 1 sobre n cuadrado.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/S13-1 Tema 01 - Ejercicio 1 - Parseval prueba suma 1 sobre n cuadrado.md.tmp.36616.105c5c96708c",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-0 Tema 01 - Teorema de Parseval.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/S13-0 Tema 01 - Teorema de Parseval.md.tmp.36616.57f8a1507ebd",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/attachments/PC02-Indicaciones.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/attachments/T01-Ej2-Guion-parseval-convergencia.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/attachments/T01-Ej1-Guion-parseval-demostracion.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s13/attachments/T01-Lectura-teorema-parseval.pdf",
     "cursos/2026-1/MaquinasElectricas/clases/s13/S13-99 Evaluación Semana 13 - AC Actividad de Participación (PA).md",
     "cursos/2026-1/MaquinasElectricas/clases/s13/S13-8 Conclusiones semana 13.md",
     "cursos/2026-1/MaquinasElectricas/clases/s13/S13-5 Ejercicio resuelto - Motor con excitación compuesta (Video).md",
@@ -262,8 +267,6 @@
     "cursos/2026-1/MaquinasElectricas/clases/s13/attachments/T02 - Figura 5. Caracteristica n-T motor derivacion.png",
     "cursos/2026-1/MaquinasElectricas/clases/s13/attachments/_mi-p15-2_385x324.png",
     "cursos/2026-1/MaquinasElectricas/clases/s13/attachments/_mi-p15-1_461x151.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s13/attachments/_mi-p14-2_398x267.png",
-    "cursos/2026-1/MaquinasElectricas/clases/s13/attachments/_mi-p14-1_461x151.png",
     "cursos/2026-1/SeriesTransformadas/clases/s12/S12-4 Conclusiones semana 12.md",
     "cursos/2026-1/SeriesTransformadas/clases/s12/S12-3 Tema 01 - Ejercicio 3 - error cuadratico seno rectificado.md",
     "cursos/2026-1/SeriesTransformadas/clases/s12/S12-2 Tema 01 - Ejercicio 2 - error cuadratico de f(t) = t.md",
@@ -273,9 +276,6 @@
     "cursos/2026-1/MaquinasElectricas/clases/s12/S12-8 Conclusiones semana 12.md",
     "cursos/2026-1/MaquinasElectricas/clases/s12/S12-4 Tema 03 - Reacción de armadura y conmutación.md",
     "cursos/2026-1/MaquinasElectricas/clases/s12/S12-3 Ejercicio resuelto - Máquina elemental DC (Video).md",
-    "cursos/2026-1/MaquinasElectricas/clases/s12/S12-2 Tema 02 - Fuerza magnetomotriz y tensión inducida.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s12/S12-1 Tema 01 - Máquinas de corriente continua.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s12/S12-0 Introducción - Máquinas de corriente continua.md",
     "Untitled.canvas"
   ]
 }

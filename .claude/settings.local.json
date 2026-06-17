@@ -22,8 +22,12 @@
       "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='chrome.exe'\" | Where-Object { $_.CommandLine -match 'mcp-chrome-50e569d' } | Select-Object ProcessId, @{N='Cmd';E={$_.CommandLine.Substring\\(0,[Math]::Min\\(160,$_.CommandLine.Length\\)\\)}} | Format-List)"
     ]
   },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
   "enabledPlugins": {
     "obsidian@obsidian-skills": true,
     "codex@openai-codex": true
-  }
+  },
+  "enableAllProjectMcpServers": true
 }

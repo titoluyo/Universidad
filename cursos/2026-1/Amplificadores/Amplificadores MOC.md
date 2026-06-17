@@ -40,6 +40,11 @@ aliases:
 - [[S08-1 Amplificadores realimentados]]
 - [[S08-2 Realimentacion negativa y realimentacion positiva]]
 
+### Semana 13 — Fuentes de corriente y cargas activas
+
+- [[S13-1 Tema 13 - Que son los espejos de corriente|S13-1 Qué son los espejos de corriente]]
+- [[S13-2 Tema 13 - Polarizar con espejos de corriente|S13-2 Polarizar con espejos de corriente]]
+
 ## Bibliografia
 
 - Boylestad, R. & Nashelsky, L. *Electronica: Teoria de Circuitos y Dispositivos Electronicos*. Pearson.

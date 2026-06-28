@@ -650,3 +650,74 @@ Expandir $f$ en Fourier (usar paridad) → aplicar Parseval → calcular $\frac{
 | $f(x)=1+\lvert x\rvert$, $(-1,1)$ (par) | $\displaystyle\sum_{n=1}^\infty \dfrac{1}{(2n-1)^4}$ | $\dfrac{\pi^4}{96}$ |
 
 Fuentes: [[S13-1 Tema 01 - Ejercicio 1 - Parseval prueba suma 1 sobre n cuadrado]], [[S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta]]
+
+## Transformada de Laplace
+
+Fuente: [[S14-1 Tema 01 - Transformadas de Laplace]]
+
+### Definición
+
+$$\mathcal{L}\{F(t)\} = \int_0^{\infty} e^{-st}\,F(t)\,dt$$
+
+- $F(t)$ continua por tramos y de orden exponencial; la integral converge para algún $s$.
+- Notación: función en mayúscula $F(t)$ → su transformada en minúscula $f(s)$.
+
+### Tabla de transformadas elementales
+
+| $F(t)$ | $f(s)$ | Región |
+| --- | --- | --- |
+| $k$ | $\dfrac{k}{s}$ | $s>0$ |
+| $t^n$ | $\dfrac{n!}{s^{n+1}}$ | $s>0$ |
+| $e^{at}$ | $\dfrac{1}{s-a}$ | $s>a$ |
+| $\sin at$ | $\dfrac{a}{s^2+a^2}$ | $s>0$ |
+| $\cos at$ | $\dfrac{s}{s^2+a^2}$ | $s>0$ |
+| $\sinh at$ | $\dfrac{a}{s^2-a^2}$ | $s>\lvert a\rvert$ |
+| $\cosh at$ | $\dfrac{s}{s^2-a^2}$ | $s>\lvert a\rvert$ |
+| $e^{bt}\sin at$ | $\dfrac{a}{(s-b)^2+a^2}$ | |
+| $e^{bt}\cos at$ | $\dfrac{s-b}{(s-b)^2+a^2}$ | |
+| $e^{bt}\sinh at$ | $\dfrac{a}{(s-b)^2-a^2}$ | |
+| $e^{bt}\cosh at$ | $\dfrac{s-b}{(s-b)^2-a^2}$ | |
+
+### Propiedades
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{L}\{c_1F_1+c_2F_2\} = c_1f_1(s)+c_2f_2(s)$ |
+| 1.ª traslación (en $s$) | $\mathcal{L}\{e^{at}F(t)\} = f(s-a)$ |
+| 2.ª traslación (en $t$) | $\mathcal{L}\{F(t-a)\,u(t-a)\} = e^{-as}f(s)$ |
+| Cambio de escala | $\mathcal{L}\{F(at)\} = \dfrac{1}{a}f\!\left(\dfrac{s}{a}\right)$ |
+| Multiplicación por $t^n$ | $\mathcal{L}\{t^nF(t)\} = (-1)^n\dfrac{d^n}{ds^n}f(s)$ |
+
+### Transformada de derivadas e integrales
+
+$$\mathcal{L}\{F'(t)\} = s\,f(s) - F(0)$$
+$$\mathcal{L}\{F''(t)\} = s^2 f(s) - s\,F(0) - F'(0)$$
+$$\mathcal{L}\{F^{(n)}(t)\} = s^n f(s) - s^{n-1}F(0) - \cdots - F^{(n-1)}(0)$$
+$$\mathcal{L}\left\{\int_0^t F(u)\,du\right\} = \frac{f(s)}{s}$$
+
+> [!tip] Clave para EDOs
+> La transformada de derivadas incorpora las **condiciones iniciales** automáticamente: una EDO con valores iniciales se vuelve una ecuación algebraica en $f(s)$.
+
+### Transformada inversa
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{L}^{-1}\{c_1f_1+c_2f_2\} = c_1F_1+c_2F_2$ |
+| 1.ª traslación | $\mathcal{L}^{-1}\{f(s-a)\} = e^{at}F(t)$ |
+| 2.ª traslación | $\mathcal{L}^{-1}\{e^{as}f(s)\} = F(t-a)\,u(t-a)$ |
+| Cambio de escala | $\mathcal{L}^{-1}\{f(ks)\} = \dfrac{1}{k}F\!\left(\dfrac{t}{k}\right)$ |
+
+Técnica práctica: **fracciones parciales** + **completar cuadrados** para llevar $f(s)$ a las formas $\dfrac{s-b}{(s-b)^2+a^2}\to e^{bt}\cos at$ y $\dfrac{a}{(s-b)^2+a^2}\to e^{bt}\sin at$.
+
+### Aplicación: circuitos RLC (leyes de Kirchhoff)
+
+$$L\frac{dI}{dt} + R\,I + \frac{Q}{C} = E,\qquad I = \frac{dQ}{dt}$$
+
+Procedimiento: plantear la EDO en $Q$ → aplicar Laplace con $Q(0)=I(0)=0$ → despejar $Q(s)=\dfrac{E/L}{s\,(s^2 + \frac{R}{L}s + \frac{1}{LC})}$ → fracciones parciales + completar cuadrados → inversa. La corriente es $I(t)=Q'(t)$.
+
+| Circuito | $Q(t)$ | $I(t)=Q'(t)$ |
+| -------- | ------ | ------------ |
+| $L{=}2,\;R{=}16,\;C{=}0{,}02,\;E{=}300$ | $6 - 6e^{-4t}\cos 3t - 8e^{-4t}\sin 3t$ | $50\,e^{-4t}\sin 3t$ |
+| $L{=}1,\;R{=}20,\;C{=}0{,}005,\;E{=}150$ | $\tfrac34(1 - e^{-10t}\cos 10t - e^{-10t}\sin 10t)$ | $15\,e^{-10t}\sin 10t$ |
+
+Fuentes: [[S14-2 Tema 01 - Ejercicio 1 - EDO con coeficientes variables]], [[S14-3 Tema 01 - Ejercicio 2 - Circuito RLC carga y corriente]], [[S14-4 Tema 01 - Ejercicio 3 - Circuito RLC II]]

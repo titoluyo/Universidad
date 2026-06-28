@@ -175,8 +175,15 @@ aliases:
 
 ### Semana 14
 
-> [!info] Pendiente
-> Arranque, frenado. Inversion de giro. Regulacion de velocidad de motor DC.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S14-0 Introducción - Arranque, frenado y regulación de motores DC\|Introduccion - Arranque, frenado y regulacion]] | introduccion |
+| 1 | [[S14-1 Tema 01 - Arranque, frenado e inversión del sentido de giro en motores DC\|Arranque, frenado e inversion del sentido de giro]] | clase |
+| 2 | [[S14-2 Tema 02 - Regulación de velocidad de un motor de corriente continua\|Regulacion de velocidad de un motor DC]] | clase |
+| 3 | [[S14-3 Ejercicio resuelto - Regulación de velocidad de motor serie (Video)\|Ejercicio resuelto - Motor serie con saturacion]] | ejercicio |
+| 8 | [[S14-8 Conclusiones semana 14\|Conclusiones semana 14]] | clase |
+| 98 | [[S14-98 PC3 - Enunciados y desarrollo\|PC3 - Enunciados y desarrollo]] | pc |
+| 99 | [[S14-99 Evaluación Semana 14 - PC3 Práctica Calificada 3\|🔴 PC3 - Practica Calificada 3 (AC-S14)]] | pc |
 
 ---
 

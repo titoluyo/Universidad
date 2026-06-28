@@ -967,3 +967,34 @@ Curva hiperbólica: **par de arranque muy alto**, **embalamiento en vacío**. El
 
 > [!example] Relaciones de proporcionalidad (ejercicios)
 > Con magnetización lineal: $\dfrac{E}{E'} = \dfrac{n\,\phi}{n'\,\phi'}$. Motor → $E = V - R_i I_i$; generador → $E = V + R_i I_i$. Potencia y par: $P_{mec} = T\cdot 2\pi\frac{n}{60}$. Ver [[S13-3 Ejercicio resuelto - Motor con excitación serie (Video)|S13-3]], [[S13-4 Ejercicio resuelto - Motor con excitación shunt (Video)|S13-4]], [[S13-5 Ejercicio resuelto - Motor con excitación compuesta (Video)|S13-5]].
+
+---
+
+## 34. Arranque, Frenado y Regulación de Velocidad del Motor DC
+Fuente: [[S14-1 Tema 01 - Arranque, frenado e inversión del sentido de giro en motores DC|S14-1 Arranque, frenado e inversion de giro]]
+Fuente: [[S14-2 Tema 02 - Regulación de velocidad de un motor de corriente continua|S14-2 Regulacion de velocidad]]
+
+### Corriente de arranque
+$$I_i = \frac{V - E}{R_i} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} \boxed{I_i(\text{arranque directo}) = \frac{V}{R_i}}$$
+
+Al arrancar $n=0 \Rightarrow E = K_E\,n\,\phi = 0$ → corriente excesiva. Se limita con **reóstato de arranque** en serie con el inducido.
+
+### Regulación de velocidad — motor shunt/independiente
+$$n = \frac{1}{K_E\,\phi}\,V - \frac{R_i}{K_E\,K_T\,\phi^2}\,T \hspace{0.5cm};\hspace{0.5cm} n_0 = \frac{V}{K_E\,\phi}$$
+
+| Método | Efecto sobre la curva $n$–$T$ |
+| --- | --- |
+| Variar tensión $V$ | rectas **paralelas** (cambia $n_0$, igual pendiente) |
+| Variar $R$ del **inducido** | mismo $n_0$, **mayor pendiente** (rectas reostáticas) |
+| Variar $R$ del **inductor** (↓ $\phi$) | **sube** $n_0$ y la pendiente (rectas por encima de la natural) |
+
+### Regulación de velocidad — motor serie ($\phi = K_I\,I_i$)
+$$I_i = \sqrt{\frac{T}{K_T\,K_I}} \hspace{0.4cm};\hspace{0.4cm} n = \frac{1}{K_E}\sqrt{\frac{K_T}{K_I}}\;\frac{V}{\sqrt{T}} - \frac{R_i}{K_E\,K_I}$$
+
+Control eficiente solo por **tensión en bornes**. El **compuesto** queda entre shunt y serie.
+
+> [!example] Ejercicio motor serie con saturación (curva de magnetización)
+> Con saturación **no** se supone $\phi$ lineal: se lee la f.e.m. en la curva. $E = V - R_i I_i$; FMM $\mathcal{F} = N\,I_i$ → en la curva (a $n_0$) se lee $E_0$; luego $\dfrac{E}{E_0} = \dfrac{n}{n_0} \Rightarrow n = \dfrac{E}{E_0}n_0$ y $T = \dfrac{E\,I_i}{2\pi\frac{n}{60}}$. Desarrollo en [[S14-3 Ejercicio resuelto - Regulación de velocidad de motor serie (Video)|S14-3]].
+
+### Inversión del sentido de giro
+Se invierte la **polaridad de los bornes del inducido** (en c.a. trifásica: permutar dos fases). Maniobra automatizada con contactores temporizados $KM_1$/$KM_2$.

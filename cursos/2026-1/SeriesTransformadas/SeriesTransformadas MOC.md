@@ -136,3 +136,13 @@ aliases:
 - [[S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta|Ej 2 — $\sum 1/(2n-1)^4 = \pi^4/96$]]
 - [[S13-3 Conclusiones semana 13|Cierre semana 13]]
 - [[S13-99 PC02 sem 13|Práctica Calificada 2 (PC02) — calificada, 19–21 jun]]
+
+## Semana 14 — Transformada de Laplace (inicio Unidad 3)
+
+- [[S14-0 Introduccion semana 14|Introducción — Unidad 3: Transformadas]]
+- [[S14-1 Tema 01 - Transformadas de Laplace|Teoría — Definición, tabla, propiedades, derivadas e inversa]]
+- [[S14-2 Tema 01 - Ejercicio 1 - EDO con coeficientes variables|Ej 1 — $tY''+2Y'+tY=0 \to Y(t)=\frac{\sin t}{t}$]]
+- [[S14-3 Tema 01 - Ejercicio 2 - Circuito RLC carga y corriente|Ej 2 — Circuito RLC: $I(t)=50e^{-4t}\sin 3t$]]
+- [[S14-4 Tema 01 - Ejercicio 3 - Circuito RLC II|Ej 3 — Circuito RLC II: $I(t)=15e^{-10t}\sin 10t$]]
+- [[S14-5 Conclusiones semana 14|Cierre semana 14]]
+- [[S14-99 Evaluacion sem 14|Evaluación no calificada — Cuestionario, 22–28 jun]]

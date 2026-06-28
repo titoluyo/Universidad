@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md",
+                "file": "cursos/2026-1/Amplificadores/clases/s14/S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S13-1 Tema 13 - Que son los espejos de corriente"
+              "title": "S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode"
             }
           },
           {
@@ -230,22 +230,26 @@
   },
   "active": "5dd537a525e3286c",
   "lastOpenFiles": [
+    "cursos/2026-1/Amplificadores/clases/s14/S14-3 Tema 14 - Funcion de transferencia de filtros - polos y ceros.md",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-2 Tema 13 - Polarizar con espejos de corriente.md",
+    "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md",
+    "cursos/2026-1/Amplificadores/clases/s14/S14-5 Tema 14 - Diagrama de Bode por factores.md",
+    "cursos/2026-1/Amplificadores/clases/s14/S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode.md",
+    "cursos/2026-1/Amplificadores/clases/s14/S14-2 Tema 14 - Filtros activos - introduccion y clasificacion.md",
+    "cursos/2026-1/Amplificadores/clases/s14/S14-1 Tema 14 - Funcion de transferencia.md",
     "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md.tmp.37556.2ac4da2d93af",
     "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md.tmp.37556.26dd0d0e51c6",
     "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.37556.f47bb28b8a81",
-    "cursos/2026-1/Amplificadores/clases/s13/S13-2 Tema 13 - Polarizar con espejos de corriente.md",
     "cursos/2026-1/Amplificadores/clases/s13/S13-2 Tema 13 - Polarizar con espejos de corriente.md.tmp.37556.bcbf45985862",
     "cursos/2026-1/Amplificadores/clases/s13/attachments/polarizacion_espejos.png",
     "cursos/2026-1/Amplificadores/clases/s13/plot_polarizacion_espejos.py",
     "cursos/2026-1/Amplificadores/clases/s12/S12-3 Tema 12 - Valor eficaz (RMS) de la corriente.md",
     "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.37556.3d65d6946ced",
-    "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md",
     "cursos/2026-1/Amplificadores/clases/s13/S13-1 Tema 13 - Que son los espejos de corriente.md.tmp.37556.3ad3a646debc",
     "cursos/2026-1/Amplificadores/clases/s13/attachments/espejo_corriente.png",
     "cursos/2026-1/Amplificadores/clases/s13/plot_espejo_corriente.py",
     "cursos/2026-1/Amplificadores/clases/s13/plot_espejo_corriente.py.tmp.37556.801c41c096e0",
     "cursos/2026-1/Amplificadores/clases/s13/attachments",
-    "cursos/2026-1/Amplificadores/clases/s13",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-99 PC02 sem 13.md",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-3 Conclusiones semana 13.md",
     "cursos/2026-1/SeriesTransformadas/clases/s13/S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta.md",
@@ -272,10 +276,6 @@
     "cursos/2026-1/SeriesTransformadas/clases/s12/S12-2 Tema 01 - Ejercicio 2 - error cuadratico de f(t) = t.md",
     "cursos/2026-1/SeriesTransformadas/clases/s12/S12-1 Tema 01 - Ejercicio 1 - serie por expansion del coseno.md",
     "cursos/2026-1/SeriesTransformadas/clases/s12/S12-0 Tema 01 - Analisis de las series de Fourier.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s12/S12-99 Evaluación Semana 12 - Cuestionario de autoevaluación.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s12/S12-8 Conclusiones semana 12.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s12/S12-4 Tema 03 - Reacción de armadura y conmutación.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s12/S12-3 Ejercicio resuelto - Máquina elemental DC (Video).md",
     "Untitled.canvas"
   ]
 }

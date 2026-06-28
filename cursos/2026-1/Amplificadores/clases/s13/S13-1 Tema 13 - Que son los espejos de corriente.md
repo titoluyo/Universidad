@@ -103,6 +103,35 @@ $$\boxed{\,I_{REF} = \dfrac{V_{CC} - V_{BE}}{R}\,}$$
 - $V_{BE}$ = caída base-emisor del transistor diodo-conectado ($\approx 0.7\ \text{V}$)
 - $R$ = resistencia que fija la referencia
 
+> [!quote] Material complementario — diapositivas del profesor
+> "$V_{CC}$ se conecta en serie con una $R_x$ en el **colector del transistor que se utiliza para conectarse con la base** (el diodo-conectado). Los emisores van conectados a tierra." Con la notación de la diapositiva ($I_x \equiv I_{REF}$, $R_x \equiv R$):
+> $$I_x = \dfrac{V_{CC} - V_{BE}}{R_x}$$
+
+### Desarrollo en clase (manuscrito sobre la diapositiva)
+
+En clase el docente resolvió el ejemplo a mano y, con él, **demostró la propiedad del espejo**: que la corriente de salida $I$ es una copia de la de referencia $I_x$. La incógnita planteada sobre la rama derecha del circuito es justamente "$I = ?$".
+
+**1. Ley de Ohm** sobre la resistencia de referencia:
+
+$$V = IR \;\Rightarrow\; I_x = \dfrac{V}{R}$$
+
+**2. La tensión sobre $R_x$** es $V_{CC}$ menos la caída base-emisor del transistor diodo-conectado:
+
+$$I_x = \dfrac{V_{CC} - V_{BE}}{R_x}$$
+
+**3. Sustituir valores** ($V_{CC}=10\ \text{V}$, $V_{BE}\approx 0.7\ \text{V}$, $R_x=1\ \text{k}\Omega$):
+
+$$I_x = \dfrac{10 - V_{BE}}{1\text{k}} = \dfrac{10 - 0.7}{1\text{k}} = \dfrac{9.3\ \text{V}}{1\,000\ \Omega} = 0{,}0093\ \text{A} = \boxed{9.3\ \text{mA}}$$
+
+**4. Conclusión** — la corriente de salida espeja a la de referencia:
+
+$$\boxed{\,I_x \simeq I\,}\quad\checkmark$$
+
+Es decir, la rama de salida entrega $I \approx 9.3\ \text{mA}$ **sin importar la carga**: eso es lo que el desarrollo quería demostrar.
+
+> [!note] Por qué $\simeq$ y no $=$
+> El docente usa $\simeq$ a propósito. Por la corriente de base finita, la copia no es exacta: $I = \dfrac{\beta_F}{\beta_F+2}\,I_x \approx I_x$. Con $\beta_F=100$, $I \approx 0.98\times 9.3 \approx 9.1\ \text{mA}$ (un 2 % menos). Este es el resultado de la *Demostración de $I_Q=(\beta_F+2)I_{B1}$* y de la sección *Error por $\beta$ finita* (§3.4), más abajo.
+
 ### 3.4 Error por $\beta$ finita
 
 En el caso ideal $I_O = I_{REF}$, pero las **corrientes de base** introducen un pequeño error. La referencia debe alimentar el colector de $Q_1$ **más** las dos bases:
@@ -181,6 +210,11 @@ $$\boxed{\,r_o = \dfrac{V_A}{I_C}\,}$$
 - $r_o$ = resistencia de salida del transistor de salida
 - $V_A$ = tensión de Early (típica $50$–$100\ \text{V}$)
 - $I_C$ = corriente de colector ($\approx I_O$)
+
+> [!quote] Material complementario — notación de parámetros $h$ (diapositiva)
+> La diapositiva escribe la resistencia de salida del espejo $R_Q$ como el **inverso del parámetro híbrido de salida** $h_{oe}$ del transistor de salida:
+> $$R_Q = h_{oe,1}^{-1} \approx \dfrac{V_{AF,1}}{I_O}$$
+> Es la **misma** $r_o$ de arriba: $h_{oe}$ es la admitancia de salida del modelo de parámetros $h$, así que $h_{oe}^{-1}$ es una resistencia, y $V_{AF}$ es la tensión de Early directa (*forward*). Por eso $R_Q = h_{oe,1}^{-1} \approx V_{AF,1}/I_O \equiv V_A/I_C$. El subíndice $1$ indica que es el transistor de **salida** (notación de la diapositiva, donde el de referencia es el $2$).
 
 Incluyendo el efecto Early, la corriente de salida depende débilmente de su tensión:
 

@@ -721,3 +721,88 @@ Procedimiento: plantear la EDO en $Q$ → aplicar Laplace con $Q(0)=I(0)=0$ → 
 | $L{=}1,\;R{=}20,\;C{=}0{,}005,\;E{=}150$ | $\tfrac34(1 - e^{-10t}\cos 10t - e^{-10t}\sin 10t)$ | $15\,e^{-10t}\sin 10t$ |
 
 Fuentes: [[S14-2 Tema 01 - Ejercicio 1 - EDO con coeficientes variables]], [[S14-3 Tema 01 - Ejercicio 2 - Circuito RLC carga y corriente]], [[S14-4 Tema 01 - Ejercicio 3 - Circuito RLC II]]
+
+## Transformada de Fourier
+
+Fuente: [[S15-1 Tema 01 - Transformada de Fourier]]
+
+### Definición (par de transformadas)
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t)\,e^{-i\omega t}\,dt \qquad\qquad f(t) = \frac{1}{2\pi}\int_{-\infty}^{\infty} F(\omega)\,e^{i\omega t}\,d\omega$$
+
+Se obtiene de la serie de Fourier compleja en el límite $T\to\infty$. Coeficiente complejo: $C_n = \frac{a_n}{2}-\frac{ib_n}{2}$, $|C_n|=\frac12\sqrt{a_n^2+b_n^2}$ (espectro de línea).
+
+### Propiedades
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{F}\{af_1+bf_2\} = aF_1(\omega)+bF_2(\omega)$ |
+| Escalado | $\mathcal{F}\{f(at)\} = \frac{1}{a}F(\frac{\omega}{a})$ |
+| Traslación en $t$ | $\mathcal{F}\{g(t-a)\} = e^{-i\omega a}G(\omega)$ |
+| Derivada | $\mathcal{F}\{f^{(n)}(t)\} = (i\omega)^n F(\omega)$ |
+
+### Transformadas notables
+
+| $f(t)$ | $F(\omega)$ |
+| ------ | ----------- |
+| $\delta(t)$ | $1$ |
+| $\delta(t-t_0)$ | $e^{-i\omega t_0}$ |
+| $1$ (constante) | $2\pi\delta(\omega)$;  $A\to 2\pi A\delta(\omega)$ |
+| $e^{i\omega_0 t}$ | $2\pi\delta(\omega-\omega_0)$ |
+| $\cos\omega_0 t$ | $\pi[\delta(\omega-\omega_0)+\delta(\omega+\omega_0)]$ |
+| $\sin\omega_0 t$ | $i\pi[\delta(\omega+\omega_0)-\delta(\omega-\omega_0)]$ |
+| Escalón $u(t)$ | $\pi\delta(\omega)+\frac{1}{i\omega}$ |
+| Pulso rectangular $P_d(t)$ | $d\,\dfrac{\sin(\omega d/2)}{\omega d/2} = d\operatorname{sinc}\frac{\omega d}{2}$ |
+
+> [!tip] Dualidad tiempo–frecuencia
+> Pulso rectangular ↔ sinc; delta ↔ constante. Lo concentrado en un dominio se dispersa en el otro.
+
+**Muestreo:** una señal de banda limitada a $f_M$ se reconstruye con muestras espaciadas $<1/f_M$.
+
+Fuentes: [[S15-2 Tema 01 - Ejercicio 1 - Transformada del pulso rectangular]], [[S15-3 Tema 01 - Ejercicio 2 - Transformada del impulso desplazado]], [[S15-4 Tema 01 - Ejercicio 3 - Transformada del escalon unitario]], [[S15-5 Tema 01 - Ejercicio 4 - Transformada de funcion periodica]]
+
+## Transformada Z
+
+Fuentes: [[S16-1 Tema 01 - Transformada Z]], [[S17-1 Tema 01 - Transformada Z Parte 2]]
+
+### Definición
+
+$$X(z) = \sum_{n=-\infty}^{+\infty} x(n)\,z^{-n}$$
+
+Generaliza la TF de secuencias; la TF es el caso $z=e^{i\omega}$ (círculo unitario $|z|=1$). **ROC:** anillo $R^-<|z|<R^+$; ceros = raíces de $N(z)$, polos = raíces de $D(z)$.
+
+Herramienta clave: **serie geométrica** $\sum_{n=0}^\infty r^n = \frac{1}{1-r}$ ($|r|<1$); desde $N_1$: $\sum_{n=N_1}^\infty r^n = \frac{r^{N_1}}{1-r}$.
+
+### Propiedades
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{Z}\{ax_1+bx_2\} = aX_1(z)+bX_2(z)$ |
+| Desplazamiento | $\mathcal{Z}\{x(n-n_0)u(n-n_0)\} = z^{-n_0}X(z)$ |
+| Operación escalar | $\mathcal{Z}\{z_0^n x(n)\} = X(z/z_0)$ |
+| Inversión de tiempo | $\mathcal{Z}\{x(-n)\} = X(1/z)$ |
+| Diferenciación | $\mathcal{Z}\{n\,x(n)\} = -z\,\frac{dX}{dz}$ |
+| Convolución | $\mathcal{Z}\{x_1 * x_2\} = X_1(z)X_2(z)$ |
+
+### Transformadas notables
+
+| $x(n)$ | $X(z)$ | ROC |
+| ------ | ------ | --- |
+| $\delta(n)$ | $1$ | todo $z$ |
+| $\delta(n-m)$ | $z^{-m}$ | $z\neq0$ |
+| $u(n)$ | $\frac{z}{z-1}$ | $|z|>1$ |
+| $a^n u(n)$ | $\frac{z}{z-a}$ | $|z|>a$ |
+| $\cos(\omega T n)$ | $\frac{z(z-\cos\omega T)}{z^2-2z\cos\omega T+1}$ | $|z|>1$ |
+
+### Transformada inversa — 4 métodos
+
+1. **División larga:** $X(z) = x(0)+x(1)z^{-1}+\cdots$ (coeficientes = $x(n)$).
+2. **Fracciones parciales + tabla:** dividir $\frac{F(z)}{z}$, factorizar $Q(z)$, expandir, multiplicar por $z$, invertir.
+3. **Integral de inversión (residuos):** $x(n) = \sum_i [(z-z_i)X(z)z^{n-1}]_{z_i}$ (polos simples), vía Cauchy.
+4. **Inspección.**
+
+### Ecuaciones en diferencias (transformada unilateral)
+
+Aplicar Z (el desplazamiento incorpora $y_0, y_1, \ldots$) → despejar $Y(z)$ → fracciones parciales → inversa. Raíces **reales** → suma de exponenciales $a^k$; raíces **complejas conjugadas** → sinusoide amortiguada.
+
+Fuentes: [[S16-2 Tema 01 - Ejercicio 1 - Transformada Z de a elevado n por u(n)]], [[S16-4 Tema 01 - Ejercicio 3 - Transformada Z del coseno]], [[S17-2 Tema 01 - Inversa por division larga]], [[S17-4 Tema 01 - Inversa por residuos]], [[S17-6 Tema 01 - Ecuacion en diferencias homogenea]]

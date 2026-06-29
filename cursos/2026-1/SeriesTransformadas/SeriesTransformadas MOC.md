@@ -146,3 +146,38 @@ aliases:
 - [[S14-4 Tema 01 - Ejercicio 3 - Circuito RLC II|Ej 3 — Circuito RLC II: $I(t)=15e^{-10t}\sin 10t$]]
 - [[S14-5 Conclusiones semana 14|Cierre semana 14]]
 - [[S14-99 Evaluacion sem 14|Evaluación no calificada — Cuestionario, 22–28 jun]]
+
+## Semana 15 — Transformada de Fourier
+
+- [[S15-0 Introduccion semana 15|Introducción]]
+- [[S15-1 Tema 01 - Transformada de Fourier|Teoría — Definición, propiedades, TF elementales, muestreo]]
+- [[S15-2 Tema 01 - Ejercicio 1 - Transformada del pulso rectangular|Ej 1 — Pulso rectangular → sinc]]
+- [[S15-3 Tema 01 - Ejercicio 2 - Transformada del impulso desplazado|Ej 2 — Impulso desplazado $\delta(t-t_0)$]]
+- [[S15-4 Tema 01 - Ejercicio 3 - Transformada del escalon unitario|Ej 3 — Escalón unitario $\to \pi\delta(\omega)+\frac{1}{i\omega}$]]
+- [[S15-5 Tema 01 - Ejercicio 4 - Transformada de funcion periodica|Ej 4 — Función periódica (tren de pulsos)]]
+- [[S15-6 Conclusiones semana 15|Cierre semana 15]]
+- [[S15-99 Evaluacion sem 15|Evaluación no calificada — Cuestionario, 29 jun–5 jul]]
+
+## Semana 16 — Transformada Z (Parte 1) + Octave + APF
+
+- [[S16-0 Introduccion semana 16|Introducción]]
+- [[S16-1 Tema 01 - Transformada Z|Teoría — Definición, propiedades, ROC]]
+- [[S16-2 Tema 01 - Ejercicio 1 - Transformada Z de a elevado n por u(n)|Ej 1 — $\mathcal{Z}\{a^n u(n)\}=\frac{z}{z-a}$]]
+- [[S16-3 Tema 01 - Ejercicio 2 - Transformada Z con desplazamiento|Ej 2 — $\mathcal{Z}\{(1/5)^n u(n-3)\}$]]
+- [[S16-4 Tema 01 - Ejercicio 3 - Transformada Z del coseno|Ej 3 — $\mathcal{Z}\{\cos\omega t\}$]]
+- [[S16-5 Tema 02 - Programa Octave|Tema 02 — Programa Octave]]
+- [[S16-6 Conclusiones semana 16|Cierre semana 16]]
+- [[S16-98 APF Indicaciones|APF — consigna y rúbrica]]
+- [[S16-99 APF sem 16|Avance de Proyecto Final (APF) — calificada, 6–13 jul]]
+
+## Semana 17 — Transformada Z (Parte 2): inversa y ecuaciones en diferencias
+
+- [[S17-0 Introduccion semana 17|Introducción]]
+- [[S17-1 Tema 01 - Transformada Z Parte 2|Teoría — TF especiales, inversa (4 métodos), unilateral]]
+- [[S17-2 Tema 01 - Inversa por division larga|Ej 1 — División larga (Fibonacci)]]
+- [[S17-3 Tema 01 - Inversa por integral de inversion|Ej 2 — Integral de inversión → $a^n u(n)$]]
+- [[S17-4 Tema 01 - Inversa por residuos|Ej 3 — Residuos → $5(1-0.8^k)$]]
+- [[S17-5 Tema 01 - Ecuacion en diferencias con entrada|Ej 4 — Ec. en diferencias con entrada (raíces complejas)]]
+- [[S17-6 Tema 01 - Ecuacion en diferencias homogenea|Ej 5 — Ec. homogénea → $3^k+2(-\frac12)^k$]]
+- [[S17-7 Conclusiones semana 17|Cierre semana 17]]
+- [[S17-99 Evaluacion sem 17|Evaluación no calificada — Cuestionario, 13–19 jul]]

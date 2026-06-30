@@ -181,3 +181,12 @@ aliases:
 - [[S17-6 Tema 01 - Ecuacion en diferencias homogenea|Ej 5 — Ec. homogénea → $3^k+2(-\frac12)^k$]]
 - [[S17-7 Conclusiones semana 17|Cierre semana 17]]
 - [[S17-99 Evaluacion sem 17|Evaluación no calificada — Cuestionario, 13–19 jul]]
+
+## Semana 18 — Proyecto Final (PROY)
+
+- [[S18-98 PROY Indicaciones|PROY — consigna y rúbrica (20 pts)]]
+- [[S18-99 PROY sem 18|Proyecto Final (PROY) — calificada, 30%, 20–21 jul]]
+
+## Trabajo Final (espacio de trabajo)
+
+- [[Trabajo Final - SyT MOC|Trabajo Final — hub de etapas]] (brainstorming → entrega)

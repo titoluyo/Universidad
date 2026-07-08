@@ -1,5 +1,5 @@
 ---
-title: Informe LE1 v2 - Amplificador operacional (marco teorico, calculo, simulacion y comparacion)
+title: Informe LE1 - Amplificador operacional (inversor y no inversor)
 curso: "[[Amplificadores MOC]]"
 unidad: 1
 semana: 6
@@ -19,13 +19,6 @@ tags:
   - tema/multisim
 date: 2026-07-07
 ---
-
-> [!info] Documentos relacionados
-> - [[S06-99 Laboratorio - LE1 Amplificador operacional|S06-99 Guía del laboratorio]]
-> - [[S06-100 Informe LE1 - Amplificador operacional|S06-100 Informe LE1 (v1, con mediciones físicas)]]
-> - [[S06-101 Espejo - Mejoras propuestas al informe LE1|S06-101 Espejo de mejoras]]
-> - [[S04-1 Aplicaciones lineales del amplificador operacional]] · [[S06-1 Amplificadores lineales y no lineales]] (teoría)
-> - [[Formulario - Amplificadores|Formulario]]
 
 > [!example] Datos del entregable
 > - **Curso:** Circuitos Electrónicos Amplificadores (100000I21N)
@@ -141,8 +134,8 @@ Ambas verificaciones aseguran que las fórmulas ideales $-R_2/R_1$ y $1 + R_2/R_
 
 ## 3. Cálculo teórico
 
-> [!note] Amplitud de la señal de entrada
-> La guía indica una señal senoidal de $5\,\text{kHz}$ y $1\,\text{Vpp}$. En la simulación la fuente V1 se configuró con **amplitud de $1\,\text{V}$ pico** (es decir, $2\,\text{Vpp}$). Como la ganancia es independiente de la amplitud (zona lineal), los cálculos siguientes se presentan para la amplitud simulada de $2\,\text{Vpp}$; para $1\,\text{Vpp}$ basta dividir las salidas entre 2.
+> [!note] Señal de entrada
+> Señal de trabajo: senoidal de $5\,\text{kHz}$ con amplitud de $1\,\text{V}$ pico ($2\,\text{Vpp}$). Dado que ambos circuitos operan dentro de la zona lineal, la ganancia es independiente de la amplitud de la señal aplicada.
 
 ### 3.1. Amplificador inversor ($R_1 = 2\,\text{k}\Omega$, $R_2 = 10\,\text{k}\Omega$)
 
@@ -186,7 +179,7 @@ Ambos circuitos se simularon en **Multisim Live** con el modelo del LM741, alime
 ![[Lab1 - Inversor-Grapher.png]]
 *Grapher: $V_i$ (verde, $1\,\text{V}$ pico) y $V_o$ (azul, $5\,\text{V}$ pico). Se aprecia el desfase de $180°$: cuando la entrada alcanza su máximo, la salida está en su mínimo.*
 
-**Lecturas de la simulación** (extraídas del CSV exportado, régimen estacionario):
+**Lecturas de la simulación** (análisis transitorio en régimen estacionario):
 
 | Magnitud | $V_i$ (PR1) | $V_o$ (PR2) |
 | -------- | ----------- | ----------- |
@@ -211,7 +204,7 @@ $$|A_{v,\text{sim}}| = \frac{V_{o,pp}}{V_{i,pp}} = \frac{9{,}9980}{1{,}9996} = 4
 ![[Lab1 - NoInversor-Grapher.png]]
 *Grapher: $V_i$ (verde, $1\,\text{V}$ pico) y $V_o$ (azul, $\approx 3{,}54\,\text{V}$ pico). Ambas señales cruzan por cero y alcanzan sus máximos en los mismos instantes: están **en fase** ($0°$).*
 
-**Lecturas de la simulación** (CSV, régimen estacionario):
+**Lecturas de la simulación** (análisis transitorio en régimen estacionario):
 
 | Magnitud | $V_i$ (PR1) | $V_o$ (PR2) |
 | -------- | ----------- | ----------- |
@@ -243,7 +236,7 @@ $$A_{v,\text{sim}} = \frac{V_{o,pp}}{V_{i,pp}} = \frac{7{,}0865}{1{,}9988} = \bo
 
 ### 5.2. Contraste con las mediciones físicas del laboratorio
 
-En la sesión presencial (ver [[S06-100 Informe LE1 - Amplificador operacional|informe v1]]) se midió con el osciloscopio una ganancia de $-4{,}81$ para el inversor y $+3{,}41$ para el no inversor (error $\approx 3{,}9\,\%$ respecto al teórico en ambos casos):
+En la sesión presencial de laboratorio se midió con el osciloscopio una ganancia de $-4{,}81$ para el inversor y $+3{,}41$ para el no inversor (error $\approx 3{,}9\,\%$ respecto al teórico en ambos casos):
 
 | Configuración | $A_v$ teórico | $A_v$ simulado | $A_v$ medido (osciloscopio) | Error medido vs teórico |
 | ------------- | ------------- | -------------- | --------------------------- | ----------------------- |

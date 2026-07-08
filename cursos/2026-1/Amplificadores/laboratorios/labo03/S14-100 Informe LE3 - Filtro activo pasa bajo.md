@@ -28,7 +28,7 @@ date: 2026-06-23
 > - [[S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode|S14-4 Filtros de primer orden y diagrama de Bode]] (teoría)
 > - [[S14-5 Tema 14 - Diagrama de Bode por factores|S14-5 Diagrama de Bode por factores]] (teoría)
 > - Evidencias originales: `TitoLuyoMurata-Laboratorio3-Evidencias.docx`
-> - Simulación corregida: carpeta `simulacion/` (`Lab3 - Filtro 2026 (1).csv` y capturas)
+> - Simulación: carpeta `simulacion/` (`Lab3 - Filtro 2026 (1).csv` y capturas)
 
 > [!example] Datos del entregable
 > - **Curso:** Circuitos Electrónicos Amplificadores
@@ -119,14 +119,14 @@ $$Q = \frac{1}{3 - A} = 1 \qquad \zeta = \frac{3 - A}{2} = 0.5$$
 
 La guía presenta la red RC con dos valores nominales: $R = 5.6\,\text{k}\Omega$ en la figura del procedimiento (valor usado en la simulación) y $R = 3.3\,\text{k}\Omega$ en el circuito del fundamento (resistencia que trae el alumno). Se calculan ambos casos con $C = 0.1\,\mu\text{F}$:
 
-| Parámetro | Fórmula | $R = 5.6\,\text{k}\Omega$ | $R = 3.3\,\text{k}\Omega$ |
-| --------- | ------- | ------------------------- | ------------------------- |
-| Frecuencia natural | $\omega_o = 1/RC$ | $1785.7\,\text{rad/s}$ | $3030.3\,\text{rad/s}$ |
-| Frecuencia natural | $f_o = \omega_o / 2\pi$ | $284.2\,\text{Hz}$ | $482.3\,\text{Hz}$ |
-| Cero del numerador | $f_z = f_o/2$ | $142.1\,\text{Hz}$ | $241.2\,\text{Hz}$ |
-| Pico de resonancia | $f_{pico} \approx 0.946\,f_o$ | $269\,\text{Hz}$ | $456\,\text{Hz}$ |
-| Ganancia máxima | $\|H\|_{max}$ | $4.50$ ($13.06\,\text{dB}$) | $4.50$ ($13.06\,\text{dB}$) |
-| Corte a −3 dB de la banda de paso | $f_{-3dB} \approx 3.02\,f_o$ | $858\,\text{Hz}$ | $1456\,\text{Hz}$ |
+| Parámetro                         | Fórmula                       | $R = 5.6\,\text{k}\Omega$   | $R = 3.3\,\text{k}\Omega$   |
+| --------------------------------- | ----------------------------- | --------------------------- | --------------------------- |
+| Frecuencia natural                | $\omega_o = 1/RC$             | $1785.7\,\text{rad/s}$      | $3030.3\,\text{rad/s}$      |
+| Frecuencia natural                | $f_o = \omega_o / 2\pi$       | $284.2\,\text{Hz}$          | $482.3\,\text{Hz}$          |
+| Cero del numerador                | $f_z = f_o/2$                 | $142.1\,\text{Hz}$          | $241.2\,\text{Hz}$          |
+| Pico de resonancia                | $f_{pico} \approx 0.946\,f_o$ | $269\,\text{Hz}$            | $456\,\text{Hz}$            |
+| Ganancia máxima                   | $\|H\|_{max}$                 | $4.50$ ($13.06\,\text{dB}$) | $4.50$ ($13.06\,\text{dB}$) |
+| Corte a −3 dB de la banda de paso | $f_{-3dB} \approx 3.02\,f_o$  | $858\,\text{Hz}$            | $1456\,\text{Hz}$           |
 
 Las funciones de transferencia numéricas quedan:
 
@@ -156,14 +156,6 @@ Valores representativos exportados del Grapher (`Lab3 - Filtro 2026 (1).csv`):
 | $\|V_o/V_i\|$ sim | 2.01 | 2.62 | **4.18** | 4.02 | 2.45 | 1.12 | 0.108 | 0.0108 |
 
 La simulación reproduce la respuesta teórica de la sección 4 para $R = 5.6\,\text{k}\Omega$: pico de $4.18$ ($12.4\,\text{dB}$) en $251\,\text{Hz}$ frente a los $4.50$ ($13.1\,\text{dB}$) en $269\,\text{Hz}$ del cálculo ideal. La pequeña diferencia (−7 % en amplitud) proviene de que $C_1 \neq C_2$ en el esquema ($97.5$ vs $113.7\,\text{nF}$, valores medidos) y del modelo real del LM741, mientras que el cálculo asume condensadores idénticos de $0.1\,\mu\text{F}$ y OPAMP ideal.
-
-> [!warning] Error detectado y corregido en la primera simulación
-> La primera versión del esquema tenía la resistencia de realimentación positiva capturada como $R_4 = 5.608\,\Omega$ (ohmios) en lugar de $5.6\,\text{k}\Omega$ — un error de unidad al digitar el valor. Con $R_4 \approx 0$ el nodo intermedio queda conectado casi directamente a la salida y la respuesta degenera a un **primer orden sin pico**, $H(s) \approx \frac{2}{1 - sRC}$, con fase en adelanto (imposible en un pasa bajo de fase mínima):
->
-> ![[s14-le3-multisim-bode-error-r4.png]]
-> *AC Sweep de la primera simulación (con $R_4 = 5.608\,\Omega$): respuesta de primer orden, sin pico de resonancia.*
->
-> El diagnóstico se verificó resolviendo numéricamente las ecuaciones de nodos con los valores exactos del esquema erróneo: el resultado coincide dígito a dígito con el CSV original (p. ej., en $1\,\text{kHz}$: modelo $0.5600$ vs CSV $0.5601$). Tras corregir $R_4$, el AC Sweep mostró el pico de resonancia esperado.
 
 ---
 
@@ -224,7 +216,7 @@ El pico medido ($A_v = 4.36$ en $\approx 450\,\text{Hz}$) **no** coincide con la
 ### Razones de las diferencias
 
 1. **Valor efectivo de la red RC ($R = 3.3\,\text{k}\Omega$).** La respuesta medida se ajusta al 1–3 % (hasta 1 kHz) a la curva teórica con $R = 3.3\,\text{k}\Omega$ ($f_o = 482\,\text{Hz}$), no a la de $5.6\,\text{k}\Omega$ ($f_o = 284\,\text{Hz}$). Esto indica que el montaje físico se armó con las resistencias de $3.3\,\text{k}\Omega$ que la guía lista como "material que trae el alumno" (y que aparecen como $R = 3\text{K}3$ en el circuito del fundamento). Es la razón dominante del corrimiento de todo el eje de frecuencias en un factor $\approx 5.6/3.3 = 1.7$.
-2. **Coherencia teoría–simulación.** Con $R_4$ ya corregida (ver sección 5), la simulación sigue la curva teórica de $5.6\,\text{k}\Omega$ dentro de un 7 %: la columna "simulado" difiere de la experimental por la misma razón que la teórica de $5.6\,\text{k}\Omega$ — el montaje físico usó otra $R$. La diferencia residual sim/teoría se debe a $C_1 \neq C_2$ ($97.5$ vs $113.7\,\text{nF}$) y al modelo real del LM741.
+2. **Coherencia teoría–simulación.** La simulación sigue la curva teórica de $5.6\,\text{k}\Omega$ dentro de un 7 %: la columna "simulado" difiere de la experimental por la misma razón que la teórica de $5.6\,\text{k}\Omega$, es decir, porque el montaje físico se armó con $R = 3.3\,\text{k}\Omega$. La diferencia residual entre simulación y teoría se debe a $C_1 \neq C_2$ ($97.5$ vs $113.7\,\text{nF}$) y al modelo real del LM741.
 3. **Tolerancias de los componentes.** Los condensadores cerámicos 104 tienen tolerancias típicas de ±10–20 % (los valores medidos en el esquema, $97.5\,\text{nF}$ y $113.7\,\text{nF}$, difieren entre sí un 16 %). Con $C_1 \neq C_2$ el pico real se desplaza y se reduce ligeramente — consistente con el máximo medido de $4.36$ frente al teórico de $4.50$ (−3 %).
 4. **Limitaciones del LM741 y de la medición en alta frecuencia.** Sobre 2 kHz la diferencia crece (hasta +27 % en 10 kHz) porque: la salida es ya muy pequeña ($0.49\,\text{V}_{pp}$) y la lectura de $V_{pp}$ en el osciloscopio incluye ruido y rizado (sesgo hacia arriba); el producto ganancia–ancho de banda finito del 741 ($\approx 1\,\text{MHz}$) y su impedancia de salida modifican la respuesta lejos de $f_o$; y los errores porcentuales se amplifican al dividir números pequeños.
 5. **Ganancia de banda de paso.** En 50 Hz se midió $A_v = 2.09$ vs. $2.0$ teórico (+4.5 %): tolerancia de $R_1, R_2$ (±5 %) y resolución de lectura del generador ($V_{i,pp} = 2.04\,\text{V}$ reales según el osciloscopio, no 2.00 V exactos).
@@ -234,7 +226,7 @@ El pico medido ($A_v = 4.36$ en $\approx 450\,\text{Hz}$) **no** coincide con la
 ## 8. Diagramas de Bode (Entregable 2)
 
 ![[s14-le3-bode-comparacion.png]]
-*Diagrama de Bode de $H(s)$: curvas teóricas para $R = 5.6\,\text{k}\Omega$ (azul) y $R = 3.3\,\text{k}\Omega$ (rojo), barrido AC de Multisim corregido (verde, se superpone a la curva azul) y puntos experimentales (negro). Las mediciones caen sobre la curva de $3.3\,\text{k}\Omega$.*
+*Diagrama de Bode de $H(s)$: curvas teóricas para $R = 5.6\,\text{k}\Omega$ (azul) y $R = 3.3\,\text{k}\Omega$ (rojo), barrido AC de Multisim (verde, se superpone a la curva azul) y puntos experimentales (negro). Las mediciones caen sobre la curva de $3.3\,\text{k}\Omega$.*
 
 Código MATLAB que genera los diagramas de Bode de la función de transferencia teórica:
 
@@ -273,15 +265,15 @@ Lectura del diagrama:
 - Con $A = 2$ el factor de calidad vale $Q = 1$ ($\zeta = 0.5$), lo que produce un **sobrepico de ganancia** cerca de $f_o$: se midió $A_{v,max} = 4.36$ ($12.8\,\text{dB}$) frente a los $4.50$ ($13.1\,\text{dB}$) teóricos — un error de solo **3 %**. La respuesta de este filtro no es plana tipo Butterworth ($\zeta \approx 0.707$, que requeriría $A = 1.6$), y la práctica lo evidenció con claridad.
 - La **posición del pico medido** ($\approx 450$–$500\,\text{Hz}$) identifica el valor efectivo de la red RC: las mediciones se ajustan al 1–3 % a la curva teórica con $R = 3.3\,\text{k}\Omega$ ($f_o = 482\,\text{Hz}$), lo que confirma que el montaje usó la resistencia de $3.3\,\text{k}\Omega$ del alumno y no la de $5.6\,\text{k}\Omega$ de la figura del procedimiento. La respuesta en frecuencia funciona así como método indirecto de verificación de componentes.
 - La pendiente medida entre 1 kHz y 10 kHz ($\approx -19\,\text{dB/déc}$) confirma la presencia del **cero en el numerador** de $H(s)$: sin él, un segundo orden caería a $-40\,\text{dB/déc}$.
-- La simulación resultó una lección en sí misma: en la primera versión, un **error de unidad** ($R_4 = 5.608\,\Omega$ en lugar de $\text{k}\Omega$) degeneró la respuesta simulada a primer orden y suprimió el pico. Contrastar la simulación contra el cálculo teórico permitió detectar el error, corregirlo y validar la versión final: el AC Sweep corregido reproduce la curva teórica de $5.6\,\text{k}\Omega$ con un pico de $4.18$ en $251\,\text{Hz}$ (−7 % respecto del ideal, por $C_1 \neq C_2$).
-- El diagrama de Bode demostró ser la herramienta natural para **comparar teoría, simulación y experimento** en un solo gráfico, evidenciando de inmediato tanto el corrimiento de $f_o$ como la ausencia del pico en la simulación.
+- La simulación en Multisim confirma la respuesta teórica para $R = 5.6\,\text{k}\Omega$: banda de paso de $A_v = 2$, pico de resonancia de $4.18$ ($12.4\,\text{dB}$) en $251\,\text{Hz}$ y caída de $-20\,\text{dB/déc}$, con una diferencia menor al 7 % respecto del cálculo ideal atribuible a $C_1 \neq C_2$.
+- El diagrama de Bode resultó la herramienta natural para **comparar teoría, simulación y experimento** en un solo gráfico, evidenciando el corrimiento de la frecuencia natural entre el valor de diseño ($5.6\,\text{k}\Omega$) y el valor efectivo del montaje ($3.3\,\text{k}\Omega$).
 
 ---
 
 ## 10. Recomendaciones
 
 - **Medir y registrar** con multímetro los valores reales de todas las resistencias y condensadores antes del montaje, y usar esos valores (no los nominales) en el cálculo teórico y la simulación; la guía misma maneja dos valores de $R$ distintos (fundamento vs. procedimiento) y conviene fijar cuál se usa.
-- **Validar la simulación contra el cálculo teórico** antes de darla por buena: revisar siempre las unidades ($\Omega$/k$\Omega$, nF/µF) al digitar valores en Multisim — un solo error de unidad en $R_4$ cambió el orden aparente del filtro, y solo el contraste con la teoría lo hizo evidente.
+- **Verificar cuidadosamente las unidades** ($\Omega$/k$\Omega$, nF/µF) al ingresar los valores de los componentes en la simulación, y contrastar siempre la respuesta simulada con el cálculo teórico antes de darla por válida.
 - **Densificar las mediciones alrededor de $f_o$** (p. ej. cada 25 Hz entre 350 y 550 Hz) para ubicar con precisión la frecuencia y amplitud del pico, y medir también la **fase** entre entrada y salida para completar el diagrama de Bode experimental.
 - Usar condensadores de **poliéster o cerámicos NP0/C0G** de tolerancia conocida en la red RC (los electrolíticos de la lista de materiales no son adecuados para señal AC por su polaridad y tolerancia ±20 %).
 - En alta frecuencia, medir $V_o$ con **promediado** o con la función de medición RMS del osciloscopio para reducir el sesgo del ruido cuando la señal es pequeña ($< 1\,\text{V}_{pp}$).

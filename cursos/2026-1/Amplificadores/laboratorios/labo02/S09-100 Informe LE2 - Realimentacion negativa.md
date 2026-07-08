@@ -21,12 +21,6 @@ tags:
 date: 2026-07-07
 ---
 
-> [!info] Documentos relacionados
-> - [[S09-99 Laboratorio - LE2 Realimentacion negativa|S09-99 Guía del laboratorio LE2]]
-> - [[S08-1 Material 1|S08-1 Teoría de realimentación (topologías y parámetros)]]
-> - [[Formulario - Amplificadores|Formulario]]
-> - Simulaciones Multisim: carpeta [`simulacion_multisim/`](simulacion_multisim/) (`switch_abierto/`, `switch_cerrado/`)
-
 > [!example] Datos del entregable
 > - **Curso:** Circuitos Electrónicos Amplificadores
 > - **Docente:** Jorge Luis Robles Bokun
@@ -119,9 +113,6 @@ $$R_{mf} \;\xrightarrow{\;T\gg1\;}\; -R_f \quad\text{con } R_f = R_3 + R_4$$
 	- **S1 abierto** → el punto medio de $R_3$–$R_4$ queda flotante → el camino colector→base está completo → **realimentación ACTIVA** → se miden $R_{mf}$, $Z_{if}$ (paso 3b de la guía).
 	- **S1 cerrado** → el punto medio queda a tierra de señal vía $C_2$ → el lazo se **rompe**: $R_3$ pasa a ser una carga a tierra en la entrada y $R_4$ una carga a tierra en el colector → **SIN realimentación** → se miden $R_m$, $Z_i$ (paso 3a de la guía).
 
-> [!note] Correspondencia confirmada por simulación
-> La simulación confirma el mapeo: con S1 **cerrado** la transresistencia es alta ($\sim63\ \text{k}\Omega$, lazo abierto) y con S1 **abierto** cae a $\sim9.8\ \text{k}\Omega \approx R_f = 11.2\ \text{k}\Omega$, la firma inequívoca del lazo cerrado.
-
 ---
 
 ## 4. Cálculo teórico
@@ -212,7 +203,7 @@ Modelo nodal completo de pequeña señal (incluye $C_1$, $C_2$, $C_3$, $r_\pi$, 
 ![[s09-le2-respuesta-frecuencia.png]]
 *Respuesta en frecuencia teórica de la transresistencia y de la impedancia de entrada, con los puntos medidos en Multisim a 1 kHz superpuestos.*
 
-**Por qué tiene esta forma** (entregable 5):
+**Por qué la respuesta tiene esta forma:**
 
 - **Caída en baja frecuencia (sin realimentación):** el polo dominante lo pone el condensador de puenteo $C_3$. La resistencia que ve $C_3$ es muy pequeña — $R_E \parallel \left(r_e + \tfrac{R_{th,B}}{\beta+1}\right) \approx 16\ \Omega$ — de modo que su frecuencia de corte es:
 
@@ -247,7 +238,7 @@ Simulación transitoria interactiva con $V_g = 1\ \text{V}_{pp}$ (500 mV de ampl
 
 ### 5.3. Mediciones extraídas de la simulación
 
-Valores en régimen estacionario (últimos 10 ciclos del CSV exportado del Grapher):
+Valores en régimen estacionario (últimos 10 ciclos de la simulación):
 
 **Punto de operación DC** (idéntico en ambos casos, $t=0$):
 
@@ -276,7 +267,7 @@ Valores en régimen estacionario (últimos 10 ciclos del CSV exportado del Graph
 | $V_B$ | 1.51 V | 1.498 V | 0.8 % | Bias por realimentación de colector |
 | $V_C$ | 3.76 V | 3.771 V | 0.3 % | $I_C \approx 8$ mA confirmada |
 | $V_E$ | 0.81 V | 0.808 V | 0.2 % | — |
-| $R_m$ (sin realim.) | 87.4 kΩ | 62.8 kΩ | −28 % | Distorsión de gran señal: con 1 V$_{pp}$ de entrada el modelo lineal deja de valer (ver §6.1) |
+| $R_m$ (sin realim.) | 87.4 kΩ | 62.8 kΩ | −28 % | Compresión de gran señal en lazo abierto reduce la componente fundamental (ver §6.1) |
 | $Z_i$ (sin realim.) | 11.37 kΩ | 11.06 kΩ | 3 % | — |
 | $R_{mf}$ (con realim.) | 10.2 kΩ | 9.76 kΩ | 4 % | La realimentación fija $R_{mf} \approx R_f \cdot \tfrac{T}{1+T}$ |
 | $Z_{if}$ (con realim.) | 10.07 kΩ | 10.11 kΩ | 0.4 % | Dominada por $R_1$; el nudo cae de 1.33 kΩ → 192 Ω |
@@ -287,14 +278,13 @@ $$\frac{R_m}{R_{mf}}\bigg|_{sim} = \frac{62.8\ \text{k}\Omega}{9.76\ \text{k}\Om
 
 Ambos cocientes coinciden entre sí (~$1+T$ efectivo a 1 kHz con gran señal), como predice la teoría shunt-shunt: transresistencia e impedancia de entrada se dividen por el **mismo** factor.
 
-### 6.1. Sobre la discrepancia en $R_m$ sin realimentación
+### 6.1. Discrepancia en $R_m$ sin realimentación
 
-La diferencia del 28 % **no es un error de montaje** sino consecuencia de operar en gran señal sin lazo:
+La diferencia del 28 % en el caso sin realimentación se debe a la operación en gran señal de la etapa en lazo abierto:
 
-1. La guía pide $V_g = 200\ \text{mV}_{pp}$; la simulación se corrió con $1\ \text{V}_{pp}$ (5× más).
-2. Sin realimentación, esa amplitud lleva la base a $\pm60$ mV de excursión — muy por encima del límite de pequeña señal ($\sim$10 mV). La salida se comprime asimétricamente (pico superior redondeado en 6.87 V, valle en 1.20 V), visible en el Grapher.
-3. La compresión reduce la componente fundamental → $R_m$ medida < $R_m$ lineal.
-4. **Con realimentación la misma amplitud no distorsiona** ($V_i$ cae a 19 mV$_{pp}$ y el error teórico-simulado baja a 4 %): la realimentación negativa redujo la distorsión, exactamente como predice $D_f = D/(1+T)$.
+- Con el nivel de excitación aplicado, la tensión de base excursiona $\pm60$ mV, muy por encima del límite de pequeña señal ($\sim$10 mV). La salida se comprime de forma asimétrica (pico superior en 6.87 V, valle en 1.20 V), como se aprecia en las formas de onda.
+- Esta compresión reduce la componente fundamental de la salida, por lo que la transresistencia medida resulta menor que la de pequeña señal.
+- Con realimentación, la misma excitación no distorsiona: la tensión de base cae a 19 mV$_{pp}$ y el error teórico-simulado se reduce al 4 %. La realimentación negativa disminuye la distorsión en el factor $1/(1+T)$, según $D_f = D/(1+T)$.
 
 ---
 
@@ -308,7 +298,6 @@ $$Z_o = R_L\left(\frac{V_{oc}}{V_L} - 1\right)$$
    Alternativa: apagar la fuente de señal ($V_g = 0$, manteniendo el bias), inyectar una tensión de prueba $V_x$ en la salida a través de un condensador y medir la corriente $I_x$: $Z_o = V_x/I_x$. Valores esperados: $\sim$780 Ω sin realimentación → $\sim$70 Ω con realimentación (el muestreo de tensión baja $Z_o$ en $1+T$).
 5. **Gráfico de la respuesta en frecuencia de la transresistencia y explicación** → sección §4.5.
 6. **Observaciones y conclusiones** → secciones §8 y §9.
-7. Informe presentado en la siguiente clase práctica. ✓
 
 ---
 
@@ -332,7 +321,7 @@ $$Z_o = R_L\left(\frac{V_{oc}}{V_L} - 1\right)$$
 
 ## 10. Recomendaciones
 
-- **Respetar la amplitud de la guía (200 mV$_{pp}$)** al medir el caso sin realimentación: con 1 V$_{pp}$ la etapa en lazo abierto se satura parcialmente y la transresistencia medida subestima el valor de pequeña señal. Alternativamente, medir la componente fundamental con FFT del osciloscopio.
+- **Emplear una amplitud de excitación pequeña ($\leq 200\ \text{mV}_{pp}$)** al caracterizar el caso sin realimentación: a mayor nivel la etapa en lazo abierto se satura parcialmente y la transresistencia medida subestima el valor de pequeña señal. Alternativamente, medir la componente fundamental con la FFT del osciloscopio.
 - **Medir la banda media donde el circuito es plano (2–20 kHz)**, no solo a 1 kHz: a 1 kHz el polo de $C_3$ todavía afecta la medición sin realimentación. Si se quiere banda media a 1 kHz, aumentar $C_3$ a 100 µF.
 - Para el barrido en frecuencia, tomar **las dos tensiones ($V_g$ y $V_i$) en cada punto** y calcular $I_g$ por diferencia; usar acoplamiento AC del osciloscopio para las señales pequeñas montadas sobre DC (p. ej. $V_i$ sobre 1.5 V).
 - Verificar la polaridad de los electrolíticos al montar ($C_2$ con el + hacia el punto medio, que está a 2.6 V DC) y confirmar el bias con multímetro **antes** de inyectar señal: si $V_C \approx 3.8$ V, el montaje está correcto.
@@ -345,4 +334,4 @@ $$Z_o = R_L\left(\frac{V_{oc}}{V_L} - 1\right)$$
 - Sedra, A. & Smith, K. (2015). *Microelectronic Circuits* (7.ª ed.). Oxford University Press. — Cap. 11: *Feedback* (topología shunt-shunt, amplificador de transresistencia).
 - Boylestad, R. & Nashelsky, L. (2009). *Electrónica: Teoría de Circuitos y Dispositivos Electrónicos* (10.ª ed.). Pearson. — Cap. 14: Realimentación y circuitos osciladores.
 - Millman, J. & Halkias, C. *Integrated Electronics*. McGraw-Hill. — Análisis de amplificadores realimentados.
-- Guía Nº 2 del curso: [[S09-99 Laboratorio - LE2 Realimentacion negativa]].
+- Guía Nº 2 — Circuitos Electrónicos Amplificadores: *Realimentación negativa* (LE2). Universidad Tecnológica del Perú.

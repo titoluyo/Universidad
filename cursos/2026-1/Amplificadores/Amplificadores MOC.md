@@ -57,6 +57,13 @@ aliases:
 
 - [[S15-1 Tema 15 - Diagrama de Bode|S15-1 Red RC de corte inferior y su Bode]]
 
+### Semana 17 — Osciladores (Unidad 4)
+
+- [[S17-1 Tema 17 - Oscilador puente de Wien - analisis y criterio de Barkhausen|S17-1 Oscilador puente de Wien: análisis y criterio de Barkhausen]]
+- [[S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion|S17-2 Filtros de primer y segundo orden: comparación]]
+- [[S17-3 Tema 17 - Filtro pasivo RLC de segundo orden y resonancia|S17-3 Filtro pasivo RLC de segundo orden y resonancia física]]
+- [[S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL|S17-4 Filtros pasivos de primer orden: ejemplo RL]]
+
 ## Bibliografia
 
 - Boylestad, R. & Nashelsky, L. *Electronica: Teoria de Circuitos y Dispositivos Electronicos*. Pearson.

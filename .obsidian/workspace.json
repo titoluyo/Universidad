@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/Amplificadores/clases/s14/S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode.md",
+                "file": "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode"
+              "title": "S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion"
             }
           },
           {
@@ -230,18 +230,23 @@
   },
   "active": "5dd537a525e3286c",
   "lastOpenFiles": [
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/TitoLuyoMurata-Proyecto1-APF.pdf",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/mso4D65.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/mso472A.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~WRL1699.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~WRD1656.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~$toLuyoMurata-Proyecto1-APF.docx",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~WRL2093.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~WRD2066.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~WRL2286.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~WRD2262.tmp",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~WRL2774.tmp",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/resolucion/S14-98 Resolucion teorica - Filtro activo pasa bajo (Sallen-Key, derivacion completa).md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/resolucion/S14-98 Resolucion teorica - Filtro activo pasa bajo (Sallen-Key, derivacion completa).md.tmp.16220.ebeb59c9b25d",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/resolucion",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md.tmp.16220.2ca7b88aafcd",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md.tmp.16220.7845712da96c",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.16220.3f2f9f6c65f3",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md.tmp.16220.33c0a9a78c3b",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.16220.87733e20a085",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-3 Tema 17 - Filtro pasivo RLC de segundo orden y resonancia.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-3 Tema 17 - Filtro pasivo RLC de segundo orden y resonancia.md.tmp.16220.5a03ccfeca6a",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md.tmp.16220.b3f302bcf57e",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md.tmp.16220.9a515de8fba0",
     "cursos/2026-1/Amplificadores/clases/s14/S14-5 Tema 14 - Diagrama de Bode por factores.md",
+    "cursos/2026-1/Amplificadores/clases/s14/S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-1 Tema 17 - Oscilador puente de Wien - analisis y criterio de Barkhausen.md",
     "cursos/2026-1/Amplificadores/clases/s15/S15-1 Tema 15 - Diagrama de Bode.md",
     "cursos/2026-1/Amplificadores/laboratorios/labo03/S14-101 Informe LE3 - Filtro activo pasa bajo (3K3).md",
     "cursos/2026-1/Amplificadores/laboratorios/labo03/S14-100 Informe LE3 - Filtro activo pasa bajo.md",
@@ -271,11 +276,6 @@
     "cursos/2026-1/SeriesTransformadas/Trabajo Final/04 - Simulacion (Octave o LTSPICE).md",
     "cursos/2026-1/SeriesTransformadas/Trabajo Final/03 - Desarrollo analitico (teoria).md",
     "cursos/2026-1/SeriesTransformadas/Trabajo Final/02 - Planificacion y cronograma.md",
-    "cursos/2026-1/SeriesTransformadas/Trabajo Final/01 - Busqueda de fuentes (APA).md",
-    "cursos/2026-1/SeriesTransformadas/Trabajo Final/00 - Brainstorming y eleccion.md",
-    "cursos/2026-1/SeriesTransformadas/Trabajo Final/Trabajo Final - SyT MOC.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s18/S18-99 PROY sem 18.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s18/S18-98 PROY Indicaciones.md",
     "Untitled.canvas"
   ]
 }

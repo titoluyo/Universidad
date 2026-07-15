@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/APF - Avance Proyecto Final (contenido).md",
+                "file": "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/02 - Plan de trabajo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "APF - Avance Proyecto Final (contenido)"
+              "title": "02 - Plan de trabajo"
             }
           },
           {
@@ -230,6 +230,11 @@
   },
   "active": "5dd537a525e3286c",
   "lastOpenFiles": [
+    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/~$toLuyoMurata-Proyecto1-APF.docx",
+    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/APF - Avance Proyecto Final (contenido).md.tmp.17176.06b3bd5a19bd",
+    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/APF - Avance Proyecto Final (contenido).md.tmp.17176.9e91648666bd",
+    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/01 - Prompt - Generar plan de trabajo.md",
+    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/APF - Avance Proyecto Final (contenido).md",
     "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/fig3_error.png",
     "cursos/2026-1/MaquinasElectricas/Formulario - Motores Eléctricos Estáticos y Rotativos.md.tmp.28796.d154b663dd57",
     "cursos/2026-1/MaquinasElectricas/Motores MOC.md.tmp.28796.d7dd41b41d5d",
@@ -242,17 +247,14 @@
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-4 Tema 03 - Máquina síncrona trifásica.md.tmp.28796.ac7c373edc01",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-0 Introducción - Curvas caracteristicas y maquina sincrona.md.tmp.28796.5ef8d6676b28",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-2 Ejercicio resuelto - Regulación de velocidad de motor de inducción (Video).md.tmp.28796.78f3d4d72658",
-    "cursos/2026-1/MaquinasElectricas/clases/s17/S17-2 Ejercicio resuelto - Regulación de velocidad de motor de inducción (Video).md.tmp.28796.21cca6aff325",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-2 Ejercicio resuelto - Regulación de velocidad de motor de inducción (Video).md",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-1 Tema 01 - Curvas características del motor asíncrono y regulación de velocidad.md",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-0 Introducción - Curvas caracteristicas y maquina sincrona.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s17/S17-0 Introducción - Curvas caracteristicas y maquina sincrona.md.tmp.28796.a7548f07ef3d",
     "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/fig1_senal.png",
     "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/attachments/fig3_error.png",
     "cursos/2026-1/MaquinasElectricas/clases/s16/S16-8 Conclusiones semana 16.md",
     "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/attachments/fig2_superposicion.png",
     "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/attachments/fig1_senal.png",
-    "cursos/2026-1/SeriesTransformadas/TrabajoFinal/Proyecto1/APF - Avance Proyecto Final (contenido).md",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-5 Tema 04 - Principio de funcionamiento como generador.md",
     "cursos/2026-1/MaquinasElectricas/clases/s16/S16-0 Introducción - Motores asíncronos de inducción.md",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-2 Ejercicio resuelto - Curvas características del motor síncrono (Video).md",
@@ -270,7 +272,6 @@
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-3 Tema 02 - Análisis de la placa de característica del motor asíncrono.md",
     "cursos/2026-1/MaquinasElectricas/clases/s16/S16-3 Tema 03 - Potencia y par en los motores de inducción.md",
     "cursos/2026-1/MaquinasElectricas/clases/s17/S17-4 Tema 03 - Máquina síncrona trifásica.md",
-    "cursos/2026-1/MaquinasElectricas/clases/s16/S16-2 Tema 02 - Circuito equivalente de un motor de inducción.md",
     "cursos/2026-1/MaquinasElectricas/clases/s16/attachments/S16-T02-05-Figura-5-Circuito-equivalente-por-fase-de-un.png",
     "cursos/2026-1/MaquinasElectricas/clases/s16/attachments/S16-T02-04-Figura-4-Corriente-del-rotor-en-funcion-de-la.png",
     "cursos/2026-1/MaquinasElectricas/clases/s16/attachments/S16-T02-03-Figura-2-Modelo-de-circuito-de-rotor-de-un-mo.png",

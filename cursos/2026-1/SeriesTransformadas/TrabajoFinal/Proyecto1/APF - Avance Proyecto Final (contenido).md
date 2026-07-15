@@ -53,7 +53,7 @@ Julio de 2026
 
 > **Lista de figuras.** Figura 1: señal senoidal rectificada de media onda. Figura 2: aproximación de Fourier $S_N(t)$ para $N=1,2,4,10$. Figura 3: error cuadrático medio $E_k$ frente al número de armónicos.
 >
-> **Lista de tablas.** Tabla 1: coeficientes de Fourier no nulos. Tabla 2: error cuadrático medio simulado. Tabla 3: error cuadrático medio teórico. Tabla 4: comparación teórico vs. simulado.
+> **Lista de tablas.** Tabla 1: error cuadrático medio simulado. Tabla 2: coeficientes de Fourier no nulos. Tabla 3: error cuadrático medio teórico. Tabla 4: comparación teórico vs. simulado.
 
 ---
 
@@ -149,9 +149,9 @@ La Figura 3 presenta el error cuadrático medio simulado frente al número de ar
 
 ![**Figura 3.** Error cuadrático medio $E_k$ frente al número de armónicos $k$, calculado en la simulación. Elaboración propia en GNU Octave.](attachments/fig3_error.png)
 
-Los valores numéricos del error obtenido por el simulador se resumen en la Tabla 2.
+Los valores numéricos del error obtenido por el simulador se resumen en la Tabla 1.
 
-**Tabla 2.** Error cuadrático medio simulado (integración numérica con `trapz`).
+**Tabla 1.** Error cuadrático medio simulado (integración numérica con `trapz`).
 
 | $k$ (armónicos) | $E_k$ simulado [V²] | Potencia residual $E_k/P$ |
 | --------------- | ------------------- | ------------------------- |
@@ -195,9 +195,9 @@ $$\boxed{\;f(t) = \frac{A}{\pi} + \frac{A}{2}\sin(\omega_0 t) - \frac{2A}{\pi}\s
 
 ### 4.2. Resultados teóricos
 
-Los coeficientes no nulos se resumen en la Tabla 1.
+Los coeficientes no nulos se resumen en la Tabla 2.
 
-**Tabla 1.** Coeficientes de Fourier no nulos de la señal ($A=16{,}97$ V).
+**Tabla 2.** Coeficientes de Fourier no nulos de la señal ($A=16{,}97$ V).
 
 | Componente | Símbolo | Expresión | Valor [V] |
 | ---------- | ------- | --------- | --------- |

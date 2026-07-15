@@ -98,15 +98,15 @@ $$f(t) = \frac{A}{\pi} + \frac{A}{2}\sin(\omega_0 t) - \frac{2A}{\pi}\sum_{k=1}^
 
 ## 4. Cronograma (fechas reales)
 
-| Fecha | Día | Tareas | Hito |
-| ----- | --- | ------ | ---- |
-| **13 jul** | lun | Cerrar T1–T2 + S1–S2 básicos; ensamblar y **entregar APF** | 🔴 **APF 11:59 p.m.** |
-| 14–15 jul | mar–mié | T3 completo (tabla $E_k$ teórico); S3 (error simulado + comparativa) | Núcleo técnico cerrado |
-| 16–17 jul | jue–vie | D1–D3: redacción completa de discusión y conclusiones; pulir figuras/tablas | Borrador PDF completo |
-| 18 jul | sáb | D4: formato, índice, APA en texto e imágenes; export a PDF; V1 (guion con datos reales) | PDF candidato |
-| 19 jul | dom | V2–V3: grabar, editar y subir el video; revisión cruzada con la rúbrica | Video en línea |
-| 20 jul | lun | Abre PROY: revisión final (checklist § 9), correcciones menores | Todo listo |
-| **21 jul** | mar | E2: subir PDF + enlace del video (colchón: subir en la mañana, no al filo) | 🔴 **PROY 11:59 p.m.** |
+| Fecha      | Día     | Tareas                                                                                  | Hito                   |
+| ---------- | ------- | --------------------------------------------------------------------------------------- | ---------------------- |
+| **13 jul** | lun     | Cerrar T1–T2 + S1–S2 básicos; ensamblar y **entregar APF**                              | 🔴 **APF 11:59 p.m.**  |
+| 14–15 jul  | mar–mié | T3 completo (tabla $E_k$ teórico); S3 (error simulado + comparativa)                    | Núcleo técnico cerrado |
+| 16–17 jul  | jue–vie | D1–D3: redacción completa de discusión y conclusiones; pulir figuras/tablas             | Borrador PDF completo  |
+| 18 jul     | sáb     | D4: formato, índice, APA en texto e imágenes; export a PDF; V1 (guion con datos reales) | PDF candidato          |
+| 19 jul     | dom     | V2–V3: grabar, editar y subir el video; revisión cruzada con la rúbrica                 | Video en línea         |
+| 20 jul     | lun     | Abre PROY: revisión final (checklist § 9), correcciones menores                         | Todo listo             |
+| **21 jul** | mar     | E2: subir PDF + enlace del video (colchón: subir en la mañana, no al filo)              | 🔴 **PROY 11:59 p.m.** |
 
 > [!tip] Qué queda listo en el APF y qué añade el PROY
 > **APF (hoy):** introducción, marco teórico, desarrollo analítico (T1–T2), simulación con gráficas (S1–S2), referencias APA.

@@ -998,3 +998,303 @@ Control eficiente solo por **tensión en bornes**. El **compuesto** queda entre 
 
 ### Inversión del sentido de giro
 Se invierte la **polaridad de los bornes del inducido** (en c.a. trifásica: permutar dos fases). Maniobra automatizada con contactores temporizados $KM_1$/$KM_2$.
+
+---
+
+## 35. Máquinas de Corriente Alterna — Síncronas y Asíncronas
+Fuente: [[S15-1 Tema 01 - Máquinas de corriente alterna|S15-1 Maquinas de corriente alterna]]
+
+### Velocidad de sincronismo (campo magnético giratorio)
+$$n_1 = \frac{60\,f_1}{p} \hspace{0.5cm};\hspace{0.5cm} n_{sinc} = \frac{120\,f_e}{P}$$
+
+Donde:
+- $n_1$, $n_{sinc}$ = velocidad del campo giratorio o **velocidad de sincronismo** [rpm]
+- $f_1$, $f_e$ = frecuencia de alimentación del estator [Hz]
+- $p$ = número de **pares** de polos; $P = 2p$ = **número de polos**
+
+> [!warning] Polos vs. pares de polos
+> Las dos formas conviven en las notas y **dan el mismo resultado**: $60f_1/p$ (pares de polos, Fraile Mora) y $120f_e/P$ (polos, Chapman). El error clásico es cruzar la constante ($60$ o $120$) con el denominador equivocado. Ej.: 4 polos, 60 Hz → $p=2$ → $n_1 = 1800$ rpm por ambas vías.
+
+### Frecuencias de la máquina de CA
+$$f_1 \neq 0 \hspace{0.8cm};\hspace{0.8cm} f_2 = f_1 \pm \frac{n\,p}{60} \hspace{0.8cm};\hspace{0.8cm} f_L = f_2$$
+
+Donde:
+- $f_1$ = frecuencia del devanado inductor (estator)
+- $f_2$ = frecuencia del devanado inducido (rotor)
+- $f_L$ = frecuencia de la carga (coincide con $f_2$)
+- $n$ = velocidad de giro del rotor [rpm]
+
+| Máquina | Inductor | Relación característica | Velocidad |
+| --- | --- | --- | --- |
+| **Síncrona** | CC ($f_1 = 0$), en el rotor | $f_L = f_2 = \pm\dfrac{n\,p}{60}$ | fija: $n = \dfrac{60\,f_2}{p}$ |
+| **Asíncrona** (inducción) | CA trifásica ($f_1 \neq 0$), en el estator | $f_2 = f_1 - \dfrac{n\,p}{60}$ (motor) | $n < n_1$ (deslizamiento) |
+
+### Deslizamiento
+$$\boxed{s = \frac{n_1 - n}{n_1} = \frac{f_2}{f_1}} \hspace{0.5cm};\hspace{0.5cm} n = (1-s)\,n_1$$
+
+Donde:
+- $s$ = deslizamiento (adimensional; también en %)
+- $n_1$ = velocidad de sincronismo [rpm]; $n$ = velocidad real del rotor [rpm]
+
+### Frecuencia eléctrica del rotor
+$$f_r = s\,f_e$$
+
+| Condición | $s$ | $f_r$ | Régimen |
+| --- | :---: | :---: | --- |
+| Rotor bloqueado ($n = 0$) | $1$ | $f_e$ | arranque |
+| $0 < n < n_1$ | $0 < s < 1$ | $s\,f_e$ | **motor** |
+| Sincronismo ($n = n_1$) | $0$ | $0$ | sin FEM, sin par |
+| $n > n_1$ (arrastrado) | $s < 0$ | — | **generador** (devuelve energía a la red) |
+
+> [!example] Aplicación numérica
+> Motor de inducción 4 polos, $60\,\text{Hz}$, $s = 5\,\%$ → $n_1 = 60(60)/2 = 1800\ \text{rpm}$, $n_2 = (1-0{,}05)(1800) = 1710\ \text{rpm}$, $f_r = (0{,}05)(60) = 3\ \text{Hz}$. Verificación cruzada: $f_2 = f_1 - n_2 p/60 = 60 - 57 = 3\ \text{Hz}$ ✓. Desarrollo en [[S15-2 Ejercicio resuelto - Máquina asíncrona trifásica (Video)|S15-2]].
+
+---
+
+## 36. Motor de Inducción — Circuito Equivalente
+Fuente: [[S16-1 Tema 01 - Principio de funcionamiento de las máquinas asíncronas trifásicas|S16-1 Principio de funcionamiento de las maquinas asincronas]]
+Fuente: [[S16-2 Tema 02 - Circuito equivalente de un motor de inducción|S16-2 Circuito equivalente de un motor de induccion]]
+
+### Voltaje inducido en las barras del rotor y par
+$$e_{ind} = (\vec{v}\times\vec{B})\cdot\vec{l} \hspace{0.5cm};\hspace{0.5cm} \boxed{\tau_{ind} = k\,(\vec{B_R}\times\vec{B_S})}$$
+
+Donde:
+- $\vec{v}$ = velocidad de la barra **relativa** al campo magnético
+- $\vec{B_R}$ = campo del rotor; $\vec{B_S}$ = campo del estator; $k$ = constante constructiva
+
+> [!info] Por qué nunca alcanza el sincronismo
+> Si $n = n_{sinc}$ → no hay movimiento relativo → $e_{ind}=0$ → sin corriente → sin $B_R$ → $\tau_{ind}=0$ → el rotor se frena y reaparece el movimiento relativo. La máquina es **asíncrona** por necesidad.
+
+### Magnitudes del rotor en función del deslizamiento
+$$E_R = s\,E_{R0} \hspace{0.5cm};\hspace{0.5cm} X_R = \omega_r L_R = 2\pi f_r L_R = s\,X_{R0} \hspace{0.5cm};\hspace{0.5cm} R_R = \text{cte}$$
+
+Donde:
+- $E_{R0}$, $X_{R0}$ = voltaje y reactancia del rotor **bloqueado** ($s = 1$)
+- $R_R$ = resistencia del rotor (no depende de $s$, salvo efecto pelicular)
+- $L_R$ = inductancia del rotor
+
+### Corriente del rotor
+$$I_R = \frac{E_R}{R_R + jX_R} = \frac{E_R}{R_R + j\,s\,X_{R0}} = \boxed{\frac{E_{R0}}{\dfrac{R_R}{s} + jX_{R0}}}$$
+
+Toda la dependencia con la velocidad queda concentrada en el término $R_R/s$ → circuito **estático**.
+
+### Referencia del rotor al estator (relación efectiva de vueltas $a_{ef}$)
+$$E_1 = E'_R = a_{ef}\,E_{R0} \hspace{0.5cm};\hspace{0.5cm} I_2 = \frac{I_R}{a_{ef}} \hspace{0.5cm};\hspace{0.5cm} Z_2 = a_{ef}^2\left(\frac{R_R}{s} + jX_{R0}\right)$$
+
+$$\boxed{R_2 = a_{ef}^2\,R_R} \hspace{0.5cm};\hspace{0.5cm} \boxed{X_2 = a_{ef}^2\,X_{R0}}$$
+
+Donde:
+- $R_1$, $X_1$ = resistencia y reactancia de dispersión del **estator**
+- $R_2$, $X_2$ = resistencia y reactancia del rotor **referidas al estator**
+- $G_C$, $B_M$ = conductancia de pérdidas en el núcleo y susceptancia de magnetización (rama en paralelo)
+
+### Impedancia equivalente por fase
+$$Z_{eq} = R_1 + jX_1 + \cfrac{1}{G_C - jB_M + \cfrac{1}{\dfrac{R_2}{s} + jX_2}} \hspace{0.5cm};\hspace{0.5cm} I_1 = \frac{V_\phi}{Z_{eq}}$$
+
+Conexión en estrella: $V_\phi = \dfrac{V_L}{\sqrt{3}}$.
+
+---
+
+## 37. Motor de Inducción — Potencia y Par
+Fuente: [[S16-3 Tema 03 - Potencia y par en los motores de inducción|S16-3 Potencia y par en los motores de induccion]]
+
+### Diagrama de flujo de potencia
+$$P_{entr} \;\to\; P_{PCE} \;\to\; P_{núcleo} \;\to\; \mathbf{P_{EH}} \;\to\; P_{PCR} \;\to\; \mathbf{P_{conv}} \;\to\; P_{FyR},\,P_{misc} \;\to\; P_{sal}$$
+
+$$P_{entr} = \sqrt{3}\,V_L\,I_L\cos\varphi$$
+
+| Término | Expresión | Significado |
+| --- | --- | --- |
+| $P_{PCE}$ | $3\,I_1^2\,R_1$ | pérdidas en el cobre del estator |
+| $P_{núcleo}$ | $3\,E_1^2\,G_C$ | pérdidas por histéresis y corrientes parásitas |
+| $P_{EH}$ | $P_{entr} - P_{PCE} - P_{núcleo} = 3\,I_2^2\,\dfrac{R_2}{s}$ | potencia en el **entrehierro** |
+| $P_{PCR}$ | $3\,I_R^2\,R_R = 3\,I_2^2\,R_2 = s\,P_{EH}$ | pérdidas en el cobre del rotor |
+| $P_{conv}$ | $P_{EH} - P_{PCR} = (1-s)\,P_{EH}$ | potencia **convertida** (mecánica desarrollada) |
+| $P_{sal}$ | $P_{conv} - P_{FyR} - P_{misc}$ | potencia en el eje |
+
+### Potencia convertida desde el circuito
+$$P_{conv} = 3I_2^2 R_2\left(\frac{1}{s}-1\right) = 3I_2^2 R_2\left(\frac{1-s}{s}\right)$$
+
+### Separación de $R_2/s$ en el circuito equivalente
+$$\boxed{\frac{R_2}{s} = R_2 + R_{conv}} \hspace{0.5cm};\hspace{0.5cm} R_{conv} = \frac{R_2}{s} - R_2 = R_2\left(\frac{1-s}{s}\right)$$
+
+- $R_2$ → disipa las **pérdidas reales** del rotor; $R_{conv}$ → resistencia ficticia que representa la **carga mecánica** (potencia que sale por el eje).
+
+### Par inducido y par de carga
+$$\tau_{ind} = \frac{P_{conv}}{\omega_m} \hspace{0.5cm}\xrightarrow[\;\omega_m=(1-s)\omega_{sinc}\;]{P_{conv}=(1-s)P_{EH}}\hspace{0.5cm} \boxed{\tau_{ind} = \frac{P_{EH}}{\omega_{sinc}}}$$
+
+$$\tau_{carga} = \frac{P_{sal}}{\omega_m} \hspace{0.5cm};\hspace{0.5cm} \omega = n\left(\frac{2\pi}{60}\right) \hspace{0.5cm};\hspace{0.5cm} \eta = \frac{P_{sal}}{P_{entr}}\times 100\ \%$$
+
+Donde:
+- $\omega_{sinc}$ = velocidad angular de sincronismo [rad/s] (**constante**); $\omega_m = (1-s)\,\omega_{sinc}$ = velocidad angular mecánica del rotor
+- $\tau_{ind}$ = par de la conversión **interna**; $\tau_{carga}$ = par disponible **en el eje** ($\tau_{ind} > \tau_{carga}$; la diferencia son las pérdidas por rotación)
+
+> [!important] Consecuencia práctica
+> $P_{PCR} = s\,P_{EH}$: cuanto **menor** el deslizamiento, menores las pérdidas del rotor. Con $s = 1$ (rotor parado) el rotor **consume toda** la $P_{EH}$ y $P_{sal} = 0$.
+
+> [!example] Aplicación numérica
+> **Flujo de potencia** ($480\,\text{V}$, $60\,\text{A}$, $FP = 0{,}85$): $P_{entr} = \sqrt{3}(480)(60)(0{,}85) = 42{,}4\ \text{kW}$ → $P_{EH} = 38{,}6\ \text{kW}$ → $P_{conv} = 37{,}9\ \text{kW}$ → $P_{sal} = 37{,}3\ \text{kW}$ → $\eta \approx 88\ \%$. Ver [[S16-4 Ejercicio resuelto - Ecuación de potencia (Video)|S16-4]].
+> **Par desde el circuito equivalente** ($460\,\text{V}$, 4 polos, $s = 2{,}2\,\%$): $Z_{tot} = 14{,}07\angle 33{,}6°\,\Omega$ → $I_1 = 18{,}88\angle{-33{,}6°}\ \text{A}$ → $P_{EH} = 11\,845\ \text{W}$ → $\tau_{ind} = 62{,}8\ \text{N}\cdot\text{m}$, $\tau_{carga} = 56{,}9\ \text{N}\cdot\text{m}$, $\eta = 83{,}7\ \%$. Ver [[S16-5 Ejercicio resuelto - Ecuación de torque (Video)|S16-5]].
+
+---
+
+## 38. Motor de Inducción — Curvas Características y Regulación de Velocidad
+Fuente: [[S17-1 Tema 01 - Curvas características del motor asíncrono y regulación de velocidad|S17-1 Curvas caracteristicas del motor asincrono y regulacion de velocidad]]
+
+### Par inducido desde el punto de vista físico
+$$\tau_{ind} = k\,\mathbf{B}_R \times \mathbf{B}_{net} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} \tau_{ind} = k\,B_R\,B_{net}\operatorname{sen}\delta$$
+
+Donde:
+- $B_{net}$ = campo magnético **neto** (aprox. constante, proporcional a $E_1$)
+- $\delta$ = ángulo entre $\mathbf{B}_R$ y $\mathbf{B}_{net}$ ($\delta > 90°$ con carga)
+
+### El término $\operatorname{sen}\delta$ es el factor de potencia del rotor
+$$\operatorname{sen}\delta = \operatorname{sen}(\theta_R + 90°) = \cos\theta_R \hspace{0.5cm};\hspace{0.5cm} \theta_R = \tan^{-1}\frac{X_R}{R_R} = \tan^{-1}\frac{s\,X_{R0}}{R_R}$$
+
+$$FP_R = \cos\theta_R = \cos\!\left(\tan^{-1}\frac{s\,X_{R0}}{R_R}\right)$$
+
+Con carga: $B_R$ **aumenta** (sube $\tau$) y $\delta$ **crece** (baja $\tau$); domina el primer efecto → el par aumenta.
+
+### Equivalente de Thevenin del circuito de entrada
+$$\mathbf{V}_{TH} = \mathbf{V}_\phi\,\frac{jX_M}{R_1 + j(X_1 + X_M)} \hspace{0.5cm};\hspace{0.5cm} V_{TH} = V_\phi\,\frac{X_M}{\sqrt{R_1^{2} + (X_1 + X_M)^{2}}}$$
+
+$$\mathbf{Z}_{TH} = \frac{\mathbf{Z}_1\mathbf{Z}_M}{\mathbf{Z}_1 + \mathbf{Z}_M} = \frac{jX_M\,(R_1 + jX_1)}{R_1 + j(X_1 + X_M)} = R_{TH} + jX_{TH}$$
+
+Aproximaciones válidas si $X_M \gg X_1$ y $X_M + X_1 \gg R_1$:
+
+$$V_{TH} \approx V_\phi\,\frac{X_M}{X_1 + X_M} \hspace{0.5cm};\hspace{0.5cm} \boxed{R_{TH} \approx R_1\left(\frac{X_M}{X_1 + X_M}\right)^{2}} \hspace{0.5cm};\hspace{0.5cm} \boxed{X_{TH} \approx X_1}$$
+
+### Corriente del rotor y ecuación general del par
+$$I_2 = \frac{V_{TH}}{\sqrt{\left(R_{TH} + \dfrac{R_2}{s}\right)^{2} + (X_{TH} + X_2)^{2}}}$$
+
+$$P_{EH} = 3\,I_2^{2}\,\frac{R_2}{s} = \frac{3\,V_{TH}^{2}\,\dfrac{R_2}{s}}{\left(R_{TH} + \dfrac{R_2}{s}\right)^{2} + (X_{TH} + X_2)^{2}}$$
+
+$$\boxed{\tau_{ind} = \frac{P_{EH}}{\omega_{sinc}} = \frac{3\,V_{TH}^{2}\,\dfrac{R_2}{s}}{\omega_{sinc}\left[\left(R_{TH} + \dfrac{R_2}{s}\right)^{2} + (X_{TH} + X_2)^{2}\right]}}$$
+
+### Par máximo (máxima transferencia de potencia a $R_2/s$)
+Condición: $\dfrac{R_2}{s} = \sqrt{R_{TH}^{2} + (X_{TH} + X_2)^{2}}$, de donde:
+
+$$\boxed{s_{máx} = \frac{R_2}{\sqrt{R_{TH}^{2} + (X_{TH} + X_2)^{2}}}} \hspace{0.5cm};\hspace{0.5cm} \boxed{\tau_{máx} = \frac{3\,V_{TH}^{2}}{2\,\omega_{sinc}\left[R_{TH} + \sqrt{R_{TH}^{2} + (X_{TH} + X_2)^{2}}\right]}}$$
+
+### Par de arranque
+Se obtiene haciendo $s = 1$ en la ecuación general del par:
+
+$$\tau_{arr} = \frac{3\,V_{TH}^{2}\,R_2}{\omega_{sinc}\left[\left(R_{TH} + R_2\right)^{2} + (X_{TH} + X_2)^{2}\right]}$$
+
+> [!tip] Propiedad clave del rotor devanado
+> $s_{máx}$ es **proporcional a $R_2$**, pero $\tau_{máx}$ **no depende de $R_2$**. Al aumentar la resistencia del rotor, el par máximo **conserva su valor** y se desplaza a **menor velocidad**, mientras el **par de arranque crece**.
+
+### Métodos de regulación de velocidad
+Sobre $n_{sinc} = \dfrac{120\,f_e}{P}$ (frecuencia o polos), o sobre el **deslizamiento** (resistencia del rotor o tensión de línea):
+
+| Método | Fundamento | Observaciones |
+| --- | --- | --- |
+| **Cambio de polos** (polos consecuentes / devanados múltiples) | $n_{sinc} \propto 1/P$ | relación fija **2:1**; combinando ambos → motor de 4 velocidades (600/900/1200/1800 rpm a 60 Hz) |
+| **Cambio de frecuencia** (variador) | $n_{sinc} \propto f_e$ | rango ≈ 5 % a 2× la velocidad base; requiere $V/f$ constante |
+| **Cambio del voltaje de línea** | $\tau \propto V^2$ | intervalo **limitado**; típico en pequeños ventiladores |
+| **Cambio de la resistencia del rotor** | desplaza $s_{máx}$ | solo **rotor devanado**; **reduce la eficiencia** → uso breve, interés histórico |
+
+Flujo en el núcleo (fundamento del control $V/f$):
+
+$$\phi(t) = \frac{1}{N_P}\int v(t)\,dt = -\frac{V_M}{\omega\,N_P}\cos\omega t$$
+
+Donde:
+- $N_P$ = espiras por fase; $V_M$ = valor pico de la tensión aplicada; $\omega$ = frecuencia angular eléctrica
+- Bajar $f_e$ un 10 % con $V$ constante → el flujo **sube** un 10 % (satura). Variando $V$ **linealmente con $f$**, el flujo se mantiene y $\tau_{máx}$ permanece alto.
+
+> [!example] Aplicación numérica
+> Motor de rotor devanado $460\,\text{V}$, $25\,\text{hp}$, 4 polos: $V_{TH} = 255{,}2\ \text{V}$, $R_{TH} = 0{,}590\ \Omega$, $X_{TH} = 1{,}106\ \Omega$ → $s_{máx} = 0{,}198$ ($n_m = 1444\ \text{rpm}$), $\tau_{máx} = 229\ \text{N}\cdot\text{m}$, $\tau_{arr} = 104\ \text{N}\cdot\text{m}$. Al **duplicar $R_2$**: $s'_{máx} = 0{,}396$ ($n'_m = 1087\ \text{rpm}$), $\tau'_{máx} = 229\ \text{N}\cdot\text{m}$ (invariante) y $\tau'_{arr} = 170\ \text{N}\cdot\text{m}$ (+63 %). Desarrollo en [[S17-2 Ejercicio resuelto - Regulación de velocidad de motor de inducción (Video)|S17-2]].
+
+---
+
+## 39. Placa de Características del Motor Asíncrono
+Fuente: [[S17-3 Tema 02 - Análisis de la placa de característica del motor asíncrono|S17-3 Analisis de la placa de caracteristica del motor asincrono]]
+
+### Valores nominales de la placa
+1. **Potencia de salida** (hp en EE. UU., kW en el resto del mundo) · 2. **Voltaje** · 3. **Corriente** · 4. **Factor de potencia** · 5. **Velocidad** · 6. **Eficiencia nominal** · 7. **Clase NEMA de diseño**.
+
+| Campo | Ejemplo | Lectura |
+| --- | --- | --- |
+| `VOLTS` / `AMPS` | 230/460 · 97/48.5 | doble tensión: al **duplicar** $V$, la corriente se **reduce a la mitad** para la misma potencia |
+| `H.P.` / `R.P.M.` | 40 · 3565 | potencia de salida y velocidad **a plena carga** |
+| `NEMA NOM. EFF.` / `NOM. P.F.` | .936 · .827 | $\eta = 93{,}6\ \%$; $\cos\varphi = 0{,}827$ |
+| `CODE` | G | letra de código NEMA → kVA/hp con **rotor bloqueado** |
+| `NEMA DESIGN` | B | clase de diseño (forma de la curva par-velocidad) |
+| `FRAME` / `INS. CL.` / `SERV. FACT.` / `DUTY` | 324TS · B · 1.0 · Cont | carcasa, aislamiento, factor de servicio, régimen |
+
+En la placa de un **motor síncrono** aparecen además los campos de **excitación** (`EXCITATION-VOLTS`, `AMP`) y las elevaciones de temperatura admisibles de estator y rotor.
+
+### Tabla 1. Letras de código NEMA (kVA/hp con rotor bloqueado)
+
+| Letra | kVA/hp | Letra | kVA/hp |
+| :---: | :---: | :---: | :---: |
+| A | 0 – 3.15 | L | 9.00 – 10.00 |
+| B | 3.15 – 3.55 | M | 10.00 – 11.00 |
+| C | 3.55 – 4.00 | N | 11.20 – 12.50 |
+| D | 4.00 – 4.50 | P | 12.50 – 14.00 |
+| E | 4.50 – 5.00 | R | 14.00 – 16.00 |
+| F | 5.00 – 5.60 | S | 16.00 – 18.00 |
+| G | 5.60 – 6.30 | T | 18.00 – 20.00 |
+| H | 6.30 – 7.10 | U | 20.00 – 22.40 |
+| J | 7.10 – 8.00 | V | 22.40 y más |
+| K | 8.00 – 9.00 | | |
+
+Cada letra se extiende **hasta, pero sin incluir**, el límite inferior de la clase superior.
+
+### Potencia aparente de arranque
+$$S_{arr} = (\text{kVA/hp de la letra de código}) \times \text{HP}_{nom}$$
+
+> [!example] Lectura del código
+> `CODE G` + `H.P. 40` → entre $40 \times 5{,}60 = 224\ \text{kVA}$ y $40 \times 6{,}30 = 252\ \text{kVA}$ con rotor bloqueado. Con ese dato se estima la **corriente de arranque** y se dimensionan protecciones y arrancador.
+
+---
+
+## 40. Máquina Síncrona Trifásica — Motor y Generador
+Fuente: [[S17-4 Tema 03 - Máquina síncrona trifásica|S17-4 Maquina sincrona trifasica]]
+Fuente: [[S17-5 Tema 04 - Principio de funcionamiento como generador|S17-5 Principio de funcionamiento como generador]]
+
+### Velocidad de rotación y frecuencia eléctrica
+$$\boxed{n_m = \frac{120\,f_e}{P}} \hspace{0.5cm}\Longleftrightarrow\hspace{0.5cm} \boxed{f_e = \frac{n_m\,P}{120}}$$
+
+Donde:
+- $n_m$ = velocidad mecánica de rotación [rpm] (igual a la del campo magnético)
+- $f_e$ = frecuencia eléctrica del estator [Hz]; $P$ = **número de polos**
+
+| Frecuencia | Polos | Velocidad requerida |
+| :---: | :---: | :---: |
+| $60\ \text{Hz}$ | $2$ | $3600\ \text{rpm}$ |
+| $50\ \text{Hz}$ | $4$ | $1500\ \text{rpm}$ |
+
+### Par inducido
+$$\tau_{ind} = k\,B_R \times B_S \hspace{0.5cm};\hspace{0.5cm} \tau_{ind} = k\,B_R\,B_{net}\operatorname{sen}\delta$$
+
+- $B_R$ = campo del rotor, **estacionario respecto al rotor**, creado por la corriente de campo $I_f$ (CC)
+- $B_S$ = campo giratorio del estator; $\delta$ = **ángulo de par** (entre $E_A$ y $V_\phi$)
+
+### Circuito equivalente por fase — LVK
+$$V_\phi = E_A + jX_S I_A + R_A I_A \hspace{0.5cm}\Longleftrightarrow\hspace{0.5cm} \boxed{E_A = V_\phi - jX_S I_A - R_A I_A}$$
+
+Donde:
+- $E_A$ = tensión interna generada (f.c.e.m.); $V_\phi$ = tensión de fase en bornes
+- $I_A$ = corriente de armadura; $X_S$ = reactancia síncrona; $R_A$ = resistencia de armadura
+
+| Operación | Referencia de $I_A$ | Fasor $jX_S I_A$ | Conversión |
+| --- | --- | --- | --- |
+| **Motor** | invertida | apunta de $E_A$ a $V_\phi$ | eléctrica → mecánica |
+| **Generador** | directa | apunta de $V_\phi$ a $E_A$ | mecánica → eléctrica |
+
+El circuito equivalente es **idéntico** en ambos casos: solo cambia la dirección de referencia de $I_A$.
+
+### Par en función de las magnitudes eléctricas
+$$\tau_{ind} = \frac{3\,V_\phi\,E_A\operatorname{sen}\delta}{\omega_m\,X_S} \hspace{0.5cm};\hspace{0.5cm} \boxed{\tau_{max} = \frac{3\,V_\phi\,E_A}{\omega_m\,X_S}} \hspace{0.3cm}\text{en}\hspace{0.3cm} \delta = 90°$$
+
+Equivalentemente, $\tau_{max} = k\,B_R\,B_{net}$.
+
+> [!info] Regulación de velocidad 0 %
+> La velocidad del motor síncrono **no depende de la carga**: queda fijada por la red mediante $n_m = 120f_e/P$ y se mantiene desde el vacío hasta $\tau_{max}$ (a partir de ahí, **pérdida de sincronismo**). Contrastar con el [[S17-1 Tema 01 - Curvas características del motor asíncrono y regulación de velocidad|motor asíncrono]], cuya velocidad sí cae con la carga a través del deslizamiento.
+
+### Alimentación del circuito de campo (CC)
+1. **Anillos rozantes y escobillas** desde una fuente externa.
+2. **Excitador sin escobillas** (campo en el estator, armadura en el eje) → sin contacto mecánico, mucho menos mantenimiento; usado en máquinas grandes.
+
+El rotor se construye con **láminas delgadas** para minimizar las pérdidas por corrientes parásitas.

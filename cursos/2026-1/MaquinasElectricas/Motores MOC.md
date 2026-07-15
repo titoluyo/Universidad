@@ -191,18 +191,51 @@ aliases:
 
 ### Semana 15
 
-> [!info] Pendiente
-> Maquinas de corriente alterna. Maquina asincrona trifasica.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S15-0 Introducción - Máquinas de corriente alterna\|Introduccion - Maquinas de corriente alterna]] | introduccion |
+| 1 | [[S15-1 Tema 01 - Máquinas de corriente alterna\|Maquinas de corriente alterna (sincronas vs asincronas)]] | clase |
+| 2 | [[S15-2 Ejercicio resuelto - Máquina asíncrona trifásica (Video)\|Ejercicio resuelto - Maquina asincrona trifasica]] | ejercicio |
+| 8 | [[S15-8 Conclusiones semana 15\|Conclusiones semana 15]] | clase |
+| 99 | [[S15-99 Laboratorio 3 - Velocidad-tension y par-corriente motor cc excitacion independiente\|🔴 LC3 - Laboratorio Calificado 3 (AC-S15)]] | laboratorio |
+| 100 | [[S15-100 Laboratorio 3 - Resolucion desarrollo y resultados\|LC3 - Resolucion, desarrollo y resultados]] | laboratorio |
 
 ### Semana 16
 
-> [!info] Pendiente
-> Caracteristicas de la maquina asincrona trifasica. Circuito equivalente. Ecuacion de torque. Deslizamiento.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S16-0 Introducción - Motores asíncronos de inducción\|Introduccion - Motores asincronos de induccion]] | introduccion |
+| 1 | [[S16-1 Tema 01 - Principio de funcionamiento de las máquinas asíncronas trifásicas\|Principio de funcionamiento de las maquinas asincronas]] | clase |
+| 2 | [[S16-2 Tema 02 - Circuito equivalente de un motor de inducción\|Circuito equivalente de un motor de induccion]] | clase |
+| 3 | [[S16-3 Tema 03 - Potencia y par en los motores de inducción\|Potencia y par en los motores de induccion]] | clase |
+| 4 | [[S16-4 Ejercicio resuelto - Ecuación de potencia (Video)\|Ejercicio resuelto - Ecuacion de potencia]] | ejercicio |
+| 5 | [[S16-5 Ejercicio resuelto - Ecuación de torque (Video)\|Ejercicio resuelto - Ecuacion de torque]] | ejercicio |
+| 8 | [[S16-8 Conclusiones semana 16\|Conclusiones semana 16]] | clase |
+| 99 | [[S16-99 Evaluación Semana 16 - AC Actividad de Participación (PA)\|🔴 AC-S16 - Actividad de Participacion (PA)]] | pa |
 
 ### Semana 17
 
-> [!info] Pendiente
-> Curvas del motor asincrono. Regulacion de velocidad. Placa de caracteristicas. Maquina sincrona trifasica.
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 0 | [[S17-0 Introducción - Curvas caracteristicas y maquina sincrona\|Introduccion - Curvas caracteristicas y maquina sincrona]] | introduccion |
+| 1 | [[S17-1 Tema 01 - Curvas características del motor asíncrono y regulación de velocidad\|Curvas caracteristicas del motor asincrono y regulacion de velocidad]] | clase |
+| 2 | [[S17-2 Ejercicio resuelto - Regulación de velocidad de motor de inducción (Video)\|Ejercicio resuelto - Regulacion de velocidad de motor de induccion]] | ejercicio |
+| 3 | [[S17-3 Tema 02 - Análisis de la placa de característica del motor asíncrono\|Analisis de la placa de caracteristica del motor asincrono]] | clase |
+| 4 | [[S17-4 Tema 03 - Máquina síncrona trifásica\|Maquina sincrona trifasica]] | clase |
+| 5 | [[S17-5 Tema 04 - Principio de funcionamiento como generador\|Principio de funcionamiento como generador]] | clase |
+| 99 | [[S17-99 Evaluación Semana 17 - Cuestionario de autoevaluación\|📝 Cuestionario de autoevaluacion]] | cuestionario |
+
+> [!note] Foro de cierre
+> El cierre de la semana 17 es un **foro de discusión no calificado** ("Conclusiones semana 17", 13-14 de julio), no una nota de contenido — por eso no hay `S17-8`.
+
+### Semana 18
+
+| Orden | Nota | Tipo |
+| ----- | ---- | ---- |
+| 99 | [[S18-99 Evaluación Semana 18 - Examen Final (EXFN)\|🔴 EXFN - Examen Final (AC-S18)]] | exfn |
+
+> [!info] Semana de examen
+> La semana 18 no tiene contenido teorico: solo las indicaciones y el **Examen Final** (20-21 de julio).
 
 ---
 
@@ -222,3 +255,28 @@ aliases:
 > [!warning] Formula
 > $\text{PF} = 0.10(PC1 + LC1 + PC2 + LC2 + PC3 + LC3 + PA) + 0.30 \cdot EXFN$
 > Nota minima aprobatoria: **12**
+
+### Estado de notas (portal, al 15 de julio de 2026)
+
+| Evaluacion | Semana | Estado | Nota |
+| ---------- | ------ | ------ | ---- |
+| PC1 | 4 | Entregado | **20**/20 |
+| LC1 | 5 | Entregado | **18**/20 |
+| PC2 | 9 | Entregado | **18**/20 |
+| LC2 | 10 | Entregado | **18**/20 |
+| PC3 | 14 | Entregado | **16**/20 |
+| LC3 | 15 | Entregado | **19**/20 |
+| PA | (s03, s08, s13, s16) | Cerrada | **5**/20 |
+| EXFN | 18 | Programado (20-21 jul) | — |
+
+La **PA** es el promedio de las cuatro actividades de participacion: AC-S03 **20**/20, AC-S08 **0**/20, AC-S13 **0**/20, AC-S16 **0**/20 → promedio **5**/20. Las cuatro ya vencieron, asi que la PA esta cerrada.
+
+> [!tip] Cuanto se necesita en el Examen Final
+> Con las notas actuales, la parte no-EXFN aporta $0.10 \times (20+18+18+18+16+19+5) = 11.4$ puntos. Entonces:
+>
+> $$\text{PF} = 11.4 + 0.30 \cdot \text{EXFN}$$
+>
+> - Para **aprobar** ($\text{PF} \geq 12$) basta con **EXFN $\geq$ 2**/20.
+> - Con EXFN = 20 la nota final maxima es **17.4**.
+>
+> Verificar la formula y los pesos contra el [[Silabo - Maquinas Electricas Estaticas y Rotativas|silabo]] antes de darlos por definitivos.

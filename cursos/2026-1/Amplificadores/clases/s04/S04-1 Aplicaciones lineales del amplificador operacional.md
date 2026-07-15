@@ -271,6 +271,9 @@ $$V_o = V_2 \cdot \frac{R_4}{R_3 + R_4} \cdot \left(1 + \frac{R_2}{R_1}\right) -
 
 ## 7. Amplificador derivador
 
+> [!info] Vision en frecuencia
+> El derivador es equivalente a un **filtro pasa-altos** de 1er orden. Funcion de transferencia $H(s) = -sRC$ (ideal) o $H(s) = -sRC/(1 + sR_1C)$ (practico). Detalles, derivaciones y diagramas de Bode en [[S07-5 Integrador y derivador como filtros activos]].
+
 Produce una salida proporcional a la **derivada** de la entrada. Se obtiene reemplazando $R_1$ por un capacitor en la configuracion inversora.
 
 ```
@@ -321,6 +324,9 @@ Donde:
 ---
 
 ## 8. Amplificador integrador
+
+> [!info] Vision en frecuencia
+> El integrador es equivalente a un **filtro pasa-bajos** de 1er orden. Funcion de transferencia $H(s) = -1/(sRC)$ (ideal) o $H(s) = -(R_f/R)/(1 + sR_fC)$ (practico, con $R_f$ paralelo a $C$). Detalles, derivaciones y diagramas de Bode en [[S07-5 Integrador y derivador como filtros activos]].
 
 Produce una salida proporcional a la **integral** de la entrada. Se obtiene reemplazando $R_f$ por un capacitor en la configuracion inversora.
 

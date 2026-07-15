@@ -8,16 +8,59 @@
         "type": "tabs",
         "children": [
           {
+            "id": "5dd537a525e3286c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion"
+            }
+          },
+          {
             "id": "5aeb4bec51c42aa4",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "cursos/2026-1/Evaluaciones.base",
-                "viewName": "Silabos del ciclo"
+                "file": "cursos/2026-1/Amplificadores/Amplificadores MOC.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Evaluaciones"
+              "icon": "lucide-file",
+              "title": "Amplificadores MOC"
+            }
+          },
+          {
+            "id": "97af62cd27e1af8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cursos/2026-1/Amplificadores/clases/s07/S07-4 Amplificador operacional de transconductancia (OTA).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S07-4 Amplificador operacional de transconductancia (OTA)"
+            }
+          },
+          {
+            "id": "ebfdabac59013dac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cursos/2026-1/Amplificadores/clases/s07/S07-5 Integrador y derivador como filtros activos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S07-5 Integrador y derivador como filtros activos"
             }
           }
         ]
@@ -43,7 +86,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -52,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "transconductancia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5
+    "width": 457.5
   },
   "right": {
     "id": "ca23c823690c8229",
@@ -155,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cursos/2026-1/SeriesTransformadas/clases/s02/S02-99 Evaluación PA01 (SyT).md",
+                "file": "cursos/2026-1/Amplificadores/clases/s09/S09-1 Amplificadores con realimentacion positiva y osciladores.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of S02-99 Evaluación PA01 (SyT)"
+              "title": "Esquema de S09-1 Amplificadores con realimentacion positiva y osciladores"
             }
           }
         ],
@@ -174,63 +217,65 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5aeb4bec51c42aa4",
+  "active": "5dd537a525e3286c",
   "lastOpenFiles": [
-    "cursos/2026-1/SeriesTransformadas/clases/s06/pa03/TitoLuyoMurata_S&T_ PA03_preg02.png",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/pa03/TitoLuyoMurata_S&T_ PA03_preg03.png",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/pa03/TitoLuyoMurata_S&T_ PA03_preg04.png",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/pa03/TitoLuyoMurata_S&T_ PA03_preg05.png",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/pa03/TitoLuyoMurata_S&T_ PA03_preg01.png",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/pa03",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/attachments/PA03_preg01_guia_estudio_A4.png",
-    "AGENTS.md",
-    "CLAUDE copy.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/attachments/TitoLuyoMurata_PA01_preg01.jpg",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/attachments/TitoLuyoMurata_PA01_preg02.jpg",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/attachments/TitoLuyoMurata_PA01_preg03.jpg",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/attachments/TitoLuyoMurata_PA01_preg04.jpg",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/attachments/TitoLuyoMurata_PA01_preg05.jpg",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-98 PA03 Enunciados.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/attachments/PA03-Enunciados.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/PA-3 -Estudiantes_WEIWMX.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-99 PA03 sem 06.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-6 Tema 06 - Teorema de extension de Cauchy.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-5 Tema 06 - Cauchy Ejercicio 2 - circle via Green.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-4 Tema 06 - Cauchy Ejercicio 1 - contorno triangular.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-3 Tema 06 - Teorema de Cauchy.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-2 Tema 06 - Ejercicio 2 - Integral por dos caminos.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/S06-1 Tema 06 - Integral de contorno en funciones complejas.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/attachments/PA03-Indicaciones.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/attachments/T03-Guion-extension-Cauchy.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/attachments/T02-Ej1-Guion-Cauchy.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/attachments/T01-Ej2-Guion-integral-contorno.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/Semana06_TeoremaCauchy.pdf",
-    "cursos/2026-1/SeriesTransformadas/clases/s06/attachments",
-    "cursos/2026-1/SeriesTransformadas/clases/s06",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-99 Evaluacion sem 05.md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-5 Tema 05 - Ejercicio 4 (SyT).md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-4 Tema 05 - Ejercicio 3 (SyT).md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-3 Tema 05 - Ejercicio 2 (SyT).md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-2 Tema 05 - Ejercicio 1 (SyT).md",
-    "cursos/2026-1/SeriesTransformadas/clases/s05/S05-1 Tema 05 - Funciones complejas elementales.md",
-    "CLAUDE-preview.md",
-    "cursos/2026-1/SeriesTransformadas/Anuncios.md",
-    "cursos/2026-1/MaquinasElectricas/Anuncios.md",
-    "cursos/2026-1/PLC/Anuncios.md",
-    "cursos/2026-1/Amplificadores/Anuncios.md",
-    "utils/entrenamiento-portal-utp.md",
-    "cursos/2026-1/Amplificadores/clases/s06/S06-1 Amplificadores lineales y no lineales.md",
-    "cursos/2026-1/Amplificadores/teoria/Ecuacion del diodo - derivacion desde Boltzmann.md",
-    "cursos/2026-1/Amplificadores/clases/s04/S04-2 Eficiencia de los amplificadores y circuitos resonantes.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/resolucion/S14-98 Resolucion teorica - Filtro activo pasa bajo (Sallen-Key, derivacion completa).md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/resolucion/S14-98 Resolucion teorica - Filtro activo pasa bajo (Sallen-Key, derivacion completa).md.tmp.16220.ebeb59c9b25d",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/resolucion",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md.tmp.16220.2ca7b88aafcd",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md.tmp.16220.7845712da96c",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.16220.3f2f9f6c65f3",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL.md.tmp.16220.33c0a9a78c3b",
+    "cursos/2026-1/Amplificadores/Amplificadores MOC.md.tmp.16220.87733e20a085",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-3 Tema 17 - Filtro pasivo RLC de segundo orden y resonancia.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-3 Tema 17 - Filtro pasivo RLC de segundo orden y resonancia.md.tmp.16220.5a03ccfeca6a",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md.tmp.16220.b3f302bcf57e",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion.md.tmp.16220.9a515de8fba0",
+    "cursos/2026-1/Amplificadores/clases/s14/S14-5 Tema 14 - Diagrama de Bode por factores.md",
+    "cursos/2026-1/Amplificadores/clases/s14/S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode.md",
+    "cursos/2026-1/Amplificadores/clases/s17/S17-1 Tema 17 - Oscilador puente de Wien - analisis y criterio de Barkhausen.md",
+    "cursos/2026-1/Amplificadores/clases/s15/S15-1 Tema 15 - Diagrama de Bode.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/S14-101 Informe LE3 - Filtro activo pasa bajo (3K3).md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/S14-100 Informe LE3 - Filtro activo pasa bajo.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/attachments/s14-le3-bode-comparacion-3k3.png",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/attachments/s14-le3-multisim-bode-3k3.png",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/attachments/s14-le3-multisim-esquema-3k3.png",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/simulacion/3.3K/Lab3 - Filtro 2026 (3.3K)-schematic.png",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/simulacion/3.3K/Lab3 - Filtro 2026 (3.3K)-Grapher.png",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/simulacion/S09-97 Simulacion LTspice - LE2 Realimentacion negativa.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/simulacion/le2_respuesta_frecuencia.png",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/resolucion/WhatsApp Image 2026-05-19 at 11.07.13 PM.jpeg",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/resolucion/WhatsApp Image 2026-05-19 at 11.06.21 PM.jpeg",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/resolucion/WhatsApp Image 2026-05-19 at 11.05.44 PM.jpeg",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/resolucion/WhatsApp Image 2026-05-19 at 11.05.30 PM.jpeg",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/resolucion/S09-98 Resolucion teorica - Realimentacion negativa (problema serie-serie).md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/S09-100 Informe LE2 - Realimentacion negativa.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo01/S06-102 Informe LE1 v2 - Amplificador operacional.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo03/s14-laboratorio-le3-guia.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo02/S09-99 Laboratorio - LE2 Realimentacion negativa.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo01/S06-101 Espejo - Mejoras propuestas al informe LE1.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo01/S06-100 Informe LE1 - Amplificador operacional.md",
+    "cursos/2026-1/Amplificadores/laboratorios/labo01/S06-99 Laboratorio - LE1 Amplificador operacional.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s15/laboratorio3/S15-100 Laboratorio 3 - Resolucion desarrollo y resultados._export.md",
+    "cursos/2026-1/MaquinasElectricas/clases/s14/S14-98 PC3 - Enunciados y desarrollo.md",
+    "cursos/2026-1/SeriesTransformadas/Trabajo Final/06 - Guion del video.md",
+    "cursos/2026-1/SeriesTransformadas/Trabajo Final/05 - Documento final (esqueleto).md",
+    "cursos/2026-1/SeriesTransformadas/Trabajo Final/04 - Simulacion (Octave o LTSPICE).md",
+    "cursos/2026-1/SeriesTransformadas/Trabajo Final/03 - Desarrollo analitico (teoria).md",
+    "cursos/2026-1/SeriesTransformadas/Trabajo Final/02 - Planificacion y cronograma.md",
     "Untitled.canvas"
   ]
 }

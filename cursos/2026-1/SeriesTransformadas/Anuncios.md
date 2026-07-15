@@ -424,3 +424,55 @@ Imágenes en [anuncios-attachments/](anuncios-attachments/).
 > - Recuerda que la fecha límite: domingo 3 de mayo, hasta las 11:59 p.m.
 >
 > 🌟 Sigan participando, preguntando y aprendiendo juntos. El avance que han demostrado hasta ahora es solo el comienzo de todo lo que pueden lograr.
+
+## 2026-05-04 6:00 AM — Bienvenido(a) a la Semana 7
+
+![[2026-05-04_bienvenida-semana-7.png]]
+
+> 📣 **Anuncio Semanal: ¡Manos a la obra!**
+>
+> ¡Hola a todos y todas!
+> ¡Bienvenidos a la **Semana 7** del curso! 🔒📣 Esta semana nos enfocaremos en **Teorema de Cauchy y teorema de extensión de Cauchy, teorema de Green. Ejercicios de aplicación**, una base esencial para todo el contenido que abordaremos más adelante.
+>
+> Te informo que en esta semana tendremos la **EVALUACIÓN PRÁCTICA CALIFICADA 1**.
+>
+> 🎯 **Esta semana demostrarás lo aprendido:**
+> Para ello debes repasar los temas estudiados que se encuentran en la plataforma UTP + CLASS, cualquier inquietud o consulta me la haces saber con toda confianza al foro.
+>
+> 📝 **Actividades clave de esta semana:**
+> - Revisión de los materiales explicativos de la semana.
+> - Desarrollo de las actividades propuestas.
+> - 🔴 **(AC-S07) Semana 07 - Práctica Calificada 1 (PC01)**
+>   Recuerda que tienes hasta el **29 de septiembre** para realizar tu PC *(NOTA: la fecha del slide arrastra del ciclo anterior — la PC1 vence el domingo 10 de mayo de 2026 según portal/consigna)*.
+>
+> 🔥 **Tu participación es fundamental.**
+> No solo mejora tu comprensión, también enriquece el aprendizaje de todos. ¡Anímate a compartir tus ideas, dudas y experiencias! Recuerda que estoy aquí para apoyarte en cada paso.
+>
+> 🗓 **Plazo de entrega Práctica calificada 1:** del **viernes 08 de mayo al domingo 10 de mayo**, hasta las **11:59 p.m.**
+> ¡Mucho éxito esta semana! ✋
+> Recuerda realizar tus consultas en los foros de consulta.
+
+## 2026-05-08 6:00 AM — Cierre Semana 7
+
+![[2026-05-08_cierre-semana-7.png]]
+
+> 📣 **Anuncio Semanal – ¡Excelente trabajo con Teorema de Cauchy y teorema de extensión de Cauchy, teorema de Green. Ejercicios de aplicación!** 👏
+>
+> ¡Hola, queridos estudiantes!
+>
+> ¡Quiero felicitar sinceramente el esfuerzo que han demostrado esta semana trabajando con **Teorema de Cauchy y teorema de extensión de Cauchy, teorema de Green. Ejercicios de aplicación!** 🤓✨
+>
+> Te informo que en esta semana tendremos la **EVALUACIÓN PRÁCTICA CALIFICADA 1**.
+>
+> 🔍 Esta semana continuaremos aplicando **Teorema de Cauchy y teorema de extensión de Cauchy, teorema de Green**, con ejercicios que implican más razonamiento.
+>
+> 📋 **Recordatorio de Actividades de la semana:**
+> - Revisión de los materiales explicativos de la semana.
+> - Desarrollo de las actividades propuestas.
+> - 🔵 **(AC-S07) Semana 07 - Práctica Calificada 1 (PC01)**
+>
+> • Recuerda que la fecha límite: **domingo 10 de mayo, hasta las 11:59 p.m.**
+>
+> 🌟 **Sigan participando, preguntando y aprendiendo juntos.** El avance que han demostrado hasta ahora es solo el comienzo de todo lo que pueden lograr.
+>
+> Estoy muy orgulloso de ustedes. ¡Vamos con fuerza a por una nueva semana de aprendizaje! 🚀

@@ -5,9 +5,11 @@ unidad: 1
 semana: 5
 orden: 99
 tipo: evaluacion
+subtipo: cuestionario
 tags:
   - curso/series-transformadas
   - tipo/evaluacion
+  - subtipo/cuestionario
   - tema/funciones-complejas-elementales
 date: 2026-04-26
 ---

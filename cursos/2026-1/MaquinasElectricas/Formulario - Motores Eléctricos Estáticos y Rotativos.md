@@ -422,3 +422,579 @@ $$\frac{P_F}{vol} = \pi^2 f^2 B_m^2 a^2 \frac{\sigma}{6} = k_F \cdot f^2 \cdot B
 $$P_{Fe} = P_H + P_F = k_H \cdot f \cdot B_m^{\alpha} + k_F \cdot f^2 \cdot B_m^2 \cdot a^2 \cdot \sigma$$
 
 El fabricante del material magnético suministra las curvas de pérdidas totales en función de $B$ a frecuencia constante.
+
+---
+
+## 14. Reactor con Núcleo de Hierro (Sección Cruciforme)
+Fuente: [[S06-1 Tema 01 - El reactor con núcleo de hierro|S06-1 El reactor con núcleo de hierro]]
+
+### Sección cruciforme de tres escalones
+Área real de hierro:
+$$S = b^2 + 2ac - 2bc$$
+
+Relación geométrica de la sección inscrita en el círculo de diámetro $d$:
+$$d^2 = a^2 + c^2 \hspace{0.5cm};\hspace{0.5cm} d^2 = 2b^2$$
+
+Expresión despejando $c$:
+$$S = \frac{d^2}{2} + 2a\sqrt{d^2 - a^2} - d\sqrt{2(d^2 - a^2)}$$
+
+### Dimensiones óptimas (3 escalones)
+Para máximo aprovechamiento del espacio interno del devanado:
+$$a = 0{,}906 \cdot d \hspace{0.5cm};\hspace{0.5cm} b = 0{,}707 \cdot d \hspace{0.5cm};\hspace{0.5cm} c = 0{,}423 \cdot d$$
+
+Donde:
+- $d$ = diámetro de la circunferencia que circunscribe al núcleo
+- $a$, $b$, $c$ = anchos de las láminas (escalón externo, intermedio e interno)
+- $S$ = área real de hierro del núcleo cruciforme
+
+---
+
+## 15. Transformador Monofásico Ideal
+Fuente: [[S06-4 Tema 02 - El transformador monofásico ideal|S06-4 El transformador monofásico ideal]]
+
+### Relación de transformación
+$$\frac{V_P(t)}{V_S(t)} = \frac{N_P}{N_S} = a$$
+
+### Relación de corrientes (Ley de Ampere aplicada al núcleo)
+$$N_P \cdot i_P(t) = N_S \cdot i_S(t) \hspace{0.5cm} \Longrightarrow \hspace{0.5cm} \frac{i_P(t)}{i_S(t)} = \frac{1}{a}$$
+
+### Forma fasorial
+$$\frac{V_P}{V_S} = a \hspace{0.5cm};\hspace{0.5cm} \frac{I_P}{I_S} = \frac{1}{a}$$
+
+### Potencia activa
+$$P_{in} = V_P \cdot I_P \cdot \cos \theta_P \hspace{0.5cm};\hspace{0.5cm} P_{out} = V_S \cdot I_S \cdot \cos \theta_S$$
+
+En el transformador ideal $\theta_S = \theta_P = \theta$, y por tanto:
+$$P_{in} = P_{out}$$
+
+### Conservación de potencias reactiva y aparente
+$$Q_{in} = V_P \cdot I_P \cdot \sin\theta = V_S \cdot I_S \cdot \sin\theta = Q_{out}$$
+$$S_{in} = V_P \cdot I_P = V_S \cdot I_S = S_{out}$$
+
+---
+
+## 16. Polaridad e Impedancia Reflejada
+Fuente: [[S06-6 Tema 02 - Polaridad y conversión de impedancias|S06-6 Polaridad y conversión de impedancias]]
+
+### Impedancia de la carga
+$$\mathbf{Z}_L = \frac{\mathbf{V}_S}{\mathbf{I}_S}$$
+
+### Impedancia aparente vista desde el primario
+$$\mathbf{Z}_L^{\prime} = \frac{\mathbf{V}_P}{\mathbf{I}_P} = \frac{a\,\mathbf{V}_S}{\dfrac{\mathbf{I}_S}{a}} = a^2 \cdot \mathbf{Z}_L$$
+
+> [!info] Regla de los puntos (dot convention)
+> - Polaridad de voltaje: el extremo marcado del primario y el extremo marcado del secundario son positivos en simultáneo.
+> - Corriente: si entra al punto del primario, **sale** por el punto del secundario.
+
+---
+
+## 17. Transformador Real — Circuito Equivalente
+Fuente: [[S07-1 Tema 01 - Circuito equivalente exacto y aproximado del transformador real|S07-1 Circuito equivalente exacto y aproximado del trafo real]]
+
+### Flujos totales y flujos de dispersión
+$$\Phi_1 = \Phi + \Phi_{d1} \hspace{0.5cm};\hspace{0.5cm} \Phi_2 = \Phi + \Phi_{d2}$$
+
+### Coeficientes de autoinducción de dispersión
+$$L_{d1} = N_1 \, \frac{d\Phi_{d1}}{di_1} \hspace{0.5cm};\hspace{0.5cm} L_{d2} = N_2 \, \frac{d\Phi_{d2}}{di_2}$$
+
+### Reactancias de dispersión
+$$X_1 = L_{d1} \, \omega \hspace{0.5cm};\hspace{0.5cm} X_2 = L_{d2} \, \omega$$
+
+### Ecuaciones de Kirchhoff (fasoriales)
+$$\mathbf{V}_1 = \mathbf{E}_1 + R_1 \, \mathbf{I}_1 + jX_1 \, \mathbf{I}_1$$
+$$\mathbf{V}_2 = \mathbf{E}_2 - R_2 \, \mathbf{I}_2 - jX_2 \, \mathbf{I}_2$$
+
+### F.e.m. inducidas (valores eficaces)
+$$E_1 = 4{,}44 \cdot f \cdot N_1 \cdot \Phi_m \hspace{0.5cm};\hspace{0.5cm} E_2 = 4{,}44 \cdot f \cdot N_2 \cdot \Phi_m$$
+
+### Reducción al primario (transformador equivalente con $N'_2 = N_1$)
+| Magnitud | Real | Equivalente |
+| -------- | ---- | ----------- |
+| Voltaje  | $E_2$, $V_2$ | $E'_2 = a \cdot E_2$, $V'_2 = a \cdot V_2$ |
+| Corriente | $I_2$ | $I'_2 = I_2 / a$ |
+| Resistencia | $R_2$ | $R'_2 = a^2 \cdot R_2$ |
+| Reactancia | $X_2$ | $X'_2 = a^2 \cdot X_2$ |
+| Impedancia | $Z_L$ | $\mathbf{Z}'_L = a^2 \cdot \mathbf{Z}_L$ |
+
+### Impedancia de cortocircuito (circuito equivalente aproximado)
+$$\boxed{R_{cc} = R_1 + R'_2 \hspace{0.4cm};\hspace{0.4cm} X_{cc} = X_1 + X'_2}$$
+
+Para transformadores grandes ($X_{cc} \gg R_{cc}$) suele usarse solo $X_{cc}$.
+
+---
+
+## 18. Ensayo de Vacío
+Fuente: [[S07-3 Tema 02 - Ensayo de vacío y de cortocircuito de un transformador real|S07-3 Ensayo de vacío y cortocircuito]]
+
+### Condición de medida
+Primario alimentado a $V_{1n}$, secundario en circuito abierto. Se miden $P_0$, $I_0$, $V_{20}$.
+
+### Pérdidas en el hierro
+$$P_0 \approx P_{Fe}$$
+
+### Factor de potencia en vacío
+$$P_0 = V_{1n} \cdot I_0 \cdot \cos\varphi_0$$
+
+### Componentes de la corriente de vacío
+$$I_{Fe} = I_0 \cos\varphi_0 \hspace{0.5cm};\hspace{0.5cm} I_\mu = I_0 \sin\varphi_0$$
+
+### Parámetros de la rama paralela
+$$R_{Fe} = \frac{V_1}{I_{Fe}} \hspace{0.5cm};\hspace{0.5cm} X_\mu = \frac{V_1}{I_\mu}$$
+
+Forma alterna directa con $P_0$:
+$$R_{Fe} = \frac{V_{1n}^2}{P_0}$$
+
+### Relación de transformación
+$$a = \frac{N_1}{N_2} = \frac{E_1}{E_2} = \frac{V_{1n}}{V_{20}}$$
+
+---
+
+## 19. Ensayo de Cortocircuito
+Fuente: [[S07-3 Tema 02 - Ensayo de vacío y de cortocircuito de un transformador real|S07-3 Ensayo de vacío y cortocircuito]]
+
+### Condición de medida
+Secundario cortocircuitado, $V_1$ se eleva desde 0 hasta que $I_1 = I_{1n}$. Se miden $V_{1cc}$, $I_{1cc}=I_{1n}$, $P_{cc}$.
+
+### Pérdidas en el cobre
+$$P_{cc} \approx P_{Cu}$$
+
+### Impedancia de cortocircuito
+$$Z_{cc} = \frac{V_{1cc}}{I_{1n}}$$
+
+### Resistencia de cortocircuito
+$$R_{cc} = \frac{P_{cc}}{I_{1n}^{\,2}}$$
+
+### Reactancia de cortocircuito
+$$X_{cc} = \sqrt{Z_{cc}^{\,2} - R_{cc}^{\,2}}$$
+
+### Factor de potencia en cortocircuito
+$$\cos\varphi_{cc} = \frac{P_{cc}}{V_{1cc} \cdot I_{1n}}$$
+
+### Caídas de tensión (diagrama vectorial)
+$$V_{R_{cc}} = R_{cc} \, I_{1n} = V_{1cc} \cos\varphi_{cc}$$
+$$V_{X_{cc}} = X_{cc} \, I_{1n} = V_{1cc} \sin\varphi_{cc}$$
+
+### Reparto entre primario y secundario (referidos al primario)
+$$R_1 = R'_2 = \frac{R_{cc}}{2} \hspace{0.5cm};\hspace{0.5cm} X_1 = X'_2 = \frac{X_{cc}}{2}$$
+
+### Conversión a magnitudes nominales (si el ensayo no se hizo con $I_{1n}$)
+$$V_{1cc} = V_{1corto} \cdot \frac{I_{1n}}{I_{1corto}} \hspace{0.4cm};\hspace{0.4cm} P_{cc} = P_{corto} \cdot \frac{I_{1n}^{\,2}}{I_{1corto}^{\,2}}$$
+
+---
+
+## 20. Tensión de Cortocircuito Porcentual y Corriente de Falta
+Fuente: [[S07-3 Tema 02 - Ensayo de vacío y de cortocircuito de un transformador real|S07-3 Ensayo de vacío y cortocircuito]]
+
+### Tensión relativa de cortocircuito
+$$\boxed{\varepsilon_{cc} = \frac{V_{1cc}}{V_{1n}} \cdot 100}$$
+
+### Componentes resistiva y reactiva
+$$\varepsilon_{R_{cc}} = \frac{V_{R_{cc}}}{V_{1n}} \cdot 100 \hspace{0.5cm};\hspace{0.5cm} \varepsilon_{X_{cc}} = \frac{V_{X_{cc}}}{V_{1n}} \cdot 100$$
+
+### Corriente de cortocircuito de falta (cortocircuito accidental con $V_{1n}$ aplicada)
+$$I_{1falta} = \frac{V_{1n}}{Z_{cc}}$$
+
+Expresión equivalente:
+$$\boxed{I_{1falta} = \frac{100}{\varepsilon_{cc}} \cdot I_{1n}}$$
+
+### Valores típicos de $\varepsilon_{cc}$
+| Capacidad | $\varepsilon_{cc}$ |
+| --------- | ------------------ |
+| $< 1000\,\text{kVA}$ (distribución) | 1 % – 6 % |
+| $> 1000\,\text{kVA}$ | 6 % – 13 % |
+
+Por lo general $\varepsilon_{X_{cc}} > \varepsilon_{R_{cc}}$ porque $X_{cc} \gg R_{cc}$.
+
+---
+
+## 21. Admitancia de Excitación (Forma Chapman)
+Fuente: [[S08-1 Tema 01 - Determinación de los parámetros del transformador|S08-1 Determinacion de los parametros del transformador]]
+
+### Conductancia y susceptancia
+$$G_{Fe} = \frac{1}{R_{Fe}} \hspace{0.5cm};\hspace{0.5cm} B_\mu = \frac{1}{X_\mu}$$
+
+### Admitancia de excitación
+$$\mathbf{Y}_E = G_{Fe} - jB_\mu = \frac{1}{R_{Fe}} - j\,\frac{1}{X_\mu}$$
+
+### Cálculo desde el ensayo de vacío
+$$|\mathbf{Y}_E| = \frac{I_0}{V_0} \hspace{0.5cm};\hspace{0.5cm} \angle\mathbf{Y}_E = -\cos^{-1}\!\left(\frac{P_0}{V_0 \cdot I_0}\right)$$
+
+### Impedancia serie desde el ensayo de cortocircuito
+$$|\mathbf{Z}_{serie}| = \frac{V_{cc}}{I_{cc}} \hspace{0.5cm};\hspace{0.5cm} \angle\mathbf{Z}_{serie} = +\cos^{-1}\!\left(\frac{P_{cc}}{V_{cc} \cdot I_{cc}}\right)$$
+
+$$\mathbf{Z}_{serie} = R_{eq} + jX_{eq}$$
+
+### Descomposición aproximada (criterio de Chapman)
+$$\mathbf{Z}_{serie} = (R_1 + a^2 R_2) + j(X_1 + a^2 X_2)$$
+
+Con reparto igualitario: $R_1 = a^2 R_2 = R_{eq}/2$, $X_1 = a^2 X_2 = X_{eq}/2$.
+
+---
+
+## 22. Regulación de Voltaje y Eficiencia
+Fuente: [[S08-2 Tema 02 - Eficiencia y regulación del transformador real|S08-2 Eficiencia y regulacion del transformador real]]
+
+### Regulación de voltaje (RV)
+$$\boxed{RV = \frac{V_P/a - V_S}{V_S} \cdot 100\,\%}$$
+
+Donde:
+- $V_P/a$ = tensión que entregaría el secundario si el transformador fuera ideal.
+- $V_S$ = tensión real en el secundario a plena carga.
+
+### Ecuación exacta (todo referido al secundario)
+$$\frac{\mathbf{V}_P}{a} = \mathbf{V}_S + R_{eq}\,\mathbf{I}_S + jX_{eq}\,\mathbf{I}_S$$
+
+### Eficiencia del transformador
+$$\eta = \frac{P_{sal}}{P_{ent}} \cdot 100\,\% = \frac{P_{sal}}{P_{sal} + P_{perdida}} \cdot 100\,\%$$
+
+$$\boxed{\eta = \frac{V_S \, I_S \, \cos\theta}{V_S \, I_S \, \cos\theta + P_{Cu} + P_{nucleo}} \cdot 100\,\%}$$
+
+### Pérdidas
+| Tipo | Origen | Se obtiene de |
+| ---- | ------ | ------------- |
+| $P_{Cu} = I^2 R$ | Resistencias del devanado | Ensayo cortocircuito ($P_{cc}$) |
+| $P_{histeresis}$ | Ciclo $B$–$H$ del núcleo | Ensayo vacío ($P_0$) |
+| $P_{Foucault}$ | Corrientes parásitas en chapas | Ensayo vacío ($P_0$) |
+
+### Comportamiento de la RV según FP de la carga
+| FP | $V_P/a$ vs $V_S$ | Signo de RV |
+| -- | ---------------- | ----------- |
+| Inductivo (retraso) | $V_P/a \gg V_S$ | Positiva grande |
+| Resistivo (FP = 1) | $V_P/a > V_S$ | Positiva moderada |
+| Capacitivo (adelanto) | $V_P/a \lessgtr V_S$ | Pequeña o **negativa** |
+
+---
+
+## 23. El Autotransformador
+Fuente: [[S08-5 Tema 04 - El autotransformador|S08-5 El autotransformador]]
+
+### Relación de espiras (devanado común y devanado serie)
+$$\frac{V_C}{V_{SE}} = \frac{N_C}{N_{SE}} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} N_C \cdot I_C = N_{SE} \cdot I_{SE}$$
+
+### Voltajes y corrientes terminales
+| Lado | Voltaje | Corriente |
+| ---- | ------- | --------- |
+| Baja (L) | $V_L = V_C$ | $I_L = I_C + I_{SE}$ |
+| Alta (H) | $V_H = V_C + V_{SE}$ | $I_H = I_{SE}$ |
+
+Donde:
+- $V_C$ = voltaje en el devanado común (aparece en ambos lados)
+- $V_{SE}$ = voltaje en el devanado en serie
+- $I_C$, $I_{SE}$ = corrientes en los devanados común y en serie
+
+> [!info] Sin aislamiento galvánico
+> A diferencia del transformador convencional, el autotransformador tiene **conexión eléctrica directa** entre primario y secundario. Es más compacto y económico, pero **no aísla** los dos lados.
+
+---
+
+## 24. Transformador Trifásico — Conexiones
+Fuente: [[S09-1 Tema 01 - El transformador trifásico|S09-1 El transformador trifasico]]
+
+### Potencia aparente trifásica
+$$S = \sqrt{3} \cdot V_L \cdot I_L = 3 \cdot V_\phi \cdot I_\phi$$
+
+### Relaciones entre fase y línea
+| Conexión | $V_L$ vs $V_\phi$ | $I_L$ vs $I_\phi$ |
+| -------- | ----------------- | ----------------- |
+| **Y** (estrella) | $V_L = \sqrt{3}\,V_\phi$ | $I_L = I_\phi$ |
+| **Δ** (triángulo) | $V_L = V_\phi$ | $I_L = \sqrt{3}\,I_\phi$ |
+
+### Relación de transformación de línea según conexión
+| Conexión | $V_{LP}/V_{LS}$ | Desfase |
+| -------- | ---------------- | ------- |
+| **Y–Y** | $a$ | 0° |
+| **Y–Δ** | $\sqrt{3} \cdot a$ | 30° |
+| **Δ–Y** | $a/\sqrt{3}$ | 30° |
+| **Δ–Δ** | $a$ | 0° |
+
+Donde $a = N_{\phi P}/N_{\phi S}$ es la **relación por fase**.
+
+### Ventajas y desventajas
+| Conexión | Ventajas | Desventajas |
+| -------- | -------- | ----------- |
+| Y–Y | Sencilla, ambos lados con neutro | Problemas con 3.er armónico y cargas desbalanceadas |
+| Y–Δ | Robusta frente a armónicos y desbalances | Desfase 30°, sin neutro secundario |
+| Δ–Y | Robusta + permite neutro secundario | Desfase 30° |
+| Δ–Δ | Sin desfase, robusta | Sin neutro accesible |
+
+---
+
+## 25. Circuito Equivalente Trifásico — Índice Horario
+Fuente: [[S09-3 Tema 02 - Circuito equivalente aproximado del transformador trifásico|S09-3 Circuito equivalente aproximado e indice horario]]
+
+### Análisis por fase (mismas fórmulas que el monofásico)
+$$a = \frac{N_{\phi P}}{N_{\phi S}} = \frac{E_{\phi P}}{E_{\phi S}}$$
+
+Cada fase es un transformador monofásico equivalente con los parámetros $R_{cc}$, $X_{cc}$, $R_{Fe}$, $X_\mu$ aplicables por fase.
+
+### Reflexión de impedancia externa al primario (por fase)
+$$\mathbf{Z}' = m^2 \cdot \mathbf{Z}$$
+
+Con $m = V_{\phi P}/V_{\phi S}$.
+
+### Caída relativa de tensión de cortocircuito (por fase)
+$$\varepsilon_{cc} = \frac{Z_{cc} \cdot I_{\phi}}{V_{\phi}} \cdot 100\,\% \hspace{0.5cm};\hspace{0.5cm} \varepsilon_{X_{cc}} = \frac{X_{cc} \cdot I_{\phi}}{V_{\phi}} \cdot 100\,\%$$
+
+Despejando los parámetros:
+$$Z_{cc} = \frac{\varepsilon_{cc} \cdot V_{\phi}}{I_{\phi}} \hspace{0.5cm};\hspace{0.5cm} X_{cc} = \frac{\varepsilon_{X_{cc}} \cdot V_{\phi}}{I_{\phi}} \hspace{0.5cm};\hspace{0.5cm} R_{cc} = \sqrt{Z_{cc}^{\,2} - X_{cc}^{\,2}}$$
+
+### Índice horario (grupo de conexión)
+**Notación:** `Xy<n>` — primera letra = primario (mayúscula), segunda = secundario (minúscula), $n$ = desfase / 30°.
+
+| Grupo | Símbolo | Desfase |
+| ----- | ------- | ------- |
+| 0 | Dd0, Yy0 | 0° |
+| 5 | Dy5, Yd5 | 150° |
+| 6 | Dd6, Yy6 | 180° |
+| 11 | Dy11, Yd11 | 330° (= −30°) |
+
+> [!info] Compatibilidad para puesta en paralelo
+> Dos transformadores trifásicos en paralelo deben tener **el mismo índice horario** para no producir corrientes circulantes destructivas.
+
+### Procedimiento general para problemas trifásicos
+1. Calcular $m$ con voltajes **de fase** y corrientes **de fase**.
+2. Pasar $\varepsilon_{cc}$, $\varepsilon_{X_{cc}}$ a Ω.
+3. Reflejar impedancias externas (línea, carga) al primario con $m^2$.
+4. Resolver el circuito **por una fase** como si fuera monofásico.
+5. Convertir las tensiones de fase del primario al lado real del secundario:
+   - **Secundario en Y:** $V_L = (V'_\phi / m) \cdot \sqrt{3}$
+   - **Secundario en Δ:** $V_L = V'_\phi / m$
+
+---
+
+## 26. Conversión Electromecánica — Fuerza de Lorentz
+Fuente: [[S10-1 Tema 01 - Conversión de energía electromecánica|S10-1 Conversion de energia electromecanica]]
+
+Fuerza sobre una carga puntual $q$ en presencia de campos $\mathbf{E}$ y $\mathbf{B}$:
+
+$$\mathbf{F} \;=\; q\,(\mathbf{E} + \mathbf{v} \times \mathbf{B})$$
+
+- $q$ = carga puntual
+- $\mathbf{E}$ = campo eléctrico
+- $\mathbf{v}$ = velocidad de la partícula
+- $\mathbf{B}$ = densidad de campo magnético
+
+El término $q\,(\mathbf{v} \times \mathbf{B})$ es el responsable del **par electromagnético** en motores: integrado sobre los portadores de carga de un conductor con corriente en un campo magnético, da la fuerza neta sobre el conductor.
+
+---
+
+## 27. Energía y Coenergía Magnética
+Fuente: [[S10-2 Tema 02 - Función de energía y coenergía|S10-2 Funcion de energia y coenergia]]
+
+### Definiciones (sobre la curva $\lambda$–$i$ a posición $x$ fija)
+
+**Energía magnética almacenada** (área entre la curva y el eje $\lambda$):
+
+$$W_c(\lambda, x) \;=\; \int_{\lambda(0)}^{\lambda(t)} i(\lambda, x)\,d\lambda$$
+
+**Coenergía magnética** — función auxiliar sin sentido físico (área bajo la curva, entre la curva y el eje $i$):
+
+$$W'_c(i, x) \;=\; \int_{i(0)}^{i(t)} \lambda(i, x)\,di$$
+
+### Relación complementaria
+
+$$W_c + W'_c \;=\; \lambda \cdot i$$
+
+### Balance de energía (dispositivo con bobina alimentada por $V, i$)
+
+$$i\,d\lambda \;=\; dW_c \;+\; F_e\,dx$$
+
+Si la pieza móvil se mantiene fija ($dx = 0$): $\;dW_c = i\,d\lambda$.
+
+### Caso lineal (sin saturación) — $\lambda = L(x)\,i$
+
+$$W_c \;=\; W'_c \;=\; \tfrac{1}{2}\,L(x)\,i^{2} \;=\; \tfrac{1}{2}\,\frac{\lambda^{2}}{L(x)}$$
+
+### Fuerza electromagnética (caso general — útil con saturación)
+
+$$F_e \;=\; \left.\frac{\partial W'_c(i, x)}{\partial x}\right|_{i\,\text{cte}} \;=\; -\left.\frac{\partial W_c(\lambda, x)}{\partial x}\right|_{\lambda\,\text{cte}}$$
+
+> [!info] Aplicación
+> Estas fórmulas son la base para calcular la **fuerza** en electroimanes/actuadores y el **par** en máquinas rotativas (Unidad 3, semanas 11–14).
+
+---
+
+## 28. Fuerza y Torque de Origen Electromagnético
+Fuente: [[S11-1 Tema 01 - Fuerza electromagnética|S11-1 Fuerza electromagnetica]]
+Fuente: [[S11-2 Tema 01 - Torques de origen electromagnético|S11-2 Torques de origen electromagnetico]]
+
+### Fuerza electromagnética (componente magnética de Lorentz)
+$$\vec{F} = q\,\vec{v} \times \vec{B}$$
+
+### Torque neto sobre una espira rectangular
+$$\vec{\tau} = -I\,A\,B\sin\theta\;\hat{i} \hspace{0.5cm}\text{con}\hspace{0.3cm} A = a\,b$$
+
+### Momento dipolar magnético
+$$\vec{\mu} = I\,A\,\hat{n} \hspace{0.5cm};\hspace{0.5cm} \vec{\mu} = N\,I\,A\,\hat{n} \quad [\text{A}\cdot\text{m}^2]$$
+
+### Torque en función del momento dipolar
+$$\boxed{\vec{\tau} = \vec{\mu} \times \vec{B}} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} \tau = \mu\,B\sin\theta$$
+
+### Energía potencial del dipolo magnético
+$$U = -\vec{\mu}\cdot\vec{B} = -\mu\,B\cos\theta$$
+
+Donde:
+- $\mu = I\cdot A$ = momento dipolar magnético (con $A = \pi r^2$ para un bucle circular)
+- $\theta$ = ángulo entre $\vec{\mu}$ y $\vec{B}$
+- $\tau$ máximo en $\theta = 90°$ (plano de la espira paralelo al campo); $U$ mínima en $\theta = 0°$ (alineación estable)
+
+> [!example] Aplicación numérica
+> Bucle circular $r = 2\,\text{cm}$, $I = 2\,\text{mA}$, $B = 0{,}5\,\text{T}$, $\theta = 30°$ → $\mu \approx 2{,}5\times10^{-6}\,\text{A}\cdot\text{m}^2$, $\tau \approx 6{,}3\times10^{-7}\,\text{N}\cdot\text{m}$, $U \approx -1{,}1\times10^{-6}\,\text{J}$. Desarrollo en [[S11-3 Ejercicio resuelto - Torque en un bucle de corriente (Video)|S11-3]].
+
+---
+
+## 29. Velocidad de Sincronismo (Motores AC)
+Fuente: [[S11-4 Tema 01 - Aplicaciones del motor eléctrico|S11-4 Aplicaciones del motor electrico]]
+
+### Velocidad de sincronismo
+$$n = \frac{60 \cdot f}{P}$$
+
+Donde:
+- $n$ = velocidad de sincronismo [rpm]
+- $f$ = frecuencia de la red [Hz]
+- $P$ = número de **pares de polos** de la máquina
+
+> [!info] Motor asíncrono
+> El **motor asíncrono** gira a una velocidad **distinta** a la de sincronismo (existe deslizamiento). Se regula con **variadores de frecuencia**.
+
+---
+
+## 30. Máquina de Corriente Continua — Tensión Inducida y Par
+Fuente: [[S12-1 Tema 01 - Máquinas de corriente continua|S12-1 Maquinas de corriente continua]]
+Fuente: [[S12-2 Tema 02 - Fuerza magnetomotriz y tensión inducida|S12-2 Fuerza magnetomotriz y tension inducida]]
+
+### Voltaje inducido en la espira giratoria
+$$e_{ind} = (\vec{v}\times\vec{B})\cdot\vec{l} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} e_{ind} = 2\,(\vec{v}\times\vec{B})\cdot\vec{l}$$
+
+Solo contribuyen los lados perpendiculares al campo ($e_{ba}=e_{cd}=(\vec{v}\times\vec{B})\cdot\vec{l}$; $e_{cb}=e_{da}=0$).
+
+### Par inducido en la espira giratoria
+$$\vec{F} = i\,(\vec{l}\times\vec{B}) \hspace{0.4cm};\hspace{0.4cm} \tau = r\,F\,\sin\theta \hspace{0.4cm};\hspace{0.4cm} \tau_{ind} = 2\,r\,(i\,l\,B)$$
+
+Con $A_P \approx \pi r l$ y $\phi = A_P B$:
+
+$$\boxed{\tau_{ind} = \frac{2}{\pi}\,\phi\,i}$$
+
+### Relaciones para el problema de la máquina elemental
+$$e_{ind} = 2rlB\,\omega \hspace{0.5cm};\hspace{0.5cm} \tau_{ind} = 2rlB\,i$$
+
+| Operación | Ley de tensiones | Comportamiento |
+| --------- | ---------------- | -------------- |
+| **Motor** | $e_{ind} = V_B - iR$ | convierte potencia eléctrica → mecánica ($e_{ind} < V_B$) |
+| **Generador** | $e_{ind} = V_B + iR$ | par externo impulsa el eje ($e_{ind} > V_B$) |
+
+Velocidad en vacío: $\omega = \dfrac{V_B}{2rlB}$ (al disminuir $B$, aumenta $\omega$). Desarrollo en [[S12-3 Ejercicio resuelto - Máquina elemental DC (Video)|S12-3]].
+
+### F.e.m. media y par en la máquina DC real
+$$f = \frac{n\cdot p}{60} \hspace{0.5cm};\hspace{0.5cm} E_{med} = 4\,\phi\,\frac{n\cdot p}{60}$$
+
+$$\phi = B_{med}\cdot\frac{2\pi R L}{2p} \hspace{0.5cm};\hspace{0.5cm} F_{med} = B_{med}\,L\,\frac{I_i}{2c}$$
+
+$$\boxed{T = \frac{1}{2\pi}\cdot\frac{p}{c}\cdot Z\cdot\phi\cdot I_i = K_T\,I_i\,\phi} \hspace{0.5cm};\hspace{0.5cm} K_T = \frac{Z}{2\pi}\cdot\frac{p}{c}$$
+
+### Potencia electromagnética
+$$T = \frac{E\cdot I_i}{2\pi\cdot\frac{n}{60}} \hspace{0.5cm};\hspace{0.5cm} P_a = E\cdot I_i = T\cdot\Omega = T\cdot 2\pi\cdot\frac{n}{60} \quad [\text{W}]$$
+
+Donde:
+- $n$ = velocidad [rpm], $p$ = pares de polos, $2c$ = ramas en paralelo, $Z$ = conductores del inducido
+- $\phi$ = flujo por polo, $I_i$ = corriente del inducido, $K_T$ = constante constructiva
+
+---
+
+## 31. Conmutación en la Máquina DC
+Fuente: [[S12-4 Tema 03 - Reacción de armadura y conmutación|S12-4 Reaccion de armadura y conmutacion]]
+
+### Resistencias de transición escobilla–delga
+$$R_1 = R_e\,\frac{T}{T-t} \hspace{0.5cm};\hspace{0.5cm} R_2 = R_e\,\frac{T}{t}$$
+
+### Reparto de corriente (Kirchhoff)
+$$i_1 + i_2 = I_i \hspace{0.4cm};\hspace{0.4cm} R_1 i_1 = R_2 i_2 \hspace{0.4cm}\Longrightarrow\hspace{0.4cm} i_1 = I_i\,\frac{T-t}{T} \hspace{0.4cm};\hspace{0.4cm} i_2 = I_i\,\frac{t}{T}$$
+
+### Corriente en la sección conmutada (conmutación lineal)
+$$i = \frac{I_i}{2}\left(1 - 2\,\frac{t}{T}\right)$$
+
+> [!info] Reacción de armadura
+> Bajo carga, la corriente del inducido distorsiona el campo de los polos → **desplaza el plano neutro** y **debilita el campo**, causando chispas. Se corrige con **interpolos de conmutación** y **devanados de compensación**.
+
+---
+
+## 32. Generador de Corriente Continua — Balance de Potencias
+Fuente: [[S13-1 Tema 01 - Generador de corriente continua|S13-1 Generador de corriente continua]]
+
+### Ecuación del inducido (generador)
+$$E = V + R_i\,I_i + V_{esc} \hspace{0.5cm};\hspace{0.5cm} V_e = R_e\,I_e \;(\text{inductor})$$
+
+### Balance de potencias en el inducido
+$$E\,I_i = V\,I_i + R_i\,I_i^2 + V_{esc}\,I_i \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} P_a = P_2 + P_{cui} + P_{esc}$$
+
+| Término | Significado |
+| ------- | ----------- |
+| $P_2 = V I_i$ | Potencia eléctrica de salida |
+| $P_{cui} = R_i I_i^2$ | Pérdidas en el cobre del inducido |
+| $P_{esc} = V_{esc} I_i$ | Pérdidas en escobillas |
+| $P_a = E I_i$ | Potencia electromagnética |
+
+### Potencia mecánica de entrada
+$$P_1 = P_{exc} + P_m + P_{Fe} + P_a \hspace{0.5cm};\hspace{0.5cm} P_{exc} = V_e I_e = R_e I_e^2$$
+
+> [!info] Tipos de excitación
+> Independiente · Serie · Derivación (shunt) · Compuesta (compound, corta/larga derivación).
+
+---
+
+## 33. Motor de Corriente Continua — Ecuaciones y Curvas Características
+Fuente: [[S13-2 Tema 02 - El motor de corriente continua|S13-2 El motor de corriente continua]]
+
+### Ecuación del inducido (motor) y par
+$$V = E + R_i\,I_i + V_{esc} \hspace{0.5cm};\hspace{0.5cm} P_i = P_a + P_{cui} + P_{esc}$$
+
+$$T = \frac{E\,I_i}{2\pi\frac{n}{60}} = K_T\,\phi\,I_i \hspace{0.5cm};\hspace{0.5cm} E = \frac{n}{60}\,Z\,\phi\,\frac{p}{c} = K_E\,n\,\phi$$
+
+### Velocidad y rendimiento
+$$\boxed{n = \frac{V - R_i\,I_i}{K_E\,\phi}} \hspace{0.5cm};\hspace{0.5cm} \eta = \frac{P_2}{P_1}$$
+
+Regulación de velocidad: (a) flujo/excitación, (b) tensión $V$, (c) resistencia del inducido.
+
+### Característica del motor derivación (shunt) e independiente
+$$n = \frac{1}{K_E\,\phi}\,V - \frac{R_i}{K_E\,K_T\,\phi^2}\,T \hspace{0.5cm}\rightarrow\hspace{0.5cm}\text{recta (velocidad casi constante)}$$
+
+### Característica del motor serie ($\phi = K_I\,I_i$)
+$$T = K_T\,K_I\,I_i^2 \hspace{0.4cm};\hspace{0.4cm} n = a\,\frac{V}{\sqrt{T}} - b \approx a\,\frac{V}{\sqrt{T}} \hspace{0.4cm}\Longrightarrow\hspace{0.4cm} \boxed{n^2\,T = a\,V = \text{cte}}$$
+
+$$a = \frac{1}{K_E}\sqrt{\frac{K_T}{K_I}} \hspace{0.5cm};\hspace{0.5cm} b = \frac{R_i}{K_E\,K_I}$$
+
+Curva hiperbólica: **par de arranque muy alto**, **embalamiento en vacío**. El **motor compuesto** tiene característica **intermedia** entre shunt y serie.
+
+> [!example] Relaciones de proporcionalidad (ejercicios)
+> Con magnetización lineal: $\dfrac{E}{E'} = \dfrac{n\,\phi}{n'\,\phi'}$. Motor → $E = V - R_i I_i$; generador → $E = V + R_i I_i$. Potencia y par: $P_{mec} = T\cdot 2\pi\frac{n}{60}$. Ver [[S13-3 Ejercicio resuelto - Motor con excitación serie (Video)|S13-3]], [[S13-4 Ejercicio resuelto - Motor con excitación shunt (Video)|S13-4]], [[S13-5 Ejercicio resuelto - Motor con excitación compuesta (Video)|S13-5]].
+
+---
+
+## 34. Arranque, Frenado y Regulación de Velocidad del Motor DC
+Fuente: [[S14-1 Tema 01 - Arranque, frenado e inversión del sentido de giro en motores DC|S14-1 Arranque, frenado e inversion de giro]]
+Fuente: [[S14-2 Tema 02 - Regulación de velocidad de un motor de corriente continua|S14-2 Regulacion de velocidad]]
+
+### Corriente de arranque
+$$I_i = \frac{V - E}{R_i} \hspace{0.5cm}\Longrightarrow\hspace{0.5cm} \boxed{I_i(\text{arranque directo}) = \frac{V}{R_i}}$$
+
+Al arrancar $n=0 \Rightarrow E = K_E\,n\,\phi = 0$ → corriente excesiva. Se limita con **reóstato de arranque** en serie con el inducido.
+
+### Regulación de velocidad — motor shunt/independiente
+$$n = \frac{1}{K_E\,\phi}\,V - \frac{R_i}{K_E\,K_T\,\phi^2}\,T \hspace{0.5cm};\hspace{0.5cm} n_0 = \frac{V}{K_E\,\phi}$$
+
+| Método | Efecto sobre la curva $n$–$T$ |
+| --- | --- |
+| Variar tensión $V$ | rectas **paralelas** (cambia $n_0$, igual pendiente) |
+| Variar $R$ del **inducido** | mismo $n_0$, **mayor pendiente** (rectas reostáticas) |
+| Variar $R$ del **inductor** (↓ $\phi$) | **sube** $n_0$ y la pendiente (rectas por encima de la natural) |
+
+### Regulación de velocidad — motor serie ($\phi = K_I\,I_i$)
+$$I_i = \sqrt{\frac{T}{K_T\,K_I}} \hspace{0.4cm};\hspace{0.4cm} n = \frac{1}{K_E}\sqrt{\frac{K_T}{K_I}}\;\frac{V}{\sqrt{T}} - \frac{R_i}{K_E\,K_I}$$
+
+Control eficiente solo por **tensión en bornes**. El **compuesto** queda entre shunt y serie.
+
+> [!example] Ejercicio motor serie con saturación (curva de magnetización)
+> Con saturación **no** se supone $\phi$ lineal: se lee la f.e.m. en la curva. $E = V - R_i I_i$; FMM $\mathcal{F} = N\,I_i$ → en la curva (a $n_0$) se lee $E_0$; luego $\dfrac{E}{E_0} = \dfrac{n}{n_0} \Rightarrow n = \dfrac{E}{E_0}n_0$ y $T = \dfrac{E\,I_i}{2\pi\frac{n}{60}}$. Desarrollo en [[S14-3 Ejercicio resuelto - Regulación de velocidad de motor serie (Video)|S14-3]].
+
+### Inversión del sentido de giro
+Se invierte la **polaridad de los bornes del inducido** (en c.a. trifásica: permutar dos fases). Maniobra automatizada con contactores temporizados $KM_1$/$KM_2$.

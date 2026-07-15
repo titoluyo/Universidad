@@ -3,10 +3,13 @@ title: Evaluacion PA01 - Series y Transformadas
 curso: "[[SeriesTransformadas MOC]]"
 unidad: 1
 semana: 2
-tipo: ejercicio
+orden: 99
+tipo: evaluacion
+subtipo: pa
 tags:
   - curso/series-transformadas
-  - tipo/ejercicio
+  - tipo/evaluacion
+  - subtipo/pa
   - tema/numeros-complejos
   - tema/raices-complejas
 date: 2026-04-05

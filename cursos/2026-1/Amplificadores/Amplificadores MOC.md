@@ -16,6 +16,53 @@ aliases:
 
 - [[Silabo - Circuitos Electronicos Amplificadores|Silabo del curso]]
 - [[Formulario - Amplificadores|Formulario de formulas]]
+- [[Anuncios|Anuncios del docente]]
+
+## Notas por semana
+
+### Semana 6 — Amplificadores lineales y no lineales
+
+- [[S06-1 Amplificadores lineales y no lineales]]
+- [[S06-99 Laboratorio - LE1 Amplificador operacional|S06-99 Guía LE1 — Amplificador operacional]]
+- [[S06-100 Informe LE1 - Amplificador operacional|S06-100 Informe LE1 — Amplificador operacional]]
+- [[S06-101 Espejo - Mejoras propuestas al informe LE1|S06-101 Espejo de mejoras — LE1]]
+
+### Semana 7 — Aplicaciones no lineales (ejercicios)
+
+- [[S07-1 Comparadores y Schmitt trigger - ejercicios resueltos]]
+- [[S07-2 Multivibrador astable y generador de onda triangular - ejercicios]]
+- [[S07-3 Amplificadores logaritmico y antilogaritmico - ejercicios]]
+- [[S07-4 Amplificador operacional de transconductancia (OTA)]]
+- [[S07-5 Integrador y derivador como filtros activos]]
+
+### Semana 8 — Amplificadores realimentados
+
+- [[S08-1 Amplificadores realimentados]]
+- [[S08-2 Realimentacion negativa y realimentacion positiva]]
+
+### Semana 13 — Fuentes de corriente y cargas activas
+
+- [[S13-1 Tema 13 - Que son los espejos de corriente|S13-1 Qué son los espejos de corriente]]
+- [[S13-2 Tema 13 - Polarizar con espejos de corriente|S13-2 Polarizar con espejos de corriente]]
+
+### Semana 14 — Respuesta en frecuencia y filtros (Unidad 3)
+
+- [[S14-1 Tema 14 - Funcion de transferencia|S14-1 Función de transferencia]]
+- [[S14-2 Tema 14 - Filtros activos - introduccion y clasificacion|S14-2 Filtros activos: introducción y clasificación]]
+- [[S14-3 Tema 14 - Funcion de transferencia de filtros - polos y ceros|S14-3 Función de transferencia de filtros: polos y ceros]]
+- [[S14-4 Tema 14 - Filtros de primer orden y diagrama de Bode|S14-4 Filtros de primer orden y diagrama de Bode]]
+- [[S14-5 Tema 14 - Diagrama de Bode por factores|S14-5 Construcción del diagrama de Bode por factores]]
+
+### Semana 15 — Respuesta en frecuencia: red RC de corte inferior (Unidad 3)
+
+- [[S15-1 Tema 15 - Diagrama de Bode|S15-1 Red RC de corte inferior y su Bode]]
+
+### Semana 17 — Osciladores (Unidad 4)
+
+- [[S17-1 Tema 17 - Oscilador puente de Wien - analisis y criterio de Barkhausen|S17-1 Oscilador puente de Wien: análisis y criterio de Barkhausen]]
+- [[S17-2 Tema 17 - Filtros de primer y segundo orden - comparacion|S17-2 Filtros de primer y segundo orden: comparación]]
+- [[S17-3 Tema 17 - Filtro pasivo RLC de segundo orden y resonancia|S17-3 Filtro pasivo RLC de segundo orden y resonancia física]]
+- [[S17-4 Tema 17 - Filtros pasivos de primer orden - ejemplo RL|S17-4 Filtros pasivos de primer orden: ejemplo RL]]
 
 ## Bibliografia
 

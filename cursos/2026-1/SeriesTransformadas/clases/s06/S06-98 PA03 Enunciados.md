@@ -4,10 +4,12 @@ curso: "[[SeriesTransformadas MOC]]"
 unidad: 1
 semana: 6
 orden: 98
-tipo: ejercicio
+tipo: evaluacion
+subtipo: pa
 tags:
   - curso/series-transformadas
-  - tipo/ejercicio
+  - tipo/evaluacion
+  - subtipo/pa
   - tema/integral-de-contorno
   - tema/funcion-logaritmica
   - tema/teorema-de-cauchy

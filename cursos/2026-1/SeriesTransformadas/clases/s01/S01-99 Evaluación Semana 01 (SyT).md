@@ -3,10 +3,13 @@ title: "Evaluación Semana 01 - Series y Transformadas"
 curso: "[[SeriesTransformadas MOC]]"
 unidad: 1
 semana: 1
-tipo: ejercicio
+orden: 99
+tipo: evaluacion
+subtipo: cuestionario
 tags:
   - curso/series-transformadas
-  - tipo/ejercicio
+  - tipo/evaluacion
+  - subtipo/cuestionario
 date: 2026-03-29
 ---
 

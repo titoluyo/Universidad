@@ -289,3 +289,520 @@ $z_0$ es singularidad de $f$ si $f$ no es analítica en $z_0$ pero sí en al men
 Para **cualquier** contorno $C$ que rodee $z = 0$ una vez en sentido antihorario:
 
 $$\oint_{C} \frac{dz}{z} = 2\pi i$$
+
+## Formula integral de Cauchy
+
+Fuente: [[S07-0 Tema 01 - Relacion del teorema de Cauchy y una integral]]
+
+### Formula simple (singularidad de orden 1)
+
+Sea $f(z)$ analítica dentro y sobre el contorno cerrado simple $C$, y sea $z_0$ un punto interior a $C$:
+
+$$\oint_C \frac{f(z)}{z - z_0}\,dz = 2\pi i\,f(z_0)$$
+
+### Formula generalizada (derivadas de funciones analiticas)
+
+Para singularidades de orden $n+1$ (polo de orden $n+1$):
+
+$$\oint_C \frac{f(z)}{(z - z_0)^{n+1}}\,dz = \frac{2\pi i}{n!}\,f^{(n)}(z_0), \quad n = 0, 1, 2, \ldots$$
+
+Donde:
+- $n$ es el orden de la derivada de $f$.
+- $f^{(n)}(z_0)$ es la derivada $n$-ésima evaluada en $z_0$.
+- Para $n = 0$ se recupera la fórmula simple.
+
+### Procedimiento operativo
+
+1. Identificar singularidades: $h(z) = 0$ (denominador).
+2. Verificar cuáles están dentro de $C$ (las de fuera no contribuyen — Teorema de Cauchy puro).
+3. Aislar el factor $(z - z_0)^{n+1}$ → leer $f(z)$ del resto del integrando y deducir $n$.
+4. Calcular $f^{(n)}(z_0)$ y aplicar la fórmula.
+5. Sumar contribuciones si hay varias singularidades interiores.
+
+### Truco: factor lineal con coeficiente
+
+Si el factor es $(az + b)$ con $a \neq 1$:
+
+$$az + b = a\left(z + \tfrac{b}{a}\right) = a\left(z - z_0\right), \quad z_0 = -\tfrac{b}{a}$$
+
+Sacar el $1/a$ al integrando antes de aplicar la fórmula.
+
+Fuente: [[S07-1 Tema 01 - Aplicacion Caso 1 - integral con factor lineal]]
+
+### Truco: fracciones parciales para varias singularidades simples
+
+$$\frac{1}{(z - z_1)(z - z_2)} = \frac{1}{z_1 - z_2}\left(\frac{1}{z - z_1} - \frac{1}{z - z_2}\right)$$
+
+Fuente: [[S07-3 Tema 01 - Aplicacion Caso 3 - fracciones parciales]]
+
+### Derivadas utiles para la formula generalizada
+
+Para $f(z) = e^{az}$: $f^{(n)}(z) = a^n e^{az}$.
+
+Fuente: [[S07-4 Tema 01 - Aplicacion Caso 4 - formula generalizada e2z]]
+
+## Series de potencias en complejos
+
+Fuente: [[S08-0 Tema 01 - Series de potencias en complejos]]
+
+### Forma general
+
+$$y = \sum_{n=0}^{\infty} a_n\,(z - z_0)^n$$
+
+Donde $a_n \in \mathbb{C}$ son los coeficientes y $z_0$ es el centro de la serie.
+
+### Convergencia absoluta
+
+Si $\sum_{n=1}^\infty |u_n|$ converge, entonces $\sum_{n=1}^\infty u_n$ converge. La implicación inversa no se cumple en general.
+
+### Criterio del cociente (D'Alembert)
+
+$$L = \lim_{n \to \infty}\left|\frac{u_{n+1}}{u_n}\right|$$
+
+- $L < 1$ → converge absolutamente
+- $L > 1$ → diverge
+- $L = 1$ → no decide
+
+### Radio de convergencia
+
+Para $\sum a_n (z - z_0)^n$, separando $|z - z_0|$ del límite:
+
+$$\lambda = \lim_{n \to \infty}\left|\frac{a_{n+1}}{a_n}\right| \qquad \Longrightarrow \qquad \boxed{R = \frac{1}{\lambda}}$$
+
+Converge en el disco abierto $|z - z_0| < R$.
+
+| $\lambda$ | $R$ | Región |
+| --------- | --- | ------ |
+| $0$ | $\infty$ | Todo $\mathbb{C}$ |
+| Finito $> 0$ | $1/\lambda$ | Disco $\|z - z_0\| < R$ |
+| $\infty$ | $0$ | Solo $z = z_0$ |
+
+### Series notables (radio de convergencia $\infty$)
+
+| Función | Serie de Maclaurin | Fuente |
+| ------- | ------------------ | ------ |
+| $e^z$ | $\sum_{n=0}^\infty \dfrac{z^n}{n!}$ | — |
+| $\sin z$ | $\sum_{n=1}^\infty \dfrac{(-1)^{n-1}\,z^{2n-1}}{(2n-1)!}$ | [[S08-2 Tema 01 - Convergencia Ej2 - serie del seno]] |
+| $\cos z$ | $\sum_{n=0}^\infty \dfrac{(-1)^n\,z^{2n}}{(2n)!}$ | — |
+
+### Serie geométrica (radio de convergencia $1$)
+
+$$\sum_{n=0}^\infty z^n = \frac{1}{1 - z}, \quad |z| < 1$$
+
+Derivadas útiles:
+
+$$\sum_{n=1}^\infty n\,z^{n-1} = \frac{1}{(1-z)^2}, \quad \sum_{n=1}^\infty n(n+1)\,z^n = \frac{2z}{(1-z)^3}$$
+
+Fuente: [[S08-4 Tema 01 - Convergencia Ej4 - polinomial n(n+1)]]
+
+### Procedimiento operativo
+
+1. Escribir $C_n$ del término general.
+2. Construir $C_{n+1}$ sustituyendo $n \mapsto n+1$.
+3. Formar el cociente $|C_{n+1}/C_n|$ y simplificar (cancelando factoriales y potencias).
+4. Sacar $|z - z_0|^k$ fuera del límite (no depende de $n$).
+5. Calcular $\lambda$ (límite del cociente de coeficientes solamente).
+6. $R = 1/\lambda$ define la región de convergencia.
+
+## Series de Taylor en números complejos
+
+Fuente: [[S09-0 Tema 01 - Series de Taylor en numeros complejos]]
+
+### Fórmula de Taylor
+
+Si $f(z)$ es analítica en el disco $|z - z_0| < R$:
+
+$$f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!}\,(z - z_0)^n$$
+
+### Serie de Maclaurin (caso $z_0 = 0$)
+
+$$f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}\,z^n$$
+
+### Series de Maclaurin notables
+
+| Función | Serie | $R$ |
+| ------- | ----- | --- |
+| $e^z$ | $\displaystyle\sum_{n=0}^\infty \frac{z^n}{n!}$ | $\infty$ |
+| $\sin z$ | $\displaystyle\sum_{n=1}^\infty \frac{(-1)^{n-1}\,z^{2n-1}}{(2n-1)!}$ | $\infty$ |
+| $\cos z$ | $\displaystyle\sum_{n=0}^\infty \frac{(-1)^n\,z^{2n}}{(2n)!}$ | $\infty$ |
+| $\dfrac{1}{1 - z}$ | $\displaystyle\sum_{n=0}^\infty z^n$ | $1$ |
+| $\ln(1 + z)$ | $\displaystyle\sum_{n=1}^\infty \frac{(-1)^{n-1}\,z^n}{n}$ | $1$ |
+| $\ln(1 - z)$ | $\displaystyle -\sum_{n=1}^\infty \frac{z^n}{n}$ | $1$ |
+| $\ln\!\left(\dfrac{1+z}{1-z}\right) = 2\,\text{arctanh}\,z$ | $\displaystyle 2\sum_{n=1}^\infty \frac{z^{2n-1}}{2n-1}$ | $1$ |
+
+Fuentes: [[S09-1 Tema 01 - Taylor Ej1 - logaritmo neperiano de (1+z)]], [[S09-2 Tema 01 - Taylor Ej2 - logaritmo de (1+z) sobre (1-z)]]
+
+### Identidades para reordenar series
+
+- $\ln\!\left(\dfrac{a}{b}\right) = \ln a - \ln b$ → permite reducir series compuestas a partes conocidas.
+- $\ln(1 - z) = \ln(1 + (-z))$ → sustitución $z \mapsto -z$ en la serie de $\ln(1+z)$.
+- $\sin(a + b) = \sin a \cos b + \cos a \sin b$ → atajo para Taylor de $\sin z$ alrededor de $z_0 = a$.
+
+### Patrones cíclicos de derivadas
+
+Para funciones trigonométricas las derivadas se repiten con período 4:
+
+| $f$ | $f'$ | $f''$ | $f'''$ | $f^{(4)}$ |
+| --- | ---- | ----- | ------ | --------- |
+| $\sin z$ | $\cos z$ | $-\sin z$ | $-\cos z$ | $\sin z$ |
+| $\cos z$ | $-\sin z$ | $-\cos z$ | $\sin z$ | $\cos z$ |
+
+Fuente: [[S09-3 Tema 01 - Taylor Ej3 - sen(z) alrededor de pi cuartos]]
+
+### Procedimiento Taylor
+
+1. Identificar $f(z)$ y centro $z_0$.
+2. Calcular derivadas sucesivas y evaluarlas en $z_0$.
+3. Construir $a_n = f^{(n)}(z_0)/n!$ y simplificar.
+4. Identificar patrón (signos, factoriales que se cancelan) y escribir sumatoria compacta.
+5. Calcular $R$ (distancia desde $z_0$ a la singularidad más cercana).
+
+### Radio de convergencia y singularidades
+
+> El radio de convergencia $R$ de una serie de Taylor centrada en $z_0$ es la distancia desde $z_0$ a la **singularidad más cercana** de $f$.
+
+Ejemplos:
+- $\ln(1+z)$ centrada en $0$ → singular en $z = -1$ → $R = 1$.
+- $\dfrac{1}{1-z}$ centrada en $0$ → singular en $z = 1$ → $R = 1$.
+- $\sin z$, $\cos z$, $e^z$ → enteras → $R = \infty$ para cualquier $z_0$.
+
+## Series de Laurent
+
+Fuente: [[S10-0 Tema 01 - Series de Maclaurin y Laurent]]
+
+### Teorema de Laurent
+
+Si $f$ es analítica en el anillo $R_1 < |z - z_0| < R_2$ (pero no necesariamente en $z_0$) y $C$ es un contorno cerrado simple orientado positivamente en torno de $z_0$ dentro del anillo:
+
+$$f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z - z_0)^n} \qquad (R_1 < |z - z_0| < R_2)$$
+
+$$a_n = \frac{1}{2\pi i}\oint_C \frac{f(z)\,dz}{(z - z_0)^{n+1}}, \qquad b_n = \frac{1}{2\pi i}\oint_C \frac{f(z)\,dz}{(z - z_0)^{-n+1}}$$
+
+- Parte analítica: $\sum a_n (z-z_0)^n$ (potencias $\geq 0$).
+- Parte principal: $\sum b_n (z-z_0)^{-n}$ (potencias negativas; delata la singularidad).
+
+### Forma compacta
+
+$$f(z) = \sum_{n=-\infty}^{\infty} c_n (z - z_0)^n, \qquad c_n = \frac{1}{2\pi i}\oint_C \frac{f(z)\,dz}{(z - z_0)^{n+1}}, \quad n = 0, \pm 1, \pm 2, \ldots$$
+
+### Serie geométrica como herramienta de expansión
+
+$$\frac{1}{1 - w} = \sum_{n=0}^{\infty} w^n, \quad |w| < 1$$
+
+Según el anillo, se elige qué factorizar:
+
+| Condición del anillo | Reescritura | Tipo de potencias |
+| -------------------- | ----------- | ----------------- |
+| $\|z\| > r$ (exterior de $\|z\|=r$) | $\dfrac{1}{z-r}=\dfrac1z\cdot\dfrac{1}{1-r/z}$ (factorizar $z$) | negativas (parte principal) |
+| $\|z\| < r$ (interior de $\|z\|=r$) | $\dfrac{1}{z-r}=-\dfrac1r\cdot\dfrac{1}{1-z/r}$ (factorizar $r$) | positivas (parte analítica) |
+
+Fuente: [[S10-2 Tema 01 - Laurent Ej2 - region anular -1 sobre (z-1)(z-2)]]
+
+### Integrales de contorno vía Laurent (residuo)
+
+El coeficiente $c_{-1}$ (término en $(z-z_0)^{-1}$) es el **residuo** de $f$ en $z_0$. Como $\oint_C (z-z_0)^k\,dz = 0$ para $k \neq -1$ y $\oint_C \dfrac{dz}{z-z_0} = 2\pi i$:
+
+$$\boxed{\oint_C f(z)\,dz = 2\pi i\,c_{-1} = 2\pi i\sum_{\text{polos interiores}}\operatorname{Res}_{z_k} f}$$
+
+Residuo en un polo simple:
+
+$$\operatorname{Res}_{z_0} f = \lim_{z \to z_0}(z - z_0)\,f(z)$$
+
+Solo contribuyen las singularidades **dentro** del contorno (las de fuera dan integral nula).
+
+Fuentes: [[S10-3 Tema 01 - Integral Ej3 - 5z-2 sobre z(z-1)]], [[S10-4 Tema 01 - Integral Ej4 - (z+1) sobre (z2-2z)]]
+
+### Procedimiento Laurent
+
+1. Identificar singularidades ($h(z)=0$) y graficar los círculos.
+2. Elegir el **anillo** de trabajo (región pedida).
+3. Descomponer en fracciones parciales si hay varios factores.
+4. Forzar la forma $\dfrac{1}{1-w}$ en cada término según la condición del anillo.
+5. Expandir y reunir potencias positivas y negativas.
+6. Para integrales: quedarse con el coeficiente de $(z-z_0)^{-1}$ y multiplicar por $2\pi i$ (sumando singularidades interiores).
+
+## Señales periódicas, pares e impares
+
+Fuente: [[S11-0 Tema 01 - Senales periodicas, pares e impares]]
+
+### Periodicidad
+
+$$f(t) = f(t + T) \qquad (T = \text{periodo mínimo})$$
+
+Para una **suma de armónicos**, el periodo total es el menor $T$ múltiplo entero simultáneo de cada periodo individual.
+
+### Paridad
+
+| Tipo | Condición | Simetría | Ejemplo |
+| ---- | --------- | -------- | ------- |
+| Par | $f(-t) = f(t)$ | eje vertical | $\cos$ |
+| Impar | $f(-t) = -f(t)$ | origen | $\sin$ |
+
+### Propiedades
+
+- par × par = par; impar × impar = par; **par × impar = impar**.
+- Toda $f(t)$ se descompone en una parte par y una impar.
+- Integral en intervalo simétrico:
+
+$$\int_{-a}^{a} f(t)\,dt = 2\int_0^a f(t)\,dt \;\;(f\text{ par}); \qquad \int_{-a}^{a} f(t)\,dt = 0 \;\;(f\text{ impar})$$
+
+## Series de Fourier
+
+Fuente: [[S11-2 Tema 02 - Series de Fourier]]
+
+### Serie trigonométrica
+
+$$f(t) = \frac{1}{2}a_0 + \sum_{n=1}^{\infty}\bigl(a_n\cos n\omega t + b_n\sin n\omega t\bigr), \qquad \omega = \frac{2\pi}{T}$$
+
+### Coeficientes (vía ortogonalidad)
+
+$$a_0 = \frac{2}{T}\int_{-T/2}^{T/2} f(t)\,dt$$
+
+$$a_n = \frac{2}{T}\int_{-T/2}^{T/2} f(t)\cos(n\omega t)\,dt, \qquad n = 0, 1, 2, \ldots$$
+
+$$b_n = \frac{2}{T}\int_{-T/2}^{T/2} f(t)\sin(n\omega t)\,dt, \qquad n = 1, 2, 3, \ldots$$
+
+- $\tfrac{1}{2}a_0$ = valor promedio (componente DC) de la señal.
+- $\omega = 2\pi/T$ = frecuencia angular fundamental.
+
+### Atajo por paridad
+
+| Si $f$ es… | Se anula | Serie resultante |
+| ---------- | -------- | ---------------- |
+| **par** | $b_n = 0$ | solo cosenos |
+| **impar** | $a_0 = a_n = 0$ | solo senos |
+
+### Relaciones de ortogonalidad ($\omega = 2\pi/T$)
+
+$$\int_{-T/2}^{T/2}\cos(m\omega t)\cos(n\omega t)\,dt = \int_{-T/2}^{T/2}\sin(m\omega t)\sin(n\omega t)\,dt = \begin{cases}0, & m\neq n\\ T/2, & m=n\end{cases}$$
+
+$$\int_{-T/2}^{T/2}\sin(m\omega t)\cos(n\omega t)\,dt = 0 \quad \forall\, m,n$$
+
+### Resultados notables
+
+| Señal (impar, periodo $T$) | Coeficiente | Serie | Fuente |
+| -------------------------- | ----------- | ----- | ------ |
+| Onda cuadrada ($\pm1$) | $b_n = \dfrac{2}{n\pi}(1-(-1)^n) = \dfrac{4}{n\pi}$ (impares) | $\dfrac{4}{\pi}\sum_{n\,\text{impar}}\dfrac{1}{n}\sin n\omega t$ | [[S11-3 Tema 02 - Series de Fourier Ejercicio 1 - onda cuadrada]] |
+| Onda triangular (altura $k$) | $b_n = \dfrac{8k}{(n\pi)^2}\sin\dfrac{n\pi}{2}$ | $\dfrac{8k}{\pi^2}\left(\sin\tfrac{\pi}{L}t - \tfrac{1}{9}\sin\tfrac{3\pi}{L}t + \cdots\right)$ | [[S11-4 Tema 02 - Series de Fourier Ejercicio 2 - onda triangular]] |
+
+> Las amplitudes decaen como $1/n$ (señal discontinua: cuadrada) o $1/n^2$ (señal continua: triangular): a mayor suavidad, decaimiento más rápido.
+
+## Series de Fourier de medio rango
+
+Fuente: [[S12-0 Tema 01 - Analisis de las series de Fourier]]
+
+Para una función definida solo en $(0, \tau)$, se extiende a periodo $T = 2\tau$ y se desarrolla con **solo senos** o **solo cosenos**:
+
+| Extensión | Serie | Coeficiente |
+| --------- | ----- | ----------- |
+| **Par** (cosenos) | $f(t) = \dfrac{1}{2}a_0 + \sum_{n=1}^{\infty} a_n\cos\dfrac{n\pi t}{\tau}$ | $a_n = \dfrac{2}{\tau}\displaystyle\int_0^{\tau} f(t)\cos\dfrac{n\pi t}{\tau}\,dt$ |
+| **Impar** (senos) | $f(t) = \sum_{n=1}^{\infty} b_n\sin\dfrac{n\pi t}{\tau}$ | $b_n = \dfrac{2}{\tau}\displaystyle\int_0^{\tau} f(t)\sin\dfrac{n\pi t}{\tau}\,dt$ |
+
+Fuente del ejercicio en cosenos: [[S12-1 Tema 01 - Ejercicio 1 - serie por expansion del coseno]]
+
+## Error cuadrático medio (aproximaciones finitas)
+
+Fuente: [[S12-0 Tema 01 - Analisis de las series de Fourier]]
+
+**Suma parcial** ($2k+1$ términos):
+
+$$S_k = \frac{1}{2}a_0 + \sum_{n=1}^{k}\bigl(a_n\cos n\omega t + b_n\sin n\omega t\bigr)$$
+
+**Error** $\varepsilon_k(t) = f(t) - S_k(t)$, y el **error cuadrático medio**:
+
+$$E_k = \frac{1}{T}\int_{-T/2}^{T/2}\bigl[f(t) - S_k(t)\bigr]^2 dt$$
+
+> [!success] Forma reducida (Parseval truncada)
+> $$E_k = \frac{1}{T}\int_{-T/2}^{T/2}\bigl[f(t)\bigr]^2 dt - \frac{a_0^2}{4} - \frac{1}{2}\sum_{n=1}^{k}\bigl(a_n^2 + b_n^2\bigr)$$
+
+- $\frac{1}{T}\int[f(t)]^2 dt$ = potencia media (valor cuadrático medio) de la señal.
+- El término sustraído = potencia capturada por los $k$ armónicos. $E_k$ = potencia residual.
+
+| Señal | $E_5$ | Comentario |
+| ----- | ----- | ---------- |
+| $f(t)=t$ en $(-\pi,\pi)$ (discontinua) | $\approx 0.363$ | converge lento (Gibbs) |
+| $A\lvert\sin\omega_0 t\rvert$ (continua) | $\approx 1.22\times10^{-4}A^2$ | converge muy rápido |
+
+Fuentes: [[S12-2 Tema 01 - Ejercicio 2 - error cuadratico de f(t) = t]], [[S12-3 Tema 01 - Ejercicio 3 - error cuadratico seno rectificado]]
+
+### Fenómeno de Gibbs
+
+Sobreoscilación (≈ 9 % del salto) cerca de una **discontinuidad** al usar sumas parciales; persiste sin importar el número de términos (se comprime hacia la discontinuidad), pero su energía (error cuadrático) tiende a cero. Solo aparece en señales **discontinuas**.
+
+## Teorema de Parseval
+
+Fuente: [[S13-0 Tema 01 - Teorema de Parseval]]
+
+> [!summary] Identidad de Parseval (señales periódicas)
+> $$\frac{1}{T}\int_{-T/2}^{T/2}\bigl[f(t)\bigr]^2 dt = \frac{a_0^2}{4} + \frac{1}{2}\sum_{n=1}^{\infty}\bigl(a_n^2 + b_n^2\bigr)$$
+
+- Lado izquierdo = **potencia promedio** (valor cuadrático medio) de la señal.
+- $\dfrac{a_0^2}{4}$ = potencia DC; $\dfrac{1}{2}(a_n^2+b_n^2)$ = potencia del $n$-ésimo armónico.
+- Se deduce del error cuadrático medio: como $E_k \geq 0$ es no creciente y $\lim E_k = 0$, queda la igualdad.
+
+### Aplicación: sumar series numéricas
+
+Expandir $f$ en Fourier (usar paridad) → aplicar Parseval → calcular $\frac{1}{T}\int[f]^2 dt$ y despejar.
+
+| Función (periodo) | Serie probada | Valor |
+| ----------------- | ------------- | ----- |
+| $f(x)=x$, $(-\pi,\pi)$ (impar) | $\displaystyle\sum_{n=1}^\infty \dfrac{1}{n^2}$ | $\dfrac{\pi^2}{6}$ |
+| $f(x)=1+\lvert x\rvert$, $(-1,1)$ (par) | $\displaystyle\sum_{n=1}^\infty \dfrac{1}{(2n-1)^4}$ | $\dfrac{\pi^4}{96}$ |
+
+Fuentes: [[S13-1 Tema 01 - Ejercicio 1 - Parseval prueba suma 1 sobre n cuadrado]], [[S13-2 Tema 01 - Ejercicio 2 - Parseval convergencia 1 sobre (2n-1) cuarta]]
+
+## Transformada de Laplace
+
+Fuente: [[S14-1 Tema 01 - Transformadas de Laplace]]
+
+### Definición
+
+$$\mathcal{L}\{F(t)\} = \int_0^{\infty} e^{-st}\,F(t)\,dt$$
+
+- $F(t)$ continua por tramos y de orden exponencial; la integral converge para algún $s$.
+- Notación: función en mayúscula $F(t)$ → su transformada en minúscula $f(s)$.
+
+### Tabla de transformadas elementales
+
+| $F(t)$ | $f(s)$ | Región |
+| --- | --- | --- |
+| $k$ | $\dfrac{k}{s}$ | $s>0$ |
+| $t^n$ | $\dfrac{n!}{s^{n+1}}$ | $s>0$ |
+| $e^{at}$ | $\dfrac{1}{s-a}$ | $s>a$ |
+| $\sin at$ | $\dfrac{a}{s^2+a^2}$ | $s>0$ |
+| $\cos at$ | $\dfrac{s}{s^2+a^2}$ | $s>0$ |
+| $\sinh at$ | $\dfrac{a}{s^2-a^2}$ | $s>\lvert a\rvert$ |
+| $\cosh at$ | $\dfrac{s}{s^2-a^2}$ | $s>\lvert a\rvert$ |
+| $e^{bt}\sin at$ | $\dfrac{a}{(s-b)^2+a^2}$ | |
+| $e^{bt}\cos at$ | $\dfrac{s-b}{(s-b)^2+a^2}$ | |
+| $e^{bt}\sinh at$ | $\dfrac{a}{(s-b)^2-a^2}$ | |
+| $e^{bt}\cosh at$ | $\dfrac{s-b}{(s-b)^2-a^2}$ | |
+
+### Propiedades
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{L}\{c_1F_1+c_2F_2\} = c_1f_1(s)+c_2f_2(s)$ |
+| 1.ª traslación (en $s$) | $\mathcal{L}\{e^{at}F(t)\} = f(s-a)$ |
+| 2.ª traslación (en $t$) | $\mathcal{L}\{F(t-a)\,u(t-a)\} = e^{-as}f(s)$ |
+| Cambio de escala | $\mathcal{L}\{F(at)\} = \dfrac{1}{a}f\!\left(\dfrac{s}{a}\right)$ |
+| Multiplicación por $t^n$ | $\mathcal{L}\{t^nF(t)\} = (-1)^n\dfrac{d^n}{ds^n}f(s)$ |
+
+### Transformada de derivadas e integrales
+
+$$\mathcal{L}\{F'(t)\} = s\,f(s) - F(0)$$
+$$\mathcal{L}\{F''(t)\} = s^2 f(s) - s\,F(0) - F'(0)$$
+$$\mathcal{L}\{F^{(n)}(t)\} = s^n f(s) - s^{n-1}F(0) - \cdots - F^{(n-1)}(0)$$
+$$\mathcal{L}\left\{\int_0^t F(u)\,du\right\} = \frac{f(s)}{s}$$
+
+> [!tip] Clave para EDOs
+> La transformada de derivadas incorpora las **condiciones iniciales** automáticamente: una EDO con valores iniciales se vuelve una ecuación algebraica en $f(s)$.
+
+### Transformada inversa
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{L}^{-1}\{c_1f_1+c_2f_2\} = c_1F_1+c_2F_2$ |
+| 1.ª traslación | $\mathcal{L}^{-1}\{f(s-a)\} = e^{at}F(t)$ |
+| 2.ª traslación | $\mathcal{L}^{-1}\{e^{as}f(s)\} = F(t-a)\,u(t-a)$ |
+| Cambio de escala | $\mathcal{L}^{-1}\{f(ks)\} = \dfrac{1}{k}F\!\left(\dfrac{t}{k}\right)$ |
+
+Técnica práctica: **fracciones parciales** + **completar cuadrados** para llevar $f(s)$ a las formas $\dfrac{s-b}{(s-b)^2+a^2}\to e^{bt}\cos at$ y $\dfrac{a}{(s-b)^2+a^2}\to e^{bt}\sin at$.
+
+### Aplicación: circuitos RLC (leyes de Kirchhoff)
+
+$$L\frac{dI}{dt} + R\,I + \frac{Q}{C} = E,\qquad I = \frac{dQ}{dt}$$
+
+Procedimiento: plantear la EDO en $Q$ → aplicar Laplace con $Q(0)=I(0)=0$ → despejar $Q(s)=\dfrac{E/L}{s\,(s^2 + \frac{R}{L}s + \frac{1}{LC})}$ → fracciones parciales + completar cuadrados → inversa. La corriente es $I(t)=Q'(t)$.
+
+| Circuito | $Q(t)$ | $I(t)=Q'(t)$ |
+| -------- | ------ | ------------ |
+| $L{=}2,\;R{=}16,\;C{=}0{,}02,\;E{=}300$ | $6 - 6e^{-4t}\cos 3t - 8e^{-4t}\sin 3t$ | $50\,e^{-4t}\sin 3t$ |
+| $L{=}1,\;R{=}20,\;C{=}0{,}005,\;E{=}150$ | $\tfrac34(1 - e^{-10t}\cos 10t - e^{-10t}\sin 10t)$ | $15\,e^{-10t}\sin 10t$ |
+
+Fuentes: [[S14-2 Tema 01 - Ejercicio 1 - EDO con coeficientes variables]], [[S14-3 Tema 01 - Ejercicio 2 - Circuito RLC carga y corriente]], [[S14-4 Tema 01 - Ejercicio 3 - Circuito RLC II]]
+
+## Transformada de Fourier
+
+Fuente: [[S15-1 Tema 01 - Transformada de Fourier]]
+
+### Definición (par de transformadas)
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t)\,e^{-i\omega t}\,dt \qquad\qquad f(t) = \frac{1}{2\pi}\int_{-\infty}^{\infty} F(\omega)\,e^{i\omega t}\,d\omega$$
+
+Se obtiene de la serie de Fourier compleja en el límite $T\to\infty$. Coeficiente complejo: $C_n = \frac{a_n}{2}-\frac{ib_n}{2}$, $|C_n|=\frac12\sqrt{a_n^2+b_n^2}$ (espectro de línea).
+
+### Propiedades
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{F}\{af_1+bf_2\} = aF_1(\omega)+bF_2(\omega)$ |
+| Escalado | $\mathcal{F}\{f(at)\} = \frac{1}{a}F(\frac{\omega}{a})$ |
+| Traslación en $t$ | $\mathcal{F}\{g(t-a)\} = e^{-i\omega a}G(\omega)$ |
+| Derivada | $\mathcal{F}\{f^{(n)}(t)\} = (i\omega)^n F(\omega)$ |
+
+### Transformadas notables
+
+| $f(t)$ | $F(\omega)$ |
+| ------ | ----------- |
+| $\delta(t)$ | $1$ |
+| $\delta(t-t_0)$ | $e^{-i\omega t_0}$ |
+| $1$ (constante) | $2\pi\delta(\omega)$;  $A\to 2\pi A\delta(\omega)$ |
+| $e^{i\omega_0 t}$ | $2\pi\delta(\omega-\omega_0)$ |
+| $\cos\omega_0 t$ | $\pi[\delta(\omega-\omega_0)+\delta(\omega+\omega_0)]$ |
+| $\sin\omega_0 t$ | $i\pi[\delta(\omega+\omega_0)-\delta(\omega-\omega_0)]$ |
+| Escalón $u(t)$ | $\pi\delta(\omega)+\frac{1}{i\omega}$ |
+| Pulso rectangular $P_d(t)$ | $d\,\dfrac{\sin(\omega d/2)}{\omega d/2} = d\operatorname{sinc}\frac{\omega d}{2}$ |
+
+> [!tip] Dualidad tiempo–frecuencia
+> Pulso rectangular ↔ sinc; delta ↔ constante. Lo concentrado en un dominio se dispersa en el otro.
+
+**Muestreo:** una señal de banda limitada a $f_M$ se reconstruye con muestras espaciadas $<1/f_M$.
+
+Fuentes: [[S15-2 Tema 01 - Ejercicio 1 - Transformada del pulso rectangular]], [[S15-3 Tema 01 - Ejercicio 2 - Transformada del impulso desplazado]], [[S15-4 Tema 01 - Ejercicio 3 - Transformada del escalon unitario]], [[S15-5 Tema 01 - Ejercicio 4 - Transformada de funcion periodica]]
+
+## Transformada Z
+
+Fuentes: [[S16-1 Tema 01 - Transformada Z]], [[S17-1 Tema 01 - Transformada Z Parte 2]]
+
+### Definición
+
+$$X(z) = \sum_{n=-\infty}^{+\infty} x(n)\,z^{-n}$$
+
+Generaliza la TF de secuencias; la TF es el caso $z=e^{i\omega}$ (círculo unitario $|z|=1$). **ROC:** anillo $R^-<|z|<R^+$; ceros = raíces de $N(z)$, polos = raíces de $D(z)$.
+
+Herramienta clave: **serie geométrica** $\sum_{n=0}^\infty r^n = \frac{1}{1-r}$ ($|r|<1$); desde $N_1$: $\sum_{n=N_1}^\infty r^n = \frac{r^{N_1}}{1-r}$.
+
+### Propiedades
+
+| Propiedad | Fórmula |
+| --------- | ------- |
+| Linealidad | $\mathcal{Z}\{ax_1+bx_2\} = aX_1(z)+bX_2(z)$ |
+| Desplazamiento | $\mathcal{Z}\{x(n-n_0)u(n-n_0)\} = z^{-n_0}X(z)$ |
+| Operación escalar | $\mathcal{Z}\{z_0^n x(n)\} = X(z/z_0)$ |
+| Inversión de tiempo | $\mathcal{Z}\{x(-n)\} = X(1/z)$ |
+| Diferenciación | $\mathcal{Z}\{n\,x(n)\} = -z\,\frac{dX}{dz}$ |
+| Convolución | $\mathcal{Z}\{x_1 * x_2\} = X_1(z)X_2(z)$ |
+
+### Transformadas notables
+
+| $x(n)$ | $X(z)$ | ROC |
+| ------ | ------ | --- |
+| $\delta(n)$ | $1$ | todo $z$ |
+| $\delta(n-m)$ | $z^{-m}$ | $z\neq0$ |
+| $u(n)$ | $\frac{z}{z-1}$ | $|z|>1$ |
+| $a^n u(n)$ | $\frac{z}{z-a}$ | $|z|>a$ |
+| $\cos(\omega T n)$ | $\frac{z(z-\cos\omega T)}{z^2-2z\cos\omega T+1}$ | $|z|>1$ |
+
+### Transformada inversa — 4 métodos
+
+1. **División larga:** $X(z) = x(0)+x(1)z^{-1}+\cdots$ (coeficientes = $x(n)$).
+2. **Fracciones parciales + tabla:** dividir $\frac{F(z)}{z}$, factorizar $Q(z)$, expandir, multiplicar por $z$, invertir.
+3. **Integral de inversión (residuos):** $x(n) = \sum_i [(z-z_i)X(z)z^{n-1}]_{z_i}$ (polos simples), vía Cauchy.
+4. **Inspección.**
+
+### Ecuaciones en diferencias (transformada unilateral)
+
+Aplicar Z (el desplazamiento incorpora $y_0, y_1, \ldots$) → despejar $Y(z)$ → fracciones parciales → inversa. Raíces **reales** → suma de exponenciales $a^k$; raíces **complejas conjugadas** → sinusoide amortiguada.
+
+Fuentes: [[S16-2 Tema 01 - Ejercicio 1 - Transformada Z de a elevado n por u(n)]], [[S16-4 Tema 01 - Ejercicio 3 - Transformada Z del coseno]], [[S17-2 Tema 01 - Inversa por division larga]], [[S17-4 Tema 01 - Inversa por residuos]], [[S17-6 Tema 01 - Ecuacion en diferencias homogenea]]

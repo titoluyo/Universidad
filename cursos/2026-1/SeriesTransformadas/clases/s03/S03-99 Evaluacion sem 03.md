@@ -4,10 +4,12 @@ curso: "[[SeriesTransformadas MOC]]"
 unidad: 1
 semana: 3
 orden: 99
-tipo: ejercicio
+tipo: evaluacion
+subtipo: cuestionario
 tags:
   - curso/series-transformadas
-  - tipo/ejercicio
+  - tipo/evaluacion
+  - subtipo/cuestionario
   - tema/cauchy-riemann
   - tema/derivada-compleja
 date: 2026-04-12

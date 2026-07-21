@@ -34,9 +34,9 @@ La señal de onda deseada para una aplicación específica debe ser una **señal
 ### Proyecto 2 — Transformada de Laplace
 Se necesita determinar el **voltaje de un capacitor** para un circuito específico, usando un programa de **simulación** y la teoría de las **Transformadas de Laplace**.
 
-> [!warning] Erratas en la consigna del portal (etiquetas cruzadas)
-> En la sección "Indicaciones específicas" del portal, los entregables aparecen **intercambiados**: bajo *"Si eligieron el proyecto 1"* describe hallar $V_o(t)$ con **Laplace** (que corresponde al Proyecto 2), y bajo *"Si eligieron el proyecto 2"* describe la **serie de Fourier** del seno rectificado (que corresponde al Proyecto 1).
-> El mapeo correcto, según la "Indicación general" y el [[S16-98 APF Indicaciones|APF]], es: **Proyecto 1 = Fourier** · **Proyecto 2 = Laplace**.
+> [!important] El cruce Proyecto 1/2 es INTENCIONAL (aclarado por el docente, 16 jul 2026)
+> En las "Indicaciones específicas" del PROY, bajo *"Si eligieron el proyecto 1"* se pide $V_o(t)$ con **Laplace** y bajo *"Si eligieron el proyecto 2"* la **serie de Fourier**. No es una errata: el diseño es que **todos trabajen ambos proyectos** — quien desarrolló el Proyecto 1 (Fourier) en el [[S16-98 APF Indicaciones|APF]] desarrolla el Proyecto 2 (Laplace) en el Proyecto Final, y viceversa.
+> En nuestro caso: APF = Fourier → **PROY = Laplace**, entregado desde [[00 - Decision y alcance v2|Proyecto2-v2]].
 
 ## Contenido exigido del documento
 

@@ -31,19 +31,20 @@ Espacio de trabajo para desarrollar el **Proyecto Final (PROY, 30%)** y su avanc
 > [!tip] El APF es un borrador del PROY
 > Lo que se entrega en el APF (introducción + marco teórico + desarrollo analítico/simulación de un proyecto) es la base del PROY. Hacer el APF bien = casi medio PROY hecho. El PROY añade: **discusión del error**, **conclusiones** y **video**.
 
-## Decisiones pendientes
+## Decisiones tomadas
 
-> [!question] Antes de empezar hay que cerrar dos decisiones (ver [[00 - Brainstorming y eleccion]])
-> 1. **¿Proyecto 1 (Fourier) o Proyecto 2 (Laplace)?** → _por decidir_
-> 2. **¿Individual o grupal?** → _por decidir_ (si grupal: definir integrantes y reparto)
+> [!success] Decisiones cerradas
+> 1. **APF = Proyecto 1 (Fourier)** — entregado el lun 13 jul desde [[Proyecto1/APF - Avance Proyecto Final (contenido)|Proyecto1]].
+> 2. **PROY = Proyecto 2 (Laplace)** — el docente aclaró (16 jul) que el **cruce es intencional**: quien hizo Fourier en el APF desarrolla Laplace en el PROY. Ver [[Consigna oficial - Proyecto Final (transcripcion)|consigna transcrita]].
+> 3. **Modalidad: individual.**
+> 4. Circuito del PROY: R–L–C serie con $R=6\ \Omega$, $L=1$ mH, $C=4\ \mu$F, $E=300$ V (valores propios; la consigna no define el circuito).
 
-## Líneas de proyecto (una subcarpeta = un agente)
+## Líneas de proyecto
 
-Tres alcances en paralelo; cada uno tiene su brief autocontenido. **Aún sin desarrollar.**
-
-- [[Proyecto 1/00 - Brief y alcance|Proyecto 1 — Serie de Fourier]] (seno rectificado de media onda + Octave)
-- [[Proyecto 2/00 - Brief y alcance|Proyecto 2 — Transformada de Laplace]] (voltaje de capacitor en circuito)
-- [[Analisis terremoto Venezuela 2026/00 - Brief y alcance|Análisis terremoto Venezuela 2026]] (adaptación de Laplace; requiere OK del profesor)
+- 🔴 **ENTREGABLE DEL PROY → [[Proyecto2-v2/00 - Decision y alcance v2|Proyecto2-v2 — Laplace, circuito R–L–C]]** (método de clase S14-3, $V_o = q/C$)
+- ✅ [[Proyecto1/APF - Avance Proyecto Final (contenido)|Proyecto1 — Serie de Fourier]] — APF entregado 13 jul (archivo)
+- 📦 [[Proyecto2/APF - Documento (Laplace)|Proyecto2 (v1) — Laplace]] — versión con circuito académico, reemplazada por la v2 (archivo de referencia)
+- 📦 [[Analisis_terremoto_Venezuela_2026/00 - Brief y alcance|Análisis terremoto Venezuela 2026]] — descartado para el PROY (requería OK del profesor)
 
 ## Etapas
 

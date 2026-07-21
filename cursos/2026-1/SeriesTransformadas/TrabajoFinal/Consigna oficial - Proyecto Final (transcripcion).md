@@ -17,10 +17,9 @@ aliases:
 > [!note] Origen
 > Transcripción **literal** del PDF oficial `Semana+18+-+Ind.pdf` (`.materiales/2026-1/SeriesTransformadas/s18/`). Se respetan las expresiones y erratas del original (p. ej. "capacitador", "especifico", "Titulo"). Documento par del [[Consigna oficial - Avance Proyecto Final (transcripcion)|APF (semana 16)]]. Resumen operativo y rúbrica mapeada: [[S18-98 PROY Indicaciones]].
 
-> [!danger] Contradicción interna del documento — leer antes de desarrollar
-> Este PDF **se contradice a sí mismo**. En la *Indicación general* (§ 2) define **PROYECTO 1 = Serie de Fourier** y **PROYECTO 2 = Laplace/Vo**. Pero en las *Indicaciones específicas* (§ 3) los entregables aparecen **intercambiados**: bajo *"Si eligieron el proyecto 1"* pide $V_o(t)$ con Laplace, y bajo *"Si eligieron el proyecto 2"* pide la serie de Fourier.
-> El PDF del APF ([[Consigna oficial - Avance Proyecto Final (transcripcion)|semana 16]]) **no** tiene ese cruce: ahí proyecto 1 → Fourier y proyecto 2 → Laplace, coherente con la indicación general de ambos documentos. La conclusión es que el cruce del § 3 de la semana 18 es un **error de copiado del profesor**.
-> **Ninguna lectura pide ambas transformadas:** cada viñeta lista un documento autocontenido (Introducción, Marco teórico, **una** línea analítica, Referencias). La rúbrica lo confirma — todos los criterios dicen "Laplace **o** Serie de Fourier". Ver [[#Nota sobre el cruce de etiquetas]].
+> [!important] El cruce del § 3 es INTENCIONAL (aclarado por el docente, 16 jul 2026)
+> En la *Indicación general* (§ 2) **PROYECTO 1 = Serie de Fourier** y **PROYECTO 2 = Laplace/Vo**, pero en las *Indicaciones específicas* (§ 3) los entregables aparecen cruzados. **No es una errata:** el diseño del curso es que **todos trabajen ambos proyectos** — quien desarrolló el Proyecto 1 (Fourier) en el [[Consigna oficial - Avance Proyecto Final (transcripcion)|APF]] desarrolla el Proyecto 2 (Laplace) en el Proyecto Final, y viceversa. Por eso el PDF del APF no cruza las viñetas y este sí.
+> **En ningún caso se piden las dos transformadas en un mismo documento:** cada viñeta lista un documento autocontenido (Introducción, Marco teórico, **una** línea analítica, Referencias) y la rúbrica dice "Laplace **o** Serie de Fourier" en todos sus criterios. Ver [[#Nota sobre el cruce de etiquetas]].
 
 ## 1. Logro a evaluar
 
@@ -146,18 +145,22 @@ Escala por criterio: **Estándar esperado · En proceso 2 · En proceso 1 · Ini
 
 Comparación de las *Indicaciones específicas* de ambos documentos oficiales:
 
-| Documento | "proyecto 1" pide… | "proyecto 2" pide… | ¿Coherente con su § 2? |
-| --------- | ------------------ | ------------------ | ---------------------- |
-| [[Consigna oficial - Avance Proyecto Final (transcripcion)\|APF — semana 16]] | Serie de Fourier (media onda) | $V_o(t)$ con Laplace | ✅ Sí |
-| **PROY — semana 18** (este) | $V_o(t)$ con Laplace | Serie de Fourier (media onda) | ❌ **No — invertido** |
+| Documento | "proyecto 1" pide… | "proyecto 2" pide… |
+| --------- | ------------------ | ------------------ |
+| [[Consigna oficial - Avance Proyecto Final (transcripcion)\|APF — semana 16]] | Serie de Fourier (media onda) | $V_o(t)$ con Laplace |
+| **PROY — semana 18** (este) | $V_o(t)$ con Laplace | Serie de Fourier (media onda) |
 
-**Lecturas posibles y qué implican:**
+**Interpretación correcta (aclarada por el docente):** el intercambio entre ambos documentos es **deliberado** — "proyecto 1/2" en el § 3 identifica **qué caso elegiste en el APF**, y el PROY te asigna **el otro caso**. Así todos los estudiantes desarrollan las dos técnicas a lo largo de las dos entregas:
 
-1. **Errata de copiado (lectura sostenida).** Las viñetas del § 3 se intercambiaron por error. Proyecto 1 = **Fourier**, como en el § 2 de este mismo PDF, como en todo el APF, y como en el PRONTER del profesor. → El proyecto ya entregado en el APF continúa tal cual.
-2. **Lectura literal del § 3.** Habría que desarrollar **Laplace en lugar de Fourier**, descartando por completo el APF entregado — y contradiciendo el § 2 de la propia página anterior.
+| Si en el APF hiciste… | En el PROY desarrollas… |
+| --------------------- | ----------------------- |
+| Proyecto 1 — Fourier (media onda) | **Laplace: $V_o(t)$ del circuito** |
+| Proyecto 2 — Laplace ($V_o$) | **Fourier: seno rectificado de media onda** |
 
-> [!important] Bajo ninguna lectura se piden las dos transformadas
-> Cada viñeta describe un documento **autocontenido** (Introducción → Marco teórico → **una** línea analítica → Referencias), de 10 a 20 páginas. El § 2 dice "escoger **uno** de los casos". La rúbrica tiene **un solo** criterio de simulación y **un solo** criterio teórico, ambos definidos con "**o**". Sumar Laplace a un proyecto de Fourier **no aporta puntos** y arriesga el límite de 20 páginas.
+**Nuestro caso:** APF = Proyecto 1 (Fourier) → **PROY = Laplace**, desarrollado en [[Proyecto2-v2/00 - Decision y alcance v2|Proyecto2-v2]].
+
+> [!important] En ningún caso se piden las dos transformadas en un mismo documento
+> Cada viñeta describe un documento **autocontenido** (Introducción → Marco teórico → **una** línea analítica → Referencias), de 10 a 20 páginas. La rúbrica tiene **un solo** criterio de simulación y **un solo** criterio teórico, ambos definidos con "**o**".
 
 ## Delta APF → PROY
 

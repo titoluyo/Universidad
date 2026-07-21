@@ -19,7 +19,9 @@ Este .md contiene SOLO el CONTENIDO exigido por la consigna
 Referencias). NO incluye el formato de Word (Arial 12, interlineado,
 paginado, indice con paginas): eso se aplica con el prompt
 "APF - Prompt para Word (formato).md".
-Alcance APF = SOLO Series de Fourier. El PROY agregara Transformadas de Laplace.
+Alcance APF = SOLO Series de Fourier (Proyecto 1). El PROY desarrolla el
+Proyecto 2 (Laplace) en documento aparte, por indicacion del docente
+(cruce intencional APF/PROY): ver TrabajoFinal/Proyecto2-v2/.
 ====================================================================
 -->
 

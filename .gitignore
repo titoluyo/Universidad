@@ -32,3 +32,6 @@ utils/.obsidian-ignore
 
 # Video screenshots (raw captures, curated ones kept in attachments)
 **/video-s02-ejercicio-*.png
+
+# Word temp
+~$*.docx
